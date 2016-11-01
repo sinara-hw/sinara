@@ -1,0 +1,651 @@
+.FILETYPE DXF_EXPORT_SETTINGS
+.VERSION "VB99.1"
+.DATE "03/05/2016 19:33:20"
+
+!  This file contains settings for the most recent DXF export session
+
+.OUTPUT_FILE "ORPAL.dxf"
+.UNITS mm
+
+.FILL_PADS 0
+
+.BOARD_CONTENTS 0
+
+.MIRROR_OUTPUT 0
+
+.ITEM "Assembly Outlines Btm"
+ ..LAYER "Assembly_Outlines_Btm"
+ ..EXPORT 0
+
+.ITEM "Assembly Outlines Top"
+ ..LAYER "Assembly_Outlines_Top"
+ ..EXPORT 0
+
+.ITEM "Assembly Part Numbers Btm"
+ ..LAYER "Assembly_Part_Numbers_Btm"
+ ..EXPORT 0
+
+.ITEM "Assembly Part Numbers Top"
+ ..LAYER "Assembly_Part_Numbers_Top"
+ ..EXPORT 0
+
+.ITEM "Assembly Ref Des Btm"
+ ..LAYER "Assembly_Ref_Des_Btm"
+ ..EXPORT 0
+
+.ITEM "Assembly Ref Des Top"
+ ..LAYER "Assembly_Ref_Des_Top"
+ ..EXPORT 0
+
+.ITEM "Board Origin"
+ ..LAYER "Board_Origin"
+ ..EXPORT 0
+
+.ITEM "Board Outline"
+ ..LAYER "Board_Outline"
+ ..EXPORT 0
+
+.ITEM "Conductive Shapes Layer 1"
+ ..LAYER "Conductive_Shapes_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Conductive Shapes Layer 12"
+ ..LAYER "Conductive_Shapes_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Copper Balancing Layer 1"
+ ..LAYER "Copper_Balancing_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Copper Balancing Layer 3"
+ ..LAYER "Copper_Balancing_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Copper Balancing Layer 5"
+ ..LAYER "Copper_Balancing_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Copper Balancing Layer 8"
+ ..LAYER "Copper_Balancing_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Copper Balancing Layer 10"
+ ..LAYER "Copper_Balancing_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Copper Balancing Layer 12"
+ ..LAYER "Copper_Balancing_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 1"
+ ..LAYER "Design_Rule_Areas_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 2"
+ ..LAYER "Design_Rule_Areas_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 3"
+ ..LAYER "Design_Rule_Areas_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 4"
+ ..LAYER "Design_Rule_Areas_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 5"
+ ..LAYER "Design_Rule_Areas_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 6"
+ ..LAYER "Design_Rule_Areas_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 7"
+ ..LAYER "Design_Rule_Areas_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 8"
+ ..LAYER "Design_Rule_Areas_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 9"
+ ..LAYER "Design_Rule_Areas_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 10"
+ ..LAYER "Design_Rule_Areas_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 11"
+ ..LAYER "Design_Rule_Areas_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Design Rule Areas Layer 12"
+ ..LAYER "Design_Rule_Areas_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Drill Drawing"
+ ..LAYER "Drill_Drawing"
+ ..EXPORT 0
+
+.ITEM "Etched Text Layer 5"
+ ..LAYER "Etched_Text_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Fiducial Pads Btm"
+ ..LAYER "Fiducial_Pads_Btm"
+ ..EXPORT 0
+
+.ITEM "Fiducial Pads Top"
+ ..LAYER "Fiducial_Pads_Top"
+ ..EXPORT 0
+
+.ITEM "Generated Silkscreen Btm"
+ ..LAYER "Generated_Silkscreen_Btm"
+ ..EXPORT 0
+
+.ITEM "Generated Silkscreen Top"
+ ..LAYER "Generated_Silkscreen_Top"
+ ..EXPORT 0
+
+.ITEM "Manufacturing Outlines"
+ ..LAYER "Manufacturing_Outlines"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 1"
+ ..LAYER "Mounting_Hole_Pads_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 2"
+ ..LAYER "Mounting_Hole_Pads_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 3"
+ ..LAYER "Mounting_Hole_Pads_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 4"
+ ..LAYER "Mounting_Hole_Pads_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 5"
+ ..LAYER "Mounting_Hole_Pads_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 6"
+ ..LAYER "Mounting_Hole_Pads_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 7"
+ ..LAYER "Mounting_Hole_Pads_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 8"
+ ..LAYER "Mounting_Hole_Pads_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 9"
+ ..LAYER "Mounting_Hole_Pads_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 10"
+ ..LAYER "Mounting_Hole_Pads_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 11"
+ ..LAYER "Mounting_Hole_Pads_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Mounting Hole Pads Layer 12"
+ ..LAYER "Mounting_Hole_Pads_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 1"
+ ..LAYER "Mounting_Holes_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 2"
+ ..LAYER "Mounting_Holes_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 3"
+ ..LAYER "Mounting_Holes_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 4"
+ ..LAYER "Mounting_Holes_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 5"
+ ..LAYER "Mounting_Holes_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 6"
+ ..LAYER "Mounting_Holes_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 7"
+ ..LAYER "Mounting_Holes_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 8"
+ ..LAYER "Mounting_Holes_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 9"
+ ..LAYER "Mounting_Holes_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 10"
+ ..LAYER "Mounting_Holes_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 11"
+ ..LAYER "Mounting_Holes_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Mounting Holes Layer 12"
+ ..LAYER "Mounting_Holes_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "NC Drill Origin"
+ ..LAYER "NC_Drill_Origin"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 1"
+ ..LAYER "Part_Holes_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 2"
+ ..LAYER "Part_Holes_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 3"
+ ..LAYER "Part_Holes_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 4"
+ ..LAYER "Part_Holes_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 5"
+ ..LAYER "Part_Holes_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 6"
+ ..LAYER "Part_Holes_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 7"
+ ..LAYER "Part_Holes_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 8"
+ ..LAYER "Part_Holes_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 9"
+ ..LAYER "Part_Holes_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 10"
+ ..LAYER "Part_Holes_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 11"
+ ..LAYER "Part_Holes_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Part Holes Layer 12"
+ ..LAYER "Part_Holes_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 1"
+ ..LAYER "Part_Pads_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 2"
+ ..LAYER "Part_Pads_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 3"
+ ..LAYER "Part_Pads_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 4"
+ ..LAYER "Part_Pads_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 5"
+ ..LAYER "Part_Pads_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 6"
+ ..LAYER "Part_Pads_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 7"
+ ..LAYER "Part_Pads_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 8"
+ ..LAYER "Part_Pads_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 9"
+ ..LAYER "Part_Pads_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 10"
+ ..LAYER "Part_Pads_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 11"
+ ..LAYER "Part_Pads_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Part Pads Layer 12"
+ ..LAYER "Part_Pads_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Part Pads SMD Btm"
+ ..LAYER "Part_Pads_SMD_Btm"
+ ..EXPORT 0
+
+.ITEM "Part Pads SMD Top"
+ ..LAYER "Part_Pads_SMD_Top"
+ ..EXPORT 0
+
+.ITEM "Pin Numbers Btm"
+ ..LAYER "Pin_Numbers_Btm"
+ ..EXPORT 0
+
+.ITEM "Pin Numbers Top"
+ ..LAYER "Pin_Numbers_Top"
+ ..EXPORT 0
+
+.ITEM "Placement Keepouts Layer 12"
+ ..LAYER "Placement_Keepouts_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Placement Outlines Btm"
+ ..LAYER "Placement_Outlines_Btm"
+ ..EXPORT 0
+
+.ITEM "Placement Outlines Top"
+ ..LAYER "Placement_Outlines_Top"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 1"
+ ..LAYER "Plane_Data_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 2"
+ ..LAYER "Plane_Data_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 4"
+ ..LAYER "Plane_Data_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 6"
+ ..LAYER "Plane_Data_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 7"
+ ..LAYER "Plane_Data_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 9"
+ ..LAYER "Plane_Data_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 10"
+ ..LAYER "Plane_Data_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 11"
+ ..LAYER "Plane_Data_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Plane Data Layer 12"
+ ..LAYER "Plane_Data_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Plane Obstructs Layer 11"
+ ..LAYER "Plane_Obstructs_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Plane Shapes Layer 1"
+ ..LAYER "Plane_Shapes_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Plane Shapes Layer 6"
+ ..LAYER "Plane_Shapes_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Plane Shapes Layer 7"
+ ..LAYER "Plane_Shapes_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Plane Shapes Layer 10"
+ ..LAYER "Plane_Shapes_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Plane Shapes Layer 11"
+ ..LAYER "Plane_Shapes_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Plane Shapes Layer 12"
+ ..LAYER "Plane_Shapes_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Route Border"
+ ..LAYER "Route_Border"
+ ..EXPORT 0
+
+.ITEM "Route Obstructs Layer 1"
+ ..LAYER "Route_Obstructs_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Route Obstructs Layer 5"
+ ..LAYER "Route_Obstructs_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Route Obstructs Layer 10"
+ ..LAYER "Route_Obstructs_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Route Obstructs Layer 11"
+ ..LAYER "Route_Obstructs_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Route Obstructs Layer 12"
+ ..LAYER "Route_Obstructs_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Silkscreen Outlines Btm"
+ ..LAYER "Silkscreen_Outlines_Btm"
+ ..EXPORT 0
+
+.ITEM "Silkscreen Outlines Top"
+ ..LAYER "Silkscreen_Outlines_Top"
+ ..EXPORT 0
+
+.ITEM "Silkscreen Part Numbers Btm"
+ ..LAYER "Silkscreen_Part_Numbers_Btm"
+ ..EXPORT 0
+
+.ITEM "Silkscreen Part Numbers Top"
+ ..LAYER "Silkscreen_Part_Numbers_Top"
+ ..EXPORT 0
+
+.ITEM "Silkscreen Ref Des Btm"
+ ..LAYER "Silkscreen_Ref_Des_Btm"
+ ..EXPORT 0
+
+.ITEM "Silkscreen Ref Des Top"
+ ..LAYER "Silkscreen_Ref_Des_Top"
+ ..EXPORT 0
+
+.ITEM "Soldermask Pads Btm"
+ ..LAYER "Soldermask_Pads_Btm"
+ ..EXPORT 0
+
+.ITEM "Soldermask Pads Top"
+ ..LAYER "Soldermask_Pads_Top"
+ ..EXPORT 0
+
+.ITEM "Solderpaste Pads Btm"
+ ..LAYER "Solderpaste_Pads_Btm"
+ ..EXPORT 0
+
+.ITEM "Solderpaste Pads Top"
+ ..LAYER "Solderpaste_Pads_Top"
+ ..EXPORT 0
+
+.ITEM "Traces Layer 1"
+ ..LAYER "Traces_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Traces Layer 3"
+ ..LAYER "Traces_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Traces Layer 5"
+ ..LAYER "Traces_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Traces Layer 8"
+ ..LAYER "Traces_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Traces Layer 10"
+ ..LAYER "Traces_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Traces Layer 12"
+ ..LAYER "Traces_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Unnamed user layer"
+ ..LAYER "Unnamed_user_layer"
+ ..EXPORT 0
+
+.ITEM "User Layer 15"
+ ..LAYER "User_Layer_15"
+ ..EXPORT 0
+
+.ITEM "User Layer 16"
+ ..LAYER "User_Layer_16"
+ ..EXPORT 0
+
+.ITEM "User Layer 17"
+ ..LAYER "User_Layer_17"
+ ..EXPORT 0
+
+.ITEM "User Layer 18"
+ ..LAYER "User_Layer_18"
+ ..EXPORT 0
+
+.ITEM "User Layer 19"
+ ..LAYER "User_Layer_19"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 1"
+ ..LAYER "Via_Holes_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 2"
+ ..LAYER "Via_Holes_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 3"
+ ..LAYER "Via_Holes_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 4"
+ ..LAYER "Via_Holes_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 5"
+ ..LAYER "Via_Holes_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 6"
+ ..LAYER "Via_Holes_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 7"
+ ..LAYER "Via_Holes_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 8"
+ ..LAYER "Via_Holes_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 9"
+ ..LAYER "Via_Holes_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 10"
+ ..LAYER "Via_Holes_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 11"
+ ..LAYER "Via_Holes_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Via Holes Layer 12"
+ ..LAYER "Via_Holes_Layer_Bottom"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 1"
+ ..LAYER "Via_Pads_Layer_Top"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 2"
+ ..LAYER "Via_Pads_Layer_2"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 3"
+ ..LAYER "Via_Pads_Layer_3"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 4"
+ ..LAYER "Via_Pads_Layer_4"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 5"
+ ..LAYER "Via_Pads_Layer_5"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 6"
+ ..LAYER "Via_Pads_Layer_6"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 7"
+ ..LAYER "Via_Pads_Layer_7"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 8"
+ ..LAYER "Via_Pads_Layer_8"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 9"
+ ..LAYER "Via_Pads_Layer_9"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 10"
+ ..LAYER "Via_Pads_Layer_10"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 11"
+ ..LAYER "Via_Pads_Layer_11"
+ ..EXPORT 0
+
+.ITEM "Via Pads Layer 12"
+ ..LAYER "Via_Pads_Layer_Bottom"
+ ..EXPORT 0
+

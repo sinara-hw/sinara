@@ -1,0 +1,166 @@
+SECTION AMC_FMC_Carrier
+KEY AllowAlpha "1"
+KEY CADBackAnno "1"
+KEY ConfigType "PCB"
+KEY FwdAnnoCleanBuildFlag "0"
+KEY FwdAnnoExtractFlag "0"
+KEY FwdAnnoRebuildFlag "0"
+KEY FwdAnnoReplaceFlag "1"
+KEY LayoutTemplate "12 Layer Template"
+KEY PCBDesignPath "PCB\AMC_FMC_ZQ.pcb"
+KEY PCBForwardAnno "1"
+KEY RootBlock "AMC_FMC_ZQ_Carrier"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+KEY UpdateJobPrefsDB "CAD"
+ENDSECTION
+SECTION CESDiagnostics_DxD
+KEY DESIGN_CHECK_LAST_UPDATE "2015-11-14 16:09:44"
+KEY DESIGN_CHECK_NUM_ERRORS "0"
+ENDSECTION
+SECTION DesignInfo
+LIST HdlSearchPaths
+ENDLIST
+KEY BorderSymbols "D:\Dropbox\DESIGNS\MTCA projects\ARTIQ\ARTIQ_EE\borders.ini"
+KEY Bus_Contents "D:\Dropbox\DESIGNS\MTCA projects\ARTIQ\ARTIQ_EE\busconts.ini"
+KEY CentralLibrary "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\EXP_CERN_PCB_LIB.lmc"
+KEY CrossProbing "On"
+KEY DBCFile "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\EXP_CERN_PCB_LIB.dbc"
+KEY DxD_Version "XENTPVX.2"
+KEY FrontEndSnapshot "DxD"
+KEY HdlUtilsConfigFile "hdlutils.ini"
+KEY NumberingType "INDEPTH"
+KEY OrderFileName ".\"
+KEY PinComponents "D:\Dropbox\DESIGNS\MTCA projects\ARTIQ\ARTIQ_EE\speccomp.ini"
+KEY SheetsEditMode "1"
+ENDSECTION
+SECTION FlowSettings
+KEY FlowType "DX"
+ENDSECTION
+SECTION ICXProInfo
+KEY HighSpeedPathsVersion "1"
+KEY IBISModelMgrDir "./HighSpeed/ICXPro/Model_Manager"
+KEY ICXProDir "./HighSpeed/ICXPro"
+KEY ICXProDir_old "ICXPro"
+KEY PostLayoutExplorerDir "./HighSpeed/ICXPro/PostLayoutExplorer"
+KEY PostLayoutLineSim "./HighSpeed/HyperLynx/PostLayoutLineSim"
+KEY SimTemplatesDir "./HighSpeed/ICXPro/Simulation_Templates"
+KEY VerifyDir "./HighSpeed/ICXPro/Verify"
+KEY VerifyLogFilesDir "./HighSpeed/ICXPro/Verify/LogFiles"
+KEY VerifyResultsDir "./HighSpeed/ICXPro/Verify/DataBases"
+KEY VerifySandBoxDir "./HighSpeed/ICXPro/Verify"
+KEY VerifyWaveformsDir "./HighSpeed/ICXPro/Verify/Waveforms"
+ENDSECTION
+SECTION IODesignerData
+KEY DesignFlow "Schematic Export"
+ENDSECTION
+SECTION Metlino_MCH
+KEY CADBackAnno "0"
+KEY ConfigType "PCB"
+KEY LayoutTemplate "12 Layer Template"
+KEY RootBlock "Metlino_MCH"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+KEY UpdateJobPrefsDB "CAD"
+KEY PCBDesignPath "PCB_Metlino\Metlino.pcb"
+KEY PCBForwardAnno "1"
+ENDSECTION
+SECTION PCBFwdAnnoOptions
+KEY RootSchematicFile "WR-MCH-TOP"
+ENDSECTION
+SECTION ProjectBackup
+KEY ConfigFile ".\ProjectBackup\ProjectBackup.cfg"
+ENDSECTION
+SECTION Sayma_AMC
+KEY CADBackAnno "0"
+KEY ConfigType "PCB"
+KEY LayoutTemplate "12 Layer Template"
+KEY PCBDesignPath "PCB_Sayma_AMC\Sayma_AMC.pcb"
+KEY PCBForwardAnno "1"
+KEY RootBlock "Sayma_AMC"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+KEY UpdateJobPrefsDB "CAD"
+ENDSECTION
+SECTION Sayma_RTM
+KEY CADBackAnno "0"
+KEY ConfigType "PCB"
+KEY LayoutTemplate "12 Layer Template"
+KEY PCBDesignPath "PCB_Sayma_RTM\Sayma_RTM.pcb"
+KEY PCBForwardAnno "1"
+KEY RootBlock "Sayma_RTM"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+KEY UpdateJobPrefsDB "CAD"
+ENDSECTION
+SECTION Template_Design
+KEY CADBackAnno "0"
+KEY ConfigType "PCB"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+ENDSECTION
+SECTION VBPCBDesignData
+KEY VBPCBDesignPath "PCB\PCB\WR-MCH.pcb"
+ENDSECTION
+SECTION VBPCBIndicators
+KEY AllowAlpha "0"
+KEY CADBackAnno "0"
+KEY DisableBackAnnoChanges "0"
+KEY FanoutSinglePinNets "0"
+KEY FwdAnnoCleanBuildFlag "0"
+KEY FwdAnnoExtractFlag "1"
+KEY FwdAnnoRebuildFlag "0"
+KEY FwdAnnoRemoveHangers "1"
+KEY FwdAnnoRemoveTraces "1"
+KEY FwdAnnoReplaceFlag "0"
+KEY FwdAnnoSchematicRefDesChanges "1"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY UnusedPartsFlag "0"
+KEY VBPCBForwardAnno "0"
+ENDSECTION
+SECTION WR-MCH
+LIST IODesignerData
+ENDLIST
+KEY AllowAlpha "0"
+KEY CADBackAnno "0"
+KEY ConfigType "PCB"
+KEY DisableBackAnnoChanges "0"
+KEY FanoutSinglePinNets "0"
+KEY FwdAnnoCleanBuildFlag "0"
+KEY FwdAnnoExtractFlag "0"
+KEY FwdAnnoRebuildFlag "1"
+KEY FwdAnnoRemoveHangers "1"
+KEY FwdAnnoRemoveTraces "1"
+KEY FwdAnnoReplaceFlag "0"
+KEY FwdAnnoSchematicRefDesChanges "1"
+KEY LayoutTemplate "8 Layer Template"
+KEY PCBDesignPath "PCB_Tongue2\WR-MCH.pcb"
+KEY PCBForwardAnno "0"
+KEY RootBlock "WR-MCH-TOP"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+KEY UnusedPartsFlag "0"
+KEY UpdateJobPrefsDB "CAD"
+ENDSECTION
+SECTION iCDB
+LIST Designs
+VALUE "Metlino_MCH"
+VALUE "Sayma_AMC"
+VALUE "Sayma_RTM"
+ENDLIST
+KEY DedicatedServerName ""
+KEY iCDBDir ".\database"
+ENDSECTION

@@ -1,0 +1,48 @@
+.FILETYPE BOM_SETTINGS
+.VERSION "EE2007.1"
+.CREATOR "Mentor Graphics Corporation"
+.DATE "Tuesday, November 17, 2015 09:41 AM"
+
+
+.PartNumber Yes
+..ItemNumber "ITEM_NUMBER"
+...Selected Yes
+..PartName "COMPANY PART NO" 
+...Selected Yes
+..Geometry "GEOMETRY" 
+...Selected Yes
+..Count "COUNT" 
+...Selected Yes
+..Description "DESCRIPTION" 
+...Selected Yes
+..ReferenceName "REFERENCE NAME" 
+...Selected Yes
+..Comment "COMMENT" 
+...Selected Yes
+
+.ReferenceDesignator Yes
+..ItemNumber "ITEM_NUMBER" 
+...Selected Yes
+..PartName "COMPANY PART NO" 
+...Selected Yes
+..Geometry "GEOMETRY" 
+...Selected Yes
+..Description "DESCRIPTION" 
+...Selected Yes
+..ReferenceName "REFERENCE NAME" 
+...Selected Yes
+..Comment "COMMENT" 
+...Selected Yes
+
+.Properties 0
+
+.AllComponents Yes
+.CommonComponents No
+.SelectVariant ""
+
+.AppendSuffix Yes
+
+.MechanicalCells Yes
+
+.SCHEME "BOMSettings"
+.SCHEMELOCATION "Local"

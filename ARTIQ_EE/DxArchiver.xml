@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DxArchiverProject version="1">
+	<DxProject Path="./ARTIQ.prj"/>
+	<TargetDirectory Path="D:\Dropbox\DESIGNS\MTCA projects\MTCA_EE"/>
+	<Compression Type="None"/>
+	<PDF Type="0"/>
+	<SetSTATIC Type="0"/>
+	<AdditionalFiles>
+	</AdditionalFiles>
+</DxArchiverProject>

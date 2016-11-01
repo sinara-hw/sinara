@@ -1,0 +1,21 @@
+.FILETYPE CCZ_EXPORT_SETTINGS
+.VERSION "VB99.1"
+.DATE "11/17/2015 17:48:35"
+
+!  This file contains settings for the most recent CCZ export session
+
+.OUTPUT_FILE "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\ORPAL.cce"
+.UNITS in
+
+.CELL_LIBRARY 1
+
+.HAZARDS 0
+
+.MATERIALS 1
+
+.UID 0
+
+.INSTANCE_SPECIFIC_CELLS 0
+
+.VARIANTS 1
+

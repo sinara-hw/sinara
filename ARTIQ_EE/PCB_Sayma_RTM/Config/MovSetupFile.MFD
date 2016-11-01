@@ -1,0 +1,45 @@
+.FILETYPE MovSetupFile
+.VERSION "VB99.0"
+.CREATOR "Expedition PCB Manufacturing OutPut Validation(MOV)"
+.DATE "Tuesday, December 01, 2015 01:30 PM"
+
+.Units MM
+.PrecisionCheck NO 
+ ..PrecisionLimit 0.0000000000 
+
+
+
+.GerberPlotDescriptionFile "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Config\\GerberPlot.egpf"
+
+.GerberOutputFile "SoldermaskTop.gbr"
+.GerberOutputFile "SoldermaskBottom.gbr"
+.GerberOutputFile "SolderPasteTop.gbr"
+.GerberOutputFile "SolderPasteBottom.gbr"
+.GerberOutputFile "Outline.gbr"
+.GerberOutputFile "GeneratedSilkscreenTop.gbr"
+.GerberOutputFile "GeneratedSilkscreenBottom.gbr"
+.GerberOutputFile "EtchLayer9Neg.gbr"
+.GerberOutputFile "EtchLayer8.gbr"
+.GerberOutputFile "EtchLayer7Neg.gbr"
+.GerberOutputFile "EtchLayer6Neg.gbr"
+.GerberOutputFile "EtchLayer5.gbr"
+.GerberOutputFile "EtchLayer4Neg.gbr"
+.GerberOutputFile "EtchLayer3.gbr"
+.GerberOutputFile "EtchLayer2Neg.gbr"
+.GerberOutputFile "EtchLayer1Top.gbr"
+.GerberOutputFile "EtchLayer12Bottom.gbr"
+.GerberOutputFile "EtchLayer11Neg.gbr"
+.GerberOutputFile "EtchLayer10.gbr"
+.GerberOutputFile "Drill_drawing.gbr"
+.GerberOutputFile "Assembly_drawing_top.gbr"
+.GerberOutputFile "Assembly_drawing_bot.gbr"
+
+
+.NCDrillOutputFile "ThruHolePlated.ncd"
+ ..NCDrillOutputPath "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\NCDrill\\ThruHolePlated.ncd"
+
+.NCDrillOutputFile "ThruHoleNonPlated.ncd"
+ ..NCDrillOutputPath "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\NCDrill\\ThruHoleNonPlated.ncd"
+
+.NCDrillOutputFile "ContourPlated.ncd"
+ ..NCDrillOutputPath "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\NCDrill\\ContourPlated.ncd"
