@@ -23,8 +23,8 @@ ENDSECTION
 SECTION DesignInfo
 LIST HdlSearchPaths
 ENDLIST
-KEY BorderSymbols "D:\Dropbox\DESIGNS\MTCA projects\ARTIQ\ARTIQ_EE\borders.ini"
-KEY Bus_Contents "D:\Dropbox\DESIGNS\MTCA projects\ARTIQ\ARTIQ_EE\busconts.ini"
+KEY BorderSymbols "D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_EE\borders.ini"
+KEY Bus_Contents "D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_EE\busconts.ini"
 KEY CentralLibrary "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\EXP_CERN_PCB_LIB.lmc"
 KEY CrossProbing "On"
 KEY DBCFile "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\EXP_CERN_PCB_LIB.dbc"
@@ -33,7 +33,7 @@ KEY FrontEndSnapshot "DxD"
 KEY HdlUtilsConfigFile "hdlutils.ini"
 KEY NumberingType "INDEPTH"
 KEY OrderFileName ".\"
-KEY PinComponents "D:\Dropbox\DESIGNS\MTCA projects\ARTIQ\ARTIQ_EE\speccomp.ini"
+KEY PinComponents "D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_EE\speccomp.ini"
 KEY SheetsEditMode "1"
 ENDSECTION
 SECTION FlowSettings
