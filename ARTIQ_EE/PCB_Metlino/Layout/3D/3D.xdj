@@ -1,0 +1,35 @@
+#Project name
+XRName 3D
+
+#Project path
+XRPathName D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_EE\PCB_Metlino\Layout
+
+#MapVersion
+XRMapVesrion 0
+
+#Emn file name
+XREmnName Input.emn
+
+#Emp file name
+XREmpName 
+
+#Assembly file name
+XRAsmName 
+
+#Assembly Creation Time
+MakeModelTime 
+
+#Date of modify
+XRDate 11/21/16 21:53:44
+
+#Status of the project
+XRStatus 0
+
+#Constrains
+XRConstrains 1
+
+#Viewing Features of the project
+ASM_Features 1 1 1 1 0 1
+Sim_Features 1 1 1 0 0 1
+
+

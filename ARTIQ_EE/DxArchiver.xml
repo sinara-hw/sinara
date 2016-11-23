@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DxArchiverProject version="1">
 	<DxProject Path="./ARTIQ.prj"/>
-	<TargetDirectory Path="D:\Dropbox\DESIGNS\MTCA projects\MTCA_EE"/>
+	<TargetDirectory Path="C:\temp\Sinara"/>
 	<Compression Type="None"/>
-	<PDF Type="0"/>
+	<PDF Type="1"/>
 	<SetSTATIC Type="0"/>
 	<AdditionalFiles>
 	</AdditionalFiles>

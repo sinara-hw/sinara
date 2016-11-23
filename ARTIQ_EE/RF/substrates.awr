@@ -1,0 +1,30 @@
+MSUB  MSUB1       14
+     1 H               32.0mils                    5     Substrate thickness
+     2 Er              3.38                       -1     Relative dielectric constant
+     3 Mur             1                          -1     Relative permeability
+     4 Cond            1.0E+306                   -1     Conductor conductivity
+     5 Hu              1.0E+30mils                 5     Cover height
+     6 T               1.4mils                       5     Conductor thickness
+     7 TanD            0                          -1     Dielectric loss tangent
+     8 Rough           0mils                       5     Conductor surface roughness
+     9 Cond1           1                       -1   (for Layout option) Layer to which cond is mapped
+    10 Cond2           2                      -1   (for Layout option) Layer to which cond2 is mapped
+    11 Diel1           diel                       -1   (for Layout option) Layer to which diel is mapped
+    12 Diel2           diel2                      -1   (for Layout option) Layer to which diel2 is mapped
+    13 Hole            hole                       -1   (for Layout option) Layer to which hole is mapped
+    14 Res             resi                       -1   (for Layout option) Layer to which resi is mapped 
+    15 Type            AWR                    -1    Substrate Definition for AWR 
+END_ELEMENT
+ 
+ 
+SSUB  SSUB1       8
+     1 Er              2.5                        -1     Relative dielectric constant
+     2 Mur             1                          -1     Relative permeability
+     3 B               62.5mils                    5     Ground Plane Spacing
+     4 T               0mils                       5     Conductor thickness
+     5 Cond            1.0E+306                   -1     Conductor conductivity
+     6 TanD            0                          -1     Dielectric loss tangent
+     7 Cond1           cond                   -1   (for Layout option) Layer to which cond is mapped
+     8 Cond2           cond2                  -1     (for Layout option) Layer to which cond2 is mapped 
+     9 Type            AWR                    -1    Substrate Definition for AWR
+END_ELEMENT

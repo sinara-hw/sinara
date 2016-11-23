@@ -1,0 +1,160 @@
+RefDes: 14
+FactPartName: "Resistor - 1% RESC1005X40N"
+SubSeriesName: "RESC1005X40N_0"
+PartNum: "RESC1005X40N_0"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\RESC1005X40N_0\RESC1005X40N_0.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\RESC1005X40N_0\RESC1005X40N_0.etd"
+
+
+RefDes: 1
+FactPartName: "Capacitor - non polarized CAPC0603X33N"
+SubSeriesName: "CAPC0603X33N"
+PartNum: "CAPC0603X33N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\CAPC0603X33N\CAPC0603X33N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\CAPC0603X33N\CAPC0603X33N.etd"
+
+
+RefDes: 3
+FactPartName: "Capacitor - non polarized CAPC1608X87N"
+SubSeriesName: "CAPC1608X87N"
+PartNum: "CAPC1608X87N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\CAPC1608X87N\CAPC1608X87N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\CAPC1608X87N\CAPC1608X87N.etd"
+
+
+RefDes: 9
+FactPartName: "LED_OSRAM_LG L29K-G2J1-24-Z"
+SubSeriesName: "LED_OSRAM_LGL29K"
+PartNum: "LED_OSRAM_LGL29K"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\LED_OSRAM_LGL29K\LED_OSRAM_LGL29K.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\LED_OSRAM_LGL29K\LED_OSRAM_LGL29K.etd"
+
+
+RefDes: 2
+FactPartName: "Capacitor - non polarized CAPC1005X55N"
+SubSeriesName: "CAPC1005X55N"
+PartNum: "CAPC1005X55N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\CAPC1005X55N\CAPC1005X55N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\CAPC1005X55N\CAPC1005X55N.etd"
+
+
+RefDes: 11
+FactPartName: "PMGD280UN"
+SubSeriesName: "SOT65P210X110-6N"
+PartNum: "SOT65P210X110-6N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\SOT65P210X110-6N\SOT65P210X110-6N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\SOT65P210X110-6N\SOT65P210X110-6N.etd"
+
+
+RefDes: 15
+FactPartName: "Resistor RESC1608X55N"
+SubSeriesName: "RESC1608X55N"
+PartNum: "RESC1608X55N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\RESC1608X55N\RESC1608X55N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\RESC1608X55N\RESC1608X55N.etd"
+
+
+RefDes: 7
+FactPartName: "HIROSE_U.FL-R-SMT-1(10)"
+SubSeriesName: "HIROSE_U.FL-R-SMT-1(10)"
+PartNum: "HIROSE_U.FL-R-SMT-1(10)"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\HIROSE_U.FL-R-SMT-1(10)\HIROSE_U.FL-R-SMT-1(10).prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\HIROSE_U.FL-R-SMT-1(10)\HIROSE_U.FL-R-SMT-1(10).etd"
+
+
+RefDes: 5
+FactPartName: "Capacitor - non polarized CAPC3216X180N"
+SubSeriesName: "CAPC3216X180N"
+PartNum: "CAPC3216X180N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\CAPC3216X180N\CAPC3216X180N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\CAPC3216X180N\CAPC3216X180N.etd"
+
+
+RefDes: 6
+FactPartName: "Capacitor - non polarized CAPC3225X270N"
+SubSeriesName: "CAPC3225X270N"
+PartNum: "CAPC3225X270N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\CAPC3225X270N\CAPC3225X270N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\CAPC3225X270N\CAPC3225X270N.etd"
+
+
+RefDes: 8
+FactPartName: "IND0402_MURATA_BLM15HB221SN1"
+SubSeriesName: "INDC1005X55N"
+PartNum: "INDC1005X55N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\INDC1005X55N\INDC1005X55N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\INDC1005X55N\INDC1005X55N.etd"
+
+
+RefDes: 4
+FactPartName: "Capacitor - non polarized CAPC2012X135N"
+SubSeriesName: "CAPC2012X135N"
+PartNum: "CAPC2012X135N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\CAPC2012X135N\CAPC2012X135N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\CAPC2012X135N\CAPC2012X135N.etd"
+
+
+RefDes: 10
+FactPartName: "MAX6642ATT90+T"
+SubSeriesName: "SON95P300X300X80-7N-R160X240"
+PartNum: "SON95P300X300X80-7N-R160X240"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\SON95P300X300X80-7N-R160X240\SON95P300X300X80-7N-R160X240.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\SON95P300X300X80-7N-R160X240\SON95P300X300X80-7N-R160X240.etd"
+
+
+RefDes: 0
+FactPartName: "BC847BV"
+SubSeriesName: "SOTFL50P160X60-6N"
+PartNum: "SOTFL50P160X60-6N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\SOTFL50P160X60-6N\SOTFL50P160X60-6N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\SOTFL50P160X60-6N\SOTFL50P160X60-6N.etd"
+
+
+RefDes: 13
+FactPartName: "Resistor - 0.1% RESC1608X55N"
+SubSeriesName: "RESC1608X55N"
+PartNum: "RESC1608X55N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\RESC1608X55N\RESC1608X55N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\RESC1608X55N\RESC1608X55N.etd"
+
+
+RefDes: 12
+FactPartName: "Resistor - 0.1% RESC1005X35N"
+SubSeriesName: "RESC1005X35N"
+PartNum: "RESC1005X35N"
+Height: 0
+Side: 
+PRT: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\Packages\User\RESC1005X35N\RESC1005X35N.prt"
+PTD: "D:\Dropbox\DESIGNS\COMMON_LIBS\Xpedition_lib\EXP_CERN_PCB_LIB\3DModels\PartDB\User\RESC1005X35N\RESC1005X35N.etd"
+
+

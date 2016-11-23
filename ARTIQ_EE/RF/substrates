@@ -1,0 +1,868 @@
+#
+#	SUBSTRATE DEFINITION FILE
+#	Loaded into Rfps_element_map. Accessed
+#	by the Rfps_backplane object.
+#
+#	Tien Pham, 11/23/97
+#
+
+MSUB	MSub1      14
+     1 H               10.0mils                    5     Substrate thickness
+     2 Er              9.6                        -1     Relative dielectric constant
+     3 Mur             1                          -1     Relative permeability
+     4 Cond            1.0E+306                   -1     Conductor conductivity
+     5 Hu              1.0E+30mils                 5     Cover height
+     6 T               0mils                       5     Conductor thickness
+     7 TanD            0                          -1     Dielectric loss tangent
+     8 Rough           0mils                       5     Conductor surface roughness
+     9 Cond1           1                       -1   (for Layout option) Layer to which cond is mapped
+    10 Cond2           2                      -1   (for Layout option) Layer to which cond2 is mapped
+    11 Diel1           diel                       -1   (for Layout option) Layer to which diel is mapped
+    12 Diel2           diel2                      -1   (for Layout option) Layer to which diel2 is mapped
+    13 Hole            hole                       -1   (for Layout option) Layer to which hole is mapped
+    14 Res             resi                       -1   (for Layout option) Layer to which resi is mapped
+END_ELEMENT
+
+MSUB	MSub2      14
+     1 H               10.0mils                    5     Substrate thickness
+     2 Er              9.6                        -1     Relative dielectric constant
+     3 Mur             1                          -1     Relative permeability
+     4 Cond            1.0E+306                   -1     Conductor conductivity
+     5 Hu              1.0E+30mils                 5     Cover height
+     6 T               0mils                       5     Conductor thickness
+     7 TanD            0                          -1     Dielectric loss tangent
+     8 Rough           0mils                       5     Conductor surface roughness
+     9 Cond1           2                       -1   (for Layout option) Layer to which cond is mapped
+    10 Cond2           3                      -1   (for Layout option) Layer to which cond2 is mapped
+    11 Diel1           diel                       -1   (for Layout option) Layer to which diel is mapped
+    12 Diel2           diel2                      -1   (for Layout option) Layer to which diel2 is mapped
+    13 Hole            hole                       -1   (for Layout option) Layer to which hole is mapped
+    14 Res             resi                       -1   (for Layout option) Layer to which resi is mapped
+END_ELEMENT
+
+SSSUB	 SSSub1     10
+     1 H               25.0mils                    5     Substrate thickness
+     2 Er              10.0                       -1     Relative dielectric constant
+     3 Mur             1                          -1     Relative permeability
+     4 Cond            1.0E+306                   -1     Conductor conductivity
+     5 Hu              100.0mils                   5     Cover height
+     6 Hl              100.0mils                   5     Lower Ground Plane Spacing
+     7 T               0mils                       5     Conductor thickness
+     8 TanD            0                          -1     Dielectric loss tangent
+     9 Rough           0mils                       5     Conductor surface roughness
+    10 Cond1           cond                   -1     (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+SSUB	SSub1      8
+     1 Er              2.5                        -1     Relative dielectric constant
+     2 Mur             1                          -1     Relative permeability
+     3 B               62.5mils                    5     Ground Plane Spacing
+     4 T               0mils                       5     Conductor thickness
+     5 Cond            1.0E+306                   -1     Conductor conductivity
+     6 TanD            0                          -1     Dielectric loss tangent
+     7 Cond1           cond                   -1   (for Layout option) Layer to which cond is mapped
+     8 Cond2           cond2                  -1     (for Layout option) Layer to which cond2 is mapped
+END_ELEMENT
+
+SSUBO	  SSubo1 	9
+     1 Er              2.5                        -1     Relative dielectric constant
+     2 Mur             1                          -1     Relative permeability
+     3 S               31.25mils                   5     Inter-layer spacing
+     4 B               62.5mils                    5     Ground Plane Spacing
+     5 T               0mils                       5     Conductor thickness
+     6 Cond            1.0E+306                   -1     Conductor conductivity
+     7 TanD            0                          -1     Dielectric loss tangent
+     8 Cond1           cond                   -1     (for Layout option) Layer to which cond is mapped
+     9 Cond2           cond2                  -1   (for Layout option) Layer to which cond2 is mapped
+END_ELEMENT
+
+CPWSUB	CPWSub1    9
+     1 H               25.0mils                    5     Substrate thickness
+     2 Er              10.0                       -1     Relative dielectric constant
+     3 Mur             1                          -1     Relative permeability
+     4 Cond            1.0E+306                   -1     Conductor conductivity
+     5 Hu              1.0E3mils                   5     Cover height
+     6 T               0mils                       5     Conductor thickness
+     7 TanD            0                          -1     Dielectric loss tangent
+     8 Rough           0mils                       5     Conductor surface roughness
+     9 Cond1           smt_cond                   -1     (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+FSUB	FSub1      5
+     1 Er              2.2                        -1     Relative dielectric constant
+     2 Fdw             62.5mils                    5     Thickness of slab
+     3 Fa              900.0mils                   5     Inside width of enclosure
+     4 Fb              400.0mils                   5     Inside height of enclosure
+     5 Cond            1.0E+306                   -1     Conductor conductivity
+END_ELEMENT
+
+PCSUB1	PCSub1    8
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 Er              10.0                       -1     Dielectric constant
+     3 Cond            1.0E+306                   -1     Conductor conductivity
+     4 Hu              100.0mils                   5     Upper ground plane spacing
+     5 Hl              100.0mils                   5     Lower ground plane spacing
+     6 T               1.0mils                     5     Metal thickness
+     7 W               500.0mils                   5     Distance between sidewalls
+     8 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+PCSUB2    PCSUB2     9
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 H[2]            25.0mils                    5     Thickness of dielectric layer #2
+     3 Er              10.0                       -1     Dielectric constant
+     4 Cond            1.0E+306                   -1     Conductor conductivity
+     5 Hu              100.0mils                   5     Upper ground plane spacing
+     6 Hl              100.0mils                   5     Lower ground plane spacing
+     7 T               1.0mils                     5     Metal thickness
+     8 W               500.0mils                   5     Distance between sidewalls
+     9 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+PCSUB3    PCSUB3    10
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 H[2]            25.0mils                    5     Thickness of dielectric layer #2
+     3 H[3]            25.0mils                    5     Thickness of dielectric layer #3
+     4 Er              10.0                       -1     Dielectric constant
+     5 Cond            1.0E+306                   -1     Conductor conductivity
+     6 Hu              100.0mils                   5     Upper ground plane spacing
+     7 Hl              100.0mils                   5     Lower ground plane spacing
+     8 T               1.0mils                     5     Metal thickness
+     9 W               500.0mils                   5     Distance between sidewalls
+    10 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+PCSUB4    PCSUB4    11
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 H[2]            25.0mils                    5     Thickness of dielectric layer #2
+     3 H[3]            25.0mils                    5     Thickness of dielectric layer #3
+     4 H[4]            25.0mils                    5     Thickness of dielectric layer #4
+     5 Er              10.0                       -1     Dielectric constant
+     6 Cond            1.0E+306                   -1     Conductor conductivity
+     7 Hu              100.0mils                   5     Upper ground plane spacing
+     8 Hl              100.0mils                   5     Lower ground plane spacing
+     9 T               1.0mils                     5     Metal thickness
+    10 W               500.0mils                   5     Distance between sidewalls
+    11 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+PCSUB5    PCSUB5    12
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 H[2]            25.0mils                    5     Thickness of dielectric layer #2
+     3 H[3]            25.0mils                    5     Thickness of dielectric layer #3
+     4 H[4]            25.0mils                    5     Thickness of dielectric layer #4
+     5 H[5]            25.0mils                    5     Thickness of dielectric layer #5
+     6 Er              10.0                       -1     Dielectric constant
+     7 Cond            1.0E+306                   -1     Conductor conductivity
+     8 Hu              100.0mils                   5     Upper ground plane spacing
+     9 Hl              100.0mils                   5     Lower ground plane spacing
+    10 T               1.0mils                     5     Metal thickness
+    11 W               500.0mils                   5     Distance between sidewalls
+    12 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+PCSUB6    PCSUB6    13
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 H[2]            25.0mils                    5     Thickness of dielectric layer #2
+     3 H[3]            25.0mils                    5     Thickness of dielectric layer #3
+     4 H[4]            25.0mils                    5     Thickness of dielectric layer #4
+     5 H[5]            25.0mils                    5     Thickness of dielectric layer #5
+     6 H[6]            25.0mils                    5     Thickness of dielectric layer #6
+     7 Er              10.0                       -1     Dielectric constant
+     8 Cond            1.0E+306                   -1     Conductor conductivity
+     9 Hu              100.0mils                   5     Upper ground plane spacing
+    10 Hl              100.0mils                   5     Lower ground plane spacing
+    11 T               1.0mils                     5     Metal thickness
+    12 W               500.0mils                   5     Distance between sidewalls
+    13 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+PCSUB7    PCSUB7    14
+     1 H[1]            25.0mils                    5     Thickness of dielectric layer #1
+     2 H[2]            25.0mils                    5     Thickness of dielectric layer #2
+     3 H[3]            25.0mils                    5     Thickness of dielectric layer #3
+     4 H[4]            25.0mils                    5     Thickness of dielectric layer #4
+     5 H[5]            25.0mils                    5     Thickness of dielectric layer #5
+     6 H[6]            25.0mils                    5     Thickness of dielectric layer #6
+     7 H[7]            25.0mils                    5     Thickness of dielectric layer #7
+     8 Er              10.0                       -1     Dielectric constant
+     9 Cond            1.0E+306                   -1     Conductor conductivity
+    10 Hu              100.0mils                   5     Upper ground plane spacing
+    11 Hl              100.0mils                   5     Lower ground plane spacing
+    12 T               1.0mils                     5     Metal thickness
+    13 W               500.0mils                   5     Distance between sidewalls
+    14 Sigma           0                          -1     Dielectric conductivity
+END_ELEMENT
+
+MLSUBSTRATE2 Subst1 11
+     1 Er              4.5                        -1     Dielectric Constant
+     2 H               10mils                      5     Height of Substrate
+     3 TanD            0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 T[2]            0mils                       5     Thickness
+     7 Cond[2]         1.0E+306                   -1     Conductivity
+     8 LayerType[1]    SIGNAL                                       -2   Metal Definition
+     9 LayerType[2]    GROUND                                       -2   Metal Definition
+    10 LayerName[1]    smt_cond                                     -1   (for Layout option) Layer to which cond is mapped
+    11 LayerName[2]    smt_cond                                     -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE3 mlsub3 18
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 T[3]            0mils                       5     Thickness
+    12 Cond[3]         1.0E+306                   -1     Conductivity
+    13 LayerType[1]    GROUND                   		    -2   Metal Definition
+    14 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    15 LayerType[3]    GROUND                   		    -2   Metal Definition
+    16 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    17 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    18 LayerName[3]    smt_cond		               -1     (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE4 mlsub4 25
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 T[4]            0mils                       5     Thickness
+    17 Cond[4]         1.0E+306                   -1     Conductivity
+    18 LayerType[1]    BLANK                    		    -2   Metal Definition
+    19 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    20 LayerType[3]    GROUND                   		    -2   Metal Definition
+    21 LayerType[4]    POWER                    		    -2   Metal Definition
+    22 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    23 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    24 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    25 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE5 mlsub5 32
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 T[5]            0mils                       5     Thickness
+    22 Cond[5]         1.0E+306                   -1     Conductivity
+    23 LayerType[1]    BLANK                    		    -2   Metal Definition
+    24 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    25 LayerType[3]    GROUND                   		    -2   Metal Definition
+    26 LayerType[4]    POWER                    		    -2   Metal Definition
+    27 LayerType[5]    POWER                    		    -2   Metal Definition
+    28 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    29 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    30 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    31 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    32 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE6 mlsub6 39
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 T[6]            0mils                       5     Thickness
+    27 Cond[6]         1.0E+306                   -1     Conductivity
+    28 LayerType[1]    BLANK                    		    -2   Metal Definition
+    29 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    30 LayerType[3]    GROUND                   		    -2   Metal Definition
+    31 LayerType[4]    POWER                    		    -2   Metal Definition
+    32 LayerType[5]    POWER                    		    -2   Metal Definition
+    33 LayerType[6]    POWER                    		    -2   Metal Definition
+    34 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    35 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    36 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    37 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    38 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    39 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE7 mlsub7 46
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 T[7]            0mils                       5     Thickness
+    32 Cond[7]         1.0E+306                   -1     Conductivity
+    33 LayerType[1]    BLANK                    		    -2   Metal Definition
+    34 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    35 LayerType[3]    GROUND                   		    -2   Metal Definition
+    36 LayerType[4]    POWER                    		    -2   Metal Definition
+    37 LayerType[5]    POWER                    		    -2   Metal Definition
+    38 LayerType[6]    POWER                    		    -2   Metal Definition
+    39 LayerType[7]    POWER                    		    -2   Metal Definition
+    40 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    41 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    42 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    43 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    44 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    45 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    46 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE8 mlsub8 53
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 Er[7]           4.5                        -1     Dielectric Constant
+    32 H[7]            10mils                      5     Height of Substrate
+    33 TanD[7]         0                          -1     Dielectric Loss Tangent
+    34 T[7]            0mils                       5     Thickness
+    35 Cond[7]         1.0E+306                   -1     Conductivity
+    36 T[8]            0mils                       5     Thickness
+    37 Cond[8]         1.0E+306                   -1     Conductivity
+    38 LayerType[1]    BLANK                    		    -2   Metal Definition
+    39 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    40 LayerType[3]    GROUND                   		    -2   Metal Definition
+    41 LayerType[4]    POWER                    		    -2   Metal Definition
+    42 LayerType[5]    POWER                    		    -2   Metal Definition
+    43 LayerType[6]    POWER                    		    -2   Metal Definition
+    44 LayerType[7]    POWER                    		    -2   Metal Definition
+    45 LayerType[8]    POWER                    		    -2   Metal Definition
+    46 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    47 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    48 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    49 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    50 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    51 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    52 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    53 LayerName[8]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE9 mlsub9 60
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 Er[7]           4.5                        -1     Dielectric Constant
+    32 H[7]            10mils                      5     Height of Substrate
+    33 TanD[7]         0                          -1     Dielectric Loss Tangent
+    34 T[7]            0mils                       5     Thickness
+    35 Cond[7]         1.0E+306                   -1     Conductivity
+    36 Er[8]           4.5                        -1     Dielectric Constant
+    37 H[8]            10mils                      5     Height of Substrate
+    38 TanD[8]         0                          -1     Dielectric Loss Tangent
+    39 T[8]            0mils                       5     Thickness
+    40 Cond[8]         1.0E+306                   -1     Conductivity
+    41 T[9]            0mils                       5     Thickness
+    42 Cond[9]         1.0E+306                   -1     Conductivity
+    43 LayerType[1]    BLANK                    		    -2   Metal Definition
+    44 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    45 LayerType[3]    GROUND                   		    -2   Metal Definition
+    46 LayerType[4]    POWER                    		    -2   Metal Definition
+    47 LayerType[5]    POWER                    		    -2   Metal Definition
+    48 LayerType[6]    POWER                    		    -2   Metal Definition
+    49 LayerType[7]    POWER                    		    -2   Metal Definition
+    50 LayerType[8]    POWER                    		    -2   Metal Definition
+    51 LayerType[9]    POWER                    		    -2   Metal Definition
+    52 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    53 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    54 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    55 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    56 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    57 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    58 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    59 LayerName[8]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    60 LayerName[9]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE10 mlsub10 67
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 Er[7]           4.5                        -1     Dielectric Constant
+    32 H[7]            10mils                      5     Height of Substrate
+    33 TanD[7]         0                          -1     Dielectric Loss Tangent
+    34 T[7]            0mils                       5     Thickness
+    35 Cond[7]         1.0E+306                   -1     Conductivity
+    36 Er[8]           4.5                        -1     Dielectric Constant
+    37 H[8]            10mils                      5     Height of Substrate
+    38 TanD[8]         0                          -1     Dielectric Loss Tangent
+    39 T[8]            0mils                       5     Thickness
+    40 Cond[8]         1.0E+306                   -1     Conductivity
+    41 Er[9]           4.5                        -1     Dielectric Constant
+    42 H[9]            10mils                      5     Height of Substrate
+    43 TanD[9]         0                          -1     Dielectric Loss Tangent
+    44 T[9]            0mils                       5     Thickness
+    45 Cond[9]         1.0E+306                   -1     Conductivity
+    46 T[10]           0mils                       5     Thickness
+    47 Cond[10]        1.0E+306                   -1     Conductivity
+    48 LayerType[1]    BLANK                    		    -2   Metal Definition
+    49 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    50 LayerType[3]    GROUND                   		    -2   Metal Definition
+    51 LayerType[4]    POWER                    		    -2   Metal Definition
+    52 LayerType[5]    POWER                    		    -2   Metal Definition
+    53 LayerType[6]    POWER                    		    -2   Metal Definition
+    54 LayerType[7]    POWER                    		    -2   Metal Definition
+    55 LayerType[8]    POWER                    		    -2   Metal Definition
+    56 LayerType[9]    POWER                    		    -2   Metal Definition
+    57 LayerType[10]   POWER                    		    -2   Metal Definition
+    58 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    59 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    60 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    61 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    62 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    63 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    64 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    65 LayerName[8]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    66 LayerName[9]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    67 LayerName[10]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE12 mlsub12 81
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 Er[7]           4.5                        -1     Dielectric Constant
+    32 H[7]            10mils                      5     Height of Substrate
+    33 TanD[7]         0                          -1     Dielectric Loss Tangent
+    34 T[7]            0mils                       5     Thickness
+    35 Cond[7]         1.0E+306                   -1     Conductivity
+    36 Er[8]           4.5                        -1     Dielectric Constant
+    37 H[8]            10mils                      5     Height of Substrate
+    38 TanD[8]         0                          -1     Dielectric Loss Tangent
+    39 T[8]            0mils                       5     Thickness
+    40 Cond[8]         1.0E+306                   -1     Conductivity
+    41 Er[9]           4.5                        -1     Dielectric Constant
+    42 H[9]            10mils                      5     Height of Substrate
+    43 TanD[9]         0                          -1     Dielectric Loss Tangent
+    44 T[9]            0mils                       5     Thickness
+    45 Cond[9]         1.0E+306                   -1     Conductivity
+    46 Er[10]          4.5                        -1     Dielectric Constant
+    47 H[10]           10mils                      5     Height of Substrate
+    48 TanD[10]        0                          -1     Dielectric Loss Tangent
+    49 T[10]           0mils                       5     Thickness
+    50 Cond[10]        1.0E+306                   -1     Conductivity
+    51 Er[11]          4.5                        -1     Dielectric Constant
+    52 H[11]           10mils                      5     Height of Substrate
+    53 TanD[11]        0                          -1     Dielectric Loss Tangent
+    54 T[11]           0mils                       5     Thickness
+    55 Cond[11]        1.0E+306                   -1     Conductivity
+    56 T[12]           0mils                       5     Thickness
+    57 Cond[12]        1.0E+306                   -1     Conductivity
+    58 LayerType[1]    BLANK                    		    -2   Metal Definition
+    59 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    60 LayerType[3]    GROUND                   		    -2   Metal Definition
+    61 LayerType[4]    POWER                    		    -2   Metal Definition
+    62 LayerType[5]    POWER                    		    -2   Metal Definition
+    63 LayerType[6]    POWER                    		    -2   Metal Definition
+    64 LayerType[7]    POWER                    		    -2   Metal Definition
+    65 LayerType[8]    POWER                    		    -2   Metal Definition
+    66 LayerType[9]    POWER                    		    -2   Metal Definition
+    67 LayerType[10]   POWER                    		    -2   Metal Definition
+    68 LayerType[11]   POWER                    		    -2   Metal Definition
+    69 LayerType[12]   POWER                    		    -2   Metal Definition
+    70 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    71 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    72 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    73 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    74 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    75 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    76 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    77 LayerName[8]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    78 LayerName[9]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    79 LayerName[10]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    80 LayerName[11]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    81 LayerName[12]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE14 mlsub14 95
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 Er[7]           4.5                        -1     Dielectric Constant
+    32 H[7]            10mils                      5     Height of Substrate
+    33 TanD[7]         0                          -1     Dielectric Loss Tangent
+    34 T[7]            0mils                       5     Thickness
+    35 Cond[7]         1.0E+306                   -1     Conductivity
+    36 Er[8]           4.5                        -1     Dielectric Constant
+    37 H[8]            10mils                      5     Height of Substrate
+    38 TanD[8]         0                          -1     Dielectric Loss Tangent
+    39 T[8]            0mils                       5     Thickness
+    40 Cond[8]         1.0E+306                   -1     Conductivity
+    41 Er[9]           4.5                        -1     Dielectric Constant
+    42 H[9]            10mils                      5     Height of Substrate
+    43 TanD[9]         0                          -1     Dielectric Loss Tangent
+    44 T[9]            0mils                       5     Thickness
+    45 Cond[9]         1.0E+306                   -1     Conductivity
+    46 Er[10]          4.5                        -1     Dielectric Constant
+    47 H[10]           10mils                      5     Height of Substrate
+    48 TanD[10]        0                          -1     Dielectric Loss Tangent
+    49 T[10]           0mils                       5     Thickness
+    50 Cond[10]        1.0E+306                   -1     Conductivity
+    51 Er[11]          4.5                        -1     Dielectric Constant
+    52 H[11]           10mils                      5     Height of Substrate
+    53 TanD[11]        0                          -1     Dielectric Loss Tangent
+    54 T[11]           0mils                       5     Thickness
+    55 Cond[11]        1.0E+306                   -1     Conductivity
+    56 Er[12]          4.5                        -1     Dielectric Constant
+    57 H[12]           10mils                      5     Height of Substrate
+    58 TanD[12]        0                          -1     Dielectric Loss Tangent
+    59 T[12]           0mils                       5     Thickness
+    60 Cond[12]        1.0E+306                   -1     Conductivity
+    61 Er[13]          4.5                        -1     Dielectric Constant
+    62 H[13]           10mils                      5     Height of Substrate
+    63 TanD[13]        0                          -1     Dielectric Loss Tangent
+    64 T[13]           0mils                       5     Thickness
+    65 Cond[13]        1.0E+306                   -1     Conductivity
+    66 T[14]           0mils                       5     Thickness
+    67 Cond[14]        1.0E+306                   -2     Conductivity
+    68 LayerType[1]    BLANK                    		    -2   Metal Definition
+    69 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    70 LayerType[3]    GROUND                   		    -2   Metal Definition
+    71 LayerType[4]    POWER                    		    -2   Metal Definition
+    72 LayerType[5]    POWER                    		    -2   Metal Definition
+    73 LayerType[6]    POWER                    		    -2   Metal Definition
+    74 LayerType[7]    POWER                    		    -2   Metal Definition
+    75 LayerType[8]    POWER                    		    -2   Metal Definition
+    76 LayerType[9]    POWER                    		    -2   Metal Definition
+    77 LayerType[10]   POWER                    		    -2   Metal Definition
+    78 LayerType[11]   POWER                    		    -2   Metal Definition
+    79 LayerType[12]   POWER                    		    -2   Metal Definition
+    80 LayerType[13]   POWER                    		    -2   Metal Definition
+    81 LayerType[14]   POWER                    		    -2   Metal Definition
+    82 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    83 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    84 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    85 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    86 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    87 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    88 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    89 LayerName[8]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    90 LayerName[9]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    91 LayerName[10]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    92 LayerName[11]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    93 LayerName[12]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    94 LayerName[13]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    95 LayerName[14]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
+MLSUBSTRATE16 mlsub16 109
+     1 Er[1]           4.5                        -1     Dielectric Constant
+     2 H[1]            10mils                      5     Height of Substrate
+     3 TanD[1]         0                          -1     Dielectric Loss Tangent
+     4 T[1]            0mils                       5     Thickness
+     5 Cond[1]         1.0E+306                   -1     Conductivity
+     6 Er[2]           4.5                        -1     Dielectric Constant
+     7 H[2]            10mils                      5     Height of Substrate
+     8 TanD[2]         0                          -1     Dielectric Loss Tangent
+     9 T[2]            0mils                       5     Thickness
+    10 Cond[2]         1.0E+306                   -1     Conductivity
+    11 Er[3]           4.5                        -1     Dielectric Constant
+    12 H[3]            10mils                      5     Height of Substrate
+    13 TanD[3]         0                          -1     Dielectric Loss Tangent
+    14 T[3]            0mils                       5     Thickness
+    15 Cond[3]         1.0E+306                   -1     Conductivity
+    16 Er[4]           4.5                        -1     Dielectric Constant
+    17 H[4]            10mils                      5     Height of Substrate
+    18 TanD[4]         0                          -1     Dielectric Loss Tangent
+    19 T[4]            0mils                       5     Thickness
+    20 Cond[4]         1.0E+306                   -1     Conductivity
+    21 Er[5]           4.5                        -1     Dielectric Constant
+    22 H[5]            10mils                      5     Height of Substrate
+    23 TanD[5]         0                          -1     Dielectric Loss Tangent
+    24 T[5]            0mils                       5     Thickness
+    25 Cond[5]         1.0E+306                   -1     Conductivity
+    26 Er[6]           4.5                        -1     Dielectric Constant
+    27 H[6]            10mils                      5     Height of Substrate
+    28 TanD[6]         0                          -1     Dielectric Loss Tangent
+    29 T[6]            0mils                       5     Thickness
+    30 Cond[6]         1.0E+306                   -1     Conductivity
+    31 Er[7]           4.5                        -1     Dielectric Constant
+    32 H[7]            10mils                      5     Height of Substrate
+    33 TanD[7]         0                          -1     Dielectric Loss Tangent
+    34 T[7]            0mils                       5     Thickness
+    35 Cond[7]         1.0E+306                   -1     Conductivity
+    36 Er[8]           4.5                        -1     Dielectric Constant
+    37 H[8]            10mils                      5     Height of Substrate
+    38 TanD[8]         0                          -1     Dielectric Loss Tangent
+    39 T[8]            0mils                       5     Thickness
+    40 Cond[8]         1.0E+306                   -1     Conductivity
+    41 Er[9]           4.5                        -1     Dielectric Constant
+    42 H[9]            10mils                      5     Height of Substrate
+    43 TanD[9]         0                          -1     Dielectric Loss Tangent
+    44 T[9]            0mils                       5     Thickness
+    45 Cond[9]         1.0E+306                   -1     Conductivity
+    46 Er[10]          4.5                        -1     Dielectric Constant
+    47 H[10]           10mils                      5     Height of Substrate
+    48 TanD[10]        0                          -1     Dielectric Loss Tangent
+    49 T[10]           0mils                       5     Thickness
+    50 Cond[10]        1.0E+306                   -1     Conductivity
+    51 Er[11]          4.5                        -1     Dielectric Constant
+    52 H[11]           10mils                      5     Height of Substrate
+    53 TanD[11]        0                          -1     Dielectric Loss Tangent
+    54 T[11]           0mils                       5     Thickness
+    55 Cond[11]        1.0E+306                   -1     Conductivity
+    56 Er[12]          4.5                        -1     Dielectric Constant
+    57 H[12]           10mils                      5     Height of Substrate
+    58 TanD[12]        0                          -1     Dielectric Loss Tangent
+    59 T[12]           0mils                       5     Thickness
+    60 Cond[12]        1.0E+306                   -1     Conductivity
+    61 Er[13]          4.5                        -1     Dielectric Constant
+    62 H[13]           10mils                      5     Height of Substrate
+    63 TanD[13]        0                          -1     Dielectric Loss Tangent
+    64 T[13]           0mils                       5     Thickness
+    65 Cond[13]        1.0E+306                   -1     Conductivity
+    66 Er[14]          4.5                        -1     Dielectric Constant
+    67 H[14]           10mils                      5     Height of Substrate
+    68 TanD[14]        0                          -1     Dielectric Loss Tangent
+    69 T[14]           0mils                       5     Thickness
+    70 Cond[14]        1.0E+306                   -1     Conductivity
+    71 Er[15]          4.5                        -1     Dielectric Constant
+    72 H[15]           10mils                      5     Height of Substrate
+    73 TanD[15]        0                          -1     Dielectric Loss Tangent
+    74 T[15]           0mils                       5     Thickness
+    75 Cond[15]        1.0E+306                   -1     Conductivity
+    76 T[16]           0mils                       5     Thickness
+    77 Cond[16]        1.0E+306                   -1     Conductivity
+    78 LayerType[1]    BLANK                    		    -2   Metal Definition
+    79 LayerType[2]    SIGNAL                   		    -2   Metal Definition
+    80 LayerType[3]    GROUND                   		    -2   Metal Definition
+    81 LayerType[4]    POWER                    		    -2   Metal Definition
+    82 LayerType[5]    POWER                    		    -2   Metal Definition
+    83 LayerType[6]    POWER                    		    -2   Metal Definition
+    84 LayerType[7]    POWER                    		    -2   Metal Definition
+    85 LayerType[8]    POWER                    		    -2   Metal Definition
+    86 LayerType[9]    POWER                    		    -2   Metal Definition
+    87 LayerType[10]   POWER                    		    -2   Metal Definition
+    88 LayerType[11]   POWER                    		    -2   Metal Definition
+    89 LayerType[12]   POWER                    		    -2   Metal Definition
+    90 LayerType[13]   POWER                    		    -2   Metal Definition
+    91 LayerType[14]   POWER                    		    -2   Metal Definition
+    92 LayerType[15]   POWER                    		    -2   Metal Definition
+    93 LayerType[16]   POWER                    		    -2   Metal Definition
+    94 LayerName[1]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    95 LayerName[2]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    96 LayerName[3]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    97 LayerName[4]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    98 LayerName[5]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+    99 LayerName[6]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   100 LayerName[7]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   101 LayerName[8]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   102 LayerName[9]    smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   103 LayerName[10]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   104 LayerName[11]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   105 LayerName[12]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   106 LayerName[13]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   107 LayerName[14]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   108 LayerName[15]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+   109 LayerName[16]   smt_cond                 		    -1   (for Layout option) Layer to which cond is mapped
+END_ELEMENT
+
