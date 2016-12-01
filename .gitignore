@@ -59,10 +59,7 @@ cdbback
 *.old
 *.bak
 BackupDatabase
-Layout_Temp
-ProjectBackup 
-Layout_Temp 
-Work
+ProjectBackup  
 Orpal
 Template.prj
 *.raw
