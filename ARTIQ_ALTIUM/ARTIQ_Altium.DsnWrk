@@ -1,0 +1,8 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=PCB_mezzanine_analog_allaki\Sayma_mezzanine.PrjPCB
+[Project2]
+ProjectPath=PCB_mezzanine_analog_template\AFE_mezzanine.PrjPCB
+[Project3]
+ProjectPath=PCB_mezzanine_clock\Clock_mezzanine.PrjPCB

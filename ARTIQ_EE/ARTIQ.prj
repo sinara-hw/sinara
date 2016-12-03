@@ -112,13 +112,14 @@ KEY FwdAnnoSchematicRefDesChanges "1"
 KEY FwdAnnoRemoveTraces "1"
 KEY FwdAnnoRemoveHangers "1"
 KEY AllowAlpha "0"
+KEY VMMode "Physical"
 ENDSECTION
 SECTION Sayma_RTM
 KEY CADBackAnno "0"
 KEY ConfigType "PCB"
 KEY LayoutTemplate "12 Layer Template"
 KEY PCBDesignPath "PCB_Sayma_RTM\Sayma_RTM.pcb"
-KEY PCBForwardAnno "0"
+KEY PCBForwardAnno "1"
 KEY RootBlock "Sayma_RTM"
 KEY SchematicConflict "FE"
 KEY SchematicDesignBackAnno "0"
@@ -137,6 +138,7 @@ KEY FwdAnnoSchematicRefDesChanges "1"
 KEY FwdAnnoRemoveTraces "1"
 KEY FwdAnnoRemoveHangers "1"
 KEY AllowAlpha "0"
+KEY VMMode "Physical"
 ENDSECTION
 SECTION Template_Design
 KEY CADBackAnno "0"

@@ -1,179 +1,717 @@
 
-/* Sym: 0919D8A8  Path 6: Metlino_MCH!Si5324 Clock recovery9459912232034  Page 11: SI5324_CLK_RECOVERY(1) */
-CHANGE 'Metlino_MCH!Si5324 Clock recovery9459912232034(1)' 	INSTANCE
-  SELECT COMP $1I3774                 /* Reference Desig is C328 */
+/* Sym: 0917F200  Path 1: Sayma_AMC  Page 1: Sayma_AMC(1) */
+CHANGE 'Sayma_AMC(1)' 	INSTANCE
+  SELECT COMP $1I3458                 /* Reference Desig is C22 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C22'         /* Reference Desig was (null) */
+  SELECT COMP $1I3402                 /* Reference Desig is R218 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R218'         /* Reference Desig was (null) */
+  SELECT COMP $1I3403                 /* Reference Desig is R219 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R219'         /* Reference Desig was (null) */
+  SELECT COMP $1I3345                 /* Reference Desig is R217 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R217'         /* Reference Desig was (null) */
+  SELECT COMP $1I3344                 /* Reference Desig is R40 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R40'         /* Reference Desig was (null) */
+
+/* Sym: 092E1528  Path 6: Sayma_AMC!AMC_FMC_Carrier_PWR_MGT75095  Page 12: POWER_Management(1) */
+CHANGE 'Sayma_AMC!AMC_FMC_Carrier_PWR_MGT75095(1)' 	INSTANCE
+  SELECT COMP $1I5007                 /* Reference Desig is R252 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R252'         /* Reference Desig was (null) */
+  SELECT COMP $1I5005                 /* Reference Desig is R220 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R220'         /* Reference Desig was (null) */
+  SELECT COMP $1I5009                 /* Reference Desig is T19 */
+    PARAM 'Part Name' = 'BSS138LT1G' 
+    PARAM 'Part Number' = 'BSS138LT1G' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'T19'         /* Reference Desig was (null) */
+  SELECT COMP $1I5011                 /* Reference Desig is T14 */
+    PARAM 'Part Name' = 'SI4425DDY-T1-GE3' 
+    PARAM 'Part Number' = 'SI4425DDY-T1-GE3' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'SI4425DDY-T1-GE3' 
+    PARAM 'Manufacturer' = 'VISHAY SILICONIX' 
+    PARAM 'Footprint' = 'SOIC127P600X175-8N' 
+    PARAM 'Part Description' = '-30V -19.7A P-Channel MOSFET' 
+    PARAM 'PackageDescription' = 'SOIC 8, Pitch 1.27mm - Body 4x5mm, IPC Medium Density' 
+    PARAM 'Footprint' = 'SOIC127P600X175-8N' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'T14'         /* Reference Desig was (null) */
+
+/* Sym: 09459920  Path 14: Sayma_AMC!$1I1001  Page 20: FPGA_XCKU040FFVA1156(FPGA Banks 64 65 HR) */
+CHANGE 'Sayma_AMC!$1I1001(FPGA Banks 64 65 HR)' 	INSTANCE
+  SELECT COMP $6I10016                 /* Reference Desig is R253 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R253'         /* Reference Desig was (null) */
+
+/* Sym: 094702E0  Path 15: Sayma_AMC!Si5324 Clock recovery945991223  Page 5: SI5324_CLK_RECOVERY(1) */
+CHANGE 'Sayma_AMC!Si5324 Clock recovery945991223(1)' 	INSTANCE
+  SELECT COMP $1I3949                 /* Reference Desig is R296 */
+    PARAM 'Part Name' = 'Resistor - 0.1% RESC1608X55N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R296'         /* Reference Desig was (null) */
+  SELECT COMP $1I3952                 /* Reference Desig is C270 */
     PARAM 'Part Name' = 'Capacitor - non polarized CAPC1608X90N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C328'         /* Reference Desig was (null) */
-  SELECT COMP $1I3776                 /* Reference Desig is C326 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC2012X135N' 
+    PARAM 15 = 'C270'         /* Reference Desig was (null) */
+  SELECT COMP $1I3954                 /* Reference Desig is L33 */
+    PARAM 'Part Name' = 'IND0603_MURATA_BLM18PG121SN1D' 
+    PARAM 'Part Number' = 'IND0603_MURATA_BLM18PG121SN1D' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C326'         /* Reference Desig was (null) */
-  SELECT COMP $1I3771                 /* Reference Desig is IC39 */
-    PARAM 'Part Name' = 'LT1963AEST-3.3#PBF' 
-    PARAM 'Part Number' = 'LT1963AEST-3.3#PBF' 
+    PARAM 15 = 'L33'         /* Reference Desig was (null) */
+  SELECT COMP $1I3955                 /* Reference Desig is IC7 */
+    PARAM 'Part Name' = 'LT3042EMSE#PBF' 
     PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC7'         /* Reference Desig was (null) */
+  SELECT COMP $1I4289                 /* Reference Desig is C25 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C25'         /* Reference Desig was (null) */
+  SELECT COMP $1I4288                 /* Reference Desig is C24 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C24'         /* Reference Desig was (null) */
+  SELECT COMP $1I3945                 /* Reference Desig is C269 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC1608X90N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C269'         /* Reference Desig was (null) */
+  SELECT COMP $1I3956                 /* Reference Desig is C268 */
+    PARAM 'Part Name' = 'Capacitor - polarized CAPMP3216X180N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C268'         /* Reference Desig was (null) */
+  SELECT COMP $1I3384                 /* Reference Desig is R254 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R254'         /* Reference Desig was (null) */
+
+/* Sym: 09480568  Path 16: Sayma_AMC!FMC_HPC2_THERMO  Page 3: Thermometers(1) */
+CHANGE 'Sayma_AMC!FMC_HPC2_THERMO(1)' 	INSTANCE
+  SELECT COMP $1I855                 /* Reference Desig is C86 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C86'         /* Reference Desig was (null) */
+  SELECT COMP $1I831                 /* Reference Desig is C85 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C85'         /* Reference Desig was (null) */
+  SELECT COMP $1I807                 /* Reference Desig is C84 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C84'         /* Reference Desig was (null) */
+  SELECT COMP $1I966                 /* Reference Desig is IC36 */
+    PARAM 'Part Name' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Number' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC36'         /* Reference Desig was (null) */
+  SELECT COMP $1I706                 /* Reference Desig is IC37 */
+    PARAM 'Part Name' = 'MAX6642ATT90+T' 
+    PARAM 'Part Number' = 'MAX6642ATT90+T' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC37'         /* Reference Desig was (null) */
+  SELECT COMP $1I939                 /* Reference Desig is IC35 */
+    PARAM 'Part Name' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Number' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC35'         /* Reference Desig was (null) */
+  SELECT COMP $1I780                 /* Reference Desig is IC8 */
+    PARAM 'Part Name' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Number' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC8'         /* Reference Desig was (null) */
+  SELECT COMP $1I759                 /* Reference Desig is R255 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R255'         /* Reference Desig was (null) */
+  SELECT COMP $1I912                 /* Reference Desig is IC34 */
+    PARAM 'Part Name' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Number' = 'LM75AIMM/NOPB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC34'         /* Reference Desig was (null) */
+  SELECT COMP $1I733                 /* Reference Desig is C26 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C26'         /* Reference Desig was (null) */
+  SELECT COMP $1I1021                 /* Reference Desig is R256 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R256'         /* Reference Desig was (null) */
+  SELECT COMP $1I879                 /* Reference Desig is C87 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C87'         /* Reference Desig was (null) */
+
+/* Sym: 09482840  Path 17: Sayma_AMC!LPC17762984  Page 2: CPU_LPC1776(1) */
+CHANGE 'Sayma_AMC!LPC17762984(1)' 	INSTANCE
+  SELECT COMP $1I17134                 /* Reference Desig is R275 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R275'         /* Reference Desig was (null) */
+  SELECT COMP $1I17111                 /* Reference Desig is R274 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R274'         /* Reference Desig was (null) */
+  SELECT COMP $1I16701                 /* Reference Desig is LD5 */
+    PARAM 'Part Name' = 'LED_OSRAM_LSR976' 
+    PARAM 'Part Number' = 'LED_OSRAM_LSR976' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'LD5'         /* Reference Desig was (null) */
+  SELECT COMP $1I16619                 /* Reference Desig is LD4 */
+    PARAM 'Part Name' = 'LED_AVAGO_HSMR-C120' 
+    PARAM 'Part Number' = 'LED_AVAGO_HSMR-C120' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'HSMR-C120' 
+    PARAM 'Manufacturer' = 'AVAGO TECHNOLOGIES' 
+    PARAM 'Footprint' = 'LED_AVAGO_HSME-C120' 
+    PARAM 'Part Description' = 'High Performance Right Angle Chip InGaN Blue LED' 
+    PARAM 'PackageDescription' = 'Blue Chip LED, 2-Leads, Body 1.7x1.1mm, Side Emitting Package' 
+    PARAM 'Footprint' = 'LED_AVAGO_HSME-C120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'LD4'         /* Reference Desig was (null) */
+  SELECT COMP $1I17743                 /* Reference Desig is R280 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R280'         /* Reference Desig was (null) */
+  SELECT COMP $1I17720                 /* Reference Desig is R279 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R279'         /* Reference Desig was (null) */
+  SELECT COMP $1I17402                 /* Reference Desig is R276 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R276'         /* Reference Desig was (null) */
+  SELECT COMP $1I17796                 /* Reference Desig is C240 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C240'         /* Reference Desig was (null) */
+  SELECT COMP $1I17797                 /* Reference Desig is C241 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C241'         /* Reference Desig was (null) */
+  SELECT COMP $1I17800                 /* Reference Desig is C244 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C244'         /* Reference Desig was (null) */
+  SELECT COMP $1I17798                 /* Reference Desig is C242 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C242'         /* Reference Desig was (null) */
+  SELECT COMP $1I17793                 /* Reference Desig is C237 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C237'         /* Reference Desig was (null) */
+  SELECT COMP $1I17697                 /* Reference Desig is R278 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R278'         /* Reference Desig was (null) */
+  SELECT COMP $1I17651                 /* Reference Desig is R277 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R277'         /* Reference Desig was (null) */
+  SELECT COMP $1I17795                 /* Reference Desig is C239 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C239'         /* Reference Desig was (null) */
+  SELECT COMP $1I17491                 /* Reference Desig is Q3 */
+    PARAM 'Part Name' = 'XTAL_8MHZ_TXC_7A-8.000MAAE-T' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'Q3'         /* Reference Desig was (null) */
+  SELECT COMP $1I17531                 /* Reference Desig is D8 */
+    PARAM 'Part Name' = 'BAT165' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D8'         /* Reference Desig was (null) */
+  SELECT COMP $1I18091                 /* Reference Desig is R283 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R283'         /* Reference Desig was (null) */
+  SELECT COMP $1I18068                 /* Reference Desig is R282 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R282'         /* Reference Desig was (null) */
+  SELECT COMP $1I18045                 /* Reference Desig is R281 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R281'         /* Reference Desig was (null) */
+  SELECT COMP $1I16576                 /* Reference Desig is R273 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R273'         /* Reference Desig was (null) */
+  SELECT COMP $1I16722                 /* Reference Desig is C88 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C88'         /* Reference Desig was (null) */
+  SELECT COMP $1I16553                 /* Reference Desig is R272 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R272'         /* Reference Desig was (null) */
+  SELECT COMP $1I16530                 /* Reference Desig is R271 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R271'         /* Reference Desig was (null) */
+  SELECT COMP $1I15971                 /* Reference Desig is D21 */
+    PARAM 'Part Name' = 'PESD3V3S1UB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D21'         /* Reference Desig was (null) */
+  SELECT COMP $1I16882                 /* Reference Desig is C235 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C235'         /* Reference Desig was (null) */
+  SELECT COMP $1I16862                 /* Reference Desig is C95 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C95'         /* Reference Desig was (null) */
+  SELECT COMP $1I16842                 /* Reference Desig is C94 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C94'         /* Reference Desig was (null) */
+  SELECT COMP $1I16822                 /* Reference Desig is C93 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C93'         /* Reference Desig was (null) */
+  SELECT COMP $1I18818                 /* Reference Desig is R289 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R289'         /* Reference Desig was (null) */
+  SELECT COMP $1I18817                 /* Reference Desig is R288 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R288'         /* Reference Desig was (null) */
+  SELECT COMP $1I18025                 /* Reference Desig is C245 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C245'         /* Reference Desig was (null) */
+  SELECT COMP $1I17426                 /* Reference Desig is L38 */
+    PARAM 'Part Name' = 'IND0402_MURATA_BLM15HB221SN1' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'L38'         /* Reference Desig was (null) */
+  SELECT COMP $1I18183                 /* Reference Desig is R286 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R286'         /* Reference Desig was (null) */
+  SELECT COMP $1I18160                 /* Reference Desig is R285 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R285'         /* Reference Desig was (null) */
+  SELECT COMP $1I18783                 /* Reference Desig is R287 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R287'         /* Reference Desig was (null) */
+  SELECT COMP $1I15762                 /* Reference Desig is D19 */
+    PARAM 'Part Name' = 'PESD3V3S1UB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D19'         /* Reference Desig was (null) */
+  SELECT COMP $1I16802                 /* Reference Desig is C92 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C92'         /* Reference Desig was (null) */
+  SELECT COMP $1I16782                 /* Reference Desig is C91 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C91'         /* Reference Desig was (null) */
+  SELECT COMP $1I16762                 /* Reference Desig is C90 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C90'         /* Reference Desig was (null) */
+  SELECT COMP $1I16742                 /* Reference Desig is C89 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C89'         /* Reference Desig was (null) */
+  SELECT COMP $1I17627                 /* Reference Desig is D10 */
+    PARAM 'Part Name' = 'BAT165' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D10'         /* Reference Desig was (null) */
+  SELECT COMP $1I17507                 /* Reference Desig is D7 */
+    PARAM 'Part Name' = 'BAT165' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D7'         /* Reference Desig was (null) */
+  SELECT COMP $1I17469                 /* Reference Desig is C248 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC1005X55N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C248'         /* Reference Desig was (null) */
+  SELECT COMP $1I18114                 /* Reference Desig is R284 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R284'         /* Reference Desig was (null) */
+  SELECT COMP $1I17291                 /* Reference Desig is IC38 */
+    PARAM 'Part Name' = 'LPC1776FET180,551' 
+    PARAM 'Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Manufacturer' = 'NXP SEMICONDUCTORS' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 'Part Description' = 'Cortex-M3, 32-bit ARM MCU, 256kB Flash, 80kB SRAM, Ethernet, USB 2.0 Device/Host/OTG, CAN, 12-Bit ADC' 
+    PARAM 'PackageDescription' = 'BGA, 0.80mm Pitch, Square; 180 Pin, 14 Columns X 14 Rows, Body 12.00mm X 12.00mm X 1.20mm H, IPC Medium Density' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC38'         /* Reference Desig was (null) */
+  SELECT COMP $1I17234                 /* Reference Desig is IC38 */
+    PARAM 'Part Name' = 'LPC1776FET180,551' 
+    PARAM 'Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Manufacturer' = 'NXP SEMICONDUCTORS' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 'Part Description' = 'Cortex-M3, 32-bit ARM MCU, 256kB Flash, 80kB SRAM, Ethernet, USB 2.0 Device/Host/OTG, CAN, 12-Bit ADC' 
+    PARAM 'PackageDescription' = 'BGA, 0.80mm Pitch, Square; 180 Pin, 14 Columns X 14 Rows, Body 12.00mm X 12.00mm X 1.20mm H, IPC Medium Density' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC38'         /* Reference Desig was (null) */
+  SELECT COMP $1I17157                 /* Reference Desig is IC38 */
+    PARAM 'Part Name' = 'LPC1776FET180,551' 
+    PARAM 'Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Manufacturer' = 'NXP SEMICONDUCTORS' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 'Part Description' = 'Cortex-M3, 32-bit ARM MCU, 256kB Flash, 80kB SRAM, Ethernet, USB 2.0 Device/Host/OTG, CAN, 12-Bit ADC' 
+    PARAM 'PackageDescription' = 'BGA, 0.80mm Pitch, Square; 180 Pin, 14 Columns X 14 Rows, Body 12.00mm X 12.00mm X 1.20mm H, IPC Medium Density' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC38'         /* Reference Desig was (null) */
+  SELECT COMP $1I18823                 /* Reference Desig is R293 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R293'         /* Reference Desig was (null) */
+  SELECT COMP $1I16363                 /* Reference Desig is R265 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R265'         /* Reference Desig was (null) */
+  SELECT COMP $1I16338                 /* Reference Desig is R263 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R263'         /* Reference Desig was (null) */
+  SELECT COMP $1I16411                 /* Reference Desig is R267 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R267'         /* Reference Desig was (null) */
+  SELECT COMP $1I16410                 /* Reference Desig is R266 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R266'         /* Reference Desig was (null) */
+  SELECT COMP $1I15973                 /* Reference Desig is D23 */
+    PARAM 'Part Name' = 'PESD3V3S1UB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D23'         /* Reference Desig was (null) */
+  SELECT COMP $1I16175                 /* Reference Desig is R259 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R259'         /* Reference Desig was (null) */
+  SELECT COMP $1I16362                 /* Reference Desig is R264 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R264'         /* Reference Desig was (null) */
+  SELECT COMP $1I18609                 /* Reference Desig is J14 */
+    PARAM 'Part Name' = 'SAMTEC_SFM-105-02-S-D-APTR' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J14'         /* Reference Desig was (null) */
+  SELECT COMP $1I18822                 /* Reference Desig is R292 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R292'         /* Reference Desig was (null) */
+  SELECT COMP $1I15763                 /* Reference Desig is D20 */
+    PARAM 'Part Name' = 'PESD3V3S1UB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D20'         /* Reference Desig was (null) */
+  SELECT COMP $1I15972                 /* Reference Desig is D22 */
+    PARAM 'Part Name' = 'PESD3V3S1UB' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D22'         /* Reference Desig was (null) */
+  SELECT COMP $1I18821                 /* Reference Desig is R291 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R291'         /* Reference Desig was (null) */
+  SELECT COMP $1I15314                 /* Reference Desig is R258 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R258'         /* Reference Desig was (null) */
+  SELECT COMP $1I17555                 /* Reference Desig is D9 */
+    PARAM 'Part Name' = 'BAT165' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'D9'         /* Reference Desig was (null) */
+  SELECT COMP $1I18819                 /* Reference Desig is R290 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R290'         /* Reference Desig was (null) */
+  SELECT COMP $1I17447                 /* Reference Desig is C247 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC1005X55N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C247'         /* Reference Desig was (null) */
+  SELECT COMP $1I16639                 /* Reference Desig is LD12 */
+    PARAM 'Part Name' = 'LED_AVAGO_HSME-C120' 
+    PARAM 'Part Number' = 'LED_AVAGO_HSME-C120' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'HSME-C120' 
+    PARAM 'Manufacturer' = 'AVAGO TECHNOLOGIES' 
+    PARAM 'Footprint' = 'LED_AVAGO_HSME-C120' 
+    PARAM 'Part Description' = 'High Performance Right Angle Chip Green LED' 
+    PARAM 'PackageDescription' = 'Green Chip LED, 2-Leads, Body 1.7x1.1mm, Side Emitting Package' 
+    PARAM 'Footprint' = 'LED_AVAGO_HSME-C120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'LD12'         /* Reference Desig was (null) */
+  SELECT COMP $1I16506                 /* Reference Desig is R270 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R270'         /* Reference Desig was (null) */
+  SELECT COMP $1I16314                 /* Reference Desig is R262 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R262'         /* Reference Desig was (null) */
+  SELECT COMP $1I16221                 /* Reference Desig is R261 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R261'         /* Reference Desig was (null) */
+  SELECT COMP $1I16198                 /* Reference Desig is R260 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R260'         /* Reference Desig was (null) */
+  SELECT COMP $1I5319                 /* Reference Desig is C246 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC1005X55N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C246'         /* Reference Desig was (null) */
+  SELECT COMP $1I5317                 /* Reference Desig is R257 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R257'         /* Reference Desig was (null) */
+  SELECT COMP $1I19257                 /* Reference Desig is IC39 */
+    PARAM 'Part Name' = 'AT24MAC402-XHM' 
+    PARAM 'Part Number' = 'AT24MAC402-XHM' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'AT24MAC402-XHM' 
+    PARAM 'Manufacturer' = 'ATMEL' 
+    PARAM 'Footprint' = 'SOP65X640X120-8N' 
+    PARAM 'Part Description' = '1.7V to 5.5V, 2K (256 x 8) I2C-Compatible (2-wire) 2-Kbit Serial EEPROM' 
+    PARAM 'PackageDescription' = 'SOP, 0.65mm pitch; 8 pin, 4.40mm W X 3.00mm L X 1.20mm H body, IPC Medium Density' 
+    PARAM 'Footprint' = 'SOP65X640X120-8N' 
     PARAM 23 = DELETE                    /* Component Fix flag */
     PARAM 15 = 'IC39'         /* Reference Desig was (null) */
+  SELECT COMP $1I17799                 /* Reference Desig is C243 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C243'         /* Reference Desig was (null) */
+  SELECT COMP $1I17794                 /* Reference Desig is C238 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C238'         /* Reference Desig was (null) */
+  SELECT COMP $1I17792                 /* Reference Desig is C236 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C236'         /* Reference Desig was (null) */
+  SELECT COMP $1I17363                 /* Reference Desig is IC38 */
+    PARAM 'Part Name' = 'LPC1776FET180,551' 
+    PARAM 'Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Manufacturer' = 'NXP SEMICONDUCTORS' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 'Part Description' = 'Cortex-M3, 32-bit ARM MCU, 256kB Flash, 80kB SRAM, Ethernet, USB 2.0 Device/Host/OTG, CAN, 12-Bit ADC' 
+    PARAM 'PackageDescription' = 'BGA, 0.80mm Pitch, Square; 180 Pin, 14 Columns X 14 Rows, Body 12.00mm X 12.00mm X 1.20mm H, IPC Medium Density' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC38'         /* Reference Desig was (null) */
+  SELECT COMP $1I5311                 /* Reference Desig is IC6 */
+    PARAM 'Part Name' = 'TPS3808G33DBVT' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC6'         /* Reference Desig was (null) */
+  SELECT COMP $1I16458                 /* Reference Desig is R268 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R268'         /* Reference Desig was (null) */
+  SELECT COMP $1I16459                 /* Reference Desig is R269 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R269'         /* Reference Desig was (null) */
+  SELECT COMP $1I18824                 /* Reference Desig is R294 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R294'         /* Reference Desig was (null) */
+  SELECT COMP $1I18826                 /* Reference Desig is R295 */
+    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R295'         /* Reference Desig was (null) */
+  SELECT COMP $1I17337                 /* Reference Desig is IC38 */
+    PARAM 'Part Name' = 'LPC1776FET180,551' 
+    PARAM 'Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Part Label' = ' ' 
+    PARAM 'Manufacturer Part Number' = 'LPC1776FET180,551' 
+    PARAM 'Manufacturer' = 'NXP SEMICONDUCTORS' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 'Part Description' = 'Cortex-M3, 32-bit ARM MCU, 256kB Flash, 80kB SRAM, Ethernet, USB 2.0 Device/Host/OTG, CAN, 12-Bit ADC' 
+    PARAM 'PackageDescription' = 'BGA, 0.80mm Pitch, Square; 180 Pin, 14 Columns X 14 Rows, Body 12.00mm X 12.00mm X 1.20mm H, IPC Medium Density' 
+    PARAM 'Footprint' = 'BGA180C80P14X14_1200X1200X120' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'IC38'         /* Reference Desig was (null) */
 
-/* Sym: 091ECA18  Path 12: Metlino_MCH!$1I2558  Page 7: FPGA_XCKU040FFVA1156_MCH(FPGA Bank 0 CFG) */
-CHANGE 'Metlino_MCH!$1I2558(FPGA Bank 0 CFG)' 	INSTANCE
-  SELECT COMP $1I15823                 /* Reference Desig is R323 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+/* Sym: 09544950  Path 20: Sayma_AMC!AMC_FMC_Carrier_PWR_MGT75095!$1I1762  Page 17: PWR_0V9(1) */
+CHANGE 'Sayma_AMC!AMC_FMC_Carrier_PWR_MGT75095!$1I1762(1)' 	INSTANCE
+  SELECT COMP $1I4662                 /* Reference Desig is C267 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R323'         /* Reference Desig was (null) */
-  SELECT COMP $1I15825                 /* Reference Desig is R325 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 15 = 'C267'         /* Reference Desig was (null) */
+  SELECT COMP $1I4642                 /* Reference Desig is C266 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R325'         /* Reference Desig was (null) */
-  SELECT COMP $1I15824                 /* Reference Desig is R324 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 15 = 'C266'         /* Reference Desig was (null) */
+  SELECT COMP $1I4622                 /* Reference Desig is C265 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R324'         /* Reference Desig was (null) */
-  SELECT COMP $1I15811                 /* Reference Desig is R167 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 15 = 'C265'         /* Reference Desig was (null) */
+  SELECT COMP $1I4602                 /* Reference Desig is C264 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R167'         /* Reference Desig was (null) */
-  SELECT COMP $1I15813                 /* Reference Desig is IC40 */
-    PARAM 'Part Name' = '74HC4066PW' 
-    PARAM 'Part Number' = '74HC4066PW' 
+    PARAM 15 = 'C264'         /* Reference Desig was (null) */
+  SELECT COMP $1I4447                 /* Reference Desig is C249 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'IC40'         /* Reference Desig was (null) */
-  SELECT COMP $1I15819                 /* Reference Desig is R322 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 15 = 'C249'         /* Reference Desig was (null) */
+  SELECT COMP $1I4567                 /* Reference Desig is C263 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R322'         /* Reference Desig was (null) */
-  SELECT COMP $1I15810                 /* Reference Desig is R166 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 15 = 'C263'         /* Reference Desig was (null) */
+  SELECT COMP $1I4547                 /* Reference Desig is C262 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R166'         /* Reference Desig was (null) */
-  SELECT COMP $1I15812                 /* Reference Desig is SW1 */
-    PARAM 'Part Name' = 'SW_TYCO_1571983-4' 
-    PARAM 'Part Number' = 'SW_TYCO_1571983-4' 
+    PARAM 15 = 'C262'         /* Reference Desig was (null) */
+  SELECT COMP $1I4527                 /* Reference Desig is C261 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'SW1'         /* Reference Desig was (null) */
-  SELECT COMP $1I15817                 /* Reference Desig is R321 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
+    PARAM 15 = 'C261'         /* Reference Desig was (null) */
+  SELECT COMP $1I4507                 /* Reference Desig is C260 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R321'         /* Reference Desig was (null) */
-  SELECT COMP $1I15816                 /* Reference Desig is IC40 */
-    PARAM 'Part Name' = '74HC4066PW' 
-    PARAM 'Part Number' = '74HC4066PW' 
+    PARAM 15 = 'C260'         /* Reference Desig was (null) */
+  SELECT COMP $1I4487                 /* Reference Desig is C259 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'IC40'         /* Reference Desig was (null) */
-    PIN_PARAM 'E' 4 = '5'                /* was: 12 */
-    PIN_PARAM 'Z' 4 = '3'                /* was: 10 */
-    PIN_PARAM 'Y' 4 = '4'                /* was: 11 */
-  SELECT COMP $1I15815                 /* Reference Desig is IC40 */
-    PARAM 'Part Name' = '74HC4066PW' 
-    PARAM 'Part Number' = '74HC4066PW' 
+    PARAM 15 = 'C259'         /* Reference Desig was (null) */
+  SELECT COMP $1I4467                 /* Reference Desig is C250 */
+    PARAM 'Part Name' = 'Capacitor - non polarized CAPC3216X180N' 
     PARAM 'Part Label' = ' ' 
     PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'IC40'         /* Reference Desig was (null) */
-    PIN_PARAM 'E' 4 = '6'                /* was: 5 */
-    PIN_PARAM 'Z' 4 = '9'                /* was: 3 */
-    PIN_PARAM 'Y' 4 = '8'                /* was: 4 */
-  SELECT COMP $1I15820                 /* Reference Desig is C308 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C308'         /* Reference Desig was (null) */
-  SELECT COMP $1I15814                 /* Reference Desig is IC40 */
-    PARAM 'Part Name' = '74HC4066PW' 
-    PARAM 'Part Number' = '74HC4066PW' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'IC40'         /* Reference Desig was (null) */
-    PIN_PARAM 'E' 4 = '12'                /* was: 6 */
-    PIN_PARAM 'Z' 4 = '10'                /* was: 9 */
-    PIN_PARAM 'Y' 4 = '11'                /* was: 8 */
-  SELECT COMP $1I15809                 /* Reference Desig is R165 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R165'         /* Reference Desig was (null) */
-  SELECT COMP $1I15806                 /* Reference Desig is R162 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R162'         /* Reference Desig was (null) */
-  SELECT COMP $1I15808                 /* Reference Desig is R164 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R164'         /* Reference Desig was (null) */
-  SELECT COMP $1I15807                 /* Reference Desig is R163 */
-    PARAM 'Part Name' = 'Resistor - 1% RESC1005X40N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'R163'         /* Reference Desig was (null) */
-
-/* Sym: 092041D0  Path 12: Metlino_MCH!$1I2558  Page 19: FPGA_XCKU040FFVA1156_MCH(FPGA Banks 64 65 HR) */
-CHANGE 'Metlino_MCH!$1I2558(FPGA Banks 64 65 HR)' 	INSTANCE
-  SELECT COMP $4I11514                 /* Reference Desig is C309 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C309'         /* Reference Desig was (null) */
-  SELECT COMP $4I11517                 /* Reference Desig is C312 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C312'         /* Reference Desig was (null) */
-  SELECT COMP $4I11515                 /* Reference Desig is C310 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C310'         /* Reference Desig was (null) */
-  SELECT COMP $4I11516                 /* Reference Desig is C311 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C311'         /* Reference Desig was (null) */
-  SELECT COMP $4I11922                 /* Reference Desig is C324 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C324'         /* Reference Desig was (null) */
-  SELECT COMP $4I11921                 /* Reference Desig is C321 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C321'         /* Reference Desig was (null) */
-  SELECT COMP $4I11788                 /* Reference Desig is C317 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C317'         /* Reference Desig was (null) */
-  SELECT COMP $4I11789                 /* Reference Desig is C320 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C320'         /* Reference Desig was (null) */
-  SELECT COMP $4I11787                 /* Reference Desig is C316 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C316'         /* Reference Desig was (null) */
-  SELECT COMP $4I11786                 /* Reference Desig is C313 */
-    PARAM 'Part Name' = 'Capacitor - non polarized CAPC0603X33N' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'C313'         /* Reference Desig was (null) */
-  SELECT COMP $4I12021                 /* Reference Desig is J10 */
-    PARAM 'Part Name' = 'SAMTEC_FTS-114-02-L-DV-A' 
-    PARAM 'Part Label' = ' ' 
-    PARAM 23 = DELETE                    /* Component Fix flag */
-    PARAM 15 = 'J10'         /* Reference Desig was (null) */
+    PARAM 15 = 'C250'         /* Reference Desig was (null) */

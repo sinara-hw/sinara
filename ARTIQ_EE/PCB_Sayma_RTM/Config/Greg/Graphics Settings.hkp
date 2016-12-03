@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 11/30/16 00:52:22
+! Created 12/03/16 14:09:59
 !
 
 .Global_Constants 965 31
@@ -13,9 +13,9 @@
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
-	(-1, -1)	! ptMinPosition
+	(-32000, -32000)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(705, 6) (1908,1037)	! ..rcNormalPosition
+	(2204, 131) (3407,995)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -3662,13 +3662,13 @@
 	"Global.Option.Selection.DisplaySolid" "0"
 	"Global.Option.Selection.DynamicHighlight" "1"
 	"Global.Option.TuningMeter" "1"
-	"[VirtualGlobal].iDC.3D.Assemblies.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.3D.Assemblies.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.Components.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.FlexObjects.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.3D.Mechanicals.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.3D.Mechanicals.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.Objects.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Board Objects.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Color By Group.CollapsedSectionState" "0"
@@ -3684,13 +3684,13 @@
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Favorites.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Favorites.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Object Appearance.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionState" "0"
@@ -3720,7 +3720,7 @@
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.ActiveTabId" "2"
-	"[VirtualGlobal].iDC.AplyTo" "3"
+	"[VirtualGlobal].iDC.AplyTo" "2"
 	"[VirtualGlobal].iDC.AssemblyItems" "2"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.Board Objects.CollapsedSectionOrder" "2"
@@ -3729,11 +3729,11 @@
 	"[VirtualGlobal].iDC.BondWires" "3"
 	"[VirtualGlobal].iDC.CapacitiveMaterials" "3"
 	"[VirtualGlobal].iDC.CellItems" "2"
-	"[VirtualGlobal].iDC.Classlines" "3"
+	"[VirtualGlobal].iDC.Classlines" "2"
 	"[VirtualGlobal].iDC.Color By Group.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.Color By Net or Class.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.ConductiveMaterials" "3"
-	"[VirtualGlobal].iDC.ConstraintClass.Collapsed" "3"
+	"[VirtualGlobal].iDC.ConstraintClass.Collapsed" "2"
 	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.DFF Display Options.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.DFF Drill.CollapsedSectionOrder" "9"
@@ -3745,22 +3745,22 @@
 	"[VirtualGlobal].iDC.DRC.ColorByHazard" "3"
 	"[VirtualGlobal].iDC.Data.Collapsed" "2"
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionOrder" "10"
-	"[VirtualGlobal].iDC.DisplayPatterns" "3"
+	"[VirtualGlobal].iDC.DisplayPatterns" "2"
 	"[VirtualGlobal].iDC.DrawAndFabricationObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.DynamicNetlineFiltering" "2"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Favorites.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Fiducials.Collapsed" "2"
-	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "3"
-	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "3"
+	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "2"
+	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "2"
 	"[VirtualGlobal].iDC.General" "2"
 	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Groups.0" "11389843"
 	"[VirtualGlobal].iDC.Groups.1" "11389844"
-	"[VirtualGlobal].iDC.Groups.Collapsed" "3"
+	"[VirtualGlobal].iDC.Groups.Collapsed" "2"
 	"[VirtualGlobal].iDC.Groups.Count" "2"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionOrder" "2"
@@ -3778,9 +3778,9 @@
 	"[VirtualGlobal].iDC.Layers.9.Collapse" "3"
 	"[VirtualGlobal].iDC.Materials.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.MountingHoles.Collapsed" "2"
-	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "3"
+	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "2"
 	"[VirtualGlobal].iDC.MultipleDesigners.ForceFields.Collapsed" "3"
-	"[VirtualGlobal].iDC.NetClasses.Collapsed" "3"
+	"[VirtualGlobal].iDC.NetClasses.Collapsed" "2"
 	"[VirtualGlobal].iDC.Netlines.Collapsed" "2"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.NetlinesFrom" "2"
@@ -3789,10 +3789,10 @@
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.Online.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Panel Objects.CollapsedSectionOrder" "5"
-	"[VirtualGlobal].iDC.Parts" "3"
+	"[VirtualGlobal].iDC.Parts" "2"
 	"[VirtualGlobal].iDC.Pins.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.Place Objects.CollapsedSectionOrder" "3"
-	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "3"
+	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "2"
 	"[VirtualGlobal].iDC.PlaceObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Planes.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.Planning.CollapsedSectionOrder" "2"
@@ -3801,15 +3801,15 @@
 	"[VirtualGlobal].iDC.ResistiveMaterials" "3"
 	"[VirtualGlobal].iDC.Route Areas.CollapsedSectionOrder" "9"
 	"[VirtualGlobal].iDC.RouteObjects.Collapsed" "2"
-	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "3"
-	"[VirtualGlobal].iDC.SelectionAndHighlights" "3"
+	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "2"
+	"[VirtualGlobal].iDC.SelectionAndHighlights" "2"
 	"[VirtualGlobal].iDC.Sheet Objects.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "3"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "150"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "300"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "331"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "142"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "236"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "403"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -3823,8 +3823,8 @@
 
 .view "Sayma_RTM"
     ..extrema
-	(71944902,112673830)		! (xmin, ymin)
-	(485768170,329651435)		! (xmax, ymax)
+	(161627167,76525951)		! (xmin, ymin)
+	(738698967,379098733)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -16392,11 +16392,11 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x77cbad70	! flags
-	0x77a368b0	! showCmd
+	0x77e3ad70	! flags
+	0x776b68b0	! showCmd
 	(262144, 0)	! ptMinPosition
-	(0, 330888)	! ptMaxPosition
-	(0, 942878976) (875837497,1698048)	! ..rcNormalPosition
+	(0, 269410)	! ptMaxPosition
+	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""
