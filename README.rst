@@ -16,8 +16,9 @@ Note
 ----
 - ARTIQ_EE folder is for designs made with the Mentor Graphics Xpedition Enterprise CAD tool.
 - ARTIQ_ALTIUM folder is for designs made with Altium Designer CAD tool.
+- let PCB_BP_RF denote microTCA.4 RF backplane (no schematic currently available)
+- let PCB_BP_AMC denote microTCA.4 AMC backplane (no schematic currently available) 
 
 --------------
-
 The hardware designs for the Sinara device family are distributed under the
 CERN Open Hardware Licence v1.2.
