@@ -51,7 +51,7 @@ si_cache
 *.PcbDocPreview
 *.SchDocPreview
 History/
-Project Outputs for */
+# Project Outputs for */
 Project Logs for */
 __Previews
 
