@@ -1,11 +1,11 @@
 .FILETYPE CCZ_EXPORT_SETTINGS
 .VERSION "VB99.1"
-.DATE "11/17/2015 17:48:35"
+.DATE "12/05/2016 00:42:39"
 
 !  This file contains settings for the most recent CCZ export session
 
-.OUTPUT_FILE "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\ORPAL.cce"
-.UNITS in
+.OUTPUT_FILE "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_RTM\\Sayma_RTM.cce"
+.UNITS mm
 
 .CELL_LIBRARY 1
 
@@ -15,7 +15,7 @@
 
 .UID 0
 
-.INSTANCE_SPECIFIC_CELLS 0
+.INSTANCE_SPECIFIC_CELLS 1
 
 .VARIANTS 1
 

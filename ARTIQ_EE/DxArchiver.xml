@@ -2,7 +2,7 @@
 <DxArchiverProject version="1">
 	<DxProject Path="./ARTIQ.prj"/>
 	<TargetDirectory Path="D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_EE\ProjectBackup\xDx_archives_GK"/>
-	<Compression Type="Zip"/>
+	<Compression Type="None"/>
 	<PDF Type="0"/>
 	<SetSTATIC Type="0"/>
 	<AdditionalFiles>

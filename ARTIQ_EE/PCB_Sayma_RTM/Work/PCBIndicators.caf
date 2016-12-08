@@ -2,7 +2,7 @@
 VBPCBIndicators
 VBPCBForwardAnno 1
 SchematicDesignBackAnno 0
-CADBackAnno 0
+CADBackAnno 1
 UpdateNetPropsDB Sync
 UpdateNetClassDB Sync
 UpdateJobPrefsDB Sync
