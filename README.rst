@@ -22,7 +22,7 @@ Modules to add to git
 - let ARTIQ_xx/BP_AMC/PCB_BP_AMC be microTCA.4 AMC backplane (no schematic currently available) 
 - let ARTIQ_xx/BP_RTM/PCB_BP_RTM_RF be microTCA.4 RF backplane (no schematic currently available)
 - let ARTIQ_xx/BP_RTM/PCB_baikal be Signal/CLK ditribution board for RF-Backplane, slot is eRTM15  (Issue #78)
-- let ARTIQ_xx/MCH/PCB_MCH_Tongues12 be MCH Tongues 1, 2 module for AMC clock distribution (in future this will replace use of NAT MCH Tongue 1 module) 
+- let ARTIQ_xx/MCH/PCB_MCH_mordovia be bare bones MCH Tongue 2 board
 
 --------------
 The hardware designs for the Sinara device family are distributed under the
