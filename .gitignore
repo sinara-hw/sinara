@@ -6,8 +6,8 @@
 
 # misc data
 *.html
-*.step
-*.stp
+# *.step
+# *.stp
 *.log
 *.zip
 *.txt

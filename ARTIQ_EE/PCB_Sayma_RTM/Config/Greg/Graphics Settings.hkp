@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 12/07/16 19:01:08
+! Created 12/09/16 00:44:57
 !
 
 .Global_Constants 964 31
@@ -12,10 +12,10 @@
     ..Active_View 1
     ..WindowPlacement
 	0x00000002	! flags
-	0x00000001	! showCmd
-	(-32000, -32000)	! ptMinPosition
+	0x00000003	! showCmd
+	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2327, 100) (3530,964)	! ..rcNormalPosition
+	(90, 98) (1293,962)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -515,18 +515,18 @@
     ..Netline_Trace_Ends_On              False
     ..Classline_Color 0x00ff00cc	! RGB(204,  0,255)
     ..Netline_Of_Classline_On            False
-    ..Show_Plane_Data                    False
+    ..Show_Plane_Data                    True
     ..Show_Plane_Shapes                  False
     ..Show_Fill_Plane_Shapes             False
     ..Show_Plane_Data_Behind_Traces      False
-    ..Show_Dynamic_Area_Fills            False
-    ..Show_Plane_Aps_Outlines            False
+    ..Show_Dynamic_Area_Fills            True
+    ..Show_Plane_Aps_Outlines            True
     ..Show_Plane_Aps_Fills               False
-    ..All_Plane_Items_Enabled            False
-    ..Show_Plane_Plane_Sketches          False
+    ..All_Plane_Items_Enabled            True
+    ..Show_Plane_Plane_Sketches          True
     ..Show_Cubal_Data                    False
     ..Show_Cubal_Shapes                  False
-    ..All_Cubal_Items_Enabled            False
+    ..All_Cubal_Items_Enabled            True
     ..Hilite_Edit_Violations             False
     ..Edit_Violations_Color 0x00ff00ff	! RGB(255,  0,255)
     ..Pad_Items_Collapsed                False
@@ -3821,11 +3821,11 @@
 
 .view "Sayma_RTM"
     ..extrema
-	(306976686,208767848)		! (xmin, ymin)
-	(414231717,271036115)		! (xmax, ymax)
+	(173343662,56780401)		! (xmin, ymin)
+	(557886824,269521960)		! (xmax, ymax)
     ..WindowPlacement
-	0x00000002	! flags
-	0x00000003	! showCmd
+	0x00000000	! flags
+	0x00000001	! showCmd
 	(0, 857)	! ptMinPosition
 	(-8, -31)	! ptMaxPosition
 	(0, 0) (837,490)	! ..rcNormalPosition
@@ -3906,7 +3906,7 @@
 	F F F F F F F F F F 	! [21 - 30]
 	F F F F ! [31 - 34]
 	)
-    ..All_Materials_Items_Enabled        False
+    ..All_Materials_Items_Enabled        True
     ..Bondpadsdrawn                      True
     ..Documentation_On                   True
     ..Scoringline_On                     True
@@ -3919,13 +3919,13 @@
                                          True 	! bottom
     ..Drill_Drawing_Through_On           False
     ..Redline_Layer_On                   False
-    ..All_User_Draft_Enabled             False
+    ..All_User_Draft_Enabled             True
     ..User_Draft_On ( 
-	F F F F F F F F F F 	! [1 - 10]
-	F F F F F F F F F F 	! [11 - 20]
-	F F F F F F F F F F 	! [21 - 30]
-	F F F F F F F F F F 	! [31 - 40]
-	F F F F F F F F F F 	! [41 - 50]
+	T T T T T T T T T T 	! [1 - 10]
+	T T T T T T T T T T 	! [11 - 20]
+	T T T T T T T T T T 	! [21 - 30]
+	T T T T T T T T T T 	! [31 - 40]
+	T T T T F F F F F F 	! [41 - 50]
 	F F F F F F F F F F 	! [51 - 60]
 	F F F F F F F F F F 	! [61 - 70]
 	F F F F F F F F F F 	! [71 - 80]
@@ -4017,8 +4017,8 @@
                                          False	! bottom
     ..Thermal_Data_On                    True 	! top
                                          True 	! bottom
-    ..All_Assy_Enabled                   False	! top
-                                         False	! bottom
+    ..All_Assy_Enabled                   True 	! top
+                                         True 	! bottom
     ..Assy_Outline_On                    False	! top
                                          False	! bottom
     ..Assy_Part_Number_On                False	! top
@@ -5130,12 +5130,12 @@
 	"Copper.Trace.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Outline.Top" "d:0" "e:0" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Outline.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Text.PartNumber.Top" "d:0" "e:0" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Text.PartNumber.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Text.RefDes.Top" "d:0" "e:0" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Text.RefDes.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Outline.Top" "d:0" "e:1" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Outline.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Text.PartNumber.Top" "d:0" "e:1" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Text.PartNumber.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Text.RefDes.Top" "d:0" "e:1" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Text.RefDes.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.TestPoint.Text.RefDes.Top" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.TestPoint.Text.RefDes.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.BondWires.Level0.Top" "d:1" "e:0" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
@@ -14352,50 +14352,50 @@
 	"Topology.TargetAreaWarnYellow" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:34" "t:1" "o:1"
 	"Topology.UnpackedArea.2" "d:0" "e:0" "s:1" "se:0" "c:10040319" "a:100" "p:0" "t:0" "o:1"
 	"Topology.VirtualPins.2" "d:0" "e:0" "s:1" "se:0" "c:10040319" "a:100" "p:0" "t:0" "o:1"
-	"User.DRAWTRACE_CLEARANCEGEOM" "d:1" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Bottomlayer" "d:1" "e:0" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Bottomoverlay" "d:1" "e:0" "s:1" "se:0" "c:5592405" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Bottompaste" "d:1" "e:0" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Bottomsolder" "d:1" "e:0" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Drilldrawing" "d:1" "e:0" "s:1" "se:0" "c:13158" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Drillguide" "d:1" "e:0" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Keepoutlayer" "d:1" "e:0" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical1" "d:1" "e:0" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical13" "d:1" "e:0" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical14" "d:1" "e:0" "s:1" "se:0" "c:13158" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical15" "d:1" "e:0" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical16" "d:1" "e:0" "s:1" "se:0" "c:16751052" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical2" "d:1" "e:0" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical3" "d:1" "e:0" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical30" "d:1" "e:0" "s:1" "se:0" "c:128" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical31" "d:1" "e:0" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical4" "d:1" "e:0" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical5" "d:1" "e:0" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical6" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical7" "d:1" "e:0" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical8" "d:1" "e:0" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer1" "d:1" "e:0" "s:1" "se:0" "c:2434341" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer2" "d:1" "e:0" "s:1" "se:0" "c:16751052" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer3" "d:1" "e:0" "s:1" "se:0" "c:16711884" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer4" "d:1" "e:0" "s:1" "se:0" "c:6684774" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer5" "d:1" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer6" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer7" "d:1" "e:0" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Midlayer8" "d:1" "e:0" "s:1" "se:0" "c:5592405" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Multilayer" "d:1" "e:0" "s:1" "se:0" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Padholelayer" "d:1" "e:0" "s:1" "se:0" "c:2434341" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Toplayer" "d:1" "e:0" "s:1" "se:0" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Topoverlay" "d:1" "e:0" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Toppaste" "d:1" "e:0" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Topsolder" "d:1" "e:0" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"User.Unnamed user layer" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 14" "d:1" "e:0" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 15" "d:1" "e:0" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 16" "d:1" "e:0" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 17" "d:1" "e:0" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 18" "d:1" "e:0" "s:1" "se:0" "c:128" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 19" "d:1" "e:0" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 24" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"User.DRAWTRACE_CLEARANCEGEOM" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Bottomlayer" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Bottomoverlay" "d:1" "e:1" "s:1" "se:1" "c:5592405" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Bottompaste" "d:1" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Bottomsolder" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Drilldrawing" "d:1" "e:1" "s:1" "se:1" "c:13158" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Drillguide" "d:1" "e:1" "s:1" "se:1" "c:10027008" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Keepoutlayer" "d:1" "e:1" "s:1" "se:1" "c:65280" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical1" "d:1" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical13" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical14" "d:1" "e:1" "s:1" "se:1" "c:13158" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical15" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical16" "d:1" "e:1" "s:1" "se:1" "c:16751052" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical2" "d:1" "e:1" "s:1" "se:1" "c:10079487" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical3" "d:1" "e:1" "s:1" "se:1" "c:10092543" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical30" "d:1" "e:1" "s:1" "se:1" "c:128" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical31" "d:1" "e:1" "s:1" "se:1" "c:10092441" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical4" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical5" "d:1" "e:1" "s:1" "se:1" "c:10092543" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical6" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical7" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical8" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer1" "d:1" "e:1" "s:1" "se:1" "c:2434341" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer2" "d:1" "e:1" "s:1" "se:1" "c:16751052" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer3" "d:1" "e:1" "s:1" "se:1" "c:16711884" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer4" "d:1" "e:1" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer5" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer6" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer7" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Midlayer8" "d:1" "e:1" "s:1" "se:1" "c:5592405" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Multilayer" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Padholelayer" "d:1" "e:1" "s:1" "se:1" "c:2434341" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Toplayer" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Topoverlay" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Toppaste" "d:1" "e:1" "s:1" "se:1" "c:10079487" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Topsolder" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"User.Unnamed user layer" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 14" "d:1" "e:1" "s:1" "se:1" "c:10027008" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 15" "d:1" "e:1" "s:1" "se:1" "c:65280" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 16" "d:1" "e:1" "s:1" "se:1" "c:10092441" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 17" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 18" "d:1" "e:1" "s:1" "se:1" "c:128" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 19" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 24" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"WirebondObjects.WirebondGuides.Top" "d:1" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
 	"WirebondObjects.WirebondGuides.Bottom" "d:1" "e:1" "s:1" "se:1" "c:128" "a:100" "p:0" "t:0" "o:1"
 	"Board.BundlePath.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
@@ -16216,18 +16216,18 @@
 	"Option.Classlines.Netlines" "2"
 	"Option.ConductiveShapes.Enabled" "1"
 	"Option.ConductiveShapes.Selectable" "1"
-	"Option.CopperBalancing.Data" "2"
-	"Option.CopperBalancing.Enabled" "0"
-	"Option.CopperBalancing.Selectable" "3"
-	"Option.CopperBalancing.Shapes" "2"
+	"Option.CopperBalancing.Data" "0"
+	"Option.CopperBalancing.Enabled" "1"
+	"Option.CopperBalancing.Selectable" "1"
+	"Option.CopperBalancing.Shapes" "0"
 	"Option.DiePinsBottom.Enabled" "1"
 	"Option.DiePinsBottom.Selectable" "1"
 	"Option.DiePinsTop.Enabled" "0"
 	"Option.DiePinsTop.Selectable" "3"
 	"Option.DrawFabObjects.Enabled" "1"
 	"Option.DrawFabObjects.Selectable" "1"
-	"Option.Fabrication.AssemblyItems.Bottom" "0"
-	"Option.Fabrication.AssemblyItems.Top" "0"
+	"Option.Fabrication.AssemblyItems.Bottom" "1"
+	"Option.Fabrication.AssemblyItems.Top" "1"
 	"Option.Fabrication.CellItems.Bottom" "0"
 	"Option.Fabrication.CellItems.Top" "0"
 	"Option.Fabrication.DrillDrawing" "1"
@@ -16253,42 +16253,42 @@
 	"Option.Holes.Enabled" "1"
 	"Option.Holes.Selectable" "1"
 	"Option.LegibleTextOnly" "1"
-	"Option.Material.3M_C-Ply" "2"
-	"Option.Material.Copper" "2"
-	"Option.Material.DuPont_EP242_10" "2"
-	"Option.Material.DuPont_EP242_100" "2"
-	"Option.Material.DuPont_EP242_1000" "2"
-	"Option.Material.DuPont_EP410" "2"
-	"Option.Material.DuPont_Interra_HK10" "2"
-	"Option.Material.Gould_TCC" "2"
-	"Option.Material.Huntsman_ProbelecCFP" "2"
-	"Option.Material.Mask.Enabled" "2"
-	"Option.Material.OakMitsuiFaradFlex_BC12" "2"
-	"Option.Material.OakMitsuiFaradFlex_BC12TM" "2"
-	"Option.Material.OakMitsuiFaradFlex_BC16" "2"
-	"Option.Material.OakMitsuiFaradFlex_BC16T" "2"
-	"Option.Material.OakMitsuiFaradFlex_BC24" "2"
-	"Option.Material.OakMitsuiFaradFlex_BC8" "2"
-	"Option.Material.Ohmega_ply_10" "2"
-	"Option.Material.Ohmega_ply_100" "2"
-	"Option.Material.Ohmega_ply_25" "2"
-	"Option.Material.Ohmega_ply_250" "2"
-	"Option.Material.Ohmega_ply_50" "2"
-	"Option.Material.Overglaze.Enabled" "2"
-	"Option.Material.Partec_RD21" "2"
-	"Option.Material.Sanmina_BC2000" "2"
-	"Option.Material.TICER_TCR_CrSiO_1000" "2"
-	"Option.Material.TICER_TCR_CrSiO_1100" "2"
-	"Option.Material.TICER_TCR_NCAS_100" "2"
-	"Option.Material.TICER_TCR_NCAS_25" "2"
-	"Option.Material.TICER_TCR_NCAS_250" "2"
-	"Option.Material.TICER_TCR_NCAS_50" "2"
-	"Option.Material.TICER_TCR_NiCr_10" "2"
-	"Option.Material.TICER_TCR_NiCr_100" "2"
-	"Option.Material.TICER_TCR_NiCr_25" "2"
-	"Option.Material.TICER_TCR_NiCr_50" "2"
-	"Option.Materials.Enabled" "0"
-	"Option.Materials.Selectable" "3"
+	"Option.Material.3M_C-Ply" "0"
+	"Option.Material.Copper" "0"
+	"Option.Material.DuPont_EP242_10" "0"
+	"Option.Material.DuPont_EP242_100" "0"
+	"Option.Material.DuPont_EP242_1000" "0"
+	"Option.Material.DuPont_EP410" "0"
+	"Option.Material.DuPont_Interra_HK10" "0"
+	"Option.Material.Gould_TCC" "0"
+	"Option.Material.Huntsman_ProbelecCFP" "0"
+	"Option.Material.Mask.Enabled" "0"
+	"Option.Material.OakMitsuiFaradFlex_BC12" "0"
+	"Option.Material.OakMitsuiFaradFlex_BC12TM" "0"
+	"Option.Material.OakMitsuiFaradFlex_BC16" "0"
+	"Option.Material.OakMitsuiFaradFlex_BC16T" "0"
+	"Option.Material.OakMitsuiFaradFlex_BC24" "0"
+	"Option.Material.OakMitsuiFaradFlex_BC8" "0"
+	"Option.Material.Ohmega_ply_10" "0"
+	"Option.Material.Ohmega_ply_100" "0"
+	"Option.Material.Ohmega_ply_25" "0"
+	"Option.Material.Ohmega_ply_250" "0"
+	"Option.Material.Ohmega_ply_50" "0"
+	"Option.Material.Overglaze.Enabled" "0"
+	"Option.Material.Partec_RD21" "0"
+	"Option.Material.Sanmina_BC2000" "0"
+	"Option.Material.TICER_TCR_CrSiO_1000" "0"
+	"Option.Material.TICER_TCR_CrSiO_1100" "0"
+	"Option.Material.TICER_TCR_NCAS_100" "0"
+	"Option.Material.TICER_TCR_NCAS_25" "0"
+	"Option.Material.TICER_TCR_NCAS_250" "0"
+	"Option.Material.TICER_TCR_NCAS_50" "0"
+	"Option.Material.TICER_TCR_NiCr_10" "0"
+	"Option.Material.TICER_TCR_NiCr_100" "0"
+	"Option.Material.TICER_TCR_NiCr_25" "0"
+	"Option.Material.TICER_TCR_NiCr_50" "0"
+	"Option.Materials.Enabled" "1"
+	"Option.Materials.Selectable" "1"
 	"Option.MirrorView" "0"
 	"Option.MountingHolePads.Enabled" "1"
 	"Option.MultipleDesigners" "1"
@@ -16328,12 +16328,12 @@
 	"Option.PlaceObjects.Parts.Top" "1"
 	"Option.PlaceObjects.Selectable" "1"
 	"Option.PlaceObstructsHeight" "3"
-	"Option.Planes.Data.Enabled" "2"
-	"Option.Planes.Data.Fill" "2"
-	"Option.Planes.Enabled" "0"
-	"Option.Planes.Selectable" "3"
-	"Option.Planes.Shape.Enabled" "2"
-	"Option.Planes.Sketch.Enabled" "3"
+	"Option.Planes.Data.Enabled" "1"
+	"Option.Planes.Data.Fill" "0"
+	"Option.Planes.Enabled" "1"
+	"Option.Planes.Selectable" "1"
+	"Option.Planes.Shape.Enabled" "0"
+	"Option.Planes.Sketch.Enabled" "1"
 	"Option.Planning.Enabled" "1"
 	"Option.Planning.Selectable" "1"
 	"Option.RFNodes.Enabled" "1"
@@ -16385,8 +16385,8 @@
 	"Option.Traces.Enabled" "1"
 	"Option.Traces.Selectable" "1"
 	"Option.UnpackedAreas.Enabled" "0"
-	"Option.UserDraftLayers.Enabled" "0"
-	"Option.UserDraftLayers.Selectable" "3"
+	"Option.UserDraftLayers.Enabled" "1"
+	"Option.UserDraftLayers.Selectable" "1"
 	"Option.ViaPads.Enabled" "0"
 	"Option.Vias.Enabled" "1"
 	"Option.Vias.Selectable" "1"
@@ -16405,15 +16405,15 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x00000000	! flags
-	0x00000001	! showCmd
+	0x00000002	! flags
+	0x00000003	! showCmd
 	(0, 857)	! ptMinPosition
 	(-8, -31)	! ptMaxPosition
 	(20, 20) (857,510)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 3
     ..View_Id  "MGCSDD3DAdapter.3DAdapterCtrl.20"
-    ..View_Data  "CameraSettings\\s1\\s12\\sCameraPosX\\s354.252167\\sCameraPosY\\s254.244980\\sCameraPosZ\\s182.521469\\sTargetPosX\\s382.452972\\sTargetPosY\\s248.976517\\sTargetPosZ\\s-3.231427\\sUpVectorX\\s0.063434\\sUpVectorY\\s0.997819\\sUpVectorZ\\s-0.018670\\sWidth\\s65.793816\\sHeight\\s36.380581\\sProjection\\s\\fperspective\\f"
+    ..View_Data  "CameraSettings\\s1\\s12\\sCameraPosX\\s160.603073\\sCameraPosY\\s-601.796875\\sCameraPosZ\\s1637.196411\\sTargetPosX\\s311.236969\\sTargetPosY\\s72.508186\\sTargetPosZ\\s33.446335\\sUpVectorX\\s0.889065\\sUpVectorY\\s0.386156\\sUpVectorZ\\s0.245868\\sWidth\\s611.268494\\sHeight\\s338.000122\\sProjection\\s\\fperspective\\f"
     ..Virtual_Options ( 
 	"[Virtual].3D.Assemblies" "1"
 	"[Virtual].3D.Components" "1"
@@ -16466,12 +16466,12 @@
 	"[Virtual].3D.Options.TestPointMarkers" "1"
 	"[Virtual].3D.Options.Wireframe" "0"
 	"[Virtual].3D.Options.Z-AxisScaling" "0"
-	"[Virtual].3D.PCBs" "0"
+	"[Virtual].3D.PCBs" "1"
 	"[Virtual].iDC.ListSelectableLayersOnly" "0"
     )
     ..Virtual_String_Options ( 
 	"[Virtual].3D.Objects.Planes.Refresh" "0"
-	"[Virtual].3D.Objects.Silkscreen.Refresh" "1"
+	"[Virtual].3D.Objects.Silkscreen.Refresh" "2"
 	"[Virtual].3D.Objects.SolderMask.Refresh" "1"
 	"[Virtual].3D.Options.ScaleFactor" "10"
 	"[Virtual].Global.3D.FlexObjects.Adhesive.Color" "FFFFFF"

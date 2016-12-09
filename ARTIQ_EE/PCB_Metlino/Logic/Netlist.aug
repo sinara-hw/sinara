@@ -2748,7 +2748,7 @@
 \SS16\    \D1\ 
 \SW_TYCO_1571983-4\    \SW1\ 
 \TCA9548ARGER\    \IC1\ 
-\Telegartner_J01151A0921\    \J3\ \J4\ \J22\ 
+\Telegartner_J01151A0921\    \J3\ \J4\ 
 \TPS3808G33DBVT\    \IC2\ \IC3\ \IC4\ 
 \TPS51200DRCT\    \IC10\ 
 \TPS53353DQPT\    \IC30\ 

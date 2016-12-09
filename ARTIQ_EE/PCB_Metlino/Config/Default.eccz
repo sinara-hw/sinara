@@ -1,21 +1,21 @@
 .FILETYPE CCZ_EXPORT_SETTINGS
 .VERSION "VB99.1"
-.DATE "11/17/2015 17:48:35"
+.DATE "12/09/2016 02:01:50"
 
 !  This file contains settings for the most recent CCZ export session
 
-.OUTPUT_FILE "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\ORPAL.cce"
+.OUTPUT_FILE "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Metlino\\Output\\Metlino.cce"
 .UNITS in
 
-.CELL_LIBRARY 1
+.CELL_LIBRARY 0
 
 .HAZARDS 0
 
-.MATERIALS 1
+.MATERIALS 0
 
 .UID 0
 
 .INSTANCE_SPECIFIC_CELLS 0
 
-.VARIANTS 1
+.VARIANTS 0
 

@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 12/07/16 19:01:01
+! Created 12/09/16 01:40:41
 !
 
 .Global_Constants 1481 31
@@ -15,7 +15,7 @@
 	0x00000003	! showCmd
 	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2380, 98) (3583,962)	! ..rcNormalPosition
+	(2118, 79) (3321,943)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -526,7 +526,7 @@
     ..Show_Plane_Plane_Sketches          False
     ..Show_Cubal_Data                    False
     ..Show_Cubal_Shapes                  False
-    ..All_Cubal_Items_Enabled            False
+    ..All_Cubal_Items_Enabled            True
     ..Hilite_Edit_Violations             False
     ..Edit_Violations_Color 0x00ff00ff	! RGB(255,  0,255)
     ..Pad_Items_Collapsed                False
@@ -4696,18 +4696,18 @@
 	"Global.Option.Selection.DisplaySolid" "0"
 	"Global.Option.Selection.DynamicHighlight" "1"
 	"Global.Option.TuningMeter" "1"
-	"[VirtualGlobal].iDC.3D.Assemblies.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.3D.Assemblies.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.3D.Components.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.FlexObjects.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.3D.Mechanicals.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.3D.Mechanicals.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.3D.Objects.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Board Objects.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Color By Group.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Color By Net or Class.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.DFF Display Options.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.DFF Drill.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.DFF Plane.CollapsedSectionState" "1"
@@ -4724,7 +4724,7 @@
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Object Appearance.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionState" "0"
@@ -4754,7 +4754,7 @@
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.ActiveTabId" "7"
-	"[VirtualGlobal].iDC.AplyTo" "2"
+	"[VirtualGlobal].iDC.AplyTo" "3"
 	"[VirtualGlobal].iDC.AssemblyItems" "2"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.Board Objects.CollapsedSectionOrder" "2"
@@ -4763,11 +4763,11 @@
 	"[VirtualGlobal].iDC.BondWires" "3"
 	"[VirtualGlobal].iDC.CapacitiveMaterials" "3"
 	"[VirtualGlobal].iDC.CellItems" "2"
-	"[VirtualGlobal].iDC.Classlines" "2"
+	"[VirtualGlobal].iDC.Classlines" "3"
 	"[VirtualGlobal].iDC.Color By Group.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.Color By Net or Class.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.ConductiveMaterials" "3"
-	"[VirtualGlobal].iDC.ConstraintClass.Collapsed" "2"
+	"[VirtualGlobal].iDC.ConstraintClass.Collapsed" "3"
 	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.DFF Display Options.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.DFF Drill.CollapsedSectionOrder" "9"
@@ -4779,22 +4779,22 @@
 	"[VirtualGlobal].iDC.DRC.ColorByHazard" "3"
 	"[VirtualGlobal].iDC.Data.Collapsed" "2"
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionOrder" "10"
-	"[VirtualGlobal].iDC.DisplayPatterns" "2"
+	"[VirtualGlobal].iDC.DisplayPatterns" "3"
 	"[VirtualGlobal].iDC.DrawAndFabricationObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionOrder" "8"
-	"[VirtualGlobal].iDC.DynamicNetlineFiltering" "3"
+	"[VirtualGlobal].iDC.DynamicNetlineFiltering" "2"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Favorites.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Fiducials.Collapsed" "2"
-	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "2"
-	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "2"
+	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "3"
+	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "3"
 	"[VirtualGlobal].iDC.General" "2"
 	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Groups.0" "11389843"
 	"[VirtualGlobal].iDC.Groups.1" "11389844"
-	"[VirtualGlobal].iDC.Groups.Collapsed" "2"
+	"[VirtualGlobal].iDC.Groups.Collapsed" "3"
 	"[VirtualGlobal].iDC.Groups.Count" "2"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionOrder" "2"
@@ -4812,9 +4812,9 @@
 	"[VirtualGlobal].iDC.Layers.9.Collapse" "3"
 	"[VirtualGlobal].iDC.Materials.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.MountingHoles.Collapsed" "2"
-	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "2"
+	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "3"
 	"[VirtualGlobal].iDC.MultipleDesigners.ForceFields.Collapsed" "3"
-	"[VirtualGlobal].iDC.NetClasses.Collapsed" "2"
+	"[VirtualGlobal].iDC.NetClasses.Collapsed" "3"
 	"[VirtualGlobal].iDC.Netlines.Collapsed" "2"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.NetlinesFrom" "2"
@@ -4823,10 +4823,10 @@
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.Online.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Panel Objects.CollapsedSectionOrder" "5"
-	"[VirtualGlobal].iDC.Parts" "2"
+	"[VirtualGlobal].iDC.Parts" "3"
 	"[VirtualGlobal].iDC.Pins.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.Place Objects.CollapsedSectionOrder" "3"
-	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "2"
+	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "3"
 	"[VirtualGlobal].iDC.PlaceObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Planes.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.Planning.CollapsedSectionOrder" "2"
@@ -4835,14 +4835,14 @@
 	"[VirtualGlobal].iDC.ResistiveMaterials" "3"
 	"[VirtualGlobal].iDC.Route Areas.CollapsedSectionOrder" "9"
 	"[VirtualGlobal].iDC.RouteObjects.Collapsed" "2"
-	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "2"
-	"[VirtualGlobal].iDC.SelectionAndHighlights" "2"
+	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "3"
+	"[VirtualGlobal].iDC.SelectionAndHighlights" "3"
 	"[VirtualGlobal].iDC.Sheet Objects.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
-	"[VirtualGlobal].iDC.Spacers" "2"
+	"[VirtualGlobal].iDC.Spacers" "3"
 	"[VirtualGlobal].iDC.SplitViewHeight.0" "150"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "274"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "299"
 	"[VirtualGlobal].iDC.SplitViewHeight.2" "331"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
@@ -4857,11 +4857,11 @@
 
 .view "Sayma_AMC"
     ..extrema
-	(217305086,-10853355)		! (xmin, ymin)
-	(530033533,162158010)		! (xmax, ymax)
+	(169175649,-26766454)		! (xmin, ymin)
+	(591685266,166754477)		! (xmax, ymax)
     ..WindowPlacement
-	0x00000000	! flags
-	0x00000001	! showCmd
+	0x00000002	! flags
+	0x00000003	! showCmd
 	(0, 857)	! ptMinPosition
 	(-8, -31)	! ptMaxPosition
 	(0, 0) (837,490)	! ..rcNormalPosition
@@ -17745,10 +17745,10 @@
 	"Option.Classlines.Netlines" "2"
 	"Option.ConductiveShapes.Enabled" "1"
 	"Option.ConductiveShapes.Selectable" "1"
-	"Option.CopperBalancing.Data" "2"
-	"Option.CopperBalancing.Enabled" "0"
-	"Option.CopperBalancing.Selectable" "3"
-	"Option.CopperBalancing.Shapes" "2"
+	"Option.CopperBalancing.Data" "0"
+	"Option.CopperBalancing.Enabled" "1"
+	"Option.CopperBalancing.Selectable" "1"
+	"Option.CopperBalancing.Shapes" "0"
 	"Option.DiePinsBottom.Enabled" "1"
 	"Option.DiePinsBottom.Selectable" "1"
 	"Option.DiePinsTop.Enabled" "0"
@@ -17929,20 +17929,20 @@
     )
 
 
-.generic_view "3D View"
+.generic_view "SPECIAL:Persistent3DViewData"
     ..extrema
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x00000002	! flags
-	0x00000003	! showCmd
-	(0, 857)	! ptMinPosition
-	(-8, -31)	! ptMaxPosition
-	(20, 20) (857,510)	! ..rcNormalPosition
+	0x7723ad70	! flags
+	0x76b568b0	! showCmd
+	(262144, 0)	! ptMinPosition
+	(0, 854486)	! ptMaxPosition
+	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
     ..Is_Float_View                      False
-    ..View_Type 3
-    ..View_Id  "MGCSDD3DAdapter.3DAdapterCtrl.20"
-    ..View_Data  "CameraSettings\\s1\\s12\\sCameraPosX\\s448.562836\\sCameraPosY\\s-265.394836\\sCameraPosZ\\s852.081360\\sTargetPosX\\s382.477142\\sTargetPosY\\s75.957870\\sTargetPosZ\\s-2.470907\\sUpVectorX\\s-0.111972\\sUpVectorY\\s0.919807\\sUpVectorZ\\s0.376078\\sWidth\\s322.909607\\sHeight\\s178.644058\\sProjection\\s\\fperspective\\f"
+    ..View_Type 0
+    ..View_Id  ""
+    ..View_Data  ""
     ..Virtual_Options ( 
 	"[Virtual].3D.Assemblies" "1"
 	"[Virtual].3D.Components" "1"
@@ -17996,8 +17996,8 @@
     )
     ..Virtual_String_Options ( 
 	"[Virtual].3D.Objects.Planes.Refresh" "0"
-	"[Virtual].3D.Objects.Silkscreen.Refresh" "0"
-	"[Virtual].3D.Objects.SolderMask.Refresh" "1"
+	"[Virtual].3D.Objects.Silkscreen.Refresh" "1"
+	"[Virtual].3D.Objects.SolderMask.Refresh" "2"
 	"[Virtual].3D.Options.ScaleFactor" "10"
 	"[Virtual].Global.3D.FlexObjects.Adhesive.Color" "FFFFFF"
 	"[Virtual].Global.3D.FlexObjects.Adhesive.Transparency" "70"

@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 12/08/16 01:06:26
+! Created 12/09/16 02:03:39
 !
 
 .Global_Constants 1458 31
@@ -13,11 +13,11 @@
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
-	(-1, -1)	! ptMinPosition
+	(-32000, -32000)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(407, 100) (1610,964)	! ..rcNormalPosition
-    ..Active_Place_Layer_Top             False
-    ..Active_Place_Layer_Bottom          True
+	(2118, 79) (3321,943)	! ..rcNormalPosition
+    ..Active_Place_Layer_Top             True
+    ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
     ..Active_Route_Layer 0
     ..Trace_Layer_Color ( 
@@ -1140,7 +1140,7 @@
 	0x00ff0000	! bottom  RGB(  0,  0,255)
     )
     ..Silk_Outline_Color (
-	0x00ff9933	! top     RGB( 51,153,255)
+	0x0000ffff	! top     RGB(255,255,  0)
 	0x00ff99ff	! bottom  RGB(255,153,255)
     )
     ..Silk_Outline_Ptrnidx               0	! top
@@ -4640,24 +4640,24 @@
 	"Global.Option.FullScreenCursor" "1"
 	"Global.Option.FullScreenCursorDuringMoveOnly" "1"
 	"Global.Option.HalfScreenCursor" "0"
-	"Global.Option.IgnoreSelectionFilter" "1"
-	"Global.Option.NetNamesOnTraces" "0"
+	"Global.Option.IgnoreSelectionFilter" "0"
+	"Global.Option.NetNamesOnTraces" "1"
 	"Global.Option.PlaneDataBehindTraces" "1"
 	"Global.Option.Selection.DisplaySolid" "0"
 	"Global.Option.Selection.DynamicHighlight" "1"
 	"Global.Option.TuningMeter" "0"
-	"[VirtualGlobal].iDC.3D.Assemblies.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.3D.Assemblies.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.3D.Components.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.FlexObjects.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.3D.Mechanicals.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.3D.Mechanicals.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.3D.Objects.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Board Objects.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Color By Group.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Color By Net or Class.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.DFF Display Options.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.DFF Drill.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.DFF Plane.CollapsedSectionState" "1"
@@ -4668,13 +4668,13 @@
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Favorites.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Favorites.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Object Appearance.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionState" "0"
@@ -4703,8 +4703,8 @@
 	"[VirtualGlobal].iDC.3D.Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionOrder" "8"
-	"[VirtualGlobal].iDC.ActiveTabId" "2"
-	"[VirtualGlobal].iDC.AplyTo" "2"
+	"[VirtualGlobal].iDC.ActiveTabId" "7"
+	"[VirtualGlobal].iDC.AplyTo" "3"
 	"[VirtualGlobal].iDC.AssemblyItems" "2"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.Board Objects.CollapsedSectionOrder" "2"
@@ -4713,11 +4713,11 @@
 	"[VirtualGlobal].iDC.BondWires" "3"
 	"[VirtualGlobal].iDC.CapacitiveMaterials" "3"
 	"[VirtualGlobal].iDC.CellItems" "2"
-	"[VirtualGlobal].iDC.Classlines" "2"
+	"[VirtualGlobal].iDC.Classlines" "3"
 	"[VirtualGlobal].iDC.Color By Group.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.Color By Net or Class.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.ConductiveMaterials" "3"
-	"[VirtualGlobal].iDC.ConstraintClass.Collapsed" "2"
+	"[VirtualGlobal].iDC.ConstraintClass.Collapsed" "3"
 	"[VirtualGlobal].iDC.Copper Balancing.CollapsedSectionOrder" "4"
 	"[VirtualGlobal].iDC.DFF Display Options.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.DFF Drill.CollapsedSectionOrder" "9"
@@ -4729,20 +4729,20 @@
 	"[VirtualGlobal].iDC.DRC.ColorByHazard" "3"
 	"[VirtualGlobal].iDC.Data.Collapsed" "2"
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionOrder" "10"
-	"[VirtualGlobal].iDC.DisplayPatterns" "2"
+	"[VirtualGlobal].iDC.DisplayPatterns" "3"
 	"[VirtualGlobal].iDC.DrawAndFabricationObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionOrder" "8"
-	"[VirtualGlobal].iDC.DynamicNetlineFiltering" "3"
+	"[VirtualGlobal].iDC.DynamicNetlineFiltering" "2"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Favorites.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Fiducials.Collapsed" "2"
-	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "2"
-	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "2"
+	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "3"
+	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "3"
 	"[VirtualGlobal].iDC.General" "2"
 	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionOrder" "3"
-	"[VirtualGlobal].iDC.Groups.Collapsed" "2"
+	"[VirtualGlobal].iDC.Groups.Collapsed" "3"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Hidden.3D.Assemblies.Count" "0"
 	"[VirtualGlobal].iDC.Hidden.3D.Components.Count" "0"
@@ -4775,9 +4775,9 @@
 	"[VirtualGlobal].iDC.Layers.9.Collapse" "3"
 	"[VirtualGlobal].iDC.Materials.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.MountingHoles.Collapsed" "2"
-	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "2"
+	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "3"
 	"[VirtualGlobal].iDC.MultipleDesigners.ForceFields.Collapsed" "3"
-	"[VirtualGlobal].iDC.NetClasses.Collapsed" "2"
+	"[VirtualGlobal].iDC.NetClasses.Collapsed" "3"
 	"[VirtualGlobal].iDC.Netlines.Collapsed" "2"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.NetlinesFrom" "2"
@@ -4810,10 +4810,10 @@
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.Online.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Panel Objects.CollapsedSectionOrder" "5"
-	"[VirtualGlobal].iDC.Parts" "2"
+	"[VirtualGlobal].iDC.Parts" "3"
 	"[VirtualGlobal].iDC.Pins.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.Place Objects.CollapsedSectionOrder" "3"
-	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "2"
+	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "3"
 	"[VirtualGlobal].iDC.PlaceObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Planes.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.Planning.CollapsedSectionOrder" "2"
@@ -4822,15 +4822,15 @@
 	"[VirtualGlobal].iDC.ResistiveMaterials" "3"
 	"[VirtualGlobal].iDC.Route Areas.CollapsedSectionOrder" "9"
 	"[VirtualGlobal].iDC.RouteObjects.Collapsed" "2"
-	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "2"
-	"[VirtualGlobal].iDC.SelectionAndHighlights" "2"
+	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "3"
+	"[VirtualGlobal].iDC.SelectionAndHighlights" "3"
 	"[VirtualGlobal].iDC.Sheet Objects.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
-	"[VirtualGlobal].iDC.Spacers" "2"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "114"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "277"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "390"
+	"[VirtualGlobal].iDC.Spacers" "3"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "108"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "295"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "331"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4844,11 +4844,11 @@
 
 .view "Metlino"
     ..extrema
-	(-80629129,-47196859)		! (xmin, ymin)
-	(831449548,370560059)		! (xmax, ymax)
+	(524201564,185773457)		! (xmin, ymin)
+	(645472362,241318791)		! (xmax, ymax)
     ..WindowPlacement
-	0x00000002	! flags
-	0x00000003	! showCmd
+	0x00000000	! flags
+	0x00000001	! showCmd
 	(0, 857)	! ptMinPosition
 	(-8, -31)	! ptMaxPosition
 	(4, 2) (1111,865)	! ..rcNormalPosition
@@ -4942,11 +4942,11 @@
                                          True 	! bottom
     ..Drill_Drawing_Through_On           True
     ..Redline_Layer_On                   False
-    ..All_User_Draft_Enabled             True
+    ..All_User_Draft_Enabled             False
     ..User_Draft_On ( 
-	T T T F F T F F T F 	! [1 - 10]
-	T F F F T T F F F F 	! [11 - 20]
-	T F F F F F F F F F 	! [21 - 30]
+	F F F F F F F F F F 	! [1 - 10]
+	F F F F F F F F F F 	! [11 - 20]
+	F F F F F F F F F F 	! [21 - 30]
 	F F F F F F F F F F 	! [31 - 40]
 	F F F F F F F F F F 	! [41 - 50]
 	F F F F F F F F F F 	! [51 - 60]
@@ -5032,8 +5032,8 @@
                                          True 	! bottom
     ..Room_On                            True 	! top
                                          True 	! bottom
-    ..Pin_Text_On                        False	! top
-                                         False	! bottom
+    ..Pin_Text_On                        True 	! top
+                                         True 	! bottom
     ..Pin_Type_On                        False	! top
                                          False	! bottom
     ..Part_Hazard_On                     False	! top
@@ -6705,7 +6705,7 @@
 	"Fabrication.RedlineLayer" "d:0" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Generated.Top" "d:0" "e:1" "s:1" "se:0" "c:13421619" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Generated.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16764159" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Outline.Top" "d:1" "e:1" "s:1" "se:1" "c:16750899" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Outline.Top" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Part.Outline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16751103" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Part.Text.PartNumber.Top" "d:0" "e:1" "s:1" "se:1" "c:16750848" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Part.Text.PartNumber.Bottom" "d:0" "e:1" "s:1" "se:1" "c:16751103" "a:100" "p:0" "t:0" "o:1"
@@ -15358,8 +15358,8 @@
 	"Part.Hazard.Bottom" "d:0" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
 	"Part.InsertionOutline.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:0" "t:0" "o:1"
 	"Part.InsertionOutline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:10040268" "a:100" "p:0" "t:0" "o:1"
-	"Part.Pin.NumberType.Top" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"Part.Pin.NumberType.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"Part.Pin.NumberType.Top" "d:1" "e:1" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"Part.Pin.NumberType.Bottom" "d:1" "e:1" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Part.PlaceOutline.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Part.PlaceOutline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:10040268" "a:100" "p:2" "t:0" "o:1"
 	"Part.SpecialPlaceOutline.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
@@ -15371,27 +15371,27 @@
 	"Sheet.SheetOutline" "d:1" "e:1" "s:1" "se:1" "c:10092441" "a:100" "p:0" "t:0" "o:1"
 	"Topology.TargetAreaWarnRed" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:34" "t:1" "o:1"
 	"Topology.TargetAreaWarnYellow" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:34" "t:1" "o:1"
-	"User.DRAWTRACE_CLEARANCEGEOM" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:21" "t:1" "o:1"
-	"User.DXF_Bottomlayer" "d:0" "e:1" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Bottomoverlay" "d:0" "e:1" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical1" "d:0" "e:1" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical14" "d:0" "e:1" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical16" "d:0" "e:1" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical2" "d:0" "e:1" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical3" "d:0" "e:1" "s:1" "se:0" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical8" "d:0" "e:1" "s:1" "se:0" "c:13158" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Padholelayer" "d:0" "e:1" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Toplayer" "d:1" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Topoverlay" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
-	"User.Unnamed user layer" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 11" "d:1" "e:1" "s:1" "se:1" "c:5592405" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 14" "d:1" "e:1" "s:1" "se:1" "c:16751052" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 15" "d:1" "e:1" "s:1" "se:1" "c:65280" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 16" "d:0" "e:1" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 17" "d:0" "e:1" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 18" "d:0" "e:1" "s:1" "se:0" "c:128" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 19" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 8" "d:1" "e:1" "s:1" "se:1" "c:2434341" "a:100" "p:0" "t:0" "o:1"
+	"User.DRAWTRACE_CLEARANCEGEOM" "d:1" "e:0" "s:1" "se:0" "c:255" "a:100" "p:21" "t:1" "o:1"
+	"User.DXF_Bottomlayer" "d:1" "e:0" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Bottomoverlay" "d:1" "e:0" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical1" "d:1" "e:0" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical14" "d:1" "e:0" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical16" "d:1" "e:0" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical2" "d:1" "e:0" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical3" "d:1" "e:0" "s:1" "se:0" "c:7237230" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical8" "d:1" "e:0" "s:1" "se:0" "c:13158" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Padholelayer" "d:1" "e:0" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Toplayer" "d:1" "e:0" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Topoverlay" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"User.Unnamed user layer" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 11" "d:1" "e:0" "s:1" "se:0" "c:5592405" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 14" "d:1" "e:0" "s:1" "se:0" "c:16751052" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 15" "d:1" "e:0" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 16" "d:1" "e:0" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 17" "d:1" "e:0" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 18" "d:1" "e:0" "s:1" "se:0" "c:128" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 19" "d:1" "e:0" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 8" "d:1" "e:0" "s:1" "se:0" "c:2434341" "a:100" "p:0" "t:0" "o:1"
 	"WirebondObjects.WirebondGuides.Top" "d:1" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
 	"WirebondObjects.WirebondGuides.Bottom" "d:1" "e:1" "s:1" "se:1" "c:128" "a:100" "p:0" "t:0" "o:1"
 	"Board.BundlePath.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
@@ -17723,7 +17723,7 @@
 	"Option.FacementPartsTop.Selectable" "1"
 	"Option.Fiducials.Enabled" "1"
 	"Option.Fiducials.Selectable" "1"
-	"Option.FillPartOutlineOnSelection" "0"
+	"Option.FillPartOutlineOnSelection" "1"
 	"Option.FillPatterns" "1"
 	"Option.ForceOutline" "0"
 	"Option.ForceSolid" "0"
@@ -17789,8 +17789,8 @@
 	"Option.PanelObjects.BoardContents.Enabled" "1"
 	"Option.PanelObjects.Enabled" "1"
 	"Option.PanelObjects.Selectable" "1"
-	"Option.Pin.Number.Bottom" "0"
-	"Option.Pin.Number.Top" "0"
+	"Option.Pin.Number.Bottom" "1"
+	"Option.Pin.Number.Top" "1"
 	"Option.Pin.Through.Enabled" "1"
 	"Option.Pin.Type.Bottom" "0"
 	"Option.Pin.Type.Top" "0"
@@ -17864,8 +17864,8 @@
 	"Option.Traces.Enabled" "1"
 	"Option.Traces.Selectable" "1"
 	"Option.UnpackedAreas.Enabled" "0"
-	"Option.UserDraftLayers.Enabled" "1"
-	"Option.UserDraftLayers.Selectable" "1"
+	"Option.UserDraftLayers.Enabled" "0"
+	"Option.UserDraftLayers.Selectable" "3"
 	"Option.ViaPads.Enabled" "1"
 	"Option.Vias.Enabled" "1"
 	"Option.Vias.Selectable" "1"
@@ -17884,15 +17884,15 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x00000000	! flags
-	0x00000001	! showCmd
+	0x00000002	! flags
+	0x00000003	! showCmd
 	(0, 857)	! ptMinPosition
 	(-8, -31)	! ptMaxPosition
-	(684, 16) (1469,847)	! ..rcNormalPosition
+	(24, 22) (1131,885)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 3
     ..View_Id  "MGCSDD3DAdapter.3DAdapterCtrl.20"
-    ..View_Data  "CameraSettings\\s1\\s12\\sCameraPosX\\s572.909180\\sCameraPosY\\s1027.585083\\sCameraPosZ\\s-2016.148193\\sTargetPosX\\s664.058472\\sTargetPosY\\s282.336761\\sTargetPosZ\\s-39.914154\\sUpVectorX\\s-0.270311\\sUpVectorY\\s-0.904899\\sUpVectorZ\\s-0.328775\\sWidth\\s740.018250\\sHeight\\s409.191956\\sProjection\\s\\fperspective\\f"
+    ..View_Data  "CameraSettings\\s1\\s12\\sCameraPosX\\s457.397797\\sCameraPosY\\s-47.394028\\sCameraPosZ\\s932.092224\\sTargetPosX\\s568.896057\\sTargetPosY\\s247.843918\\sTargetPosZ\\s-4.386931\\sUpVectorX\\s0.244425\\sUpVectorY\\s0.916088\\sUpVectorZ\\s0.317911\\sWidth\\s351.303070\\sHeight\\s181.218079\\sProjection\\s\\fperspective\\f"
     ..Virtual_Options ( 
 	"[Virtual].3D.Assemblies" "1"
 	"[Virtual].3D.Components" "1"
@@ -17947,7 +17947,7 @@
     ..Virtual_String_Options ( 
 	"[Virtual].3D.Objects.Planes.Refresh" "0"
 	"[Virtual].3D.Objects.Silkscreen.Refresh" "1"
-	"[Virtual].3D.Objects.SolderMask.Refresh" "0"
+	"[Virtual].3D.Objects.SolderMask.Refresh" "1"
 	"[Virtual].3D.Options.ScaleFactor" "10"
 	"[Virtual].Global.3D.FlexObjects.Adhesive.Color" "FFFFFF"
 	"[Virtual].Global.3D.FlexObjects.Adhesive.Transparency" "70"
