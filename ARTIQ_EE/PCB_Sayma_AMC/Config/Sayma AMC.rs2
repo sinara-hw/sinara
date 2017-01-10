@@ -1,0 +1,120 @@
+# Number of passes
+15
+# Pass:  0
+1 10 1 3 -1 -1 0 0 1 0 236755730 0 -1 0 Board
+# Pass 0 layer info
+2 1 12
+# Pass 0 component filter info
+11 IC3 IC16 IC17 IC21 IC25 IC38 IC44 IC45 IC46 IC47 U1
+# Pass 0 has no via limit info
+
+# Pass:  1
+3 13 1 5 0 0 0 0 6 0 0 0 -1 0 Board
+# Pass 1 layer info
+1 12
+# Pass 1 constraint class filter info
+1 GTX_TX
+# Pass 1 has no via limit info
+
+# Pass:  2
+3 13 1 5 0 0 0 0 6 0 236755730 0 -1 0 Board
+# Pass 2 layer info
+1 10
+# Pass 2 constraint class filter info
+1 GTX_RX
+# Pass 2 has no via limit info
+
+# Pass:  3
+0 9 1 3 -1 -1 0 0 9 0 0 0 -1 0 Board
+# Pass 3 layer info
+2 1 12
+# Pass 3 net class filter info
+2 DDR_ADDR_CTRL_DIFF DDR_DAT_DIFF
+# Pass 3 has no via limit info
+
+# Pass:  4
+0 9 1 3 -1 -1 0 0 9 0 0 0 -1 0 Board
+# Pass 4 layer info
+2 5 10
+# Pass 4 net class filter info
+2 DDR_ADDR_CTRL DDR_ADDR_CTRL_DIFF
+# Pass 4 has no via limit info
+
+# Pass:  5
+0 9 1 3 -1 -1 0 0 9 0 236755730 0 -1 0 Board
+# Pass 5 layer info
+2 3 8
+# Pass 5 net class filter info
+2 DDR_ADDR_CTRL DDR_ADDR_CTRL_DIFF
+# Pass 5 has no via limit info
+
+# Pass:  6
+0 9 1 3 -1 -1 0 0 10 0 0 0 -1 0 Board
+# Pass 6 layer info
+2 5 10
+# Pass 6 net class filter info
+2 DDR_DAT DDR_DAT_DIFF
+# Pass 6 has no via limit info
+
+# Pass:  7
+0 9 1 3 -1 -1 0 0 8 0 0 0 -1 0 Board
+# Pass 7 layer info
+4 3 5 8 10
+# Pass 7 net class filter info
+4 DDR_ADDR_CTRL DDR_ADDR_CTRL_DIFF DDR_DAT DDR_DAT_DIFF
+# Pass 7 has no via limit info
+
+# Pass:  8
+1 9 1 3 -1 -1 0 0 1 0 0 0 -1 0 Board
+# Pass 8 layer info
+2 1 12
+# Pass 8 net class filter info
+2 HIGH_POWER POWER
+# Pass 8 has no via limit info
+
+# Pass:  9
+3 9 1 5 -1 -1 0 0 6 0 236755730 0 -1 0 Board
+# Pass 9 layer info
+2 3 5
+# Pass 9 net class filter info
+1 FMC
+# Pass 9 has no via limit info
+
+# Pass:  10
+2 0 1 3 -1 -1 0 0 -1 0 0 3 -20 0 Board
+# Pass 10 layer info
+2 1 12
+# Pass 10 has no filter info
+# Pass 10 has no via limit info
+
+# Pass:  11
+3 9 1 3 -1 -1 0 0 11 0 236755730 2 -5 0 Board
+# Pass 11 layer info
+3 3 5 10
+# Pass 11 net class filter info
+2 DDR_ZQ DIFF_CLK
+# Pass 11 has no via limit info
+
+# Pass:  12
+3 9 2 2 -1 -1 0 0 11 0 236755730 2 -5 0 Board
+# Pass 12 layer info
+3 3 5 10
+# Pass 12 net class filter info
+3 ETHERNET_MAC LVDS SE_CLOCKS
+# Pass 12 has no via limit info
+
+# Pass:  13
+3 9 1 3 -1 -1 0 0 13 0 0 0 -1 0 Board
+# Pass 13 layer info
+0
+# Pass 13 net class filter info
+2 JTAG QSPI
+# Pass 13 has no via limit info
+
+# Pass:  14
+3 0 1 5 -1 -1 0 0 -1 0 0 0 -1 1 Board
+# Pass 14 layer info
+0
+# Pass 14 has no filter info
+# Pass 14 has no via limit info
+

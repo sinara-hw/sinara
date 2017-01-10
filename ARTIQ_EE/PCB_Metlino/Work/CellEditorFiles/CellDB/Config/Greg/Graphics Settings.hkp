@@ -2,10 +2,10 @@
 ! change it at your own peril
 
 !
-! Created 12/08/16 23:57:45
+! Created 12/24/16 15:25:16
 !
 
-.Global_Constants 119 2
+.Global_Constants 108 2
     ..File_Type Graphics_Settings
     ..Version Version_6
     ..Num_Views 2
@@ -1328,17 +1328,6 @@
 	"Net-103"	! [106]
 	"Net-104"	! [107]
 	"Net-105"	! [108]
-	"Net-106"	! [109]
-	"Net-107"	! [110]
-	"Net-108"	! [111]
-	"Net-109"	! [112]
-	"Net-110"	! [113]
-	"Net-111"	! [114]
-	"Net-112"	! [115]
-	"Net-113"	! [116]
-	"Net-114"	! [117]
-	"Net-115"	! [118]
-	"Net-116"	! [119]
     )
     ..Netclass_Names ( 
 	"(Default)"	! [1]
@@ -1350,66 +1339,60 @@
 	"(All)"	! [1]
     )
     ..Net_Color ( 
-	0x00ffffff 0x00ffffff	! [1-2] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [3-4] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [5-6] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [7-8] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [9-10] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [11-12] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [13-14] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [15-16] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [17-18] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [19-20] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [21-22] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [23-24] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [25-26] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [27-28] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [29-30] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [31-32] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [33-34] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [35-36] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [37-38] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [39-40] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [41-42] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [43-44] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [45-46] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [47-48] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [49-50] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [51-52] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [53-54] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [55-56] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [57-58] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [59-60] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [61-62] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [63-64] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [65-66] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [67-68] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [69-70] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [71-72] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [73-74] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [75-76] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [77-78] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [79-80] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [81-82] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [83-84] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [85-86] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [87-88] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [89-90] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [91-92] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [93-94] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [95-96] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [97-98] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [99-100] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [101-102] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [103-104] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [105-106] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [107-108] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [109-110] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [111-112] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [113-114] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [115-116] RGB(255,255,255)  undefined
-	        -1         -1	! [117-118] undefined  undefined
-	        -1		! [119] undefined
+	        -1         -1	! [1-2] undefined  undefined
+	        -1         -1	! [3-4] undefined  undefined
+	        -1         -1	! [5-6] undefined  undefined
+	        -1         -1	! [7-8] undefined  undefined
+	        -1         -1	! [9-10] undefined  undefined
+	        -1         -1	! [11-12] undefined  undefined
+	        -1         -1	! [13-14] undefined  undefined
+	        -1         -1	! [15-16] undefined  undefined
+	        -1         -1	! [17-18] undefined  undefined
+	        -1         -1	! [19-20] undefined  undefined
+	        -1         -1	! [21-22] undefined  undefined
+	        -1         -1	! [23-24] undefined  undefined
+	        -1         -1	! [25-26] undefined  undefined
+	        -1         -1	! [27-28] undefined  undefined
+	        -1         -1	! [29-30] undefined  undefined
+	        -1         -1	! [31-32] undefined  undefined
+	        -1         -1	! [33-34] undefined  undefined
+	        -1         -1	! [35-36] undefined  undefined
+	        -1         -1	! [37-38] undefined  undefined
+	        -1         -1	! [39-40] undefined  undefined
+	        -1         -1	! [41-42] undefined  undefined
+	        -1         -1	! [43-44] undefined  undefined
+	        -1         -1	! [45-46] undefined  undefined
+	        -1         -1	! [47-48] undefined  undefined
+	        -1         -1	! [49-50] undefined  undefined
+	        -1         -1	! [51-52] undefined  undefined
+	        -1         -1	! [53-54] undefined  undefined
+	        -1         -1	! [55-56] undefined  undefined
+	        -1         -1	! [57-58] undefined  undefined
+	        -1         -1	! [59-60] undefined  undefined
+	        -1         -1	! [61-62] undefined  undefined
+	        -1         -1	! [63-64] undefined  undefined
+	        -1         -1	! [65-66] undefined  undefined
+	        -1         -1	! [67-68] undefined  undefined
+	        -1         -1	! [69-70] undefined  undefined
+	        -1         -1	! [71-72] undefined  undefined
+	        -1         -1	! [73-74] undefined  undefined
+	        -1         -1	! [75-76] undefined  undefined
+	        -1         -1	! [77-78] undefined  undefined
+	        -1         -1	! [79-80] undefined  undefined
+	        -1         -1	! [81-82] undefined  undefined
+	        -1         -1	! [83-84] undefined  undefined
+	        -1         -1	! [85-86] undefined  undefined
+	        -1         -1	! [87-88] undefined  undefined
+	        -1         -1	! [89-90] undefined  undefined
+	        -1         -1	! [91-92] undefined  undefined
+	        -1         -1	! [93-94] undefined  undefined
+	        -1         -1	! [95-96] undefined  undefined
+	        -1         -1	! [97-98] undefined  undefined
+	        -1         -1	! [99-100] undefined  undefined
+	        -1         -1	! [101-102] undefined  undefined
+	        -1         -1	! [103-104] undefined  undefined
+	        -1         -1	! [105-106] undefined  undefined
+	        -1         -1	! [107-108] undefined  undefined
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -1422,8 +1405,7 @@
 	0 0 0 0 0 0 0 0 0 0 	! [71 - 80]
 	0 0 0 0 0 0 0 0 0 0 	! [81 - 90]
 	0 0 0 0 0 0 0 0 0 0 	! [91 - 100]
-	0 0 0 0 0 0 0 0 0 0 	! [101 - 110]
-	0 0 0 0 0 0 0 0 0 ! [111 - 119]
+	0 0 0 0 0 0 0 0 ! [101 - 108]
 	)
     ..Net_Alpha ( 
 	100 100 100 100 100 100 100 100 100 100 	! [1 - 10]
@@ -1436,8 +1418,7 @@
 	100 100 100 100 100 100 100 100 100 100 	! [71 - 80]
 	100 100 100 100 100 100 100 100 100 100 	! [81 - 90]
 	100 100 100 100 100 100 100 100 100 100 	! [91 - 100]
-	100 100 100 100 100 100 100 100 100 100 	! [101 - 110]
-	100 100 100 100 100 100 100 100 100 ! [111 - 119]
+	100 100 100 100 100 100 100 100 ! [101 - 108]
 	)
     ..Net_Nopaque ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -1450,26 +1431,24 @@
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
 	F F F F F F F F F F 	! [91 - 100]
-	F F F F F F F F F F 	! [101 - 110]
-	F F F F F F F F F ! [111 - 119]
+	F F F F F F F F ! [101 - 108]
 	)
     ..Net_Outline ( 
-	T F T F F F F F F F 	! [1 - 10]
-	F F F F F F F F F F 	! [11 - 20]
-	F F F F F F F F F F 	! [21 - 30]
-	F F F F F F F F F F 	! [31 - 40]
-	F F F F F F F F F F 	! [41 - 50]
-	F F F F F F F F F F 	! [51 - 60]
-	F F F F F F F F F F 	! [61 - 70]
-	F F F F F F F F F F 	! [71 - 80]
-	F F F F F F F F F F 	! [81 - 90]
-	F F F F F F F F F F 	! [91 - 100]
-	F F F F F F F F F F 	! [101 - 110]
-	F F F F F T T T T ! [111 - 119]
+	T T T T T T T T T T 	! [1 - 10]
+	T T T T T T T T T T 	! [11 - 20]
+	T T T T T T T T T T 	! [21 - 30]
+	T T T T T T T T T T 	! [31 - 40]
+	T T T T T T T T T T 	! [41 - 50]
+	T T T T T T T T T T 	! [51 - 60]
+	T T T T T T T T T T 	! [61 - 70]
+	T T T T T T T T T T 	! [71 - 80]
+	T T T T T T T T T T 	! [81 - 90]
+	T T T T T T T T T T 	! [91 - 100]
+	T T T T T T T T ! [101 - 108]
 	)
     ..Netclass_Color (
-	0x00ffffff	! top     RGB(255,255,255)
-	0x00ffffff	! bottom  RGB(255,255,255)
+	        -1	! top     undefined
+	        -1	! bottom  undefined
     )
     ..Netclass_Ptrnidx                   0	! top
                                          0	! bottom
@@ -1477,7 +1456,7 @@
                                          100	! bottom
     ..Netclass_Nopaque                   False	! top
                                          False	! bottom
-    ..Netclass_Outline                   False	! top
+    ..Netclass_Outline                   True 	! top
                                          True 	! bottom
     ..Bus_Color ( 
     )
@@ -1490,7 +1469,7 @@
     ..Bus_Outline ( 
     )
     ..Constraint_Color ( 
-	0x00ffffff		! [1] RGB(255,255,255)
+	        -1		! [1] undefined
     )
     ..Constraint_Ptrnidx ( 
 	0 ![1]
@@ -1502,7 +1481,7 @@
 	False ![1]
     )
     ..Constraint_Outline ( 
-	False ![1]
+	True  ![1]
     )
     ..Net_On ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -1515,8 +1494,7 @@
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
 	F F F F F F F F F F 	! [91 - 100]
-	F F F F F F F F F F 	! [101 - 110]
-	F F F F F F F F F ! [111 - 119]
+	F F F F F F F F ! [101 - 108]
 	)
     ..Netclass_On                        False	! top
                                          False	! bottom
@@ -1834,10 +1812,10 @@
     )
 
 
-.view "MOLEX_87832-1420"
+.view "Telegartner_J01151A0921"
     ..extrema
-	(-11097200,-6889998)		! (xmin, ymin)
-	(11097200,6039998)		! (xmax, ymax)
+	(-28594006,-10100177)		! (xmin, ymin)
+	(6080001,10100177)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000000	! flags
 	0x00000001	! showCmd
@@ -4694,9 +4672,9 @@
 	"Internal.Part.SpecialPlaceOutlineTop.254" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineTop.255" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineTop.256" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:2" "t:0" "o:1"
-	"[Net].UnConnected_Net" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[Net].UnConnected_Net" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].(Net0)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].(Spacer_Net)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[Net].(Spacer_Net)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-3" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -4802,19 +4780,8 @@
 	"[Net].Net-103" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-104" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-105" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-106" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-107" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-108" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-109" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-110" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-111" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-112" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-113" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-114" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-115" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-116" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(Default)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[NetClass].(SpacerNetClass)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[NetClass].(SpacerNetClass)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[ConstraintClass].(All)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
     )
     ..Virtual_String_Options ( 
@@ -4993,10 +4960,10 @@
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
 	0x0019ef1c	! flags
-	0x773edc34	! showCmd
+	0x766adbf4	! showCmd
 	(786432, 0)	! ptMinPosition
-	(1699592, 2000608317)	! ptMaxPosition
-	(0, 2001993728) (1998756064,0)	! ..rcNormalPosition
+	(1699592, 1986714621)	! ptMaxPosition
+	(0, 1997406208) (1988008160,0)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""

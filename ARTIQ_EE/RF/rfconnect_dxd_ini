@@ -1,0 +1,9 @@
+<?xml version="1.0"?><RFADSCnnLib><*m_cnns><XMapProperties></XMapProperties></*m_cnns>
+<*m_elements_in_libraries><RFMapProperties></RFMapProperties></*m_elements_in_libraries>
+<*m_symbols_for_elements><XMapProperties></XMapProperties></*m_symbols_for_elements>
+<*m_params_for_elements><RFMapProperties></RFMapProperties></*m_params_for_elements>
+<*m_macros_for_elements><XMapProperties></XMapProperties></*m_macros_for_elements>
+<m_server_port>4001</m_server_port>
+<m_server_port_range>5</m_server_port_range>
+<m_timeout>3000</m_timeout>
+</RFADSCnnLib>
