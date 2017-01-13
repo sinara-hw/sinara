@@ -11,12 +11,12 @@
 \$1N4691\    \C1\-\1\ \IC2\-\6\ 
 \$1N4846\    \C2\-\1\ \C48\-\2\ \IC2\-\2\ \IC2\-\3\ \L1\-\2\ 
 \$1N8295\    \J3\-\1\ \J3\-\1/2\ \J3\-\1/3\ \J3\-\1/4\ \R309\-\2\ 
-\ADC1_SYNC_N\    \J2\-\A6\ 
-\ADC1_SYNC_P\    \J2\-\B6\ 
-\ADC2_SYNC_N\    \J2\-\A5\ 
-\ADC2_SYNC_P\    \J2\-\B5\ 
-\AMC_MASTER_AUX_CLK_N\    \J2\-\B3\ 
-\AMC_MASTER_AUX_CLK_P\    \J2\-\A3\ 
+\ADC1_SYNC_N\    \J1\-\A6\ 
+\ADC1_SYNC_P\    \J1\-\B6\ 
+\ADC2_SYNC_N\    \J1\-\A5\ 
+\ADC2_SYNC_P\    \J1\-\B5\ 
+\AMC_MASTER_AUX_CLK_N\    \J1\-\B3\ 
+\AMC_MASTER_AUX_CLK_P\    \J1\-\A3\ 
 \AUX_CLOCK_C2_N\    \J63\-\1\ 
 \AUX_CLOCK_C2_P\    \J62\-\1\ 
 \CLK_MEZ_SCL5\    \IC1\-\11\ \R7\-\1\ 
@@ -26,84 +26,84 @@
 \EXT_100M_RF_IN\    \J4\-\1\ 
 \EXT_100M_RF_IN_GND\    \C347\-\1\ \J4\-\2\ \J4\-\2/2\ \J4\-\2/3\ \J4\-\2/4\ 
 *  \J4\-\2/5\ \J4\-\2/6\ \R307\-\1\ 
-\FPGA_ADC_SYSREF_N\    \J1\-\B3\ 
-\FPGA_ADC_SYSREF_P\    \J1\-\A3\ 
-\FPGA_CFG_CCLK\    \J1\-\A10\ 
-\FPGA_CFG_DIN\    \J1\-\B10\ 
-\FPGA_CFG_DONE\    \J1\-\A9\ 
-\FPGA_CFG_INIT_B\    \J1\-\B8\ 
-\FPGA_CFG_PROGRAM_B\    \J1\-\B9\ 
-\FPGA_DAC_SYSREF_N\    \J1\-\B2\ 
-\FPGA_DAC_SYSREF_P\    \J1\-\A2\ 
+\FPGA_ADC_SYSREF_N\    \J2\-\B3\ 
+\FPGA_ADC_SYSREF_P\    \J2\-\A3\ 
+\FPGA_CFG_CCLK\    \J2\-\A10\ 
+\FPGA_CFG_DIN\    \J2\-\B10\ 
+\FPGA_CFG_DONE\    \J2\-\A9\ 
+\FPGA_CFG_INIT_B\    \J2\-\B8\ 
+\FPGA_CFG_PROGRAM_B\    \J2\-\B9\ 
+\FPGA_DAC_SYSREF_N\    \J2\-\B2\ 
+\FPGA_DAC_SYSREF_P\    \J2\-\A2\ 
 \GND\    \C1\-\2\ \C2\-\2\ \C13\-\1\ \C14\-\1\ \C48\-\1\ \C347\-\2\ 
 *  \IC1\-\9\ \IC1\-\25\ \IC2\-\1\ \IC2\-\4\ \IC2\-\7\ \IC2\-\8\ \IC56\-\3\ 
 *  \IC56\-\4\ \IC56\-\11\ \IC56\-\17\ \IC57\-\4\ \IC57\-\11\ \IC57\-\17\ 
 *  \J1\-\BG1\ \J1\-\BG2\ \J1\-\BG3\ \J1\-\BG4\ \J1\-\BG5\ \J1\-\BG6\ 
-*  \J1\-\BG7\ \J1\-\BG8\ \J1\-\BG9\ \J1\-\BG10\ \J1\-\DG1\ \J1\-\DG2\ 
-*  \J1\-\DG3\ \J1\-\DG4\ \J1\-\DG5\ \J1\-\DG6\ \J1\-\DG7\ \J1\-\DG8\ 
-*  \J1\-\DG9\ \J1\-\DG10\ \J1\-\FG1\ \J1\-\FG2\ \J1\-\FG3\ \J1\-\FG4\ 
-*  \J1\-\FG5\ \J1\-\FG6\ \J1\-\FG7\ \J1\-\FG8\ \J1\-\FG9\ \J1\-\FG10\ 
-*  \J2\-\BG1\ \J2\-\BG2\ \J2\-\BG3\ \J2\-\BG4\ \J2\-\BG5\ \J2\-\BG6\ 
-*  \J2\-\BG7\ \J2\-\BG8\ \J2\-\BG9\ \J2\-\BG10\ \J2\-\C1\ \J2\-\DG1\ 
+*  \J1\-\BG7\ \J1\-\BG8\ \J1\-\BG9\ \J1\-\BG10\ \J1\-\C1\ \J1\-\DG1\ 
+*  \J1\-\DG2\ \J1\-\DG3\ \J1\-\DG4\ \J1\-\DG5\ \J1\-\DG6\ \J1\-\DG7\ 
+*  \J1\-\DG8\ \J1\-\DG9\ \J1\-\DG10\ \J1\-\FG1\ \J1\-\FG2\ \J1\-\FG3\ 
+*  \J1\-\FG4\ \J1\-\FG5\ \J1\-\FG6\ \J1\-\FG7\ \J1\-\FG8\ \J1\-\FG9\ 
+*  \J1\-\FG10\ \J2\-\BG1\ \J2\-\BG2\ \J2\-\BG3\ \J2\-\BG4\ \J2\-\BG5\ 
+*  \J2\-\BG6\ \J2\-\BG7\ \J2\-\BG8\ \J2\-\BG9\ \J2\-\BG10\ \J2\-\DG1\ 
 *  \J2\-\DG2\ \J2\-\DG3\ \J2\-\DG4\ \J2\-\DG5\ \J2\-\DG6\ \J2\-\DG7\ 
 *  \J2\-\DG8\ \J2\-\DG9\ \J2\-\DG10\ \J2\-\FG1\ \J2\-\FG2\ \J2\-\FG3\ 
 *  \J2\-\FG4\ \J2\-\FG5\ \J2\-\FG6\ \J2\-\FG7\ \J2\-\FG8\ \J2\-\FG9\ 
 *  \J2\-\FG10\ \J62\-\2\ \J62\-\2/2\ \J63\-\2\ \J63\-\2/2\ \R17\-\1\ 
 *  \R18\-\1\ \R19\-\1\ \R186\-\1\ \R307\-\2\ \R309\-\1\ 
-\GTP_CLK1_IN_N\    \J1\-\B1\ 
-\GTP_CLK1_IN_P\    \J1\-\A1\ 
-\GTP_CLK2_IN_N\    \J1\-\B5\ 
-\GTP_CLK2_IN_P\    \J1\-\A5\ 
-\GTP0RX_N\    \J1\-\D10\ 
-\GTP0RX_P\    \J1\-\C10\ 
-\GTP0TX_N\    \J1\-\F10\ 
-\GTP0TX_P\    \J1\-\E10\ 
-\GTP1RX_N\    \J1\-\D9\ 
-\GTP1RX_P\    \J1\-\C9\ 
-\GTP1TX_N\    \J1\-\F9\ 
-\GTP1TX_P\    \J1\-\E9\ 
-\GTP2RX_N\    \J1\-\D8\ 
-\GTP2RX_P\    \J1\-\C8\ 
-\GTP2TX_N\    \J1\-\F8\ 
-\GTP2TX_P\    \J1\-\E8\ 
-\GTP3RX_N\    \J1\-\D7\ 
-\GTP3RX_P\    \J1\-\C7\ 
-\GTP3TX_N\    \J1\-\F7\ 
-\GTP3TX_P\    \J1\-\E7\ 
-\GTP4RX_N\    \J1\-\D6\ 
-\GTP4RX_P\    \J1\-\C6\ 
-\GTP4TX_N\    \J1\-\F6\ 
-\GTP4TX_P\    \J1\-\E6\ 
-\GTP5RX_N\    \J1\-\D5\ 
-\GTP5RX_P\    \J1\-\C5\ 
-\GTP5TX_N\    \J1\-\F5\ 
-\GTP5TX_P\    \J1\-\E5\ 
-\GTP6RX_N\    \J1\-\D4\ 
-\GTP6RX_P\    \J1\-\C4\ 
-\GTP6TX_N\    \J1\-\F4\ 
-\GTP6TX_P\    \J1\-\E4\ 
-\GTP7RX_N\    \J1\-\D3\ 
-\GTP7RX_P\    \J1\-\C3\ 
-\GTP7TX_N\    \J1\-\F3\ 
-\GTP7TX_P\    \J1\-\E3\ 
-\GTP8TX_N\    \J1\-\F2\ 
-\GTP8TX_P\    \J1\-\E2\ 
-\GTP9TX_N\    \J1\-\F1\ 
-\GTP9TX_P\    \J1\-\E1\ 
-\GTP10TX_N\    \J2\-\F10\ 
-\GTP10TX_P\    \J2\-\E10\ 
-\GTP11TX_N\    \J2\-\F9\ 
-\GTP11TX_P\    \J2\-\E9\ 
-\GTP12TX_N\    \J2\-\F8\ 
-\GTP12TX_P\    \J2\-\E8\ 
-\GTP13TX_N\    \J2\-\F7\ 
-\GTP13TX_P\    \J2\-\E7\ 
-\GTP14TX_N\    \J2\-\F6\ 
-\GTP14TX_P\    \J2\-\E6\ 
-\GTP15TX_N\    \J2\-\F5\ 
-\GTP15TX_P\    \J2\-\E5\ 
-\IPMI_SCL\    \J2\-\D2\ 
-\IPMI_SDA\    \J2\-\D1\ 
+\GTP_CLK1_IN_N\    \J2\-\B1\ 
+\GTP_CLK1_IN_P\    \J2\-\A1\ 
+\GTP_CLK2_IN_N\    \J2\-\B5\ 
+\GTP_CLK2_IN_P\    \J2\-\A5\ 
+\GTP0RX_N\    \J2\-\D10\ 
+\GTP0RX_P\    \J2\-\C10\ 
+\GTP0TX_N\    \J2\-\F10\ 
+\GTP0TX_P\    \J2\-\E10\ 
+\GTP1RX_N\    \J2\-\D9\ 
+\GTP1RX_P\    \J2\-\C9\ 
+\GTP1TX_N\    \J2\-\F9\ 
+\GTP1TX_P\    \J2\-\E9\ 
+\GTP2RX_N\    \J2\-\D8\ 
+\GTP2RX_P\    \J2\-\C8\ 
+\GTP2TX_N\    \J2\-\F8\ 
+\GTP2TX_P\    \J2\-\E8\ 
+\GTP3RX_N\    \J2\-\D7\ 
+\GTP3RX_P\    \J2\-\C7\ 
+\GTP3TX_N\    \J2\-\F7\ 
+\GTP3TX_P\    \J2\-\E7\ 
+\GTP4RX_N\    \J2\-\D6\ 
+\GTP4RX_P\    \J2\-\C6\ 
+\GTP4TX_N\    \J2\-\F6\ 
+\GTP4TX_P\    \J2\-\E6\ 
+\GTP5RX_N\    \J2\-\D5\ 
+\GTP5RX_P\    \J2\-\C5\ 
+\GTP5TX_N\    \J2\-\F5\ 
+\GTP5TX_P\    \J2\-\E5\ 
+\GTP6RX_N\    \J2\-\D4\ 
+\GTP6RX_P\    \J2\-\C4\ 
+\GTP6TX_N\    \J2\-\F4\ 
+\GTP6TX_P\    \J2\-\E4\ 
+\GTP7RX_N\    \J2\-\D3\ 
+\GTP7RX_P\    \J2\-\C3\ 
+\GTP7TX_N\    \J2\-\F3\ 
+\GTP7TX_P\    \J2\-\E3\ 
+\GTP8TX_N\    \J2\-\F2\ 
+\GTP8TX_P\    \J2\-\E2\ 
+\GTP9TX_N\    \J2\-\F1\ 
+\GTP9TX_P\    \J2\-\E1\ 
+\GTP10TX_N\    \J1\-\F10\ 
+\GTP10TX_P\    \J1\-\E10\ 
+\GTP11TX_N\    \J1\-\F9\ 
+\GTP11TX_P\    \J1\-\E9\ 
+\GTP12TX_N\    \J1\-\F8\ 
+\GTP12TX_P\    \J1\-\E8\ 
+\GTP13TX_N\    \J1\-\F7\ 
+\GTP13TX_P\    \J1\-\E7\ 
+\GTP14TX_N\    \J1\-\F6\ 
+\GTP14TX_P\    \J1\-\E6\ 
+\GTP15TX_N\    \J1\-\F5\ 
+\GTP15TX_P\    \J1\-\E5\ 
+\IPMI_SCL\    \J1\-\D2\ 
+\IPMI_SDA\    \J1\-\D1\ 
 \MEZ_SCL1\    \IC1\-\2\ \R15\-\1\ 
 \MEZ_SCL2\    \IC1\-\4\ \R13\-\1\ 
 \MEZ_SCL3\    \IC1\-\6\ \R11\-\1\ 
@@ -117,38 +117,38 @@
 *  \IC57\-\3\ \IC57\-\12\ \R1\-\2\ \R2\-\2\ \R3\-\2\ \R4\-\2\ \R5\-\2\ 
 *  \R6\-\2\ \R7\-\2\ \R8\-\2\ \R9\-\2\ \R10\-\2\ \R11\-\2\ \R12\-\2\ 
 *  \R13\-\2\ \R14\-\2\ \R15\-\2\ \R16\-\2\ \R20\-\1\ \R21\-\1\ 
-\P3V3MP\    \J2\-\C2\ 
-\P12V0\    \J2\-\A1\ \J2\-\A2\ \J2\-\B1\ \J2\-\B2\ 
-\RTM_FPGA_GTP_Rx0_N\    \J2\-\B8\ 
-\RTM_FPGA_GTP_Rx0_P\    \J2\-\A8\ 
-\RTM_FPGA_GTP_Rx1_N\    \J2\-\B7\ 
-\RTM_FPGA_GTP_Rx1_P\    \J2\-\A7\ 
-\RTM_FPGA_GTP_Tx0_N\    \J2\-\B10\ 
-\RTM_FPGA_GTP_Tx0_P\    \J2\-\A10\ 
-\RTM_FPGA_GTP_Tx1_N\    \J2\-\B9\ 
-\RTM_FPGA_GTP_Tx1_P\    \J2\-\A9\ 
-\RTM_FPGA_LVDS1_N\    \J1\-\B6\ 
-\RTM_FPGA_LVDS1_P\    \J1\-\A6\ 
-\RTM_FPGA_LVDS2_N\    \J1\-\B4\ 
-\RTM_FPGA_LVDS2_P\    \J1\-\A4\ 
-\RTM_FPGA_USR_IO_N\    \J2\-\B4\ 
-\RTM_FPGA_USR_IO_P\    \J2\-\A4\ 
+\P3V3MP\    \J1\-\C2\ 
+\P12V0\    \J1\-\A1\ \J1\-\A2\ \J1\-\B1\ \J1\-\B2\ 
+\RTM_FPGA_GTP_Rx0_N\    \J1\-\B8\ 
+\RTM_FPGA_GTP_Rx0_P\    \J1\-\A8\ 
+\RTM_FPGA_GTP_Rx1_N\    \J1\-\B7\ 
+\RTM_FPGA_GTP_Rx1_P\    \J1\-\A7\ 
+\RTM_FPGA_GTP_Tx0_N\    \J1\-\B10\ 
+\RTM_FPGA_GTP_Tx0_P\    \J1\-\A10\ 
+\RTM_FPGA_GTP_Tx1_N\    \J1\-\B9\ 
+\RTM_FPGA_GTP_Tx1_P\    \J1\-\A9\ 
+\RTM_FPGA_LVDS1_N\    \J2\-\B6\ 
+\RTM_FPGA_LVDS1_P\    \J2\-\A6\ 
+\RTM_FPGA_LVDS2_N\    \J2\-\B4\ 
+\RTM_FPGA_LVDS2_P\    \J2\-\A4\ 
+\RTM_FPGA_USR_IO_N\    \J1\-\B4\ 
+\RTM_FPGA_USR_IO_P\    \J1\-\A4\ 
 \RTM_SCL\    \IC1\-\19\ \R20\-\2\ 
 \RTM_SDA\    \IC1\-\20\ \R21\-\2\ 
 \SI5324_SCL\    \IC1\-\13\ \R5\-\1\ 
 \SI5324_SDA\    \IC1\-\12\ \R6\-\1\ 
-\SYNCOUT10_N\    \J2\-\F4\ 
-\SYNCOUT10_P\    \J2\-\E4\ 
-\SYNCOUT20_N\    \J2\-\D4\ 
-\SYNCOUT20_P\    \J2\-\C4\ 
-\TCK\    \J2\-\E1\ 
-\TDI\    \J2\-\E2\ 
-\TDO\    \J2\-\F1\ 
+\SYNCOUT10_N\    \J1\-\F4\ 
+\SYNCOUT10_P\    \J1\-\E4\ 
+\SYNCOUT20_N\    \J1\-\D4\ 
+\SYNCOUT20_P\    \J1\-\C4\ 
+\TCK\    \J1\-\E1\ 
+\TDI\    \J1\-\E2\ 
+\TDO\    \J1\-\F1\ 
 \TMP_SENS_SCL\    \IC1\-\15\ \IC56\-\1\ \IC57\-\1\ \R3\-\1\ 
 \TMP_SENS_SDA\    \IC1\-\14\ \IC56\-\2\ \IC57\-\2\ \R4\-\1\ 
-\TMS\    \J2\-\F2\ 
-\USR_UART_N\    \J1\-\B7\ 
-\USR_UART_P\    \J1\-\A7\ 
+\TMS\    \J1\-\F2\ 
+\USR_UART_N\    \J2\-\B7\ 
+\USR_UART_P\    \J2\-\A7\ 
 
 %page=Sayma_RTM!Mezzanine_connectors2
 \$1N369_2\    \C550\-\2\ \C576\-\2\ \J5\-\32\ \L15\-\1\ 
@@ -896,8 +896,8 @@
 \CAL_ADC_SYNCn\    \U1\-\B10\ 
 \CDR_CLK_CLEAN1_N\    \U1\-\B5\ 
 \CDR_CLK_CLEAN1_P\    \U1\-\B6\ 
-\CDR_CLK_CLEAN2_N\    \U1\-\T15\ 
-\CDR_CLK_CLEAN2_P\    \U1\-\T14\ 
+\CDR_CLK_CLEAN2_N\    \R315\-\2\ \U1\-\T15\ 
+\CDR_CLK_CLEAN2_P\    \R314\-\2\ \U1\-\T14\ 
 \CLK_MEZZ_IO0\    \U1\-\D11\ 
 \CLK_MEZZ_IO1\    \U1\-\C12\ 
 \CLK_MEZZ_IO2\    \U1\-\B12\ 
@@ -944,9 +944,10 @@
 \FPGA_CFG_DONE\    \U1\-\F12\ 
 \FPGA_CFG_INIT_B\    \U1\-\T10\ 
 \FPGA_CFG_PROGRAM_B\    \U1\-\P10\ 
-\GND\    \C350\-\1\ \C351\-\1\ \C352\-\1\ \C449\-\1\ \IC35\-\6\ \J70\-\1\ 
-*  \J70\-\4\ \J70\-\7\ \J71\-\1\ \J71\-\4\ \J71\-\7\ \J72\-\12\ \OSC2\-\3\ 
-*  \OSC3\-\2\ \R112\-\1\ \R172\-\1\ \R173\-\1\ \R174\-\1\ \R254\-\1\ 
+\GND\    \C350\-\1\ \C351\-\1\ \C352\-\1\ \C449\-\1\ \C933\-\2\ \IC35\-\6\ 
+*  \J70\-\1\ \J70\-\4\ \J70\-\7\ \J71\-\1\ \J71\-\4\ \J71\-\7\ \J72\-\12\ 
+*  \OSC2\-\3\ \OSC3\-\2\ \R112\-\1\ \R172\-\1\ \R173\-\1\ \R174\-\1\ 
+*  \R254\-\1\ \R311\-\1\ 
 \HMC_SPI_GPIO\    \U1\-\D8\ 
 \HMC_SPI_SCLK\    \U1\-\A17\ 
 \HMC_SPI_SDATA\    \U1\-\B16\ 
@@ -1022,7 +1023,7 @@
 \MEZZ4_IO14\    \U1\-\N6\ 
 \MEZZ4_IO15\    \U1\-\N1\ 
 \MGTAVTT\    \R113\-\1\ 
-\P1V8F\    \C350\-\2\ \IC35\-\1\ \IC35\-\12\ \J72\-\11\ 
+\P1V8F\    \C350\-\2\ \IC35\-\1\ \IC35\-\12\ \J72\-\11\ \R312\-\1\ 
 \P3V3F\    \C351\-\2\ \C449\-\2\ \IC35\-\11\ \L78\-\2\ \OSC3\-\1\ \OSC3\-\4\ 
 *  \R114\-\1\ \R116\-\1\ \R250\-\1\ \R251\-\1\ \R252\-\1\ \R253\-\1\ 
 \REC_CLOCK_N_1\    \U1\-\M17\ 
@@ -1058,8 +1059,8 @@
 \RTM_FPGA_LVDS2_P\    \U1\-\T17\ 
 \RTM_FPGA_USR_IO_N\    \U1\-\T18\ 
 \RTM_FPGA_USR_IO_P\    \U1\-\R18\ 
-\RTM_MASTER_AUX_CLK_N\    \U1\-\R15\ 
-\RTM_MASTER_AUX_CLK_P\    \U1\-\P14\ 
+\RTM_MASTER_AUX_CLK_N\    \R310\-\2\ \U1\-\R15\ 
+\RTM_MASTER_AUX_CLK_P\    \R313\-\2\ \U1\-\P14\ 
 \RTM_SCL\    \U1\-\J6\ 
 \RTM_SDA\    \U1\-\K6\ 
 \Rx2_C_N\    \C456\-\1\ \J71\-\3\ 
@@ -1074,6 +1075,8 @@
 \TMS\    \U1\-\R8\ 
 \USR_UART_N\    \U1\-\B17\ 
 \USR_UART_P\    \U1\-\C16\ 
+\Vbias_0.9V\    \C933\-\1\ \R310\-\1\ \R311\-\2\ \R312\-\2\ \R313\-\1\ 
+*  \R314\-\1\ \R315\-\1\ 
 
 %page=Sayma_RTM!Si5324 Clock recovery
 \$1N1493\    \IC38\-\21\ \R118\-\2\ 
@@ -1085,8 +1088,6 @@
 \$1N2302\    \IC34\-\6\ \R122\-\2\ 
 \$1N2304_18\    \C469\-\2\ \IC34\-\11\ \R123\-\1\ 
 \$1N2305\    \C470\-\2\ \IC34\-\10\ \R124\-\1\ 
-\$1N2306\    \C466\-\2\ \C678\-\1\ \IC34\-\2\ \IC34\-\7\ \IC34\-\12\ 
-*  \L57\-\2\ 
 \$1N2923\    \C471\-\2\ \IC34\-\9\ \R125\-\1\ 
 \$1N2924\    \C472\-\2\ \IC34\-\8\ \R126\-\1\ 
 \$1N3223\    \C142\-\1\ \IC38\-\13\ 
@@ -1096,8 +1097,8 @@
 *  \L84\-\2\ 
 \$1N4334\    \C467\-\2\ \IC38\-\35\ 
 \$1N4381\    \C468\-\2\ \IC38\-\34\ 
-\AUX_CLOCK_C2_N\    \C142\-\2\ \R260\-\1\ 
-\AUX_CLOCK_C2_P\    \C141\-\2\ \R260\-\2\ 
+\AUX_CLOCK_C2_N\    \C142\-\2\ \R316\-\1\ 
+\AUX_CLOCK_C2_P\    \C141\-\2\ \R316\-\2\ 
 \CDR_CLK_CLEAN1_N\    \C465\-\1\ 
 \CDR_CLK_CLEAN1_P\    \C464\-\1\ 
 \CDR_CLK_CLEAN2_N\    \C470\-\1\ 
@@ -1110,6 +1111,8 @@
 *  \IC38\-\24\ \IC38\-\25\ \IC38\-\26\ \IC38\-\31\ \IC38\-\36\ \IC38\-\37\ 
 *  \Q1\-\2\ \Q1\-\4\ \R118\-\1\ \R121\-\1\ \R122\-\1\ \R123\-\2\ \R124\-\2\ 
 *  \R125\-\2\ \R126\-\2\ \R224\-\1\ 
+\LTC_SUP\    \C466\-\2\ \C678\-\1\ \IC34\-\2\ \IC34\-\7\ \IC34\-\12\ 
+*  \L57\-\2\ 
 \P3V3_CDR\    \C272\-\2\ \C627\-\2\ \IC32\-\9\ \IC32\-\10\ \L56\-\1\ 
 *  \L57\-\1\ \R119\-\1\ \R120\-\1\ 
 \P5V0\    \L84\-\1\ 
@@ -1853,6 +1856,7 @@
 *  \C540\ \C541\ \C542\ \C543\ \C544\ \C545\ \C546\ \C547\ \C599\ \C608\ 
 *  \C612\ \C615\ \C616\ \C617\ \C618\ \C619\ \C620\ \C654\ \C655\ \C656\ 
 *  \C657\ \C660\ \C661\ \C662\ \C663\ \C664\ \C666\ \C667\ \C914\ \C932\ 
+*  \C933\ 
 \Capacitor - non polarized CAPC1005X55N\    \C19\ \C27\ \C30\ \C99\ \C100\ 
 *  \C101\ \C102\ \C109\ \C110\ \C111\ \C112\ \C113\ \C268\ \C269\ \C273\ 
 *  \C303\ \C416\ \C419\ \C430\ \C431\ \C450\ \C451\ \C454\ \C455\ \C510\ 
@@ -1981,9 +1985,9 @@
 *  \R178\ \R179\ \R180\ \R181\ \R182\ \R183\ \R184\ \R185\ \R190\ \R210\ 
 *  \R211\ \R212\ \R213\ \R214\ \R215\ \R216\ \R217\ \R218\ \R219\ \R220\ 
 *  \R221\ \R222\ \R235\ \R236\ \R238\ \R239\ \R240\ \R241\ \R242\ \R250\ 
-*  \R251\ \R252\ \R253\ \R254\ \R255\ \R256\ \R257\ \R258\ \R259\ \R260\ 
-*  \R261\ \R262\ \R263\ \R268\ \R269\ \R270\ \R281\ \R282\ \R283\ \R284\ 
-*  \R285\ \R286\ \R308\ 
+*  \R251\ \R252\ \R253\ \R254\ \R255\ \R256\ \R257\ \R258\ \R259\ \R261\ 
+*  \R262\ \R263\ \R268\ \R269\ \R270\ \R281\ \R282\ \R283\ \R284\ \R285\ 
+*  \R286\ \R308\ \R310\ \R311\ \R312\ \R313\ \R314\ \R315\ \R316\ 
 \Resistor - 1% RESC1608X55N\    \R307\ 
 \Resistor - 1% RESC3216X80N\    \R305\ \R306\ 
 \Resistor - 1% RESC5025X65N\    \R186\ \R187\ \R309\ 
@@ -1999,7 +2003,7 @@
 \TCA9548ARGER\    \IC1\ 
 \TXB0304RUTR\    \IC35\ 
 \TYCO_1469265-1\    \J3\ 
-\TYCO_6469183-1\    \J1\ \J2\ 
+\TYCO_6469183-1a\    \J1\ \J2\ 
 \XC7A15T-1CSG325\    \U1\ 
 \XFMR_MINI-CIRCUITS_TCM2-43X+\    \TR1\ \TR2\ \TR3\ \TR4\ 
 \XR77129ELB\    \IC64\ 

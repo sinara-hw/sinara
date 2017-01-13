@@ -1,5 +1,5 @@
-TYCO_6469183-1J1   
-TYCO_6469183-1J2   
+TYCO_6469183-1aJ1   
+TYCO_6469183-1aJ2   
 TCA9548ARGERIC1   
 Resistor - 1% RESC1005X40NR166   
 Resistor - 1% RESC1005X40NR168   
@@ -137,9 +137,15 @@ Resistor - 1% RESC1005X40NR126
 Resistor - 1% RESC1005X40NR122   
 Resistor - 1% RESC1005X40NR120   
 Resistor - 1% RESC1005X40NR119   
-Resistor - 1% RESC1005X40NR260   
+Resistor - 1% RESC1005X40NR316   
 Resistor - 1% RESC1005X40NR118   
 Resistor - 1% RESC1005X40NR117   
+Resistor - 1% RESC1005X40NR315   
+Resistor - 1% RESC1005X40NR314   
+Resistor - 1% RESC1005X40NR313   
+Resistor - 1% RESC1005X40NR311   
+Resistor - 1% RESC1005X40NR310   
+Resistor - 1% RESC1005X40NR312   
 Resistor - 1% RESC1005X40NR259   
 Resistor - 1% RESC1005X40NR258   
 Resistor - 1% RESC1005X40NR257   
@@ -482,6 +488,7 @@ Capacitor - non polarized CAPC0603X33NC465
 Capacitor - non polarized CAPC0603X33NC464   
 Capacitor - non polarized CAPC0603X33NC463   
 Capacitor - non polarized CAPC0603X33NC462   
+Capacitor - non polarized CAPC0603X33NC933   
 Capacitor - non polarized CAPC0603X33NC140   
 Capacitor - non polarized CAPC0603X33NC139   
 Capacitor - non polarized CAPC0603X33NC137   
