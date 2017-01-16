@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 01/12/17 00:52:45
+! Created 01/13/17 23:13:19
 !
 
 .Global_Constants 1373 31
@@ -13,9 +13,9 @@
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
-	(-1, -1)	! ptMinPosition
+	(-32000, -32000)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(188, 65) (1610,785)	! ..rcNormalPosition
+	(2018, 347) (3440,1067)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -4663,7 +4663,7 @@
 	"[VirtualGlobal].iDC.Spacers" "3"
 	"[VirtualGlobal].iDC.SplitViewHeight.0" "108"
 	"[VirtualGlobal].iDC.SplitViewHeight.1" "299"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "337"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "331"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4677,8 +4677,8 @@
 
 .view "Metlino"
     ..extrema
-	(423915914,202975550)		! (xmin, ymin)
-	(691467139,340990530)		! (xmax, ymax)
+	(216504590,176590945)		! (xmin, ymin)
+	(573239557,365107668)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -17632,29 +17632,29 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x76aedbf4	! flags
-	0x000c0000	! showCmd
-	(0, 1697912)	! ptMinPosition
-	(1991171069, 0)	! ptMaxPosition
-	(2009932864, 942878976) (875837497,1697792)	! ..rcNormalPosition
+	0x7748ad70	! flags
+	0x748768b0	! showCmd
+	(262144, 0)	! ptMinPosition
+	(0, 2233044)	! ptMaxPosition
+	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""
     ..View_Data  ""
     ..Virtual_Options ( 
 	"[Virtual].3D.Assemblies" "1"
-	"[Virtual].3D.Component.12498463.Appearance" "3"
-	"[Virtual].3D.Component.12498463.Visibility" "0"
-	"[Virtual].3D.Component.12498482.Appearance" "3"
-	"[Virtual].3D.Component.12498482.Visibility" "0"
-	"[Virtual].3D.Component.12554532.Appearance" "3"
-	"[Virtual].3D.Component.12554532.Visibility" "0"
-	"[Virtual].3D.Component.13115575.Appearance" "3"
-	"[Virtual].3D.Component.13115575.Visibility" "0"
-	"[Virtual].3D.Component.13115580.Appearance" "3"
-	"[Virtual].3D.Component.13115580.Visibility" "0"
-	"[Virtual].3D.Component.13115585.Appearance" "3"
-	"[Virtual].3D.Component.13115585.Visibility" "0"
+	"[Virtual].3D.Component.12498463.Appearance" "1"
+	"[Virtual].3D.Component.12498463.Visibility" "1"
+	"[Virtual].3D.Component.12498482.Appearance" "1"
+	"[Virtual].3D.Component.12498482.Visibility" "1"
+	"[Virtual].3D.Component.12554532.Appearance" "1"
+	"[Virtual].3D.Component.12554532.Visibility" "1"
+	"[Virtual].3D.Component.13115575.Appearance" "1"
+	"[Virtual].3D.Component.13115575.Visibility" "1"
+	"[Virtual].3D.Component.13115580.Appearance" "1"
+	"[Virtual].3D.Component.13115580.Visibility" "1"
+	"[Virtual].3D.Component.13115585.Appearance" "1"
+	"[Virtual].3D.Component.13115585.Visibility" "1"
 	"[Virtual].3D.Components" "1"
 	"[Virtual].3D.FlexObjects" "0"
 	"[Virtual].3D.FlexObjects.Adhesive" "0"

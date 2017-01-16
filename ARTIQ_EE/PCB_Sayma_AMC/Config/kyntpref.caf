@@ -370,6 +370,7 @@ Capacitor - non polarized CAPC0603X33NC3
 Capacitor - non polarized CAPC0603X33NC9   
 Capacitor - non polarized CAPC0603X33NC4   
 Capacitor - non polarized CAPC0603X33NC2   
+Capacitor - non polarized CAPC0603X33NC277   
 Capacitor - non polarized CAPC0603X33NC22   
 Capacitor - non polarized CAPC0603X33NC566   
 HIROSE_U.FL-R-SMT-1(10)J17   
@@ -827,6 +828,10 @@ Resistor - 1% RESC1005X40NR328
 Resistor - 1% RESC1005X40NR325   
 Resistor - 1% RESC1005X40NR324   
 Resistor - 1% RESC1005X40NR323   
+Resistor - 1% RESC1005X40NR488   
+Resistor - 1% RESC1005X40NR455   
+Resistor - 1% RESC1005X40NR341   
+Resistor - 1% RESC1005X40NR21   
 Resistor - 1% RESC1005X40NR218   
 Resistor - 1% RESC1005X40NR219   
 Resistor - 1% RESC1005X40NR217   
@@ -850,7 +855,7 @@ Resistor - 1% RESC5025X65NR2
 Resistor - 1% RESC5025X65NR1   
 TCA9548ARGERIC9   
 SW_C&K_HDT0001PB2   
-TYCO_6469183-1J30   
+SN74CB3T3257PWIC14   
 FT4232H-56QIC1   
 XTAL_12MHZ_TXC_7M-12.000MAAJ-TQ1   
 PRTR5V0U2XD1   

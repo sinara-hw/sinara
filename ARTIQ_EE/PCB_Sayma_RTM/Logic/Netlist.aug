@@ -379,18 +379,18 @@
 \CVDD12\    \C6\-\1\ \C32\-\2\ \C60\-\1\ \C60\-\3\ \C60\-\6\ \C60\-\8\ 
 *  \C93\-\2\ \C94\-\2\ \C95\-\2\ \C96\-\2\ \C97\-\2\ \C98\-\2\ \C154\-\2\ 
 *  \IC3\-\71\ \IC3\-\76\ \IC3\-\81\ \IC3\-\87\ \IC10\-\9\ \IC10\-\10\ 
-\DAC1_CLK_N\    \IC3\-\3\ 
-\DAC1_CLK_P\    \IC3\-\2\ 
 \DAC1_IRQn\    \IC3\-\65\ 
 \DAC1_SPI_CSn\    \IC3\-\63\ 
 \DAC1_SPI_SCLK\    \IC3\-\61\ 
 \DAC1_SPI_SDIO\    \IC3\-\62\ 
 \DAC1_SPI_SDO\    \IC3\-\60\ 
-\DAC1_SYSREF_N\    \IC3\-\6\ 
-\DAC1_SYSREF_P\    \IC3\-\5\ 
 \DAC1_TXEN0\    \IC3\-\11\ 
 \DAC1_TXEN1\    \IC3\-\12\ 
+\DAC2_CLK_N\    \IC3\-\3\ 
+\DAC2_CLK_P\    \IC3\-\2\ 
 \DAC2_RESETn\    \IC3\-\64\ 
+\DAC2_SYSREF_N\    \IC3\-\6\ 
+\DAC2_SYSREF_P\    \IC3\-\5\ 
 \DVDD12\    \C7\-\1\ \C16\-\2\ \C61\-\1\ \C61\-\3\ \C61\-\6\ \C61\-\8\ 
 *  \C103\-\2\ \C104\-\2\ \C105\-\2\ \C106\-\2\ \C107\-\2\ \C108\-\2\ 
 *  \C146\-\2\ \IC3\-\13\ \IC3\-\14\ \IC3\-\53\ \IC6\-\9\ \IC6\-\10\ 
@@ -419,22 +419,22 @@
 *  \IC10\-\8\ \IC10\-\11\ \IC11\-\5\ \IC11\-\8\ \IC11\-\11\ \R188\-\2\ 
 *  \R287\-\1\ \R289\-\1\ \R290\-\1\ \R291\-\1\ \R292\-\1\ \R293\-\1\ 
 *  \R294\-\1\ 
-\GTP0TX_N\    \IC3\-\16\ 
-\GTP0TX_P\    \IC3\-\15\ 
-\GTP1TX_N\    \IC3\-\19\ 
-\GTP1TX_P\    \IC3\-\18\ 
-\GTP2TX_N\    \IC3\-\27\ 
-\GTP2TX_P\    \IC3\-\26\ 
-\GTP3TX_N\    \IC3\-\30\ 
-\GTP3TX_P\    \IC3\-\29\ 
-\GTP4TX_N\    \IC3\-\37\ 
-\GTP4TX_P\    \IC3\-\38\ 
-\GTP5TX_N\    \IC3\-\40\ 
-\GTP5TX_P\    \IC3\-\41\ 
-\GTP6TX_N\    \IC3\-\48\ 
-\GTP6TX_P\    \IC3\-\49\ 
-\GTP7TX_N\    \IC3\-\51\ 
-\GTP7TX_P\    \IC3\-\52\ 
+\GTP8TX_N\    \IC3\-\16\ 
+\GTP8TX_P\    \IC3\-\15\ 
+\GTP9TX_N\    \IC3\-\19\ 
+\GTP9TX_P\    \IC3\-\18\ 
+\GTP10TX_N\    \IC3\-\27\ 
+\GTP10TX_P\    \IC3\-\26\ 
+\GTP11TX_N\    \IC3\-\30\ 
+\GTP11TX_P\    \IC3\-\29\ 
+\GTP12TX_N\    \IC3\-\37\ 
+\GTP12TX_P\    \IC3\-\38\ 
+\GTP13TX_N\    \IC3\-\40\ 
+\GTP13TX_P\    \IC3\-\41\ 
+\GTP14TX_N\    \IC3\-\48\ 
+\GTP14TX_P\    \IC3\-\49\ 
+\GTP15TX_N\    \IC3\-\51\ 
+\GTP15TX_P\    \IC3\-\52\ 
 \IOVDD\    \C12\-\1\ \C130\-\2\ \C132\-\2\ \C162\-\2\ \C632\-\1\ \C716\-\1\ 
 *  \IC3\-\66\ \L36\-\2\ 
 \PLLVDD12\    \C9\-\1\ \C31\-\2\ \C123\-\2\ \C124\-\2\ \C125\-\2\ \C152\-\2\ 
@@ -496,16 +496,16 @@
 *  \C207\-\2\ \C208\-\2\ \C209\-\2\ \C210\-\2\ \C211\-\2\ \C212\-\2\ 
 *  \C256\-\2\ \IC4\-\71\ \IC4\-\76\ \IC4\-\81\ \IC4\-\87\ \IC17\-\9\ 
 *  \IC17\-\10\ 
-\DAC2_CLK_N\    \IC4\-\3\ 
-\DAC2_CLK_P\    \IC4\-\2\ 
+\DAC1_CLK_N\    \IC4\-\3\ 
+\DAC1_CLK_P\    \IC4\-\2\ 
+\DAC1_SYSREF_N\    \IC4\-\6\ 
+\DAC1_SYSREF_P\    \IC4\-\5\ 
 \DAC2_IRQn\    \IC4\-\65\ 
 \DAC2_RESETn\    \IC4\-\64\ 
 \DAC2_SPI_CSn\    \IC4\-\63\ 
 \DAC2_SPI_SCLK\    \IC4\-\62\ 
 \DAC2_SPI_SDIO\    \IC4\-\61\ 
 \DAC2_SPI_SDO\    \IC4\-\60\ 
-\DAC2_SYSREF_N\    \IC4\-\6\ 
-\DAC2_SYSREF_P\    \IC4\-\5\ 
 \DAC2_TXEN0\    \IC4\-\11\ 
 \DAC2_TXEN1\    \IC4\-\12\ 
 \DVDD12_10\    \C24\-\1\ \C35\-\2\ \C82\-\1\ \C82\-\3\ \C82\-\6\ \C82\-\8\ 
@@ -537,22 +537,22 @@
 *  \IC16\-\11\ \IC17\-\5\ \IC17\-\8\ \IC17\-\11\ \IC18\-\5\ \IC18\-\8\ 
 *  \IC18\-\11\ \R189\-\2\ \R288\-\1\ \R295\-\1\ \R296\-\1\ \R297\-\1\ 
 *  \R298\-\1\ \R299\-\1\ \R300\-\1\ 
-\GTP8TX_N\    \IC4\-\16\ 
-\GTP8TX_P\    \IC4\-\15\ 
-\GTP9TX_N\    \IC4\-\19\ 
-\GTP9TX_P\    \IC4\-\18\ 
-\GTP10TX_N\    \IC4\-\27\ 
-\GTP10TX_P\    \IC4\-\26\ 
-\GTP11TX_N\    \IC4\-\30\ 
-\GTP11TX_P\    \IC4\-\29\ 
-\GTP12TX_N\    \IC4\-\37\ 
-\GTP12TX_P\    \IC4\-\38\ 
-\GTP13TX_N\    \IC4\-\40\ 
-\GTP13TX_P\    \IC4\-\41\ 
-\GTP14TX_N\    \IC4\-\48\ 
-\GTP14TX_P\    \IC4\-\49\ 
-\GTP15TX_N\    \IC4\-\51\ 
-\GTP15TX_P\    \IC4\-\52\ 
+\GTP0TX_N\    \IC4\-\16\ 
+\GTP0TX_P\    \IC4\-\15\ 
+\GTP1TX_N\    \IC4\-\19\ 
+\GTP1TX_P\    \IC4\-\18\ 
+\GTP2TX_N\    \IC4\-\27\ 
+\GTP2TX_P\    \IC4\-\26\ 
+\GTP3TX_N\    \IC4\-\30\ 
+\GTP3TX_P\    \IC4\-\29\ 
+\GTP4TX_N\    \IC4\-\37\ 
+\GTP4TX_P\    \IC4\-\38\ 
+\GTP5TX_N\    \IC4\-\40\ 
+\GTP5TX_P\    \IC4\-\41\ 
+\GTP6TX_N\    \IC4\-\48\ 
+\GTP6TX_P\    \IC4\-\49\ 
+\GTP7TX_N\    \IC4\-\51\ 
+\GTP7TX_P\    \IC4\-\52\ 
 \IOVDD_10\    \C29\-\1\ \C244\-\2\ \C246\-\2\ \C276\-\2\ \C636\-\1\ 
 *  \C726\-\1\ \IC4\-\66\ \L37\-\2\ 
 \PLLVDD12_10\    \C26\-\1\ \C44\-\2\ \C237\-\2\ \C238\-\2\ \C239\-\2\ 
@@ -651,14 +651,14 @@
 *  \IC23\-\5\ \IC23\-\8\ \IC23\-\11\ \IC24\-\5\ \IC24\-\8\ \IC24\-\11\ 
 *  \IC25\-\5\ \IC25\-\8\ \IC25\-\11\ \R26\-\2\ \R281\-\1\ \R282\-\1\ 
 *  \R283\-\1\ 
-\GTP0RX_N\    \C278\-\2\ 
-\GTP0RX_P\    \C277\-\2\ 
-\GTP1RX_N\    \C280\-\2\ 
-\GTP1RX_P\    \C279\-\2\ 
-\GTP2RX_N\    \C282\-\2\ 
-\GTP2RX_P\    \C281\-\2\ 
-\GTP3RX_N\    \C284\-\2\ 
-\GTP3RX_P\    \C283\-\2\ 
+\GTP4RX_N\    \C278\-\2\ 
+\GTP4RX_P\    \C277\-\2\ 
+\GTP5RX_N\    \C280\-\2\ 
+\GTP5RX_P\    \C279\-\2\ 
+\GTP6RX_N\    \C282\-\2\ 
+\GTP6RX_P\    \C281\-\2\ 
+\GTP7RX_N\    \C284\-\2\ 
+\GTP7RX_P\    \C283\-\2\ 
 \P4V0\    \C261\-\2\ \C262\-\2\ \C670\-\2\ \IC23\-\1\ \IC23\-\2\ \IC23\-\3\ 
 *  \IC23\-\6\ \IC24\-\1\ \IC24\-\2\ \IC24\-\3\ \IC24\-\6\ \IC25\-\1\ 
 *  \IC25\-\2\ \IC25\-\3\ \IC25\-\6\ 
@@ -745,14 +745,14 @@
 *  \IC26\-\5\ \IC26\-\8\ \IC26\-\11\ \IC27\-\5\ \IC27\-\8\ \IC27\-\11\ 
 *  \IC28\-\5\ \IC28\-\8\ \IC28\-\11\ \R36\-\2\ \R284\-\1\ \R285\-\1\ 
 *  \R286\-\1\ 
-\GTP4RX_N\    \C313\-\2\ 
-\GTP4RX_P\    \C312\-\2\ 
-\GTP5RX_N\    \C315\-\2\ 
-\GTP5RX_P\    \C314\-\2\ 
-\GTP6RX_N\    \C317\-\2\ 
-\GTP6RX_P\    \C316\-\2\ 
-\GTP7RX_N\    \C319\-\2\ 
-\GTP7RX_P\    \C318\-\2\ 
+\GTP0RX_N\    \C313\-\2\ 
+\GTP0RX_P\    \C312\-\2\ 
+\GTP1RX_N\    \C315\-\2\ 
+\GTP1RX_P\    \C314\-\2\ 
+\GTP2RX_N\    \C317\-\2\ 
+\GTP2RX_P\    \C316\-\2\ 
+\GTP3RX_N\    \C319\-\2\ 
+\GTP3RX_P\    \C318\-\2\ 
 \P4V0\    \C265\-\2\ \C266\-\2\ \C672\-\2\ \IC26\-\1\ \IC26\-\2\ \IC26\-\3\ 
 *  \IC26\-\6\ \IC27\-\1\ \IC27\-\2\ \IC27\-\3\ \IC27\-\6\ \IC28\-\1\ 
 *  \IC28\-\2\ \IC28\-\3\ \IC28\-\6\ 
@@ -898,22 +898,22 @@
 \CDR_CLK_CLEAN1_P\    \U1\-\B6\ 
 \CDR_CLK_CLEAN2_N\    \R315\-\2\ \U1\-\T15\ 
 \CDR_CLK_CLEAN2_P\    \R314\-\2\ \U1\-\T14\ 
-\CLK_MEZZ_IO0\    \U1\-\D11\ 
-\CLK_MEZZ_IO1\    \U1\-\C12\ 
-\CLK_MEZZ_IO2\    \U1\-\B12\ 
-\CLK_MEZZ_IO3\    \U1\-\A12\ 
-\CLK_MEZZ_IO4\    \U1\-\A13\ 
-\CLK_MEZZ_IO5\    \U1\-\A14\ 
-\CLK_MEZZ_IO6\    \U1\-\C14\ 
-\CLK_MEZZ_IO7\    \U1\-\B15\ 
-\CLK_MEZZ_IO8\    \U1\-\B14\ 
-\CLK_MEZZ_IO9\    \U1\-\A15\ 
-\CLK_MEZZ_IO10\    \U1\-\D13\ 
-\CLK_MEZZ_IO11\    \U1\-\C13\ 
-\CLK_MEZZ_IO12\    \U1\-\E13\ 
-\CLK_MEZZ_IO13\    \U1\-\D14\ 
-\CLK_MEZZ_IO14\    \U1\-\E16\ 
-\CLK_MEZZ_IO15\    \U1\-\D15\ 
+\CLK_MEZZ_IO0\    \U1\-\D18\ 
+\CLK_MEZZ_IO1\    \U1\-\C17\ 
+\CLK_MEZZ_IO2\    \U1\-\C18\ 
+\CLK_MEZZ_IO3\    \U1\-\G17\ 
+\CLK_MEZZ_IO4\    \U1\-\F18\ 
+\CLK_MEZZ_IO5\    \U1\-\H16\ 
+\CLK_MEZZ_IO6\    \U1\-\G16\ 
+\CLK_MEZZ_IO7\    \U1\-\G15\ 
+\CLK_MEZZ_IO8\    \U1\-\F15\ 
+\CLK_MEZZ_IO9\    \U1\-\G14\ 
+\CLK_MEZZ_IO10\    \U1\-\F14\ 
+\CLK_MEZZ_IO11\    \U1\-\H17\ 
+\CLK_MEZZ_IO12\    \U1\-\H18\ 
+\CLK_MEZZ_IO13\    \U1\-\F17\ 
+\CLK_MEZZ_IO14\    \U1\-\H14\ 
+\CLK_MEZZ_IO15\    \U1\-\E18\ 
 \DAC_CLK_SRC_SEL\    \IC35\-\8\ 
 \DAC_CLK_SRC_SEL_1V8\    \IC35\-\4\ \U1\-\P16\ 
 \DAC1_IRQn\    \U1\-\V14\ 
@@ -990,22 +990,22 @@
 \MEZZ2_IO13\    \U1\-\V8\ 
 \MEZZ2_IO14\    \U1\-\V7\ 
 \MEZZ2_IO15\    \U1\-\R6\ 
-\MEZZ3_IO0\    \U1\-\D18\ 
-\MEZZ3_IO1\    \U1\-\C17\ 
-\MEZZ3_IO2\    \U1\-\C18\ 
-\MEZZ3_IO3\    \U1\-\G17\ 
-\MEZZ3_IO4\    \U1\-\F18\ 
-\MEZZ3_IO5\    \U1\-\H16\ 
-\MEZZ3_IO6\    \U1\-\G16\ 
-\MEZZ3_IO7\    \U1\-\G15\ 
-\MEZZ3_IO8\    \U1\-\F15\ 
-\MEZZ3_IO9\    \U1\-\G14\ 
-\MEZZ3_IO10\    \U1\-\F14\ 
-\MEZZ3_IO11\    \U1\-\H17\ 
-\MEZZ3_IO12\    \U1\-\H18\ 
-\MEZZ3_IO13\    \U1\-\F17\ 
-\MEZZ3_IO14\    \U1\-\E18\ 
-\MEZZ3_IO15\    \U1\-\H14\ 
+\MEZZ3_IO0\    \U1\-\D11\ 
+\MEZZ3_IO1\    \U1\-\C12\ 
+\MEZZ3_IO2\    \U1\-\B12\ 
+\MEZZ3_IO3\    \U1\-\A12\ 
+\MEZZ3_IO4\    \U1\-\A13\ 
+\MEZZ3_IO5\    \U1\-\A14\ 
+\MEZZ3_IO6\    \U1\-\C14\ 
+\MEZZ3_IO7\    \U1\-\B15\ 
+\MEZZ3_IO8\    \U1\-\B14\ 
+\MEZZ3_IO9\    \U1\-\A15\ 
+\MEZZ3_IO10\    \U1\-\D13\ 
+\MEZZ3_IO11\    \U1\-\C13\ 
+\MEZZ3_IO12\    \U1\-\E13\ 
+\MEZZ3_IO13\    \U1\-\D14\ 
+\MEZZ3_IO14\    \U1\-\D15\ 
+\MEZZ3_IO15\    \U1\-\E16\ 
 \MEZZ4_IO0\    \U1\-\K5\ 
 \MEZZ4_IO1\    \U1\-\J5\ 
 \MEZZ4_IO2\    \U1\-\J4\ 
@@ -1357,16 +1357,16 @@
 \$1N18422\    \C916\-\2\ \IC62\-\1\ \IC62\-\2\ \IC62\-\3\ \IC62\-\6\ 
 *  \IC63\-\1\ \IC63\-\2\ \IC63\-\3\ \IC63\-\6\ \L89\-\2\ 
 \$1N18593\    \C918\-\2\ \IC63\-\9\ \IC63\-\10\ \R306\-\1\ 
-\ADC1_CLK_N\    \C362\-\2\ 
-\ADC1_CLK_P\    \C361\-\2\ 
-\ADC1_SER_SYSREF_N\    \C364\-\2\ 
-\ADC1_SER_SYSREF_P\    \C363\-\2\ 
-\ADC2_CLK_N\    \C378\-\2\ 
-\ADC2_CLK_P\    \C377\-\2\ 
-\ADC2_SER_SYSREF_N\    \C380\-\2\ 
-\ADC2_SER_SYSREF_P\    \C379\-\2\ 
-\AMC_MASTER_AUX_CLK_N\    \C376\-\2\ 
-\AMC_MASTER_AUX_CLK_P\    \C375\-\2\ 
+\ADC1_CLK_N\    \C378\-\2\ 
+\ADC1_CLK_P\    \C377\-\2\ 
+\ADC1_SER_SYSREF_N\    \C380\-\2\ 
+\ADC1_SER_SYSREF_P\    \C379\-\2\ 
+\ADC2_CLK_N\    \C362\-\2\ 
+\ADC2_CLK_P\    \C361\-\2\ 
+\ADC2_SER_SYSREF_N\    \C364\-\2\ 
+\ADC2_SER_SYSREF_P\    \C363\-\2\ 
+\AMC_MASTER_AUX_CLK_N\    \C372\-\2\ 
+\AMC_MASTER_AUX_CLK_P\    \C371\-\2\ 
 \CDR_CLK_CLEAN3_N\    \IC45\-\2\ 
 \CDR_CLK_CLEAN3_P\    \IC45\-\1\ 
 \DAC_CLK_N\    \C435\-\1\ 
@@ -1382,8 +1382,8 @@
 \DAC2_SYSREF_P\    \C355\-\2\ 
 \EXT_100M_RF_IN\    \C666\-\1\ 
 \EXT_100M_RF_IN_GND\    \C599\-\2\ \TR1\-\1\ \TR1\-\2\ 
-\FPGA_ADC_SYSREF_N\    \C372\-\2\ 
-\FPGA_ADC_SYSREF_P\    \C371\-\2\ 
+\FPGA_ADC_SYSREF_N\    \C376\-\2\ 
+\FPGA_ADC_SYSREF_P\    \C375\-\2\ 
 \FPGA_DAC_SYSREF_N\    \C368\-\2\ 
 \FPGA_DAC_SYSREF_P\    \C367\-\2\ 
 \GND\    \C10\-\1\ \C270\-\2\ \C271\-\2\ \C348\-\1\ \C349\-\1\ \C385\-\1\ 
@@ -1435,8 +1435,8 @@
 *  \SH4\-\12\ \SH4\-\13\ \SH4\-\14\ \SH4\-\15\ \SH4\-\16\ \SH4\-\16/2\ 
 *  \SH4\-\17\ \SH4\-\18\ \SH4\-\19\ \SH4\-\20\ \TR1\-\5\ \TR2\-\1\ 
 *  \TR2\-\2\ \TR2\-\5\ \T1\-\2\ 
-\GTP_CLK1_IN_N\    \C374\-\2\ 
-\GTP_CLK1_IN_P\    \C373\-\2\ 
+\GTP_CLK1_IN_N\    \C370\-\2\ 
+\GTP_CLK1_IN_P\    \C369\-\2\ 
 \GTP_CLK2_IN_N\    \C366\-\2\ 
 \GTP_CLK2_IN_P\    \C365\-\2\ 
 \HMC_SPI_GPIO\    \IC58\-\34\ 
@@ -1468,16 +1468,16 @@
 \REF_LO_CLK_SEL\    \IC52\-\32\ 
 \REF_LO_N\    \C432\-\1\ 
 \REF_LO_P\    \C433\-\1\ 
-\REF1_LO_N\    \C409\-\2\ 
-\REF1_LO_P\    \C408\-\2\ 
-\REF2_LO_N\    \C411\-\2\ 
-\REF2_LO_P\    \C410\-\2\ 
-\REF3_LO_N\    \C413\-\2\ 
-\REF3_LO_P\    \C412\-\2\ 
-\REF4_LO_N\    \C415\-\2\ 
-\REF4_LO_P\    \C414\-\2\ 
-\RTM_MASTER_AUX_CLK_N\    \C369\-\2\ 
-\RTM_MASTER_AUX_CLK_P\    \C370\-\2\ 
+\REF1_LO_N\    \C411\-\2\ 
+\REF1_LO_P\    \C410\-\2\ 
+\REF2_LO_N\    \C409\-\2\ 
+\REF2_LO_P\    \C408\-\2\ 
+\REF3_LO_N\    \C415\-\2\ 
+\REF3_LO_P\    \C414\-\2\ 
+\REF4_LO_N\    \C413\-\2\ 
+\REF4_LO_P\    \C412\-\2\ 
+\RTM_MASTER_AUX_CLK_N\    \C373\-\2\ 
+\RTM_MASTER_AUX_CLK_P\    \C374\-\2\ 
 \SI5324_RST\    \IC58\-\5\ 
 \uRFB_REF_CLK_IN_N\    \R58\-\2\ 
 \uRFB_REF_CLK_IN_P\    \R59\-\2\ 
@@ -1555,14 +1555,7 @@
 %page=Sayma_RTM!RTM_POWER_SUPPLY!PWR_Buck_2V_4V_4A
 \$1N2159\    \C682\-\2\ \IC47\-\K6\ \R191\-\1\ 
 \$1N2160\    \R147\-\1\ \R192\-\2\ 
-\$1N2169\    \C682\-\1\ \C825\-\2\ \C826\-\2\ \IC47\-\A1\ \IC47\-\A2\ 
-*  \IC47\-\A3\ \IC47\-\B1\ \IC47\-\B2\ \IC47\-\B3\ \IC47\-\C1\ \IC47\-\C2\ 
-*  \IC47\-\C3\ \IC47\-\D1\ \IC47\-\D2\ \IC47\-\D3\ \L65\-\1\ \R191\-\2\ 
 \$1N2170\    \C681\-\2\ \IC47\-\K7\ \R192\-\1\ 
-\$1N2171\    \C681\-\1\ \C827\-\2\ \C828\-\2\ \IC47\-\A10\ \IC47\-\A11\ 
-*  \IC47\-\A12\ \IC47\-\B10\ \IC47\-\B11\ \IC47\-\B12\ \IC47\-\C10\ 
-*  \IC47\-\C11\ \IC47\-\C12\ \IC47\-\D10\ \IC47\-\D11\ \IC47\-\D12\ 
-*  \L64\-\1\ \R147\-\2\ 
 \$1N2175\    \LD3\-\2\ \R149\-\2\ 
 \$1N2179\    \IC47\-\H8\ \R150\-\2\ 
 \$1N2181\    \IC47\-\J8\ \TP1\-\1\ 
@@ -1596,7 +1589,14 @@
 *  \T7\-\1\ 
 \POWER_GOOD\    \IC47\-\H5\ 
 \P2V0\    \C728\-\1\ \C830\-\2\ \L65\-\2\ \R148\-\1\ 
+\P2V0_Buck\    \C682\-\1\ \C825\-\2\ \C826\-\2\ \IC47\-\A1\ \IC47\-\A2\ 
+*  \IC47\-\A3\ \IC47\-\B1\ \IC47\-\B2\ \IC47\-\B3\ \IC47\-\C1\ \IC47\-\C2\ 
+*  \IC47\-\C3\ \IC47\-\D1\ \IC47\-\D2\ \IC47\-\D3\ \L65\-\1\ \R191\-\2\ 
 \P4V0\    \C727\-\1\ \C829\-\2\ \L64\-\2\ \R149\-\1\ 
+\P4V0_Buck\    \C681\-\1\ \C827\-\2\ \C828\-\2\ \IC47\-\A10\ \IC47\-\A11\ 
+*  \IC47\-\A12\ \IC47\-\B10\ \IC47\-\B11\ \IC47\-\B12\ \IC47\-\C10\ 
+*  \IC47\-\C11\ \IC47\-\C12\ \IC47\-\D10\ \IC47\-\D11\ \IC47\-\D12\ 
+*  \L64\-\1\ \R147\-\2\ 
 \P12V0\    \C782\-\2\ \C783\-\2\ \C784\-\2\ \C785\-\2\ \IC47\-\J1\ 
 *  \IC47\-\J2\ \IC47\-\J3\ \IC47\-\J10\ \IC47\-\J11\ \IC47\-\J12\ 
 *  \IC47\-\K1\ \IC47\-\K2\ \IC47\-\K3\ \IC47\-\K4\ \IC47\-\K9\ \IC47\-\K10\ 
@@ -1636,7 +1636,7 @@
 *  \R153\-\2\ \R154\-\2\ 
 \POWER_GOOD\    \IC48\-\H5\ 
 \P6V0A\    \C729\-\1\ \C833\-\2\ \L69\-\2\ \R151\-\1\ 
-\P6V0SW\    \C689\-\2\ \C831\-\2\ \C832\-\2\ \C839\-\1\ \IC48\-\A1\ 
+\P6V0_Buck\    \C689\-\2\ \C831\-\2\ \C832\-\2\ \C839\-\1\ \IC48\-\A1\ 
 *  \IC48\-\A2\ \IC48\-\A3\ \IC48\-\A10\ \IC48\-\A11\ \IC48\-\A12\ 
 *  \IC48\-\B1\ \IC48\-\B2\ \IC48\-\B3\ \IC48\-\B10\ \IC48\-\B11\ \IC48\-\B12\ 
 *  \IC48\-\C1\ \IC48\-\C2\ \IC48\-\C3\ \IC48\-\C10\ \IC48\-\C11\ \IC48\-\C12\ 
@@ -1676,13 +1676,13 @@
 *  \IC50\-\K5\ \IC50\-\K6\ \IC50\-\L1\ \IC50\-\L2\ \IC50\-\L3\ \IC50\-\L4\ 
 *  \LD10\-\1\ \LD11\-\2\ \R177\-\1\ \R205\-\1\ \R206\-\1\ 
 \N12V0A\    \C732\-\2\ \C815\-\2\ \C816\-\2\ \L67\-\2\ \R179\-\1\ 
-\N12V0SW\    \C813\-\2\ \C814\-\2\ \C817\-\2\ \C818\-\2\ \IC50\-\G1\ 
+\N12V0_Buck\    \C813\-\2\ \C814\-\2\ \C817\-\2\ \C818\-\2\ \IC50\-\G1\ 
 *  \IC50\-\G2\ \IC50\-\H1\ \IC50\-\H2\ \IC50\-\J2\ \L67\-\1\ \R207\-\2\ 
 \POWER_GOOD\    \IC50\-\D6\ \IC50\-\H6\ 
 \P12V0\    \C805\-\2\ \C806\-\2\ \C807\-\2\ \C808\-\2\ \IC50\-\A5\ 
 *  \IC50\-\A6\ \IC50\-\A7\ \IC50\-\L5\ \IC50\-\L6\ \IC50\-\L7\ 
 \P12V0A\    \C731\-\1\ \C811\-\2\ \C812\-\2\ \L66\-\2\ \R178\-\1\ 
-\P12V0SW\    \C809\-\2\ \C810\-\2\ \C819\-\2\ \C820\-\2\ \IC50\-\A1\ 
+\P12V0_Buck\    \C809\-\2\ \C810\-\2\ \C819\-\2\ \C820\-\2\ \IC50\-\A1\ 
 *  \IC50\-\A2\ \IC50\-\B1\ \IC50\-\B2\ \L66\-\1\ \R176\-\2\ 
 
 %page=Sayma_RTM!RTM_POWER_SUPPLY!PWR_SEPIC_N6V
@@ -1711,7 +1711,7 @@
 *  \IC51\-\K4\ \IC51\-\K5\ \IC51\-\K6\ \IC51\-\L1\ \IC51\-\L2\ \IC51\-\L3\ 
 *  \IC51\-\L4\ \LD12\-\2\ \R180\-\1\ \R208\-\1\ \R209\-\1\ 
 \N6V0A\    \C733\-\2\ \C837\-\2\ \C838\-\2\ \L68\-\2\ \R185\-\1\ 
-\N6V0SW\    \C835\-\2\ \C836\-\2\ \IC51\-\C2\ \IC51\-\D1\ \IC51\-\D2\ 
+\N6V0_Buck\    \C835\-\2\ \C836\-\2\ \IC51\-\C2\ \IC51\-\D1\ \IC51\-\D2\ 
 *  \IC51\-\E1\ \IC51\-\E2\ \IC51\-\G1\ \IC51\-\G2\ \IC51\-\H1\ \IC51\-\H2\ 
 *  \IC51\-\J2\ \R182\-\2\ \R184\-\2\ \R228\-\1\ 
 \N7V0_URFB\    \R229\-\2\ 
