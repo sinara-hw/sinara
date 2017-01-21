@@ -1,8 +1,8 @@
 * Text backup of PRJ VBPCBIndicators
 VBPCBIndicators
-VBPCBForwardAnno 1
+VBPCBForwardAnno 0
 SchematicDesignBackAnno 0
-CADBackAnno 0
+CADBackAnno 1
 UpdateNetPropsDB Sync
 UpdateNetClassDB Sync
 UpdateJobPrefsDB Sync

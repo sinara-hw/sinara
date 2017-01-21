@@ -1,3 +1,12 @@
+SECTION AFCZ
+KEY CADBackAnno "0"
+KEY ConfigType "PCB"
+KEY RootBlock "AFCZ-top"
+KEY SchematicConflict "FE"
+KEY SchematicDesignBackAnno "0"
+KEY SchematicDesignStatus "0"
+KEY SearchPathScheme "(Default)"
+ENDSECTION
 SECTION AMC_FMC_Carrier
 KEY AllowAlpha "1"
 KEY CADBackAnno "1"
@@ -17,7 +26,7 @@ KEY SearchPathScheme "(Default)"
 KEY UpdateJobPrefsDB "CAD"
 ENDSECTION
 SECTION CESDiagnostics_DxD
-KEY DESIGN_CHECK_LAST_UPDATE "2015-11-14 16:09:44"
+KEY DESIGN_CHECK_LAST_UPDATE "2017-01-20 20:37:35"
 KEY DESIGN_CHECK_NUM_ERRORS "0"
 ENDSECTION
 SECTION CESDiagnostics_Sayma_AMC_Layout_Temp
@@ -88,20 +97,20 @@ KEY UnusedPartsFlag "0"
 KEY UpdateJobPrefsDB "CAD"
 ENDSECTION
 SECTION PCBFwdAnnoOptions
-KEY RootSchematicFile "WR-MCH-TOP"
+KEY RootSchematicFile "Sayma_RTM"
 ENDSECTION
 SECTION ProjectBackup
 KEY ConfigFile ".\ProjectBackup\ProjectBackup.cfg"
 ENDSECTION
 SECTION Sayma_AMC
 KEY AllowAlpha "0"
-KEY CADBackAnno "0"
+KEY CADBackAnno "1"
 KEY ConfigType "PCB"
 KEY DisableBackAnnoChanges "0"
 KEY DisableECOChanges "0"
 KEY FanoutSinglePinNets "0"
-KEY FwdAnnoCleanBuildFlag "1"
-KEY FwdAnnoExtractFlag "0"
+KEY FwdAnnoCleanBuildFlag "0"
+KEY FwdAnnoExtractFlag "1"
 KEY FwdAnnoRebuildFlag "0"
 KEY FwdAnnoRemoveHangers "0"
 KEY FwdAnnoRemoveTraces "0"
@@ -109,7 +118,7 @@ KEY FwdAnnoReplaceFlag "0"
 KEY FwdAnnoSchematicRefDesChanges "1"
 KEY LayoutTemplate "12 Layer Template"
 KEY PCBDesignPath "PCB_Sayma_AMC\Sayma_AMC.pcb"
-KEY PCBForwardAnno "1"
+KEY PCBForwardAnno "0"
 KEY RootBlock "Sayma_AMC"
 KEY SchematicConflict "FE"
 KEY SchematicDesignBackAnno "0"
@@ -135,7 +144,7 @@ KEY FwdAnnoReplaceFlag "0"
 KEY FwdAnnoSchematicRefDesChanges "1"
 KEY LayoutTemplate "12 Layer Template"
 KEY PCBDesignPath "PCB_Sayma_RTM\Sayma_RTM.pcb"
-KEY PCBForwardAnno "0"
+KEY PCBForwardAnno "1"
 KEY RootBlock "Sayma_RTM"
 KEY SchematicConflict "FE"
 KEY SchematicDesignBackAnno "0"
@@ -208,13 +217,4 @@ VALUE "AFCZ"
 ENDLIST
 KEY DedicatedServerName ""
 KEY iCDBDir ".\database"
-ENDSECTION
-SECTION AFCZ
-KEY CADBackAnno "0"
-KEY ConfigType "PCB"
-KEY SchematicConflict "FE"
-KEY SchematicDesignBackAnno "0"
-KEY SchematicDesignStatus "0"
-KEY SearchPathScheme "(Default)"
-KEY RootBlock "AFCZ-top"
 ENDSECTION

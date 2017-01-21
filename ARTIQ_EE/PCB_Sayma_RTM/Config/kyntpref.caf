@@ -1,5 +1,6 @@
 TYCO_6469183-1aJ1   
 TYCO_6469183-1aJ2   
+TCA9548ARGERIC43   
 TCA9548ARGERIC1   
 Resistor - 1% RESC1005X40NR166   
 Resistor - 1% RESC1005X40NR168   
@@ -105,19 +106,14 @@ Resistor - 1% RESC1005X40NR48
 Resistor - 1% RESC1005X40NR144   
 Resistor - 1% RESC1005X40NR96   
 Resistor - 1% RESC1005X40NR143   
-Resistor - 1% RESC1005X40NR157   
-Resistor - 1% RESC1005X40NR156   
 Resistor - 1% RESC1005X40NR269   
 Resistor - 1% RESC1005X40NR268   
 Resistor - 1% RESC1005X40NR263   
 Resistor - 1% RESC1005X40NR262   
-Resistor - 1% RESC1005X40NR131   
 Resistor - 1% RESC1005X40NR261   
 Resistor - 1% RESC1005X40NR130   
 Resistor - 1% RESC1005X40NR137   
 Resistor - 1% RESC1005X40NR136   
-Resistor - 1% RESC1005X40NR142   
-Resistor - 1% RESC1005X40NR141   
 Resistor - 1% RESC1005X40NR135   
 Resistor - 1% RESC1005X40NR140   
 Resistor - 1% RESC1005X40NR134   
@@ -212,6 +208,12 @@ Resistor - 1% RESC1005X40NR25
 Resistor - 1% RESC1005X40NR24   
 Resistor - 1% RESC1005X40NR23   
 Resistor - 1% RESC1005X40NR22   
+Resistor - 1% RESC1005X40NR157   
+Resistor - 1% RESC1005X40NR156   
+Resistor - 1% RESC1005X40NR142   
+Resistor - 1% RESC1005X40NR141   
+Resistor - 1% RESC1005X40NR131   
+Resistor - 1% RESC1005X40NR98   
 Resistor - 1% RESC1005X40NR21   
 Resistor - 1% RESC1005X40NR20   
 Resistor - 1% RESC1005X40NR19   
@@ -468,8 +470,6 @@ Capacitor - non polarized CAPC0603X33NC480
 Capacitor - non polarized CAPC0603X33NC479   
 Capacitor - non polarized CAPC0603X33NC478   
 Capacitor - non polarized CAPC0603X33NC477   
-Capacitor - non polarized CAPC0603X33NC476   
-Capacitor - non polarized CAPC0603X33NC475   
 Capacitor - non polarized CAPC0603X33NC474   
 Capacitor - non polarized CAPC0603X33NC473   
 Capacitor - non polarized CAPC0603X33NC460   
@@ -704,6 +704,7 @@ Capacitor - non polarized CAPC0603X33NC52
 Capacitor - non polarized CAPC0603X33NC51   
 Capacitor - non polarized CAPC0603X33NC50   
 Capacitor - non polarized CAPC0603X33NC49   
+Capacitor - non polarized CAPC0603X33NC117   
 Capacitor - non polarized CAPC0603X33NC14   
 Capacitor - non polarized CAPC0603X33NC48   
 Capacitor - non polarized CAPC0603X33NC13   
@@ -1243,7 +1244,6 @@ LM75AIMM/NOPBIC39
 LM75AIMM/NOPBIC40   
 SW_C&K_HDT0001PB1   
 24LC64-I/MSIC41   
-TCA9517DGKRIC43   
 MAX6642ATT90+TIC44   
 LED_AVAGO_HSMR-C120LD1   
 LED_AVAGO_HSME-C120LD2   

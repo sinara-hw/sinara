@@ -2,10 +2,10 @@
 ! change it at your own peril
 
 !
-! Created 01/13/17 14:38:25
+! Created 01/20/17 23:27:41
 !
 
-.Global_Constants 107 2
+.Global_Constants 106 2
     ..File_Type Graphics_Settings
     ..Version Version_6
     ..Num_Views 2
@@ -1326,7 +1326,6 @@
 	"Net-101"	! [104]
 	"Net-102"	! [105]
 	"Net-103"	! [106]
-	"Net-104"	! [107]
     )
     ..Netclass_Names ( 
 	"(Default)"	! [1]
@@ -1391,7 +1390,6 @@
 	0x00ffffff 0x00ffffff	! [101-102] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [103-104] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [105-106] RGB(255,255,255)  RGB(255,255,255)
-	        -1		! [107] undefined
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -1404,7 +1402,7 @@
 	0 0 0 0 0 0 0 0 0 0 	! [71 - 80]
 	0 0 0 0 0 0 0 0 0 0 	! [81 - 90]
 	0 0 0 0 0 0 0 0 0 0 	! [91 - 100]
-	0 0 0 0 0 0 0 ! [101 - 107]
+	0 0 0 0 0 0 ! [101 - 106]
 	)
     ..Net_Alpha ( 
 	100 100 100 100 100 100 100 100 100 100 	! [1 - 10]
@@ -1417,7 +1415,7 @@
 	100 100 100 100 100 100 100 100 100 100 	! [71 - 80]
 	100 100 100 100 100 100 100 100 100 100 	! [81 - 90]
 	100 100 100 100 100 100 100 100 100 100 	! [91 - 100]
-	100 100 100 100 100 100 100 ! [101 - 107]
+	100 100 100 100 100 100 ! [101 - 106]
 	)
     ..Net_Nopaque ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -1430,7 +1428,7 @@
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
 	F F F F F F F F F F 	! [91 - 100]
-	F F F F F F F ! [101 - 107]
+	F F F F F F ! [101 - 106]
 	)
     ..Net_Outline ( 
 	T F T F F F F F F F 	! [1 - 10]
@@ -1443,7 +1441,7 @@
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
 	F F F F F F F F F F 	! [91 - 100]
-	F F F F F F T ! [101 - 107]
+	F F F F F F ! [101 - 106]
 	)
     ..Netclass_Color (
 	0x00ffffff	! top     RGB(255,255,255)
@@ -1493,7 +1491,7 @@
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
 	F F F F F F F F F F 	! [91 - 100]
-	F F F F F F F ! [101 - 107]
+	F F F F F F ! [101 - 106]
 	)
     ..Netclass_On                        False	! top
                                          False	! bottom
@@ -1811,10 +1809,10 @@
     )
 
 
-.view "TYCO_5120913-1"
+.view "TO228P991X239-3N-R552X520"
     ..extrema
-	(-12689812,-11528980)		! (xmin, ymin)
-	(26890011,11529402)		! (xmax, ymax)
+	(-14777194,-8070000)		! (xmin, ymin)
+	(12927195,8070000)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000000	! flags
 	0x00000001	! showCmd
@@ -4776,7 +4774,6 @@
 	"[Net].Net-101" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-102" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Net-103" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].Net-104" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(Default)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(SpacerNetClass)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[ConstraintClass].(All)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -4957,10 +4954,10 @@
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
 	0x0019ef1c	! flags
-	0x76aedbf4	! showCmd
+	0x756ddbf4	! showCmd
 	(786432, 0)	! ptMinPosition
-	(1699592, 1991171069)	! ptMaxPosition
-	(0, 2009923584) (1998100704,0)	! ..rcNormalPosition
+	(1699592, 1970134013)	! ptMaxPosition
+	(0, 1998585856) (1963235552,0)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""
