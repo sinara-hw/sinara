@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 01/13/17 23:13:19
+! Created 01/23/17 17:42:31
 !
 
 .Global_Constants 1373 31
@@ -13,9 +13,9 @@
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
-	(-32000, -32000)	! ptMinPosition
+	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2018, 347) (3440,1067)	! ..rcNormalPosition
+	(2024, 21) (3704,1027)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -4501,12 +4501,12 @@
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionState" "1"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionState" "0"
-	"[VirtualGlobal].iDC.Favorites.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Favorites.CollapsedSectionState" "0"
+	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Grids.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Hazards.CollapsedSectionState" "1"
-	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "1"
+	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Materials.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionState" "0"
 	"[VirtualGlobal].iDC.Object Appearance.CollapsedSectionState" "0"
@@ -4562,15 +4562,15 @@
 	"[VirtualGlobal].iDC.DRC.ColorByHazard" "3"
 	"[VirtualGlobal].iDC.Data.Collapsed" "2"
 	"[VirtualGlobal].iDC.Detail Views.CollapsedSectionOrder" "10"
-	"[VirtualGlobal].iDC.DisplayPatterns" "3"
+	"[VirtualGlobal].iDC.DisplayPatterns" "2"
 	"[VirtualGlobal].iDC.DrawAndFabricationObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Drill Drawing.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.DynamicNetlineFiltering" "2"
 	"[VirtualGlobal].iDC.Fabrication Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Favorites.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Fiducials.Collapsed" "2"
-	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "3"
-	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "3"
+	"[VirtualGlobal].iDC.FixedAndLockedPatterns" "2"
+	"[VirtualGlobal].iDC.FullScreenCursor.Collapse" "2"
 	"[VirtualGlobal].iDC.General" "2"
 	"[VirtualGlobal].iDC.Global View & Interactive Selection.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Graphics Options.CollapsedSectionOrder" "2"
@@ -4608,9 +4608,9 @@
 	"[VirtualGlobal].iDC.Layers.9.Collapse" "3"
 	"[VirtualGlobal].iDC.Materials.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.MountingHoles.Collapsed" "2"
-	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "3"
+	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "2"
 	"[VirtualGlobal].iDC.MultipleDesigners.ForceFields.Collapsed" "3"
-	"[VirtualGlobal].iDC.NetClasses.Collapsed" "3"
+	"[VirtualGlobal].iDC.NetClasses.Collapsed" "2"
 	"[VirtualGlobal].iDC.Netlines.Collapsed" "2"
 	"[VirtualGlobal].iDC.Netlines.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.NetlinesFrom" "2"
@@ -4643,10 +4643,10 @@
 	"[VirtualGlobal].iDC.Obstructs.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.Online.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.Panel Objects.CollapsedSectionOrder" "5"
-	"[VirtualGlobal].iDC.Parts" "3"
+	"[VirtualGlobal].iDC.Parts" "2"
 	"[VirtualGlobal].iDC.Pins.CollapsedSectionOrder" "5"
 	"[VirtualGlobal].iDC.Place Objects.CollapsedSectionOrder" "3"
-	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "3"
+	"[VirtualGlobal].iDC.Place.ObstructsAndRooms" "2"
 	"[VirtualGlobal].iDC.PlaceObjects.Collapsed" "2"
 	"[VirtualGlobal].iDC.Planes.CollapsedSectionOrder" "7"
 	"[VirtualGlobal].iDC.Planning.CollapsedSectionOrder" "2"
@@ -4655,15 +4655,15 @@
 	"[VirtualGlobal].iDC.ResistiveMaterials" "3"
 	"[VirtualGlobal].iDC.Route Areas.CollapsedSectionOrder" "9"
 	"[VirtualGlobal].iDC.RouteObjects.Collapsed" "2"
-	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "3"
-	"[VirtualGlobal].iDC.SelectionAndHighlights" "3"
+	"[VirtualGlobal].iDC.RoutePlanning.Collapsed" "2"
+	"[VirtualGlobal].iDC.SelectionAndHighlights" "2"
 	"[VirtualGlobal].iDC.Sheet Objects.CollapsedSectionOrder" "6"
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
-	"[VirtualGlobal].iDC.Spacers" "3"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "108"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "299"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "331"
+	"[VirtualGlobal].iDC.Spacers" "2"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "72"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "237"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "421"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4677,8 +4677,8 @@
 
 .view "Metlino"
     ..extrema
-	(216504590,176590945)		! (xmin, ymin)
-	(573239557,365107668)		! (xmax, ymax)
+	(370516641,168758157)		! (xmin, ymin)
+	(707045640,336328578)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -17632,10 +17632,10 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x7748ad70	! flags
-	0x748768b0	! showCmd
+	0x772cad70	! flags
+	0x757968b0	! showCmd
 	(262144, 0)	! ptMinPosition
-	(0, 2233044)	! ptMaxPosition
+	(0, 928292)	! ptMaxPosition
 	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0

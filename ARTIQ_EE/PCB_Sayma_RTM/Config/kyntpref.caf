@@ -131,8 +131,6 @@ Resistor - 1% RESC1005X40NR125
 Resistor - 1% RESC1005X40NR124   
 Resistor - 1% RESC1005X40NR126   
 Resistor - 1% RESC1005X40NR122   
-Resistor - 1% RESC1005X40NR120   
-Resistor - 1% RESC1005X40NR119   
 Resistor - 1% RESC1005X40NR316   
 Resistor - 1% RESC1005X40NR118   
 Resistor - 1% RESC1005X40NR117   
@@ -512,6 +510,14 @@ Capacitor - non polarized CAPC0603X33NC448
 Capacitor - non polarized CAPC0603X33NC445   
 Capacitor - non polarized CAPC0603X33NC446   
 Capacitor - non polarized CAPC0603X33NC444   
+Capacitor - non polarized CAPC0603X33NC639   
+Capacitor - non polarized CAPC0603X33NC638   
+Capacitor - non polarized CAPC0603X33NC637   
+Capacitor - non polarized CAPC0603X33NC621   
+Capacitor - non polarized CAPC0603X33NC611   
+Capacitor - non polarized CAPC0603X33NC476   
+Capacitor - non polarized CAPC0603X33NC475   
+Capacitor - non polarized CAPC0603X33NC343   
 Capacitor - non polarized CAPC0603X33NC346   
 Capacitor - non polarized CAPC0603X33NC345   
 Capacitor - non polarized CAPC0603X33NC344   
@@ -534,8 +540,6 @@ Capacitor - non polarized CAPC0603X33NC323
 Capacitor - non polarized CAPC0603X33NC324   
 Capacitor - non polarized CAPC0603X33NC322   
 Capacitor - non polarized CAPC0603X33NC331   
-Capacitor - non polarized CAPC0603X33NC320   
-Capacitor - non polarized CAPC0603X33NC321   
 Capacitor - non polarized CAPC0603X33NC316   
 Capacitor - non polarized CAPC0603X33NC318   
 Capacitor - non polarized CAPC0603X33NC317   
@@ -544,6 +548,14 @@ Capacitor - non polarized CAPC0603X33NC315
 Capacitor - non polarized CAPC0603X33NC314   
 Capacitor - non polarized CAPC0603X33NC313   
 Capacitor - non polarized CAPC0603X33NC312   
+Capacitor - non polarized CAPC0603X33NC275   
+Capacitor - non polarized CAPC0603X33NC245   
+Capacitor - non polarized CAPC0603X33NC243   
+Capacitor - non polarized CAPC0603X33NC241   
+Capacitor - non polarized CAPC0603X33NC236   
+Capacitor - non polarized CAPC0603X33NC235   
+Capacitor - non polarized CAPC0603X33NC176   
+Capacitor - non polarized CAPC0603X33NC119   
 Capacitor - non polarized CAPC0603X33NC311   
 Capacitor - non polarized CAPC0603X33NC310   
 Capacitor - non polarized CAPC0603X33NC309   
@@ -566,8 +578,6 @@ Capacitor - non polarized CAPC0603X33NC288
 Capacitor - non polarized CAPC0603X33NC289   
 Capacitor - non polarized CAPC0603X33NC287   
 Capacitor - non polarized CAPC0603X33NC296   
-Capacitor - non polarized CAPC0603X33NC285   
-Capacitor - non polarized CAPC0603X33NC286   
 Capacitor - non polarized CAPC0603X33NC281   
 Capacitor - non polarized CAPC0603X33NC283   
 Capacitor - non polarized CAPC0603X33NC282   
