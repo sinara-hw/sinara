@@ -17,7 +17,7 @@ Project overview is [here](https://github.com/m-labs/artiq-hardware)
 - ARTIQ_ALTIUM/PCB_mezzanine_analog_allaki is analog mezzanine for base band output and DC-100 kHz input 
 
 # Kasli
-- Kasli/PCB_Kasli is an FPGA peripheral interfaced with Metlino over SPI optical link (see [wiki](https://github.com/m-labs/sinara/wiki/Kasli)) 
+- Kasli/PCB_Kasli is an FPGA peripheral interfaced with Metlino over SPI optical link (see [wiki](https://github.com/m-labs/sinara/wiki/Kasli), track the design #129) 
 
 Several peripherals are designed to interface with Kasli and fit into 3U crates. 
 
