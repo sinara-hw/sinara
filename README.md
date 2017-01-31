@@ -10,14 +10,14 @@ Project overview is [here](https://github.com/m-labs/artiq-hardware)
 - ARTIQ_EE/PCB_Sayma_AMC is Sayma board with high speed digital components 
 - ARTIQ_EE/PCB_Sayma_RTM is Sayma RTM board housing DACs and ADCs
 - ARTIQ_ALTIUM/PCB_RTM_loopback is test fixture
-- ARTIQ_ALTIUM/PCB_baikal is Signal/CLK ditribution board for RF-Backplane, slot is eRTM15  (Issue #78)
+- ARTIQ_ALTIUM/PCB_baikal is Signal/CLK ditribution board for RF-Backplane, slot is eRTM15  ([#78](https://github.com/m-labs/sinara/issues/78))
 - ARTIQ_ALTIUM/PCB_mezzanine_clock is DAC clock generation mezzanine
 - ARTIQ_ALTIUM/PCB_mezzanine_clock_template is simple test board and template for more complex clock mezzanines 
 - ARTIQ_ALTIUM/PCB_mezzanine_analog_template is simple test board and template for more complex analog mezzanines 
 - ARTIQ_ALTIUM/PCB_mezzanine_analog_allaki is analog mezzanine for base band output and DC-100 kHz input 
 
 # Kasli
-- Kasli/PCB_Kasli is an FPGA peripheral interfaced with Metlino over SPI optical link (see [wiki](https://github.com/m-labs/sinara/wiki/Kasli), track the design #129) 
+- Kasli/PCB_Kasli is an FPGA peripheral interfaced with Metlino over SPI optical link (see [wiki](https://github.com/m-labs/sinara/wiki/Kasli), track the design [#129](https://github.com/m-labs/sinara/issues/129)) 
 
 Several peripherals are designed to interface with Kasli and fit into 3U crates. 
 
