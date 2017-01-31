@@ -15,6 +15,15 @@ Project overview is [here](https://github.com/m-labs/artiq-hardware)
 - ARTIQ_ALTIUM/PCB_mezzanine_analog_template is simple test board and template for more complex analog mezzanines 
 - ARTIQ_ALTIUM/PCB_mezzanine_analog_allaki is analog mezzanine for base band output and DC-100 kHz input 
 
+# Kasli
+- Kasli/PCB_Kasli is an FPGA peripheral interfaced with Metlino over SPI optical link (see [wiki](https://github.com/m-labs/sinara/wiki/Kasli)) 
+
+Several peripherals are designed to interface with Kasli and fit into 3U crates. 
+
+- Kasli/3U/PCB_BNC is 2x4 channel, 50-Ohm TTL, bi-directional IO extender 
+- Kasli/3U/PCB_RJ45 is 4x4 channel, RJ45, LVDS IO extender 
+- Kasli/3U/PCB_VHDCI_breakout interfaces Kasli/3U peripheral cards with PCB_Metlino over VHDCI 
+
 # Note
 - ARTIQ_EE folder is for designs made with the Mentor Graphics Xpedition Enterprise CAD tool.
 - ARTIQ_ALTIUM folder is for designs made with Altium Designer CAD tool.
