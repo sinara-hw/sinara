@@ -1,6 +1,6 @@
 A somewhat outdated overview of the Sinara hardware vision is [here](https://github.com/m-labs/artiq-hardware). See Issues and Schematics for the latest.
 
-The first Sinara prototype hardware is designated v0.1. The components that will ship to collaborators is tracked in [#97](prototype 0.1: packing list #97). See [Issue 21](https://github.com/m-labs/sinara/issues/21) for a the list of additional hardware that's needed to get v0.1 running. Track project milestones [here](https://github.com/m-labs/sinara/milestones).
+The first Sinara prototype hardware is designated v0.1. The components that will ship to collaborators is tracked in [#97](https://github.com/m-labs/sinara/issues/97). See [Issue 21](https://github.com/m-labs/sinara/issues/21) for a the list of additional hardware that's needed to get v0.1 running. Track project milestones [here](https://github.com/m-labs/sinara/milestones).
 
 # Metlino
 - ARTIQ_EE/PCB_Metlino is Metlino board housing ARTIQ master FPGA (MCH Tongues 3,4)
