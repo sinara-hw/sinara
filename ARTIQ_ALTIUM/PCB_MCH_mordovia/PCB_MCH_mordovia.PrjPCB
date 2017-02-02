@@ -70,7 +70,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DVWMDIFR
+DocumentUniqueId=WUEBUKEX
 
 [Document3]
 DocumentPath=PCB_MCH_mordovia.OutJob
@@ -88,6 +88,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PCB_MCH_mordovia\Design Rule Check - PCB_MCH_mordovia.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
