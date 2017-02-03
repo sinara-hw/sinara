@@ -26,3 +26,5 @@ ProjectPath=Kasli\3U\PCB_3U_SMA\PCB_3U_SMA.PrjPCB
 ProjectPath=Kasli\3U\PCB_3U_VHDCI_breakout\PCB_VHDCI_breakout.PrjPCB
 [Project13]
 ProjectPath=ARTIQ_COMMON\ARTIQ_COMMON.PrjPcb
+[Project14]
+ProjectPath=PCB_AMC_SATA\AMC_SATA_Adapter.PrjPcb
