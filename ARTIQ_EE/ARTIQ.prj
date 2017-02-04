@@ -26,7 +26,7 @@ KEY SearchPathScheme "(Default)"
 KEY UpdateJobPrefsDB "CAD"
 ENDSECTION
 SECTION CESDiagnostics_DxD
-KEY DESIGN_CHECK_LAST_UPDATE "2017-01-20 20:37:35"
+KEY DESIGN_CHECK_LAST_UPDATE "2017-02-04 12:34:30"
 KEY DESIGN_CHECK_NUM_ERRORS "0"
 ENDSECTION
 SECTION CESDiagnostics_Sayma_AMC_Layout_Temp
@@ -144,7 +144,7 @@ KEY FwdAnnoReplaceFlag "0"
 KEY FwdAnnoSchematicRefDesChanges "1"
 KEY LayoutTemplate "12 Layer Template"
 KEY PCBDesignPath "PCB_Sayma_RTM\Sayma_RTM.pcb"
-KEY PCBForwardAnno "1"
+KEY PCBForwardAnno "0"
 KEY RootBlock "Sayma_RTM"
 KEY SchematicConflict "FE"
 KEY SchematicDesignBackAnno "0"
