@@ -1,11 +1,11 @@
 .FILETYPE GerberPlotSetupFile
 .VERSION "VB99.0"
-.CREATOR "Expedition PCB Gerber Output"
-.DATE "Wednesday, January 13, 2016 01:32 AM"
+.CREATOR "Xpedition xPCB Layout Gerber Output"
+.DATE "Wednesday, February 08, 2017 05:31 PM"
 
 .BaseUnits "1NM"
 
-.GerberOutputDir "Output\\Gerber\\"
+.GerberOutputDir "Output\\Gerber"
 
 .DataOffset 0 0
 .DataCopies 1 1
@@ -716,5 +716,5 @@
    ...CellItem AssemblyOutline
    ...CellItem SilkscreenReferenceDesignator
 .SchemeChanged No 
-.Scheme "PlotSetup"
-.SchemeLocation "System"
+.Scheme "GerberPlot"
+.SchemeLocation "Local"

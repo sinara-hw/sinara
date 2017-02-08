@@ -26,7 +26,7 @@ KEY SearchPathScheme "(Default)"
 KEY UpdateJobPrefsDB "CAD"
 ENDSECTION
 SECTION CESDiagnostics_DxD
-KEY DESIGN_CHECK_LAST_UPDATE "2017-02-04 12:34:30"
+KEY DESIGN_CHECK_LAST_UPDATE "2017-02-08 14:33:28"
 KEY DESIGN_CHECK_NUM_ERRORS "0"
 ENDSECTION
 SECTION CESDiagnostics_Sayma_AMC_Layout_Temp
@@ -104,7 +104,7 @@ KEY ConfigFile ".\ProjectBackup\ProjectBackup.cfg"
 ENDSECTION
 SECTION Sayma_AMC
 KEY AllowAlpha "0"
-KEY CADBackAnno "1"
+KEY CADBackAnno "0"
 KEY ConfigType "PCB"
 KEY DisableBackAnnoChanges "0"
 KEY DisableECOChanges "0"

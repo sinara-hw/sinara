@@ -2,10 +2,10 @@
 ! change it at your own peril
 
 !
-! Created 02/02/17 10:21:31
+! Created 02/07/17 15:50:19
 !
 
-.Global_Constants 1364 22
+.Global_Constants 1383 22
     ..File_Type Graphics_Settings
     ..Version Version_6
     ..Num_Views 2
@@ -15,11 +15,11 @@
 	0x00000003	! showCmd
 	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2204, 210) (3240,983)	! ..rcNormalPosition
-    ..Active_Place_Layer_Top             False
-    ..Active_Place_Layer_Bottom          True
+	(2052, 234) (3088,1007)	! ..rcNormalPosition
+    ..Active_Place_Layer_Top             True
+    ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
-    ..Active_Route_Layer 11
+    ..Active_Route_Layer 0
     ..Trace_Layer_Color ( 
 	0x000033ff 0x00330066	! [1-2] RGB(255, 51,  0)  RGB(102,  0, 51)
 	0x00996666 0x000099ff	! [3-4] RGB(102,102,153)  RGB(255,153,  0)
@@ -516,7 +516,7 @@
     ..Classline_Color 0x00ff00cc	! RGB(204,  0,255)
     ..Netline_Of_Classline_On            False
     ..Show_Plane_Data                    True
-    ..Show_Plane_Shapes                  True
+    ..Show_Plane_Shapes                  False
     ..Show_Fill_Plane_Shapes             True
     ..Show_Plane_Data_Behind_Traces      False
     ..Show_Dynamic_Area_Fills            True
@@ -663,7 +663,7 @@
     ..Drill_Drawing_Through_Nopaque      False
     ..Drill_Drawing_Through_Outline      True
     ..Redline_Layer_Color 0x000000ff	! RGB(255,  0,  0)
-    ..Redline_Layer_On                   False
+    ..Redline_Layer_On                   True
     ..User_Draft_Color ( 
 	0x00ffffff 0x00cc99ff	! [1-2] RGB(255,255,255)  RGB(255,153,204)
 	0x00000080 0x000000ff	! [3-4] RGB(128,  0,  0)  RGB(255,  0,  0)
@@ -1030,7 +1030,7 @@
     ..Show_Auto_Pan_Enabled              True
     ..Update_On_Apply_Enabled            False
     ..Shrink_Lines_Cutoff 1
-    ..Pan_Sensitivity 3
+    ..Pan_Sensitivity 7
     ..Pattern_Timing_Net_On              False
     ..Pattern_Timing_Net_Ptrnidx 0
     ..Selectionshape_Color 0x00ffffff	! RGB(255,255,255)
@@ -1998,655 +1998,674 @@
 	"MII_CRS"	! [713]
 	"MII_MDC"	! [714]
 	"MII_MDIO"	! [715]
-	"MII_MODE"	! [716]
-	"MII_PWR_EN"	! [717]
-	"MII_RXD0"	! [718]
-	"MII_RXD1"	! [719]
-	"MII_RXD2"	! [720]
-	"MII_RXD3"	! [721]
-	"MII_RX_CLK"	! [722]
-	"MII_RX_DV"	! [723]
-	"MII_RX_ER"	! [724]
-	"MII_TXD0"	! [725]
-	"MII_TXD1"	! [726]
-	"MII_TXD2"	! [727]
-	"MII_TXD3"	! [728]
-	"MII_TX_CLK"	! [729]
-	"MII_TX_EN"	! [730]
+	"MII_RXD0"	! [716]
+	"MII_RXD1"	! [717]
+	"MII_RXD2"	! [718]
+	"MII_RXD3"	! [719]
+	"MII_RX_CLK"	! [720]
+	"MII_RX_DV"	! [721]
+	"MII_RX_ER"	! [722]
+	"MII_TXD0"	! [723]
+	"MII_TXD1"	! [724]
+	"MII_TXD2"	! [725]
+	"MII_TXD3"	! [726]
+	"MII_TX_CLK"	! [727]
+	"MII_TX_EN"	! [728]
+	"MII1_INT"	! [729]
+	"MII1_TXD1"	! [730]
 	"MII1_CRS"	! [731]
-	"MII1_INT"	! [732]
-	"MII1_MDC"	! [733]
-	"MII1_MDIO"	! [734]
-	"MII1_MODE"	! [735]
-	"MII1_RXD0"	! [736]
-	"MII1_RXD1"	! [737]
-	"MII1_RXD2"	! [738]
-	"MII1_RXD3"	! [739]
-	"MII1_RX_CLK"	! [740]
-	"MII1_RX_DV"	! [741]
-	"MII1_RX_ER"	! [742]
-	"MII1_TXD0"	! [743]
-	"MII1_TXD1"	! [744]
-	"MII1_TXD2"	! [745]
-	"MII1_TXD3"	! [746]
-	"MII1_TX_CLK"	! [747]
-	"MII1_TX_EN"	! [748]
-	"MII2_CRS"	! [749]
-	"MII2_RX_ER"	! [750]
-	"FLASH_UPD_MISO"	! [751]
-	"MLVDS_FSEN"	! [752]
-	"MMC_CONS_PROG_RxD"	! [753]
-	"MMC_CONS_PROG_TxD"	! [754]
-	"MMC_RESETn"	! [755]
-	"MMC_SCL"	! [756]
-	"MMC_SDA"	! [757]
-	"MMC_TCK"	! [758]
-	"MMC_TDI"	! [759]
-	"MMC_TDO"	! [760]
-	"MMC_TMS"	! [761]
-	"MMC_TRSTn"	! [762]
-	"MOD_HANDLE"	! [763]
-	"FLASH_UPD_CSB"	! [764]
-	"MP_XTAL1"	! [765]
-	"MP_XTAL2"	! [766]
-	"NOPB_TRANS"	! [767]
-	"PGND"	! [768]
-	"PHY_CFG_DDR"	! [769]
-	"PHY_CFG_SPD0"	! [770]
-	"PHY_CFG_SPD1"	! [771]
-	"PHY_RESETn"	! [772]
-	"MMC_FPGA_INIT_B"	! [773]
-	"PROG_TCK"	! [774]
-	"PROG_TDI"	! [775]
-	"PROG_TDO"	! [776]
-	"PROG_TMS"	! [777]
-	"PSS_XRP_BST1"	! [778]
-	"PSS_XRP_BST2"	! [779]
-	"PSS_XRP_BST3"	! [780]
-	"PSS_XRP_BST4"	! [781]
-	"PSS_XRP_GH1"	! [782]
-	"PSS_XRP_GH2"	! [783]
-	"PSS_XRP_GH3"	! [784]
-	"PSS_XRP_GH4"	! [785]
-	"PSS_XRP_GL1"	! [786]
-	"PSS_XRP_GL2"	! [787]
-	"PSS_XRP_GL3"	! [788]
-	"PSS_XRP_GL4"	! [789]
-	"PSS_XRP_LDO3_3"	! [790]
-	"PSS_XRP_LX1"	! [791]
-	"PSS_XRP_LX2"	! [792]
-	"PSS_XRP_LX3"	! [793]
-	"PSS_XRP_LX4"	! [794]
-	"PS_TCK"	! [795]
-	"PS_TDI"	! [796]
-	"PS_TDO"	! [797]
-	"PS_TMS"	! [798]
-	"PS0#"	! [799]
-	"PS1#"	! [800]
-	"P0V9"	! [801]
-	"P0V95"	! [802]
-	"P3_GREEN"	! [803]
-	"P4"	! [804]
-	"P4_RED"	! [805]
-	"P5V0"	! [806]
-	"P5V0_DCDC"	! [807]
-	"P5V0_SW"	! [808]
-	"P12V_R"	! [809]
-	"$1N1106"	! [810]
-	"QSPI0_CS_B"	! [811]
-	"QSPI0_IO0"	! [812]
-	"QSPI0_IO1"	! [813]
-	"QSPI0_IO2"	! [814]
-	"QSPI0_IO3"	! [815]
-	"QSPI1_CS_B"	! [816]
-	"QSPI1_IO0"	! [817]
-	"QSPI1_IO1"	! [818]
-	"QSPI1_IO2"	! [819]
-	"QSPI1_IO3"	! [820]
-	"REC_CLOCK_N"	! [821]
-	"REC_CLOCK_N_54"	! [822]
-	"REC_CLOCK_P"	! [823]
-	"REC_CLOCK_P_54"	! [824]
-	"REFIN"	! [825]
-	"REFIN_35"	! [826]
-	"RE_DE_RX_P17"	! [827]
-	"RE_DE_RX_P18"	! [828]
-	"RE_DE_RX_P19"	! [829]
-	"RE_DE_RX_P20"	! [830]
-	"RE_DE_TX_P17"	! [831]
-	"RE_DE_TX_P18"	! [832]
-	"RE_DE_TX_P19"	! [833]
-	"RE_DE_TX_P20"	! [834]
-	"RGMII2_MDC"	! [835]
-	"RGMII2_MDIO"	! [836]
-	"RGMII2_RXD0"	! [837]
-	"RGMII2_RXD1"	! [838]
-	"RGMII2_RXD2"	! [839]
-	"RGMII2_RXD3"	! [840]
-	"RGMII2_RX_CLK"	! [841]
-	"RGMII2_RX_CTL"	! [842]
-	"RGMII2_TXD0"	! [843]
-	"RGMII2_TXD1"	! [844]
-	"RGMII2_TXD2"	! [845]
-	"RGMII2_TXD3"	! [846]
-	"RGMII2_TX_CLK"	! [847]
-	"RGMII2_TX_CTL"	! [848]
-	"RTM_FPGA_USR_IO_N"	! [849]
-	"RTM_FPGA_USR_IO_P"	! [850]
-	"RTM_FPGA_GTP_Rx0_N"	! [851]
-	"RTM_FPGA_GTP_Rx0_P"	! [852]
-	"RTM_FPGA_GTP_Rx1_N"	! [853]
-	"RTM_FPGA_GTP_Rx1_P"	! [854]
-	"RTM_FPGA_GTP_Tx0_N"	! [855]
-	"RTM_FPGA_GTP_Tx0_P"	! [856]
-	"RTM_FPGA_GTP_Tx1_N"	! [857]
-	"RTM_FPGA_GTP_Tx1_P"	! [858]
-	"RTM_FPGA_LVDS1_N"	! [859]
-	"RTM_FPGA_LVDS1_P"	! [860]
-	"RTM_FPGA_LVDS2_N"	! [861]
-	"RTM_FPGA_LVDS2_P"	! [862]
-	"RTM_PS#"	! [863]
-	"RTM_SCL"	! [864]
-	"RTM_SDA"	! [865]
-	"RTM_TCK"	! [866]
-	"RTM_TDI"	! [867]
-	"RTM_TDO"	! [868]
-	"RTM_TMS"	! [869]
-	"RX0C_N"	! [870]
-	"RX0C_P"	! [871]
-	"RX0_N"	! [872]
-	"RX0_P"	! [873]
-	"Rx1_N"	! [874]
-	"Rx1_P"	! [875]
-	"Rx2_N"	! [876]
-	"Rx2_P"	! [877]
-	"Rx3_N"	! [878]
-	"Rx3_P"	! [879]
-	"RX4_N"	! [880]
-	"RX4_P"	! [881]
-	"RX5_N"	! [882]
-	"RX5_P"	! [883]
-	"RX6_N"	! [884]
-	"RX6_P"	! [885]
-	"RX7_N"	! [886]
-	"RX7_P"	! [887]
-	"RX10_N"	! [888]
-	"RX10_P"	! [889]
-	"RX11_N"	! [890]
-	"RX11_P"	! [891]
-	"RX12_N"	! [892]
-	"RX12_P"	! [893]
-	"RX13_N"	! [894]
-	"RX13_P"	! [895]
-	"RX14_N"	! [896]
-	"RX14_P"	! [897]
-	"RX15_N"	! [898]
-	"RX15_P"	! [899]
-	"RX17_N"	! [900]
-	"RX17_P"	! [901]
-	"RX18_N"	! [902]
-	"RX18_P"	! [903]
-	"RX19_N"	! [904]
-	"RX19_P"	! [905]
-	"RX20_N"	! [906]
-	"RX20_P"	! [907]
-	"SB_S"	! [908]
-	"SCANSTA_ADR0"	! [909]
-	"SCANSTA_ADR1"	! [910]
-	"SCANSTA_ADR2"	! [911]
-	"SCANSTA_ADR3"	! [912]
-	"SCANSTA_ADR4"	! [913]
-	"SCANSTA_ADR5"	! [914]
-	"SCANSTA_ADR6"	! [915]
-	"SCANSTA_ADR7"	! [916]
-	"SCANSTA_LPSEL0"	! [917]
-	"SCANSTA_LPSEL1"	! [918]
-	"SCANSTA_LPSEL2"	! [919]
-	"SCANSTA_LPSEL3"	! [920]
-	"SCANSTA_LPSEL4"	! [921]
-	"SCANSTA_LPSEL5"	! [922]
-	"SCANSTA_LPSEL6"	! [923]
-	"SCANSTA_RESET"	! [924]
-	"EN_FLASH_UPDATE"	! [925]
-	"SCN_RSTn"	! [926]
-	"SDRAM_PGOOD"	! [927]
-	"SEL_RGMII"	! [928]
-	"SFP1RX_N"	! [929]
-	"SFP1RX_P"	! [930]
-	"SFP1TX_N"	! [931]
-	"SFP1TX_P"	! [932]
-	"SFP1_TX_FAULT"	! [933]
-	"SFP1_TX_DISABLE"	! [934]
-	"SFP1_MOD_DEF0"	! [935]
-	"SFP1_MOD_DEF1"	! [936]
-	"SFP1_LOS"	! [937]
-	"SFP1_LED2"	! [938]
-	"SFP1_LED1"	! [939]
-	"SFP1_MOD_DEF2"	! [940]
-	"SFP1_RATE_SELECT"	! [941]
-	"SFP2RX_N"	! [942]
-	"SFP2RX_P"	! [943]
-	"SFP2TX_N"	! [944]
-	"SFP2TX_P"	! [945]
-	"SFP2_TX_FAULT"	! [946]
-	"SFP2_TX_DISABLE"	! [947]
-	"SFP2_MOD_DEF0"	! [948]
-	"SFP2_MOD_DEF1"	! [949]
-	"SFP2_LOS"	! [950]
-	"SFP2_LED2"	! [951]
-	"SFP2_LED1"	! [952]
-	"SFP2_MOD_DEF2"	! [953]
-	"SFP2_RATE_SELECT"	! [954]
-	"CDR_CLK_CLEAN1_N"	! [955]
-	"CDR_CLK_CLEAN1_P"	! [956]
-	"CDR_CLK_CLEAN2_N"	! [957]
-	"CDR_CLK_CLEAN2_P"	! [958]
-	"SI5324_INT_ALM"	! [959]
-	"SI5324_RST"	! [960]
-	"SI5324_SCL"	! [961]
-	"SI5324_SDA"	! [962]
-	"SI5328_XTAL_XA"	! [963]
-	"SI5328_XTAL_XB"	! [964]
-	"AUX_UART_RxD"	! [965]
-	"AUX_UART_TxD"	! [966]
-	"FLASH_UPD_MOSI"	! [967]
-	"SUP1.0_FILT"	! [968]
-	"SUP1.0_LL"	! [969]
-	"SUP1.0_VBST"	! [970]
-	"SUP1.0_VBSTR"	! [971]
-	"SUP1.0_VFB"	! [972]
-	"SUP1.0_VFBR"	! [973]
-	"SUP1.0_VREG"	! [974]
-	"SW"	! [975]
-	"SYNCOUT10_N"	! [976]
-	"SYNCOUT10_P"	! [977]
-	"SYNCOUT11_N"	! [978]
-	"SYNCOUT11_P"	! [979]
-	"SYNCOUT20_N"	! [980]
-	"SYNCOUT20_P"	! [981]
-	"SYNCOUT21_N"	! [982]
-	"SYNCOUT21_P"	! [983]
-	"SYSCLK_300_N"	! [984]
-	"SYSCLK_300_P"	! [985]
-	"SYSCLK1_300_N"	! [986]
-	"SYSCLK1_300_P"	! [987]
-	"SYSMON_VN_R"	! [988]
-	"SYSMON_VP_R"	! [989]
-	"TCLKA_N"	! [990]
-	"TCLKA_P"	! [991]
-	"TCLKB_N"	! [992]
-	"TCLKB_P"	! [993]
-	"TCLKC_N"	! [994]
-	"TCLKC_P"	! [995]
-	"TCLKD_N"	! [996]
-	"TCLKD_P"	! [997]
-	"TLR_TRST"	! [998]
-	"TLR_TRST6"	! [999]
-	"TPS74401RGW_PG1"	! [1000]
-	"TPS74401RGW_PG2"	! [1001]
-	"TX0C_N"	! [1002]
-	"TX0C_P"	! [1003]
-	"TX0_N"	! [1004]
-	"TX0_P"	! [1005]
-	"Tx1_N"	! [1006]
-	"Tx1_P"	! [1007]
-	"Tx2_N"	! [1008]
-	"Tx2_P"	! [1009]
-	"Tx3_N"	! [1010]
-	"Tx3_P"	! [1011]
-	"TX4_N"	! [1012]
-	"TX4_P"	! [1013]
-	"TX5_N"	! [1014]
-	"TX5_P"	! [1015]
-	"TX6_N"	! [1016]
-	"TX6_P"	! [1017]
-	"TX7_N"	! [1018]
-	"TX7_P"	! [1019]
-	"TX10_N"	! [1020]
-	"TX10_P"	! [1021]
-	"TX11_N"	! [1022]
-	"TX11_P"	! [1023]
-	"TX12_N"	! [1024]
-	"TX12_P"	! [1025]
-	"TX13_N"	! [1026]
-	"TX13_P"	! [1027]
-	"TX14_N"	! [1028]
-	"TX14_P"	! [1029]
-	"TX15_N"	! [1030]
-	"TX15_P"	! [1031]
-	"TX17_N"	! [1032]
-	"TX17_P"	! [1033]
-	"TX18_N"	! [1034]
-	"TX18_P"	! [1035]
-	"TX19_N"	! [1036]
-	"TX19_P"	! [1037]
-	"TX20_N"	! [1038]
-	"TX20_P"	! [1039]
-	"USB_D_R_N"	! [1040]
-	"USB_D_R_P"	! [1041]
-	"USB_TCK"	! [1042]
-	"USB_TDI"	! [1043]
-	"USB_TDO"	! [1044]
-	"USB_TMS"	! [1045]
-	"USB_TRSTn"	! [1046]
-	"USR_UART_N"	! [1047]
-	"USR_UART_P"	! [1048]
-	"VOSNS"	! [1049]
-	"VOSNS_35"	! [1050]
-	"VRP_44"	! [1051]
-	"VRP_45"	! [1052]
-	"VRP_46"	! [1053]
-	"VRP_47"	! [1054]
-	"VRP_48"	! [1055]
-	"VRP_66"	! [1056]
-	"VRP_67"	! [1057]
-	"VRP_68"	! [1058]
-	"VTT32"	! [1059]
-	"VTT64"	! [1060]
-	"$1N7329"	! [1061]
-	"ZQ1"	! [1062]
-	"ZQ2"	! [1063]
-	"ZQ2_35"	! [1064]
-	"$1N1830"	! [1065]
-	"$1N2301"	! [1066]
-	"$1N2302"	! [1067]
-	"$1N2304"	! [1068]
-	"$1N2305"	! [1069]
-	"$1N2923_54"	! [1070]
-	"$1N2924"	! [1071]
-	"$1N3223"	! [1072]
-	"$1N3225"	! [1073]
-	"TXC10_N"	! [1074]
-	"RXC10_P"	! [1075]
-	"RXC10_N"	! [1076]
-	"TXC10_P"	! [1077]
-	"TXC9_N"	! [1078]
-	"TXC9_P"	! [1079]
-	"RXC9_P"	! [1080]
-	"RXC9_N"	! [1081]
-	"RXC11_P"	! [1082]
-	"TXC11_P"	! [1083]
-	"RXC11_N"	! [1084]
-	"TXC11_N"	! [1085]
-	"RXC8_P"	! [1086]
-	"RXC8_N"	! [1087]
-	"TXC8_N"	! [1088]
-	"TXC8_P"	! [1089]
-	"TXC12_P"	! [1090]
-	"TXC12_N"	! [1091]
-	"TXC13_P"	! [1092]
-	"TXC13_N"	! [1093]
-	"TXC14_P"	! [1094]
-	"TXC14_N"	! [1095]
-	"TXC15_P"	! [1096]
-	"TXC15_N"	! [1097]
-	"TXC6_P"	! [1098]
-	"TXC7_N"	! [1099]
-	"TXC7_P"	! [1100]
-	"TXC6_N"	! [1101]
-	"REFCLK227_C_P"	! [1102]
-	"REFCLK227_C_N"	! [1103]
-	"$9N7293"	! [1104]
-	"$9N7294"	! [1105]
-	"RF_OUT"	! [1106]
-	"$1N3670"	! [1107]
-	"$1N6972"	! [1108]
-	"$1N1833"	! [1109]
-	"$1N2632"	! [1110]
-	"$1N2633"	! [1111]
-	"$1N2634"	! [1112]
-	"$1N2636"	! [1113]
-	"$1N2688"	! [1114]
-	"$1N2689"	! [1115]
-	"$1N2690"	! [1116]
-	"$1N2691"	! [1117]
-	"$9N8317"	! [1118]
-	"$9N8318"	! [1119]
-	"FCLKAC_N"	! [1120]
-	"FCLKAC_P"	! [1121]
-	"AMC_MASTER_AUX_CLK_N"	! [1122]
-	"AMC_MASTER_AUX_CLK_P"	! [1123]
-	"CLK_200MHz_N"	! [1124]
-	"CLK_200MHz_P"	! [1125]
-	"OSC3_PWR"	! [1126]
-	"$9N8682"	! [1127]
-	"$9N8683"	! [1128]
-	"OSC4_PWR"	! [1129]
-	"CLK_RFU_N"	! [1130]
-	"CLK_RFU_P"	! [1131]
-	"P3V3MP_BUCK"	! [1132]
-	"$1N3111"	! [1133]
-	"$1N4258"	! [1134]
-	"$1N4368"	! [1135]
-	"$1N4453"	! [1136]
-	"$1N4650"	! [1137]
-	"GTP7TXC_N"	! [1138]
-	"GTP7TXC_P"	! [1139]
-	"GTP6TXC_N"	! [1140]
-	"GTP6TXC_P"	! [1141]
-	"GTP5TXC_N"	! [1142]
-	"GTP5TXC_P"	! [1143]
-	"GTP4TXC_N"	! [1144]
-	"GTP4TXC_P"	! [1145]
-	"GTP0TXC_N"	! [1146]
-	"GTP0TXC_P"	! [1147]
-	"GTP1TXC_N"	! [1148]
-	"GTP2TXC_N"	! [1149]
-	"GTP2TXC_P"	! [1150]
-	"GTP3TXC_N"	! [1151]
-	"GTP3TXC_P"	! [1152]
-	"TX4C_P"	! [1153]
-	"TX4C_N"	! [1154]
-	"TX5C_P"	! [1155]
-	"TX5C_N"	! [1156]
-	"GTP8TXC_P"	! [1157]
-	"GTP8TXC_N"	! [1158]
-	"GTP9TXC_P"	! [1159]
-	"GTP9TXC_N"	! [1160]
-	"GTP10TXC_P"	! [1161]
-	"GTP10TXC_N"	! [1162]
-	"GTP11TXC_P"	! [1163]
-	"GTP11TXC_N"	! [1164]
-	"GTP15TXC_P"	! [1165]
-	"GTP15TXC_N"	! [1166]
-	"GTP14TXC_P"	! [1167]
-	"GTP14TXC_N"	! [1168]
-	"GTP13TXC_P"	! [1169]
-	"GTP13TXC_N"	! [1170]
-	"GTP12TXC_P"	! [1171]
-	"GTP12TXC_N"	! [1172]
-	"AUX_CLOCK_C2_N"	! [1173]
-	"AUX_CLOCK_C2_P"	! [1174]
-	"FPGA_CCLK"	! [1175]
-	"MMC_MISO1"	! [1176]
-	"P3V3MP_SW"	! [1177]
-	"$1N15450"	! [1178]
-	"$1N15473"	! [1179]
-	"$1N15496"	! [1180]
-	"$1N15519"	! [1181]
-	"HW_ID0"	! [1182]
-	"HW_ID1"	! [1183]
-	"HW_ID2"	! [1184]
-	"HW_ID3"	! [1185]
-	"P3V3MP_FUSE"	! [1186]
-	"SFP2_SCL"	! [1187]
-	"SFP2_SDA"	! [1188]
-	"SFP1_SCL"	! [1189]
-	"SFP1_SDA"	! [1190]
-	"$1N3937"	! [1191]
-	"$1N3944"	! [1192]
-	"$1N4334"	! [1193]
-	"$1N4381"	! [1194]
-	"$1N5003"	! [1195]
-	"EN_RTM_MP"	! [1196]
-	"HW_ID0_58"	! [1197]
-	"HW_ID1_58"	! [1198]
-	"HW_ID2_58"	! [1199]
-	"HW_ID3_58"	! [1200]
-	"MII_COL_58"	! [1201]
-	"MRn"	! [1202]
-	"$1N233"	! [1203]
-	"$1N256"	! [1204]
-	"$1N377"	! [1205]
-	"$1N449"	! [1206]
-	"$1N7790"	! [1207]
-	"$1N19937"	! [1208]
-	"Vref68"	! [1209]
-	"Vref65"	! [1210]
-	"Vref64"	! [1211]
-	"DDR3_32_CS_N"	! [1212]
-	"DDR3_32_DQ12"	! [1213]
-	"DDR3_32_DQ14"	! [1214]
-	"DDR3_32_DQ15"	! [1215]
-	"DDR3_32_DQ17"	! [1216]
-	"DDR3_32_DQ18"	! [1217]
-	"DDR3_32_DQ20"	! [1218]
-	"DDR3_32_DQ23"	! [1219]
-	"DDR3_64_BA2"	! [1220]
-	"DDR3_64_CK_P"	! [1221]
-	"DDR3_64_DM0"	! [1222]
-	"DDR3_64_DM2"	! [1223]
-	"DDR3_64_DM3"	! [1224]
-	"DDR3_64_DM5"	! [1225]
-	"EN_PSU_CH"	! [1226]
-	"EN_P0V9"	! [1227]
-	"EN_P5V0"	! [1228]
-	"FMC2_TRST_n"	! [1229]
-	"FPGA_STATUS"	! [1230]
-	"PGOOD_P5V0"	! [1231]
-	"PROG_TRST"	! [1232]
-	"RTM_TRSTn"	! [1233]
-	"SMA_IO1"	! [1234]
-	"SMA_IO1_DIR"	! [1235]
-	"SMA_IO2"	! [1236]
-	"SMA_IO2_DIR"	! [1237]
-	"SMA1_IO_TTL"	! [1238]
-	"SMA2_IO_TTL"	! [1239]
-	"$1N1267"	! [1240]
-	"$1N1269"	! [1241]
-	"$1N1271"	! [1242]
-	"$1N1273"	! [1243]
-	"$1N1275"	! [1244]
-	"$1N1277"	! [1245]
-	"$1N1279"	! [1246]
-	"$1N2012"	! [1247]
-	"$1N2137"	! [1248]
-	"$1N4317"	! [1249]
-	"$1N5277"	! [1250]
-	"P1V5_LDO_IN"	! [1251]
-	"$1N7325"	! [1252]
-	"XR77129ILB_F_VOUT1"	! [1253]
-	"XR77129ILB_F_VOUT2"	! [1254]
-	"XR77129ILB_F_VOUT3"	! [1255]
-	"XR77129ILB_F_VOUT4"	! [1256]
-	"$1N13998"	! [1257]
-	"$1N14047"	! [1258]
-	"$2N16603"	! [1259]
-	"$2N16641"	! [1260]
-	"GTP1TXC_P"	! [1261]
-	"$3N14244"	! [1262]
-	"$3N14269"	! [1263]
-	"RXC14_P"	! [1264]
-	"RXC14_N"	! [1265]
-	"RXC15_P"	! [1266]
-	"RXC15_N"	! [1267]
-	"$7N9414"	! [1268]
-	"$7N9439"	! [1269]
-	"RTM_FPGA_GTP_RxC0_N"	! [1270]
-	"RTM_FPGA_GTP_RxC0_P"	! [1271]
-	"RTM_FPGA_GTP_RxC1_N"	! [1272]
-	"RTM_FPGA_GTP_RxC1_P"	! [1273]
-	"RXC6_N"	! [1274]
-	"RXC6_P"	! [1275]
-	"RXC7_N"	! [1276]
-	"RXC7_P"	! [1277]
-	"RXC12_N"	! [1278]
-	"RXC12_P"	! [1279]
-	"RXC13_N"	! [1280]
-	"RXC13_P"	! [1281]
-	"Vbias_0.9V"	! [1282]
-	"Vbias_1.6"	! [1283]
-	"RX8_N"	! [1284]
-	"RX8_P"	! [1285]
-	"RX9_N"	! [1286]
-	"RX9_P"	! [1287]
-	"TX8_N"	! [1288]
-	"TX8_P"	! [1289]
-	"TX9_N"	! [1290]
-	"TX9_P"	! [1291]
-	"$1N5450"	! [1292]
-	"$1N5450_36"	! [1293]
-	"$1N5451"	! [1294]
-	"$1N5451_36"	! [1295]
-	"$1N5452"	! [1296]
-	"$1N5452_36"	! [1297]
-	"$1N5453"	! [1298]
-	"$1N5453_36"	! [1299]
-	"$1N5461"	! [1300]
-	"$1N5461_36"	! [1301]
-	"$1N5462"	! [1302]
-	"$1N5462_36"	! [1303]
-	"$1N5465"	! [1304]
-	"$1N5465_36"	! [1305]
-	"$1N7979"	! [1306]
-	"$1N7979_36"	! [1307]
-	"$1N8399"	! [1308]
-	"$1N8399_36"	! [1309]
-	"$1N8881"	! [1310]
-	"$1N8881_36"	! [1311]
-	"$1N8883"	! [1312]
-	"$1N8883_36"	! [1313]
-	"$1N4943"	! [1314]
-	"$1N4967"	! [1315]
-	"$1N4991"	! [1316]
-	"$1N5038"	! [1317]
-	"AUX_VUART_RxD"	! [1318]
-	"AUX_VUART_TxD"	! [1319]
-	"MMC_UART1_RxD"	! [1320]
-	"MMC_UART1_TxD"	! [1321]
-	"MMC_UART4_RxD"	! [1322]
-	"MMC_UART4_TxD"	! [1323]
-	"PRI_VUART_RxD"	! [1324]
-	"PRI_VUART_TxD"	! [1325]
-	"USB_PRESENT"	! [1326]
-	"$1N9"	! [1327]
-	"$1N10"	! [1328]
-	"$1N11"	! [1329]
-	"$1N1411"	! [1330]
-	"$1N1412"	! [1331]
-	"$1N1413"	! [1332]
-	"$1N2255"	! [1333]
-	"$1N4269"	! [1334]
-	"$1N4272"	! [1335]
-	"$1N5420"	! [1336]
-	"$1N5929"	! [1337]
-	"$1N5931"	! [1338]
-	"$1N5959"	! [1339]
-	"$1N6016"	! [1340]
-	"$1N6017"	! [1341]
-	"$1N6019"	! [1342]
-	"$1N6091"	! [1343]
-	"$1N6093"	! [1344]
-	"$1N6157"	! [1345]
-	"$1N6241"	! [1346]
-	"$1N7258"	! [1347]
-	"$1N7260"	! [1348]
-	"$1N7483"	! [1349]
-	"$1N7591"	! [1350]
-	"$1N7689"	! [1351]
-	"$1N20115"	! [1352]
-	"$1N20139"	! [1353]
-	"I2C_SW_RESETn"	! [1354]
-	"PM_SCL"	! [1355]
-	"PM_SDA"	! [1356]
-	"SCL1"	! [1357]
-	"SDA1"	! [1358]
-	"SENS_SCL"	! [1359]
-	"SENS_SDA"	! [1360]
-	"$1N9022"	! [1361]
-	"$1N9022_36"	! [1362]
-	"$1N9049"	! [1363]
-	"$1N9049_36"	! [1364]
+	"MII1_MDC"	! [732]
+	"MII1_MDIO"	! [733]
+	"MII1_COL"	! [734]
+	"MII1_RXD0"	! [735]
+	"MII1_RXD1"	! [736]
+	"MII1_RXD2"	! [737]
+	"MII1_RXD3"	! [738]
+	"MII1_RX_CLK"	! [739]
+	"MII1_RX_DV"	! [740]
+	"MII1_RX_ER"	! [741]
+	"MII1_TXD0"	! [742]
+	"MII1_MODE"	! [743]
+	"MII1_TXD2"	! [744]
+	"MII1_TXD3"	! [745]
+	"MII1_TX_CLK"	! [746]
+	"MII2_CRS"	! [747]
+	"MII2_RX_ER"	! [748]
+	"FLASH_UPD_MISO"	! [749]
+	"MLVDS_FSEN"	! [750]
+	"MMC_CONS_PROG_RxD"	! [751]
+	"MMC_CONS_PROG_TxD"	! [752]
+	"MMC_RESETn"	! [753]
+	"MMC_SCL"	! [754]
+	"MMC_SDA"	! [755]
+	"MMC_TCK"	! [756]
+	"MMC_TDI"	! [757]
+	"MMC_TDO"	! [758]
+	"MMC_TMS"	! [759]
+	"MMC_TRSTn"	! [760]
+	"MOD_HANDLE"	! [761]
+	"FLASH_UPD_CSB"	! [762]
+	"MP_XTAL1"	! [763]
+	"MP_XTAL2"	! [764]
+	"NOPB_TRANS"	! [765]
+	"PGND"	! [766]
+	"MII1_TX_EN"	! [767]
+	"PHY_CFG_DDR"	! [768]
+	"PHY_CFG_SPD0"	! [769]
+	"PHY_CFG_SPD1"	! [770]
+	"MMC_FPGA_INIT_B"	! [771]
+	"PROG_TCK"	! [772]
+	"PROG_TDI"	! [773]
+	"PROG_TDO"	! [774]
+	"PROG_TMS"	! [775]
+	"PSS_XRP_BST1"	! [776]
+	"PSS_XRP_BST2"	! [777]
+	"PSS_XRP_BST3"	! [778]
+	"PSS_XRP_BST4"	! [779]
+	"PSS_XRP_GH1"	! [780]
+	"PSS_XRP_GH2"	! [781]
+	"PSS_XRP_GH3"	! [782]
+	"PSS_XRP_GH4"	! [783]
+	"PSS_XRP_GL1"	! [784]
+	"PSS_XRP_GL2"	! [785]
+	"PSS_XRP_GL3"	! [786]
+	"PSS_XRP_GL4"	! [787]
+	"PSS_XRP_LDO3_3"	! [788]
+	"PSS_XRP_LX1"	! [789]
+	"PSS_XRP_LX2"	! [790]
+	"PSS_XRP_LX3"	! [791]
+	"PSS_XRP_LX4"	! [792]
+	"PS_TCK"	! [793]
+	"PS_TDI"	! [794]
+	"PS_TDO"	! [795]
+	"PS_TMS"	! [796]
+	"PS0#"	! [797]
+	"PS1#"	! [798]
+	"P0V9"	! [799]
+	"P0V95"	! [800]
+	"P3_GREEN"	! [801]
+	"P4"	! [802]
+	"P4_RED"	! [803]
+	"P5V0"	! [804]
+	"P5V0_DCDC"	! [805]
+	"P5V0_SW"	! [806]
+	"P12V_R"	! [807]
+	"$1N1106"	! [808]
+	"QSPI0_CS_B"	! [809]
+	"QSPI0_IO0"	! [810]
+	"QSPI0_IO1"	! [811]
+	"QSPI0_IO2"	! [812]
+	"QSPI0_IO3"	! [813]
+	"QSPI1_CS_B"	! [814]
+	"QSPI1_IO0"	! [815]
+	"QSPI1_IO1"	! [816]
+	"QSPI1_IO2"	! [817]
+	"QSPI1_IO3"	! [818]
+	"REC_CLOCK_N"	! [819]
+	"REC_CLOCK_N_54"	! [820]
+	"REC_CLOCK_P"	! [821]
+	"REC_CLOCK_P_54"	! [822]
+	"REFIN"	! [823]
+	"REFIN_35"	! [824]
+	"RE_DE_RX_P17"	! [825]
+	"RE_DE_RX_P18"	! [826]
+	"RE_DE_RX_P19"	! [827]
+	"RE_DE_RX_P20"	! [828]
+	"RE_DE_TX_P17"	! [829]
+	"RE_DE_TX_P18"	! [830]
+	"RE_DE_TX_P19"	! [831]
+	"RE_DE_TX_P20"	! [832]
+	"RGMII2_MDC"	! [833]
+	"RGMII2_MDIO"	! [834]
+	"RGMII2_RXD0"	! [835]
+	"RGMII2_RXD1"	! [836]
+	"RGMII2_RXD2"	! [837]
+	"RGMII2_RXD3"	! [838]
+	"RGMII2_RX_CLK"	! [839]
+	"RGMII2_RX_CTL"	! [840]
+	"RGMII2_TXD0"	! [841]
+	"RGMII2_TXD1"	! [842]
+	"RGMII2_TXD2"	! [843]
+	"RGMII2_TXD3"	! [844]
+	"RGMII2_TX_CLK"	! [845]
+	"RGMII2_TX_CTL"	! [846]
+	"RTM_FPGA_USR_IO_N"	! [847]
+	"RTM_FPGA_USR_IO_P"	! [848]
+	"RTM_FPGA_GTP_Rx0_N"	! [849]
+	"RTM_FPGA_GTP_Rx0_P"	! [850]
+	"RTM_FPGA_GTP_Rx1_N"	! [851]
+	"RTM_FPGA_GTP_Rx1_P"	! [852]
+	"RTM_FPGA_GTP_Tx0_N"	! [853]
+	"RTM_FPGA_GTP_Tx0_P"	! [854]
+	"RTM_FPGA_GTP_Tx1_N"	! [855]
+	"RTM_FPGA_GTP_Tx1_P"	! [856]
+	"RTM_FPGA_LVDS1_N"	! [857]
+	"RTM_FPGA_LVDS1_P"	! [858]
+	"RTM_FPGA_LVDS2_N"	! [859]
+	"RTM_FPGA_LVDS2_P"	! [860]
+	"RTM_PS#"	! [861]
+	"RTM_SCL"	! [862]
+	"RTM_SDA"	! [863]
+	"RTM_TCK"	! [864]
+	"RTM_TDI"	! [865]
+	"RTM_TDO"	! [866]
+	"RTM_TMS"	! [867]
+	"RX0C_N"	! [868]
+	"RX0C_P"	! [869]
+	"RX0_N"	! [870]
+	"RX0_P"	! [871]
+	"Rx1_N"	! [872]
+	"Rx1_P"	! [873]
+	"Rx2_N"	! [874]
+	"Rx2_P"	! [875]
+	"Rx3_N"	! [876]
+	"Rx3_P"	! [877]
+	"RX4_N"	! [878]
+	"RX4_P"	! [879]
+	"RX5_N"	! [880]
+	"RX5_P"	! [881]
+	"RX6_N"	! [882]
+	"RX6_P"	! [883]
+	"RX7_N"	! [884]
+	"RX7_P"	! [885]
+	"RX10_N"	! [886]
+	"RX10_P"	! [887]
+	"RX11_N"	! [888]
+	"RX11_P"	! [889]
+	"RX12_N"	! [890]
+	"RX12_P"	! [891]
+	"RX13_N"	! [892]
+	"RX13_P"	! [893]
+	"RX14_N"	! [894]
+	"RX14_P"	! [895]
+	"RX15_N"	! [896]
+	"RX15_P"	! [897]
+	"RX17_N"	! [898]
+	"RX17_P"	! [899]
+	"RX18_N"	! [900]
+	"RX18_P"	! [901]
+	"RX19_N"	! [902]
+	"RX19_P"	! [903]
+	"RX20_N"	! [904]
+	"RX20_P"	! [905]
+	"SB_S"	! [906]
+	"SCANSTA_ADR0"	! [907]
+	"SCANSTA_ADR1"	! [908]
+	"SCANSTA_ADR2"	! [909]
+	"SCANSTA_ADR3"	! [910]
+	"SCANSTA_ADR4"	! [911]
+	"SCANSTA_ADR5"	! [912]
+	"SCANSTA_ADR6"	! [913]
+	"SCANSTA_ADR7"	! [914]
+	"SCANSTA_LPSEL0"	! [915]
+	"SCANSTA_LPSEL1"	! [916]
+	"SCANSTA_LPSEL2"	! [917]
+	"SCANSTA_LPSEL3"	! [918]
+	"SCANSTA_LPSEL4"	! [919]
+	"SCANSTA_LPSEL5"	! [920]
+	"SCANSTA_LPSEL6"	! [921]
+	"SCANSTA_RESET"	! [922]
+	"EN_FLASH_UPDATE"	! [923]
+	"SCN_RSTn"	! [924]
+	"SDRAM_PGOOD"	! [925]
+	"SEL_RGMII"	! [926]
+	"SFP1RX_N"	! [927]
+	"SFP1RX_P"	! [928]
+	"SFP1TX_N"	! [929]
+	"SFP1TX_P"	! [930]
+	"SFP1_TX_FAULT"	! [931]
+	"SFP1_TX_DISABLE"	! [932]
+	"SFP1_MOD_DEF0"	! [933]
+	"SFP1_MOD_DEF1"	! [934]
+	"SFP1_LOS"	! [935]
+	"SFP1_LED2"	! [936]
+	"SFP1_LED1"	! [937]
+	"SFP1_MOD_DEF2"	! [938]
+	"SFP1_RATE_SELECT"	! [939]
+	"SFP2RX_N"	! [940]
+	"SFP2RX_P"	! [941]
+	"SFP2TX_N"	! [942]
+	"SFP2TX_P"	! [943]
+	"SFP2_TX_FAULT"	! [944]
+	"SFP2_TX_DISABLE"	! [945]
+	"SFP2_MOD_DEF0"	! [946]
+	"SFP2_MOD_DEF1"	! [947]
+	"SFP2_LOS"	! [948]
+	"SFP2_LED2"	! [949]
+	"SFP2_LED1"	! [950]
+	"SFP2_MOD_DEF2"	! [951]
+	"SFP2_RATE_SELECT"	! [952]
+	"CDR_CLK_CLEAN1_N"	! [953]
+	"CDR_CLK_CLEAN1_P"	! [954]
+	"CDR_CLK_CLEAN2_N"	! [955]
+	"CDR_CLK_CLEAN2_P"	! [956]
+	"SI5324_INT_ALM"	! [957]
+	"SI5324_RST"	! [958]
+	"SI5324_SCL"	! [959]
+	"SI5324_SDA"	! [960]
+	"SI5328_XTAL_XA"	! [961]
+	"SI5328_XTAL_XB"	! [962]
+	"AUX_UART_RxD"	! [963]
+	"AUX_UART_TxD"	! [964]
+	"FLASH_UPD_MOSI"	! [965]
+	"SUP1.0_FILT"	! [966]
+	"SUP1.0_LL"	! [967]
+	"SUP1.0_VBST"	! [968]
+	"SUP1.0_VBSTR"	! [969]
+	"SUP1.0_VFB"	! [970]
+	"SUP1.0_VFBR"	! [971]
+	"SUP1.0_VREG"	! [972]
+	"SW"	! [973]
+	"SYNCOUT10_N"	! [974]
+	"SYNCOUT10_P"	! [975]
+	"SYNCOUT11_N"	! [976]
+	"SYNCOUT11_P"	! [977]
+	"SYNCOUT20_N"	! [978]
+	"SYNCOUT20_P"	! [979]
+	"SYNCOUT21_N"	! [980]
+	"SYNCOUT21_P"	! [981]
+	"SYSCLK_300_N"	! [982]
+	"SYSCLK_300_P"	! [983]
+	"SYSCLK1_300_N"	! [984]
+	"SYSCLK1_300_P"	! [985]
+	"SYSMON_VN_R"	! [986]
+	"SYSMON_VP_R"	! [987]
+	"TCLKA_N"	! [988]
+	"TCLKA_P"	! [989]
+	"TCLKB_N"	! [990]
+	"TCLKB_P"	! [991]
+	"TCLKC_N"	! [992]
+	"TCLKC_P"	! [993]
+	"TCLKD_N"	! [994]
+	"TCLKD_P"	! [995]
+	"TLR_TRST"	! [996]
+	"TLR_TRST6"	! [997]
+	"TPS74401RGW_PG1"	! [998]
+	"TPS74401RGW_PG2"	! [999]
+	"TX0C_N"	! [1000]
+	"TX0C_P"	! [1001]
+	"TX0_N"	! [1002]
+	"TX0_P"	! [1003]
+	"Tx1_N"	! [1004]
+	"Tx1_P"	! [1005]
+	"Tx2_N"	! [1006]
+	"Tx2_P"	! [1007]
+	"Tx3_N"	! [1008]
+	"Tx3_P"	! [1009]
+	"TX4_N"	! [1010]
+	"TX4_P"	! [1011]
+	"TX5_N"	! [1012]
+	"TX5_P"	! [1013]
+	"TX6_N"	! [1014]
+	"TX6_P"	! [1015]
+	"TX7_N"	! [1016]
+	"TX7_P"	! [1017]
+	"TX10_N"	! [1018]
+	"TX10_P"	! [1019]
+	"TX11_N"	! [1020]
+	"TX11_P"	! [1021]
+	"TX12_N"	! [1022]
+	"TX12_P"	! [1023]
+	"TX13_N"	! [1024]
+	"TX13_P"	! [1025]
+	"TX14_N"	! [1026]
+	"TX14_P"	! [1027]
+	"TX15_N"	! [1028]
+	"TX15_P"	! [1029]
+	"TX17_N"	! [1030]
+	"TX17_P"	! [1031]
+	"TX18_N"	! [1032]
+	"TX18_P"	! [1033]
+	"TX19_N"	! [1034]
+	"TX19_P"	! [1035]
+	"TX20_N"	! [1036]
+	"TX20_P"	! [1037]
+	"USB_D_R_N"	! [1038]
+	"USB_D_R_P"	! [1039]
+	"USB_TCK"	! [1040]
+	"USB_TDI"	! [1041]
+	"USB_TDO"	! [1042]
+	"USB_TMS"	! [1043]
+	"USB_TRSTn"	! [1044]
+	"USR_UART_N"	! [1045]
+	"USR_UART_P"	! [1046]
+	"VOSNS"	! [1047]
+	"VOSNS_35"	! [1048]
+	"VRP_44"	! [1049]
+	"VRP_45"	! [1050]
+	"VRP_46"	! [1051]
+	"VRP_47"	! [1052]
+	"VRP_48"	! [1053]
+	"VRP_66"	! [1054]
+	"VRP_67"	! [1055]
+	"VRP_68"	! [1056]
+	"VTT32"	! [1057]
+	"VTT64"	! [1058]
+	"$1N7329"	! [1059]
+	"ZQ1"	! [1060]
+	"ZQ2"	! [1061]
+	"ZQ2_35"	! [1062]
+	"$1N1830"	! [1063]
+	"$1N2301"	! [1064]
+	"$1N2302"	! [1065]
+	"$1N2304"	! [1066]
+	"$1N2305"	! [1067]
+	"$1N2923_54"	! [1068]
+	"$1N2924"	! [1069]
+	"$1N3223"	! [1070]
+	"$1N3225"	! [1071]
+	"TXC10_N"	! [1072]
+	"RXC10_P"	! [1073]
+	"RXC10_N"	! [1074]
+	"TXC10_P"	! [1075]
+	"TXC9_N"	! [1076]
+	"TXC9_P"	! [1077]
+	"RXC9_P"	! [1078]
+	"RXC9_N"	! [1079]
+	"RXC11_P"	! [1080]
+	"TXC11_P"	! [1081]
+	"RXC11_N"	! [1082]
+	"TXC11_N"	! [1083]
+	"RXC8_P"	! [1084]
+	"RXC8_N"	! [1085]
+	"TXC8_N"	! [1086]
+	"TXC8_P"	! [1087]
+	"TXC12_P"	! [1088]
+	"TXC12_N"	! [1089]
+	"TXC13_P"	! [1090]
+	"TXC13_N"	! [1091]
+	"TXC14_P"	! [1092]
+	"TXC14_N"	! [1093]
+	"TXC15_P"	! [1094]
+	"TXC15_N"	! [1095]
+	"TXC6_P"	! [1096]
+	"TXC7_N"	! [1097]
+	"TXC7_P"	! [1098]
+	"TXC6_N"	! [1099]
+	"REFCLK227_C_P"	! [1100]
+	"REFCLK227_C_N"	! [1101]
+	"$9N7293"	! [1102]
+	"$9N7294"	! [1103]
+	"RF_OUT"	! [1104]
+	"$1N3670"	! [1105]
+	"$1N6972"	! [1106]
+	"$1N1833"	! [1107]
+	"$1N2632"	! [1108]
+	"$1N2633"	! [1109]
+	"$1N2634"	! [1110]
+	"$1N2636"	! [1111]
+	"$1N2688"	! [1112]
+	"$1N2689"	! [1113]
+	"$1N2690"	! [1114]
+	"$1N2691"	! [1115]
+	"$9N8317"	! [1116]
+	"$9N8318"	! [1117]
+	"FCLKAC_N"	! [1118]
+	"FCLKAC_P"	! [1119]
+	"AMC_MASTER_AUX_CLK_N"	! [1120]
+	"AMC_MASTER_AUX_CLK_P"	! [1121]
+	"CLK_200MHz_N"	! [1122]
+	"CLK_200MHz_P"	! [1123]
+	"OSC3_PWR"	! [1124]
+	"$9N8682"	! [1125]
+	"$9N8683"	! [1126]
+	"OSC4_PWR"	! [1127]
+	"CLK_RFU_N"	! [1128]
+	"CLK_RFU_P"	! [1129]
+	"P3V3MP_BUCK"	! [1130]
+	"$1N3111"	! [1131]
+	"$1N4258"	! [1132]
+	"$1N4368"	! [1133]
+	"$1N4453"	! [1134]
+	"$1N4650"	! [1135]
+	"GTP7TXC_N"	! [1136]
+	"GTP7TXC_P"	! [1137]
+	"GTP6TXC_N"	! [1138]
+	"GTP6TXC_P"	! [1139]
+	"GTP5TXC_N"	! [1140]
+	"GTP5TXC_P"	! [1141]
+	"GTP4TXC_N"	! [1142]
+	"GTP4TXC_P"	! [1143]
+	"GTP0TXC_N"	! [1144]
+	"GTP0TXC_P"	! [1145]
+	"GTP1TXC_N"	! [1146]
+	"GTP2TXC_N"	! [1147]
+	"GTP2TXC_P"	! [1148]
+	"GTP3TXC_N"	! [1149]
+	"GTP3TXC_P"	! [1150]
+	"TX4C_P"	! [1151]
+	"TX4C_N"	! [1152]
+	"TX5C_P"	! [1153]
+	"TX5C_N"	! [1154]
+	"GTP8TXC_P"	! [1155]
+	"GTP8TXC_N"	! [1156]
+	"GTP9TXC_P"	! [1157]
+	"GTP9TXC_N"	! [1158]
+	"GTP10TXC_P"	! [1159]
+	"GTP10TXC_N"	! [1160]
+	"GTP11TXC_P"	! [1161]
+	"GTP11TXC_N"	! [1162]
+	"GTP15TXC_P"	! [1163]
+	"GTP15TXC_N"	! [1164]
+	"GTP14TXC_P"	! [1165]
+	"GTP14TXC_N"	! [1166]
+	"GTP13TXC_P"	! [1167]
+	"GTP13TXC_N"	! [1168]
+	"GTP12TXC_P"	! [1169]
+	"GTP12TXC_N"	! [1170]
+	"AUX_CLOCK_C2_N"	! [1171]
+	"AUX_CLOCK_C2_P"	! [1172]
+	"FPGA_CCLK"	! [1173]
+	"MMC_MISO1"	! [1174]
+	"P3V3MP_SW"	! [1175]
+	"$1N15450"	! [1176]
+	"$1N15473"	! [1177]
+	"$1N15496"	! [1178]
+	"$1N15519"	! [1179]
+	"HW_ID0"	! [1180]
+	"HW_ID1"	! [1181]
+	"HW_ID2"	! [1182]
+	"HW_ID3"	! [1183]
+	"P3V3MP_FUSE"	! [1184]
+	"SFP2_SCL"	! [1185]
+	"SFP2_SDA"	! [1186]
+	"SFP1_SCL"	! [1187]
+	"SFP1_SDA"	! [1188]
+	"$1N3937"	! [1189]
+	"$1N3944"	! [1190]
+	"$1N4334"	! [1191]
+	"$1N4381"	! [1192]
+	"$1N5003"	! [1193]
+	"EN_RTM_MP"	! [1194]
+	"HW_ID0_58"	! [1195]
+	"HW_ID1_58"	! [1196]
+	"HW_ID2_58"	! [1197]
+	"HW_ID3_58"	! [1198]
+	"MRn"	! [1199]
+	"$1N233"	! [1200]
+	"$1N256"	! [1201]
+	"$1N377"	! [1202]
+	"$1N449"	! [1203]
+	"RTM_ESD"	! [1204]
+	"$1N19937"	! [1205]
+	"Vref68"	! [1206]
+	"Vref65"	! [1207]
+	"Vref64"	! [1208]
+	"DDR3_32_CS_N"	! [1209]
+	"DDR3_32_DQ12"	! [1210]
+	"DDR3_32_DQ14"	! [1211]
+	"DDR3_32_DQ15"	! [1212]
+	"DDR3_32_DQ17"	! [1213]
+	"DDR3_32_DQ18"	! [1214]
+	"DDR3_32_DQ20"	! [1215]
+	"DDR3_32_DQ23"	! [1216]
+	"DDR3_64_BA2"	! [1217]
+	"DDR3_64_CK_P"	! [1218]
+	"DDR3_64_DM0"	! [1219]
+	"DDR3_64_DM2"	! [1220]
+	"DDR3_64_DM3"	! [1221]
+	"DDR3_64_DM5"	! [1222]
+	"EN_PSU_CH"	! [1223]
+	"EN_P0V9"	! [1224]
+	"EN_P5V0"	! [1225]
+	"FMC2_TRST_n"	! [1226]
+	"FPGA_STATUS"	! [1227]
+	"PGOOD_P5V0"	! [1228]
+	"PROG_TRST"	! [1229]
+	"RTM_TRSTn"	! [1230]
+	"SMA_IO1"	! [1231]
+	"SMA_IO1_DIR"	! [1232]
+	"SMA_IO2"	! [1233]
+	"SMA_IO2_DIR"	! [1234]
+	"SMA1_IO_TTL"	! [1235]
+	"SMA2_IO_TTL"	! [1236]
+	"$1N1267"	! [1237]
+	"$1N1269"	! [1238]
+	"$1N1271"	! [1239]
+	"$1N1273"	! [1240]
+	"$1N1275"	! [1241]
+	"$1N1277"	! [1242]
+	"$1N1279"	! [1243]
+	"$1N2012"	! [1244]
+	"$1N2137"	! [1245]
+	"$1N4317"	! [1246]
+	"$1N5277"	! [1247]
+	"P1V5_LDO_IN"	! [1248]
+	"$1N7325"	! [1249]
+	"XR77129ILB_F_VOUT1"	! [1250]
+	"XR77129ILB_F_VOUT2"	! [1251]
+	"XR77129ILB_F_VOUT3"	! [1252]
+	"XR77129ILB_F_VOUT4"	! [1253]
+	"$1N13998"	! [1254]
+	"$1N14047"	! [1255]
+	"$2N16603"	! [1256]
+	"$2N16641"	! [1257]
+	"GTP1TXC_P"	! [1258]
+	"$3N14244"	! [1259]
+	"$3N14269"	! [1260]
+	"RXC14_P"	! [1261]
+	"RXC14_N"	! [1262]
+	"RXC15_P"	! [1263]
+	"RXC15_N"	! [1264]
+	"$7N9414"	! [1265]
+	"$7N9439"	! [1266]
+	"RTM_FPGA_GTP_RxC0_N"	! [1267]
+	"RTM_FPGA_GTP_RxC0_P"	! [1268]
+	"RTM_FPGA_GTP_RxC1_N"	! [1269]
+	"RTM_FPGA_GTP_RxC1_P"	! [1270]
+	"RXC6_N"	! [1271]
+	"RXC6_P"	! [1272]
+	"RXC7_N"	! [1273]
+	"RXC7_P"	! [1274]
+	"RXC12_N"	! [1275]
+	"RXC12_P"	! [1276]
+	"RXC13_N"	! [1277]
+	"RXC13_P"	! [1278]
+	"Vbias_0.9V"	! [1279]
+	"Vbias_1.6"	! [1280]
+	"RX8_N"	! [1281]
+	"RX8_P"	! [1282]
+	"RX9_N"	! [1283]
+	"RX9_P"	! [1284]
+	"TX8_N"	! [1285]
+	"TX8_P"	! [1286]
+	"TX9_N"	! [1287]
+	"TX9_P"	! [1288]
+	"$1N5450"	! [1289]
+	"$1N5450_36"	! [1290]
+	"$1N5451"	! [1291]
+	"$1N5451_36"	! [1292]
+	"$1N5452"	! [1293]
+	"$1N5452_36"	! [1294]
+	"$1N5453"	! [1295]
+	"$1N5453_36"	! [1296]
+	"$1N5461"	! [1297]
+	"$1N5461_36"	! [1298]
+	"$1N5462"	! [1299]
+	"$1N5462_36"	! [1300]
+	"$1N5465"	! [1301]
+	"$1N5465_36"	! [1302]
+	"$1N7979"	! [1303]
+	"$1N7979_36"	! [1304]
+	"$1N8399"	! [1305]
+	"$1N8399_36"	! [1306]
+	"$1N8881"	! [1307]
+	"$1N8881_36"	! [1308]
+	"$1N8883"	! [1309]
+	"$1N8883_36"	! [1310]
+	"$1N4943"	! [1311]
+	"$1N4967"	! [1312]
+	"$1N4991"	! [1313]
+	"$1N5038"	! [1314]
+	"AUX_VUART_RxD"	! [1315]
+	"AUX_VUART_TxD"	! [1316]
+	"MMC_UART1_RxD"	! [1317]
+	"MMC_UART1_TxD"	! [1318]
+	"MMC_UART4_RxD"	! [1319]
+	"MMC_UART4_TxD"	! [1320]
+	"PRI_VUART_RxD"	! [1321]
+	"PRI_VUART_TxD"	! [1322]
+	"USB_PRESENT"	! [1323]
+	"$1N9"	! [1324]
+	"$1N10"	! [1325]
+	"$1N11"	! [1326]
+	"$1N1411"	! [1327]
+	"$1N1412"	! [1328]
+	"$1N1413"	! [1329]
+	"$1N2255"	! [1330]
+	"$1N4269"	! [1331]
+	"$1N4272"	! [1332]
+	"$1N5420"	! [1333]
+	"$1N5929"	! [1334]
+	"$1N5931"	! [1335]
+	"$1N5959"	! [1336]
+	"$1N6016"	! [1337]
+	"$1N6017"	! [1338]
+	"$1N6019"	! [1339]
+	"$1N6091"	! [1340]
+	"$1N6093"	! [1341]
+	"$1N6157"	! [1342]
+	"$1N6241"	! [1343]
+	"$1N7258"	! [1344]
+	"$1N7260"	! [1345]
+	"$1N7483"	! [1346]
+	"$1N7591"	! [1347]
+	"$1N7689"	! [1348]
+	"$1N20115"	! [1349]
+	"$1N20139"	! [1350]
+	"I2C_SW_RESETn"	! [1351]
+	"PM_SCL"	! [1352]
+	"PM_SDA"	! [1353]
+	"SCL1"	! [1354]
+	"SDA1"	! [1355]
+	"SENS_SCL"	! [1356]
+	"SENS_SDA"	! [1357]
+	"$1N9022"	! [1358]
+	"$1N9022_36"	! [1359]
+	"$1N9049"	! [1360]
+	"$1N9049_36"	! [1361]
+	"$1N5263"	! [1362]
+	"$1N5266"	! [1363]
+	"$1N19382"	! [1364]
+	"$1N19422"	! [1365]
+	"$1N19423"	! [1366]
+	"$1N19424"	! [1367]
+	"$1N19438"	! [1368]
+	"$1N19440"	! [1369]
+	"$1N20177"	! [1370]
+	"$1N20179"	! [1371]
+	"$1N20194"	! [1372]
+	"$1N20210"	! [1373]
+	"FMC2_PG_C2M"	! [1374]
+	"FMC2_PG_M2C"	! [1375]
+	"FMC2_PRSNT"	! [1376]
+	"PHY_RESETn"	! [1377]
+	"SSP0_MISO"	! [1378]
+	"SSP0_MOSI"	! [1379]
+	"SSP0_SCK"	! [1380]
+	"SSP0_SSEL"	! [1381]
+	"$1N5436"	! [1382]
+	"$1N5489"	! [1383]
     )
     ..Netclass_Names ( 
 	"(Default)"	! [1]
@@ -2754,11 +2773,11 @@
 	0x00ffffff 0x00ffffff	! [121-122] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [123-124] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [125-126] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [127-128] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [129-130] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [131-132] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [133-134] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [135-136] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [127-128] RGB(255,255,255)  undefined
+	        -1         -1	! [129-130] undefined  undefined
+	        -1         -1	! [131-132] undefined  undefined
+	        -1         -1	! [133-134] undefined  undefined
+	        -1 0x00ffffff	! [135-136] undefined  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [137-138] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [139-140] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [141-142] RGB(255,255,255)  RGB(255,255,255)
@@ -3057,7 +3076,7 @@
 	0x00ffffff 0x00ffffff	! [727-728] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [729-730] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [731-732] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [733-734] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [733-734] RGB(255,255,255)  undefined
 	0x00ffffff 0x00ffffff	! [735-736] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [737-738] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [739-740] RGB(255,255,255)  RGB(255,255,255)
@@ -3090,8 +3109,8 @@
 	0x00ffffff 0x00ffffff	! [793-794] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [795-796] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [797-798] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [799-800] RGB(255,255,255)  RGB(255,255,255)
-	0x0099ffff 0x0033ffcc	! [801-802] RGB(255,255,153)  RGB(204,255, 51)
+	0x0099ffff 0x0033ffcc	! [799-800] RGB(255,255,153)  RGB(204,255, 51)
+	0x00ffffff 0x00ffffff	! [801-802] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [803-804] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [805-806] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [807-808] RGB(255,255,255)  RGB(255,255,255)
@@ -3226,21 +3245,21 @@
 	0x00ffffff 0x00ffffff	! [1065-1066] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1067-1068] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1069-1070] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1071-1072] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1073-1074] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1075-1076] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1077-1078] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1079-1080] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1081-1082] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1083-1084] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1085-1086] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1087-1088] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1089-1090] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1091-1092] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1093-1094] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1095-1096] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1097-1098] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1099-1100] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [1071-1072] RGB(255,255,255)  undefined
+	        -1         -1	! [1073-1074] undefined  undefined
+	        -1         -1	! [1075-1076] undefined  undefined
+	        -1         -1	! [1077-1078] undefined  undefined
+	        -1         -1	! [1079-1080] undefined  undefined
+	        -1         -1	! [1081-1082] undefined  undefined
+	        -1         -1	! [1083-1084] undefined  undefined
+	        -1         -1	! [1085-1086] undefined  undefined
+	        -1         -1	! [1087-1088] undefined  undefined
+	        -1         -1	! [1089-1090] undefined  undefined
+	        -1         -1	! [1091-1092] undefined  undefined
+	        -1         -1	! [1093-1094] undefined  undefined
+	        -1         -1	! [1095-1096] undefined  undefined
+	        -1         -1	! [1097-1098] undefined  undefined
+	        -1 0x00ffffff	! [1099-1100] undefined  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1101-1102] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1103-1104] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1105-1106] RGB(255,255,255)  RGB(255,255,255)
@@ -3249,8 +3268,8 @@
 	0x00ffffff 0x00ffffff	! [1111-1112] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1113-1114] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1115-1116] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1117-1118] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1119-1120] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [1117-1118] RGB(255,255,255)  undefined
+	        -1 0x00ffffff	! [1119-1120] undefined  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1121-1122] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1123-1124] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1125-1126] RGB(255,255,255)  RGB(255,255,255)
@@ -3258,33 +3277,33 @@
 	0x00ffffff 0x00ffffff	! [1129-1130] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1131-1132] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1133-1134] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1135-1136] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1137-1138] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1139-1140] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1141-1142] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1143-1144] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1145-1146] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1147-1148] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1149-1150] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1151-1152] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1153-1154] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1155-1156] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1157-1158] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1159-1160] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1161-1162] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1163-1164] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1165-1166] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1167-1168] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1169-1170] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [1135-1136] RGB(255,255,255)  undefined
+	        -1         -1	! [1137-1138] undefined  undefined
+	        -1         -1	! [1139-1140] undefined  undefined
+	        -1         -1	! [1141-1142] undefined  undefined
+	        -1         -1	! [1143-1144] undefined  undefined
+	        -1         -1	! [1145-1146] undefined  undefined
+	        -1         -1	! [1147-1148] undefined  undefined
+	        -1         -1	! [1149-1150] undefined  undefined
+	        -1         -1	! [1151-1152] undefined  undefined
+	        -1         -1	! [1153-1154] undefined  undefined
+	        -1         -1	! [1155-1156] undefined  undefined
+	        -1         -1	! [1157-1158] undefined  undefined
+	        -1         -1	! [1159-1160] undefined  undefined
+	        -1         -1	! [1161-1162] undefined  undefined
+	        -1         -1	! [1163-1164] undefined  undefined
+	        -1         -1	! [1165-1166] undefined  undefined
+	        -1         -1	! [1167-1168] undefined  undefined
+	        -1         -1	! [1169-1170] undefined  undefined
 	0x00ffffff 0x00ffffff	! [1171-1172] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1173-1174] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1175-1176] RGB(255,255,255)  RGB(255,255,255)
+	        -1 0x00ffffff	! [1175-1176] undefined  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1177-1178] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1179-1180] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1181-1182] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1183-1184] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1185-1186] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1187-1188] RGB(255,255,255)  RGB(255,255,255)
+	        -1         -1	! [1185-1186] undefined  undefined
+	        -1         -1	! [1187-1188] undefined  undefined
 	0x00ffffff 0x00ffffff	! [1189-1190] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1191-1192] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1193-1194] RGB(255,255,255)  RGB(255,255,255)
@@ -3292,7 +3311,7 @@
 	0x00ffffff 0x00ffffff	! [1197-1198] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1199-1200] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1201-1202] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1203-1204] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [1203-1204] RGB(255,255,255)  undefined
 	0x00ffffff 0x00ffffff	! [1205-1206] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1207-1208] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1209-1210] RGB(255,255,255)  RGB(255,255,255)
@@ -3314,65 +3333,75 @@
 	0x00ffffff 0x00ffffff	! [1241-1242] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1243-1244] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1245-1246] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1247-1248] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [1247-1248] RGB(255,255,255)  undefined
 	0x00ffffff 0x00ffffff	! [1249-1250] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1251-1252] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1253-1254] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1255-1256] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1257-1258] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1259-1260] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1261-1262] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1263-1264] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1265-1266] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1267-1268] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1269-1270] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1271-1272] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1273-1274] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1275-1276] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1277-1278] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1279-1280] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff         -1	! [1257-1258] RGB(255,255,255)  undefined
+	        -1         -1	! [1259-1260] undefined  undefined
+	        -1         -1	! [1261-1262] undefined  undefined
+	        -1         -1	! [1263-1264] undefined  undefined
+	        -1         -1	! [1265-1266] undefined  undefined
+	        -1         -1	! [1267-1268] undefined  undefined
+	        -1         -1	! [1269-1270] undefined  undefined
+	        -1         -1	! [1271-1272] undefined  undefined
+	        -1         -1	! [1273-1274] undefined  undefined
+	        -1         -1	! [1275-1276] undefined  undefined
+	        -1         -1	! [1277-1278] undefined  undefined
+	        -1         -1	! [1279-1280] undefined  undefined
 	0x00ffffff 0x00ffffff	! [1281-1282] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1283-1284] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1285-1286] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1287-1288] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1289-1290] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1291-1292] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1293-1294] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1295-1296] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1297-1298] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1299-1300] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1301-1302] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1303-1304] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1305-1306] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1307-1308] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1309-1310] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1311-1312] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1313-1314] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1315-1316] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1317-1318] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1319-1320] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1321-1322] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1323-1324] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1325-1326] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1327-1328] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1329-1330] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1331-1332] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1333-1334] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1335-1336] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1337-1338] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1339-1340] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1341-1342] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1343-1344] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1345-1346] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1347-1348] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1349-1350] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1351-1352] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1353-1354] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1355-1356] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1357-1358] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1359-1360] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1361-1362] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [1363-1364] RGB(255,255,255)  RGB(255,255,255)
+	        -1         -1	! [1289-1290] undefined  undefined
+	        -1         -1	! [1291-1292] undefined  undefined
+	        -1         -1	! [1293-1294] undefined  undefined
+	        -1         -1	! [1295-1296] undefined  undefined
+	        -1         -1	! [1297-1298] undefined  undefined
+	        -1         -1	! [1299-1300] undefined  undefined
+	        -1         -1	! [1301-1302] undefined  undefined
+	        -1         -1	! [1303-1304] undefined  undefined
+	        -1         -1	! [1305-1306] undefined  undefined
+	        -1         -1	! [1307-1308] undefined  undefined
+	        -1         -1	! [1309-1310] undefined  undefined
+	        -1         -1	! [1311-1312] undefined  undefined
+	        -1         -1	! [1313-1314] undefined  undefined
+	        -1         -1	! [1315-1316] undefined  undefined
+	        -1         -1	! [1317-1318] undefined  undefined
+	        -1         -1	! [1319-1320] undefined  undefined
+	        -1         -1	! [1321-1322] undefined  undefined
+	        -1         -1	! [1323-1324] undefined  undefined
+	        -1         -1	! [1325-1326] undefined  undefined
+	        -1         -1	! [1327-1328] undefined  undefined
+	        -1         -1	! [1329-1330] undefined  undefined
+	        -1         -1	! [1331-1332] undefined  undefined
+	        -1         -1	! [1333-1334] undefined  undefined
+	        -1         -1	! [1335-1336] undefined  undefined
+	        -1         -1	! [1337-1338] undefined  undefined
+	        -1         -1	! [1339-1340] undefined  undefined
+	        -1         -1	! [1341-1342] undefined  undefined
+	        -1         -1	! [1343-1344] undefined  undefined
+	        -1         -1	! [1345-1346] undefined  undefined
+	        -1         -1	! [1347-1348] undefined  undefined
+	        -1         -1	! [1349-1350] undefined  undefined
+	        -1         -1	! [1351-1352] undefined  undefined
+	        -1         -1	! [1353-1354] undefined  undefined
+	        -1         -1	! [1355-1356] undefined  undefined
+	        -1         -1	! [1357-1358] undefined  undefined
+	        -1         -1	! [1359-1360] undefined  undefined
+	        -1         -1	! [1361-1362] undefined  undefined
+	        -1         -1	! [1363-1364] undefined  undefined
+	        -1         -1	! [1365-1366] undefined  undefined
+	        -1         -1	! [1367-1368] undefined  undefined
+	        -1         -1	! [1369-1370] undefined  undefined
+	        -1         -1	! [1371-1372] undefined  undefined
+	        -1         -1	! [1373-1374] undefined  undefined
+	        -1         -1	! [1375-1376] undefined  undefined
+	0x00ffffff         -1	! [1377-1378] RGB(255,255,255)  undefined
+	        -1         -1	! [1379-1380] undefined  undefined
+	        -1         -1	! [1381-1382] undefined  undefined
+	        -1		! [1383] undefined
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -3511,7 +3540,9 @@
 	0 0 0 0 0 0 0 0 0 0 	! [1331 - 1340]
 	0 0 0 0 0 0 0 0 0 0 	! [1341 - 1350]
 	0 0 0 0 0 0 0 0 0 0 	! [1351 - 1360]
-	0 0 0 0 ! [1361 - 1364]
+	0 0 0 0 0 0 0 0 0 0 	! [1361 - 1370]
+	0 0 0 0 0 0 0 0 0 0 	! [1371 - 1380]
+	0 0 0 ! [1381 - 1383]
 	)
     ..Net_Alpha ( 
 	100 100 100 100 100 100 100 100 100 100 	! [1 - 10]
@@ -3650,7 +3681,9 @@
 	100 100 100 100 100 100 100 100 100 100 	! [1331 - 1340]
 	100 100 100 100 100 100 100 100 100 100 	! [1341 - 1350]
 	100 100 100 100 100 100 100 100 100 100 	! [1351 - 1360]
-	100 100 100 100 ! [1361 - 1364]
+	100 100 100 100 100 100 100 100 100 100 	! [1361 - 1370]
+	100 100 100 100 100 100 100 100 100 100 	! [1371 - 1380]
+	100 100 100 ! [1381 - 1383]
 	)
     ..Net_Nopaque ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -3789,7 +3822,9 @@
 	F F F F F F F F F F 	! [1331 - 1340]
 	F F F F F F F F F F 	! [1341 - 1350]
 	F F F F F F F F F F 	! [1351 - 1360]
-	F F F F ! [1361 - 1364]
+	F F F F F F F F F F 	! [1361 - 1370]
+	F F F F F F F F F F 	! [1371 - 1380]
+	F F F ! [1381 - 1383]
 	)
     ..Net_Outline ( 
 	T T T T T T T F F F 	! [1 - 10]
@@ -3804,8 +3839,8 @@
 	F F F F F F F F F F 	! [91 - 100]
 	F F F F F F F F F F 	! [101 - 110]
 	F F F F F F F F F F 	! [111 - 120]
-	F F F F F F F F F F 	! [121 - 130]
-	F F F F F F F F F F 	! [131 - 140]
+	F F F F F F F T T T 	! [121 - 130]
+	T T T T T F F F F F 	! [131 - 140]
 	F F F F F F F F F F 	! [141 - 150]
 	F F F F F F F F F F 	! [151 - 160]
 	F F F F F F F F F F 	! [161 - 170]
@@ -3865,16 +3900,16 @@
 	F F F F F F F T F F 	! [701 - 710]
 	F F F F F F F F F F 	! [711 - 720]
 	F F F F F F F F F F 	! [721 - 730]
-	F F F F F F F F F F 	! [731 - 740]
-	F F F F F F F F F F 	! [741 - 750]
-	F T F F F F F F F F 	! [751 - 760]
+	F F F T F F F F F F 	! [731 - 740]
+	F F F F F F F F F T 	! [741 - 750]
+	F F F F F F F F F F 	! [751 - 760]
 	F F F F F F F F F F 	! [761 - 770]
-	F F F F F F F T T T 	! [771 - 780]
+	F F F F F T T T T T 	! [771 - 780]
 	T T T T T T T T T T 	! [781 - 790]
-	T T T T F F F F F F 	! [791 - 800]
-	F F F F F T T T F F 	! [801 - 810]
+	T T F F F F F F F F 	! [791 - 800]
+	F F F T T T F F F F 	! [801 - 810]
 	F F F F F F F F F F 	! [811 - 820]
-	F F F F T F F F F F 	! [821 - 830]
+	F F T F F F F F F F 	! [821 - 830]
 	F F F F F F F F F F 	! [831 - 840]
 	F F F F F F F F F F 	! [841 - 850]
 	F F F F F F F F F F 	! [851 - 860]
@@ -3884,51 +3919,53 @@
 	F F F F F F F F F F 	! [891 - 900]
 	F F F F F F F F F F 	! [901 - 910]
 	F F F F F F F F F F 	! [911 - 920]
-	F F F F T F F F F F 	! [921 - 930]
-	F F T T T T T F F T 	! [931 - 940]
-	T T T T T T T T T T 	! [941 - 950]
-	F F T T F F F F F F 	! [951 - 960]
+	F F T F F F F F F F 	! [921 - 930]
+	T T T T T F F T T T 	! [931 - 940]
+	T T T T T T T T F F 	! [941 - 950]
+	T T F F F F F F F F 	! [951 - 960]
 	F F F F F F F F F F 	! [961 - 970]
 	F F F F F F F F F F 	! [971 - 980]
 	F F F F F F F F F F 	! [981 - 990]
-	F F F F F F F F F T 	! [991 - 1000]
-	T F F F F F F F F F 	! [1001 - 1010]
+	F F F F F F F T T F 	! [991 - 1000]
+	F F F F F F F F F F 	! [1001 - 1010]
 	F F F F F F F F F F 	! [1011 - 1020]
 	F F F F F F F F F F 	! [1021 - 1030]
-	F F F F F F F F F T 	! [1031 - 1040]
-	T F F F F F F F T F 	! [1041 - 1050]
-	F F F F F F F F F F 	! [1051 - 1060]
-	F T T F F F F F F F 	! [1061 - 1070]
-	F F F F F F F F F F 	! [1071 - 1080]
-	F F F F F F F F F F 	! [1081 - 1090]
-	F F F F F F F F F F 	! [1091 - 1100]
+	F F F F F F F T T F 	! [1031 - 1040]
+	F F F F F F T F F F 	! [1041 - 1050]
+	F F F F F F F F F T 	! [1051 - 1060]
+	T F F F F F F F F F 	! [1061 - 1070]
+	F T T T T T T T T T 	! [1071 - 1080]
+	T T T T T T T T T T 	! [1081 - 1090]
+	T T T T T T T T T F 	! [1091 - 1100]
 	F F F F F F F F F F 	! [1101 - 1110]
-	F F F F F F F F F F 	! [1111 - 1120]
+	F F F F F F F T T F 	! [1111 - 1120]
 	F F F F F F F F F F 	! [1121 - 1130]
-	F F F F F F F F F F 	! [1131 - 1140]
-	F F F F F F F F F F 	! [1141 - 1150]
-	F F F F F F F F F F 	! [1151 - 1160]
-	F F F F F F F F F F 	! [1161 - 1170]
-	F F F F F F F F F F 	! [1171 - 1180]
-	F F F F F F F F F F 	! [1181 - 1190]
+	F F F F F T T T T T 	! [1131 - 1140]
+	T T T T T T T T T T 	! [1141 - 1150]
+	T T T T T T T T T T 	! [1151 - 1160]
+	T T T T T T T T T T 	! [1161 - 1170]
+	F F F F T F F F F F 	! [1171 - 1180]
+	F F F F T T T T F F 	! [1181 - 1190]
 	F F F F F F F F F F 	! [1191 - 1200]
-	F F F F F F F F F F 	! [1201 - 1210]
+	F F F T F F F F F F 	! [1201 - 1210]
 	F F F F F F F F F F 	! [1211 - 1220]
 	F F F F F F F F F F 	! [1221 - 1230]
 	F F F F F F F F F F 	! [1231 - 1240]
-	F F F F F F F F F F 	! [1241 - 1250]
-	F F F F F F F F F F 	! [1251 - 1260]
-	F F F F F F F F F F 	! [1261 - 1270]
-	F F F F F F F F F F 	! [1271 - 1280]
-	F F F F F F F F F F 	! [1281 - 1290]
-	F F F F F F F F F F 	! [1291 - 1300]
-	F F F F F F F F F F 	! [1301 - 1310]
-	F F F F F F F F F F 	! [1311 - 1320]
-	F F F F F F F F F F 	! [1321 - 1330]
-	F F F F F F F F F F 	! [1331 - 1340]
-	F F F F F F F F F F 	! [1341 - 1350]
-	F F F F F F F F F F 	! [1351 - 1360]
-	F F F F ! [1361 - 1364]
+	F F F F F F F T F F 	! [1241 - 1250]
+	F F F F F F F T T T 	! [1251 - 1260]
+	T T T T T T T T T T 	! [1261 - 1270]
+	T T T T T T T T T T 	! [1271 - 1280]
+	F F F F F F F F T T 	! [1281 - 1290]
+	T T T T T T T T T T 	! [1291 - 1300]
+	T T T T T T T T T T 	! [1301 - 1310]
+	T T T T T T T T T T 	! [1311 - 1320]
+	T T T T T T T T T T 	! [1321 - 1330]
+	T T T T T T T T T T 	! [1331 - 1340]
+	T T T T T T T T T T 	! [1341 - 1350]
+	T T T T T T T T T T 	! [1351 - 1360]
+	T T T T T T T T T T 	! [1361 - 1370]
+	T T T T T T F T T T 	! [1371 - 1380]
+	T T T ! [1381 - 1383]
 	)
     ..Netclass_Color ( 
 	0x00ffffff 0x00ffffff	! [1-2] RGB(255,255,255)  RGB(255,255,255)
@@ -4259,7 +4296,9 @@
 	F F F F F F F F F F 	! [1331 - 1340]
 	F F F F F F F F F F 	! [1341 - 1350]
 	F F F F F F F F F F 	! [1351 - 1360]
-	F F F F ! [1361 - 1364]
+	F F F F F F F F F F 	! [1361 - 1370]
+	F F F F F F F F F F 	! [1371 - 1380]
+	F F F ! [1381 - 1383]
 	)
     ..Netclass_On ( 
 	False ![1]
@@ -4528,7 +4567,7 @@
 	"[VirtualGlobal].iDC.3D.Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionOrder" "8"
-	"[VirtualGlobal].iDC.ActiveTabId" "2"
+	"[VirtualGlobal].iDC.ActiveTabId" "5"
 	"[VirtualGlobal].iDC.AplyTo" "3"
 	"[VirtualGlobal].iDC.AssemblyItems" "2"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionOrder" "4"
@@ -4745,9 +4784,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "2"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "48"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "213"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "439"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "34"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "290"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "114"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4761,8 +4800,8 @@
 
 .view "Sayma_AMC"
     ..extrema
-	(239271658,-22611922)		! (xmin, ymin)
-	(557760639,155540803)		! (xmax, ymax)
+	(241445300,12881233)		! (xmin, ymin)
+	(531444421,152497781)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -4862,8 +4901,8 @@
     ..All_User_Draft_Enabled             True
     ..User_Draft_On ( 
 	F F T F F F F F F F 	! [1 - 10]
-	F F F F F F F F F F 	! [11 - 20]
-	F F F F F F F F F F 	! [21 - 30]
+	F F F F T F F F F F 	! [11 - 20]
+	T F F F F F F F F F 	! [21 - 30]
 	F F F F F F F F F F 	! [31 - 40]
 	F F F F F F F F F F 	! [41 - 50]
 	F F F F F F F F F F 	! [51 - 60]
@@ -4887,26 +4926,26 @@
 	F F F F F F F F F F 	! [231 - 240]
 	F F F F F F F F F F 	! [241 - 250]
 	)
-    ..All_Board_Items_Enabled            False
-    ..Board_Outline_On                   False
+    ..All_Board_Items_Enabled            True
+    ..Board_Outline_On                   True
     ..Route_Border_On                    True
     ..Hard_Route_Fence_On                False
     ..Soft_Route_Fence_On                False
-    ..Contour_On                         False
-    ..Contour_Span_On                    False
-    ..Cavity_On                          False
+    ..Contour_On                         True
+    ..Contour_Span_On                    True
+    ..Cavity_On                          True
     ..Milling_On                         False
-    ..Mounting_Hole_On                   False
+    ..Mounting_Hole_On                   True
     ..Other_Hole_On                      True
-    ..Fiducial_On                        False	! top
-                                         False	! bottom
-    ..Origin_On                          False
-    ..Nc_Drill_Origin_On                 False
+    ..Fiducial_On                        True 	! top
+                                         True 	! bottom
+    ..Origin_On                          True
+    ..Nc_Drill_Origin_On                 True
     ..Route_Obstruct_On                  True
     ..Pad_Obstruct_On                    False
     ..Rule_Area_On                       True
-    ..Drc_Window_On                      False
-    ..Manufacturing_Outline_On           False
+    ..Drc_Window_On                      True
+    ..Manufacturing_Outline_On           True
     ..All_Panel_Items_Enabled            True
     ..Panel_Outline_On                   True
     ..Panel_Border_On                    True
@@ -4923,14 +4962,14 @@
     ..Dsp_Active_Route_Layer_Only        False
     ..Display_Legible_Text_Only          True
     ..Mirror_View_On                     False
-    ..All_Text_Items_Enabled             False
-    ..Pin_Property_Text_On               False
-    ..Cell_Property_Text_On              False
+    ..All_Text_Items_Enabled             True
+    ..Pin_Property_Text_On               True
+    ..Cell_Property_Text_On              True
     ..All_Mult_Designers_Enabled         True
     ..Reserved_Areas_On                  False
     ..Protected_Areas_On                 True
     ..Sandboxes_On                       True
-    ..Fixture_Outline_On                 False
+    ..Fixture_Outline_On                 True
     ..All_Xds_Force_Fields_Enabled       True
     ..This_Xdc_Handle_On                 True
     ..Other_Xdcs_On                      True
@@ -4969,10 +5008,10 @@
                                          True 	! bottom
     ..Silk_Outline_On                    True 	! top
                                          True 	! bottom
-    ..Silk_Part_Number_On                False	! top
-                                         False	! bottom
-    ..Silk_Ref_Des_On                    False	! top
-                                         False	! bottom
+    ..Silk_Part_Number_On                True 	! top
+                                         True 	! bottom
+    ..Silk_Ref_Des_On                    True 	! top
+                                         True 	! bottom
     ..Silk_Altered_Data_On               False	! top
                                          False	! bottom
     ..All_Cell_Enabled                   False	! top
@@ -5284,18 +5323,18 @@
 	"LayerControl.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"Board.BendArea" "d:1" "e:0" "s:1" "se:1" "c:65535" "a:100" "p:80" "t:1" "o:1"
-	"Board.BoardOutline" "d:1" "e:0" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"Board.Cavity" "d:1" "e:0" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
-	"Board.DRCWindow" "d:1" "e:0" "s:1" "se:1" "c:16737945" "a:100" "p:0" "t:0" "o:1"
-	"Board.FixtureOutline" "d:1" "e:0" "s:1" "se:1" "c:8388608" "a:100" "p:0" "t:0" "o:1"
-	"Board.ManufacturingOutline" "d:1" "e:0" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
+	"Board.BendArea" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:80" "t:1" "o:1"
+	"Board.BoardOutline" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"Board.Cavity" "d:1" "e:1" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
+	"Board.DRCWindow" "d:1" "e:1" "s:1" "se:1" "c:16737945" "a:100" "p:0" "t:0" "o:1"
+	"Board.FixtureOutline" "d:1" "e:1" "s:1" "se:1" "c:8388608" "a:100" "p:0" "t:0" "o:1"
+	"Board.ManufacturingOutline" "d:1" "e:1" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.Part.Top" "d:0" "e:1" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.Part.Bottom" "d:1" "e:1" "s:1" "se:1" "c:13434624" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.TestPoint.Top" "d:0" "e:1" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.TestPoint.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16711782" "a:100" "p:0" "t:0" "o:1"
-	"Board.Origin.Board" "d:1" "e:0" "s:1" "se:1" "c:13434777" "a:100" "p:0" "t:0" "o:1"
-	"Board.Origin.NCDrill" "d:1" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"Board.Origin.Board" "d:1" "e:1" "s:1" "se:1" "c:13434777" "a:100" "p:0" "t:0" "o:1"
+	"Board.Origin.NCDrill" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Board.Room.Top" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:0" "t:0" "o:1"
 	"Board.Room.Bottom" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Board.RouteBorder" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
@@ -5558,8 +5597,8 @@
 	"Copper.Pad.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.Fiducial.Top" "d:1" "e:0" "s:1" "se:0" "c:16776960" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.Fiducial.Bottom" "d:1" "e:0" "s:1" "se:0" "c:16764159" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.Fiducial.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.Fiducial.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16764159" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.TestPoint.Top" "d:0" "e:1" "s:1" "se:0" "c:16750950" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.TestPoint.Bottom" "d:0" "e:1" "s:1" "se:0" "c:10040319" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
@@ -6106,9 +6145,9 @@
 	"Fabrication.DiePins.Level4.Top" "d:1" "e:0" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DiePins.Level4.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DrillDrawingThrough" "d:0" "e:0" "s:1" "se:1" "c:6724095" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Hole.Contour" "d:1" "e:0" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Hole.Contour.SpanNumbers" "d:1" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Hole.Mounting" "d:1" "e:0" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Hole.Contour" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Hole.Contour.SpanNumbers" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Hole.Mounting" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Hole.Pin" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Hole.Via" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Material.Mask.1" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
@@ -6623,15 +6662,15 @@
 	"Fabrication.Material.Overglaze.254" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.255" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.256" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.RedlineLayer" "d:0" "e:0" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.RedlineLayer" "d:0" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Generated.Top" "d:0" "e:1" "s:1" "se:0" "c:16763955" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Generated.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16764159" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Part.Outline.Top" "d:1" "e:1" "s:1" "se:1" "c:6750207" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.Part.Outline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:26265" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.PartNumber.Top" "d:0" "e:1" "s:1" "se:0" "c:16750899" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.PartNumber.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16751103" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.RefDes.Top" "d:0" "e:1" "s:1" "se:0" "c:16750899" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.RefDes.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16751103" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.PartNumber.Top" "d:1" "e:1" "s:1" "se:1" "c:16750899" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.PartNumber.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16751103" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.RefDes.Top" "d:1" "e:1" "s:1" "se:1" "c:16750899" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.RefDes.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16751103" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Probe.Top" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Probe.Bottom" "d:1" "e:0" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Text.RefDes.Top" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
@@ -15293,6 +15332,7 @@
 	"Topology.TargetAreaWarnRed" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:34" "t:1" "o:1"
 	"Topology.TargetAreaWarnYellow" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:34" "t:1" "o:1"
 	"User.DRAWTRACE_CLEARANCEGEOM" "d:0" "e:1" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Artiq" "d:1" "e:1" "s:1" "se:1" "c:16751052" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Bottomoverlay" "d:0" "e:1" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Keepoutlayer" "d:0" "e:1" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Mechanical1" "d:0" "e:1" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
@@ -15301,7 +15341,7 @@
 	"User.DXF_Mechanical2" "d:0" "e:1" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Mechanical8" "d:0" "e:1" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Padholelayer" "d:0" "e:1" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Topoverlay" "d:0" "e:1" "s:1" "se:0" "c:2434341" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Topoverlay" "d:1" "e:1" "s:1" "se:1" "c:2434341" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Toppaste" "d:0" "e:1" "s:1" "se:0" "c:5592405" "a:100" "p:0" "t:0" "o:1"
 	"User.DXF_Topsolder" "d:0" "e:1" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
 	"User.Unnamed user layer" "d:0" "e:1" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
@@ -16798,8 +16838,6 @@
 	"[Net].MII_CRS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_MDC" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_MDIO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII_MODE" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII_PWR_EN" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_RXD0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_RXD1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_RXD2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -16813,11 +16851,12 @@
 	"[Net].MII_TXD3" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_TX_CLK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII_TX_EN" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII1_CRS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_INT" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].MII1_TXD1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].MII1_CRS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_MDC" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_MDIO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII1_MODE" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].MII1_COL" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_RXD0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_RXD1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_RXD2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -16826,11 +16865,10 @@
 	"[Net].MII1_RX_DV" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_RX_ER" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_TXD0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII1_TXD1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].MII1_MODE" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_TXD2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_TXD3" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII1_TX_CLK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII1_TX_EN" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII2_CRS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MII2_RX_ER" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].FLASH_UPD_MISO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -16851,10 +16889,10 @@
 	"[Net].MP_XTAL2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].NOPB_TRANS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].PGND" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].MII1_TX_EN" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].PHY_CFG_DDR" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].PHY_CFG_SPD0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].PHY_CFG_SPD1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].PHY_RESETn" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MMC_FPGA_INIT_B" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].PROG_TCK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].PROG_TDI" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -17283,13 +17321,12 @@
 	"[Net].HW_ID1_58" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].HW_ID2_58" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].HW_ID3_58" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].MII_COL_58" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].MRn" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N233" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N256" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N377" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N449" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N7790" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RTM_ESD" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N19937" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Vref68" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].Vref65" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -17447,6 +17484,28 @@
 	"[Net].$1N9022_36" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N9049" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N9049_36" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N5263" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N5266" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N19382" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N19422" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N19423" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N19424" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N19438" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N19440" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N20177" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N20179" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N20194" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N20210" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].FMC2_PG_C2M" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].FMC2_PG_M2C" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].FMC2_PRSNT" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].PHY_RESETn" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SSP0_MISO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SSP0_MOSI" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SSP0_SCK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SSP0_SSEL" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N5436" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].$1N5489" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(Default)" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[NetClass].USR_IO" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].SPI" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -17490,10 +17549,10 @@
     ..Named_Options ( 
 	"Internal.Option.FabricationObjects.Propagating" "1"
 	"Option.ActiveLayerOnly" "0"
-	"Option.BoardElements.Enabled" "3"
-	"Option.BoardElements.Selectable" "3"
-	"Option.BoardObjects.Enabled" "0"
-	"Option.BoardObjects.Selectable" "3"
+	"Option.BoardElements.Enabled" "1"
+	"Option.BoardElements.Selectable" "1"
+	"Option.BoardObjects.Enabled" "1"
+	"Option.BoardObjects.Selectable" "1"
 	"Option.BondWiresBottom.Enabled" "0"
 	"Option.BondWiresBottom.Selectable" "3"
 	"Option.BondWiresTop.Enabled" "0"
@@ -17529,16 +17588,16 @@
 	"Option.FabricationObjects.Top" "1"
 	"Option.FacementPartsBottom.Selectable" "1"
 	"Option.FacementPartsTop.Selectable" "1"
-	"Option.Fiducials.Enabled" "3"
-	"Option.Fiducials.Selectable" "3"
+	"Option.Fiducials.Enabled" "1"
+	"Option.Fiducials.Selectable" "1"
 	"Option.FillPartOutlineOnSelection" "0"
 	"Option.FillPatterns" "1"
 	"Option.ForceOutline" "0"
 	"Option.ForceSolid" "0"
 	"Option.Grids.Enabled" "1"
 	"Option.HighlightedOnly" "1"
-	"Option.Holes.Enabled" "3"
-	"Option.Holes.Selectable" "3"
+	"Option.Holes.Enabled" "1"
+	"Option.Holes.Selectable" "1"
 	"Option.LegibleTextOnly" "1"
 	"Option.Material.3M_C-Ply" "0"
 	"Option.Material.Copper" "0"
@@ -17577,7 +17636,7 @@
 	"Option.Materials.Enabled" "1"
 	"Option.Materials.Selectable" "1"
 	"Option.MirrorView" "0"
-	"Option.MountingHolePads.Enabled" "3"
+	"Option.MountingHolePads.Enabled" "1"
 	"Option.MultipleDesigners" "1"
 	"Option.MultipleDesigners.ForceFields.Enabled" "1"
 	"Option.MultipleDesigners.TeamPCB.ShadowMode" "2"
@@ -17619,7 +17678,7 @@
 	"Option.Planes.Data.Fill" "1"
 	"Option.Planes.Enabled" "1"
 	"Option.Planes.Selectable" "1"
-	"Option.Planes.Shape.Enabled" "1"
+	"Option.Planes.Shape.Enabled" "0"
 	"Option.Planes.Sketch.Enabled" "1"
 	"Option.Planning.Enabled" "1"
 	"Option.Planning.Selectable" "1"
@@ -17663,12 +17722,12 @@
 	"Option.TargetAreas.Enabled" "0"
 	"Option.Teardrops.Enabled" "1"
 	"Option.Teardrops.Selectable" "1"
-	"Option.TextItems.CellProperties.Enabled" "3"
-	"Option.TextItems.CellProperties.Selectable" "3"
-	"Option.TextItems.Enabled" "3"
-	"Option.TextItems.PinProperties.Enabled" "3"
-	"Option.TextItems.PinProperties.Selectable" "3"
-	"Option.TextItems.Selectable" "3"
+	"Option.TextItems.CellProperties.Enabled" "1"
+	"Option.TextItems.CellProperties.Selectable" "1"
+	"Option.TextItems.Enabled" "1"
+	"Option.TextItems.PinProperties.Enabled" "1"
+	"Option.TextItems.PinProperties.Selectable" "1"
+	"Option.TextItems.Selectable" "1"
 	"Option.Traces.Enabled" "1"
 	"Option.Traces.Selectable" "1"
 	"Option.UnpackedAreas.Enabled" "1"
@@ -17692,10 +17751,10 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x77d1ad70	! flags
-	0x776d68b0	! showCmd
+	0x776aad70	! flags
+	0x75e768b0	! showCmd
 	(262144, 0)	! ptMinPosition
-	(0, 668010)	! ptMaxPosition
+	(0, 991216)	! ptMaxPosition
 	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
@@ -17745,7 +17804,7 @@
 	"[Virtual].3D.Objects.RouteBorder" "1"
 	"[Virtual].3D.Objects.RouteObstructs" "1"
 	"[Virtual].3D.Objects.Sandboxes" "1"
-	"[Virtual].3D.Objects.Silkscreen" "0"
+	"[Virtual].3D.Objects.Silkscreen" "1"
 	"[Virtual].3D.Objects.SolderMask" "1"
 	"[Virtual].3D.Objects.Traces" "1"
 	"[Virtual].3D.Objects.ViaPads" "1"
@@ -17774,7 +17833,7 @@
     )
     ..Virtual_String_Options ( 
 	"[Virtual].3D.Objects.Planes.Refresh" "0"
-	"[Virtual].3D.Objects.Silkscreen.Refresh" "2"
+	"[Virtual].3D.Objects.Silkscreen.Refresh" "3"
 	"[Virtual].3D.Objects.SolderMask.Refresh" "9"
 	"[Virtual].3D.Options.ScaleFactor" "10"
 	"[Virtual].Global.3D.FlexObjects.Adhesive.Color" "FFFFFF"
