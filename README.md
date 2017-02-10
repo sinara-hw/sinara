@@ -37,7 +37,7 @@ The first production version is designated v1.0.
 
 # Future
 
-The tag [for-contract](https://github.com/m-labs/sinara/issues?q=is%3Aissue+is%3Aopen+label%3Atype%3Afor-contract) is applied to Issues describing features not yet funded. Use the Issue system to discuss new features and find support in the community for joint development/funding. There is an equivalent [ARTIQ for-contract](https://github.com/m-labs/artiq/issues?q=is%3Aissue+is%3Aopen+label%3Atype%3Afor-contract) tag for tracking future ARTIQ features. 
+The tag [for-contract](https://github.com/m-labs/sinara/issues?q=is%3Aissue+is%3Aopen+label%3Astate%3Afor-contract) is applied to Issues describing features not yet funded. Use the Issue system to discuss new features and find support in the community for joint development/funding. There is an equivalent [ARTIQ for-contract](https://github.com/m-labs/artiq/issues?q=is%3Aissue+is%3Aopen+label%3Atype%3Afor-contract) tag for tracking future ARTIQ features. 
 
 ---------------------
 
