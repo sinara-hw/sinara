@@ -31,7 +31,7 @@ Several peripherals are designed to interface with Kasli and fit into 3U crates.
 
 # Prototype Hardware
 
-The first Sinara prototype hardware is designated v0.1. The components that will ship to collaborators is tracked in [#97](https://github.com/m-labs/sinara/issues/97). See [Issue 21](https://github.com/m-labs/sinara/issues/21) for a the list of additional hardware that's needed to get v0.1 running. Track project milestones [here](https://github.com/m-labs/sinara/milestones). Track status of prototype hardware [here](https://github.com/m-labs/sinara/wiki/hardware-status).
+The first Sinara prototype hardware is designated v0.1. The components that will ship to collaborators is tracked in [#97](https://github.com/m-labs/sinara/issues/97). See [Issue 21](https://github.com/m-labs/sinara/issues/21) for a the list of additional hardware that's needed to get v0.1 running. Track project milestones [here](https://github.com/m-labs/sinara/milestones). Track status of prototype hardware [here](https://github.com/m-labs/sinara/wiki/status).
 
 The first production version is designated v1.0. 
 
