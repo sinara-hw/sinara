@@ -2,10 +2,10 @@
 ! change it at your own peril
 
 !
-! Created 02/07/17 15:50:19
+! Created 02/14/17 17:53:58
 !
 
-.Global_Constants 1383 22
+.Global_Constants 1387 22
     ..File_Type Graphics_Settings
     ..Version Version_6
     ..Num_Views 2
@@ -13,13 +13,13 @@
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
-	(-1, -1)	! ptMinPosition
+	(-32000, -32000)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2052, 234) (3088,1007)	! ..rcNormalPosition
-    ..Active_Place_Layer_Top             True
-    ..Active_Place_Layer_Bottom          False
+	(2297, 212) (3333,985)	! ..rcNormalPosition
+    ..Active_Place_Layer_Top             False
+    ..Active_Place_Layer_Bottom          True
     ..Active_Place_Layer_Internal        False
-    ..Active_Route_Layer 0
+    ..Active_Route_Layer 2
     ..Trace_Layer_Color ( 
 	0x000033ff 0x00330066	! [1-2] RGB(255, 51,  0)  RGB(102,  0, 51)
 	0x00996666 0x000099ff	! [3-4] RGB(102,102,153)  RGB(255,153,  0)
@@ -516,7 +516,7 @@
     ..Classline_Color 0x00ff00cc	! RGB(204,  0,255)
     ..Netline_Of_Classline_On            False
     ..Show_Plane_Data                    True
-    ..Show_Plane_Shapes                  False
+    ..Show_Plane_Shapes                  True
     ..Show_Fill_Plane_Shapes             True
     ..Show_Plane_Data_Behind_Traces      False
     ..Show_Dynamic_Area_Fills            True
@@ -663,7 +663,7 @@
     ..Drill_Drawing_Through_Nopaque      False
     ..Drill_Drawing_Through_Outline      True
     ..Redline_Layer_Color 0x000000ff	! RGB(255,  0,  0)
-    ..Redline_Layer_On                   True
+    ..Redline_Layer_On                   False
     ..User_Draft_Color ( 
 	0x00ffffff 0x00cc99ff	! [1-2] RGB(255,255,255)  RGB(255,153,204)
 	0x00000080 0x000000ff	! [3-4] RGB(128,  0,  0)  RGB(255,  0,  0)
@@ -2647,15 +2647,15 @@
 	"$1N5263"	! [1362]
 	"$1N5266"	! [1363]
 	"$1N19382"	! [1364]
-	"$1N19422"	! [1365]
-	"$1N19423"	! [1366]
-	"$1N19424"	! [1367]
+	"SDDAT3"	! [1365]
+	"SDDAT2"	! [1366]
+	"SDDAT1"	! [1367]
 	"$1N19438"	! [1368]
 	"$1N19440"	! [1369]
-	"$1N20177"	! [1370]
-	"$1N20179"	! [1371]
-	"$1N20194"	! [1372]
-	"$1N20210"	! [1373]
+	"SDCLK"	! [1370]
+	"SDCMD"	! [1371]
+	"SDPWR"	! [1372]
+	"SDDAT0"	! [1373]
 	"FMC2_PG_C2M"	! [1374]
 	"FMC2_PG_M2C"	! [1375]
 	"FMC2_PRSNT"	! [1376]
@@ -2666,6 +2666,10 @@
 	"SSP0_SSEL"	! [1381]
 	"$1N5436"	! [1382]
 	"$1N5489"	! [1383]
+	"PS_MODE0"	! [1384]
+	"PS_MODE1"	! [1385]
+	"PS_MODE2"	! [1386]
+	"PS_MODE3"	! [1387]
     )
     ..Netclass_Names ( 
 	"(Default)"	! [1]
@@ -2773,11 +2777,11 @@
 	0x00ffffff 0x00ffffff	! [121-122] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [123-124] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [125-126] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [127-128] RGB(255,255,255)  undefined
-	        -1         -1	! [129-130] undefined  undefined
-	        -1         -1	! [131-132] undefined  undefined
-	        -1         -1	! [133-134] undefined  undefined
-	        -1 0x00ffffff	! [135-136] undefined  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [127-128] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [129-130] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [131-132] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [133-134] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [135-136] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [137-138] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [139-140] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [141-142] RGB(255,255,255)  RGB(255,255,255)
@@ -3076,7 +3080,7 @@
 	0x00ffffff 0x00ffffff	! [727-728] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [729-730] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [731-732] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [733-734] RGB(255,255,255)  undefined
+	0x00ffffff 0x00ffffff	! [733-734] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [735-736] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [737-738] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [739-740] RGB(255,255,255)  RGB(255,255,255)
@@ -3245,21 +3249,21 @@
 	0x00ffffff 0x00ffffff	! [1065-1066] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1067-1068] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1069-1070] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [1071-1072] RGB(255,255,255)  undefined
-	        -1         -1	! [1073-1074] undefined  undefined
-	        -1         -1	! [1075-1076] undefined  undefined
-	        -1         -1	! [1077-1078] undefined  undefined
-	        -1         -1	! [1079-1080] undefined  undefined
-	        -1         -1	! [1081-1082] undefined  undefined
-	        -1         -1	! [1083-1084] undefined  undefined
-	        -1         -1	! [1085-1086] undefined  undefined
-	        -1         -1	! [1087-1088] undefined  undefined
-	        -1         -1	! [1089-1090] undefined  undefined
-	        -1         -1	! [1091-1092] undefined  undefined
-	        -1         -1	! [1093-1094] undefined  undefined
-	        -1         -1	! [1095-1096] undefined  undefined
-	        -1         -1	! [1097-1098] undefined  undefined
-	        -1 0x00ffffff	! [1099-1100] undefined  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1071-1072] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1073-1074] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1075-1076] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1077-1078] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1079-1080] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1081-1082] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1083-1084] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1085-1086] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1087-1088] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1089-1090] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1091-1092] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1093-1094] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1095-1096] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1097-1098] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1099-1100] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1101-1102] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1103-1104] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1105-1106] RGB(255,255,255)  RGB(255,255,255)
@@ -3268,8 +3272,8 @@
 	0x00ffffff 0x00ffffff	! [1111-1112] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1113-1114] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1115-1116] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [1117-1118] RGB(255,255,255)  undefined
-	        -1 0x00ffffff	! [1119-1120] undefined  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1117-1118] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1119-1120] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1121-1122] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1123-1124] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1125-1126] RGB(255,255,255)  RGB(255,255,255)
@@ -3277,33 +3281,33 @@
 	0x00ffffff 0x00ffffff	! [1129-1130] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1131-1132] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1133-1134] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [1135-1136] RGB(255,255,255)  undefined
-	        -1         -1	! [1137-1138] undefined  undefined
-	        -1         -1	! [1139-1140] undefined  undefined
-	        -1         -1	! [1141-1142] undefined  undefined
-	        -1         -1	! [1143-1144] undefined  undefined
-	        -1         -1	! [1145-1146] undefined  undefined
-	        -1         -1	! [1147-1148] undefined  undefined
-	        -1         -1	! [1149-1150] undefined  undefined
-	        -1         -1	! [1151-1152] undefined  undefined
-	        -1         -1	! [1153-1154] undefined  undefined
-	        -1         -1	! [1155-1156] undefined  undefined
-	        -1         -1	! [1157-1158] undefined  undefined
-	        -1         -1	! [1159-1160] undefined  undefined
-	        -1         -1	! [1161-1162] undefined  undefined
-	        -1         -1	! [1163-1164] undefined  undefined
-	        -1         -1	! [1165-1166] undefined  undefined
-	        -1         -1	! [1167-1168] undefined  undefined
-	        -1         -1	! [1169-1170] undefined  undefined
+	0x00ffffff 0x00ffffff	! [1135-1136] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1137-1138] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1139-1140] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1141-1142] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1143-1144] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1145-1146] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1147-1148] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1149-1150] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1151-1152] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1153-1154] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1155-1156] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1157-1158] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1159-1160] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1161-1162] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1163-1164] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1165-1166] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1167-1168] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1169-1170] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1171-1172] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1173-1174] RGB(255,255,255)  RGB(255,255,255)
-	        -1 0x00ffffff	! [1175-1176] undefined  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1175-1176] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1177-1178] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1179-1180] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1181-1182] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1183-1184] RGB(255,255,255)  RGB(255,255,255)
-	        -1         -1	! [1185-1186] undefined  undefined
-	        -1         -1	! [1187-1188] undefined  undefined
+	0x00ffffff 0x00ffffff	! [1185-1186] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1187-1188] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1189-1190] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1191-1192] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1193-1194] RGB(255,255,255)  RGB(255,255,255)
@@ -3311,7 +3315,7 @@
 	0x00ffffff 0x00ffffff	! [1197-1198] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1199-1200] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1201-1202] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [1203-1204] RGB(255,255,255)  undefined
+	0x00ffffff 0x00ffffff	! [1203-1204] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1205-1206] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1207-1208] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1209-1210] RGB(255,255,255)  RGB(255,255,255)
@@ -3333,75 +3337,77 @@
 	0x00ffffff 0x00ffffff	! [1241-1242] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1243-1244] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1245-1246] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [1247-1248] RGB(255,255,255)  undefined
+	0x00ffffff 0x00ffffff	! [1247-1248] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1249-1250] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1251-1252] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1253-1254] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1255-1256] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff         -1	! [1257-1258] RGB(255,255,255)  undefined
-	        -1         -1	! [1259-1260] undefined  undefined
-	        -1         -1	! [1261-1262] undefined  undefined
-	        -1         -1	! [1263-1264] undefined  undefined
-	        -1         -1	! [1265-1266] undefined  undefined
-	        -1         -1	! [1267-1268] undefined  undefined
-	        -1         -1	! [1269-1270] undefined  undefined
-	        -1         -1	! [1271-1272] undefined  undefined
-	        -1         -1	! [1273-1274] undefined  undefined
-	        -1         -1	! [1275-1276] undefined  undefined
-	        -1         -1	! [1277-1278] undefined  undefined
-	        -1         -1	! [1279-1280] undefined  undefined
+	0x00ffffff 0x00ffffff	! [1257-1258] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1259-1260] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1261-1262] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1263-1264] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1265-1266] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1267-1268] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1269-1270] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1271-1272] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1273-1274] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1275-1276] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1277-1278] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1279-1280] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1281-1282] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1283-1284] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1285-1286] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [1287-1288] RGB(255,255,255)  RGB(255,255,255)
-	        -1         -1	! [1289-1290] undefined  undefined
-	        -1         -1	! [1291-1292] undefined  undefined
-	        -1         -1	! [1293-1294] undefined  undefined
-	        -1         -1	! [1295-1296] undefined  undefined
-	        -1         -1	! [1297-1298] undefined  undefined
-	        -1         -1	! [1299-1300] undefined  undefined
-	        -1         -1	! [1301-1302] undefined  undefined
-	        -1         -1	! [1303-1304] undefined  undefined
-	        -1         -1	! [1305-1306] undefined  undefined
-	        -1         -1	! [1307-1308] undefined  undefined
-	        -1         -1	! [1309-1310] undefined  undefined
-	        -1         -1	! [1311-1312] undefined  undefined
-	        -1         -1	! [1313-1314] undefined  undefined
-	        -1         -1	! [1315-1316] undefined  undefined
-	        -1         -1	! [1317-1318] undefined  undefined
-	        -1         -1	! [1319-1320] undefined  undefined
-	        -1         -1	! [1321-1322] undefined  undefined
-	        -1         -1	! [1323-1324] undefined  undefined
-	        -1         -1	! [1325-1326] undefined  undefined
-	        -1         -1	! [1327-1328] undefined  undefined
-	        -1         -1	! [1329-1330] undefined  undefined
-	        -1         -1	! [1331-1332] undefined  undefined
-	        -1         -1	! [1333-1334] undefined  undefined
-	        -1         -1	! [1335-1336] undefined  undefined
-	        -1         -1	! [1337-1338] undefined  undefined
-	        -1         -1	! [1339-1340] undefined  undefined
-	        -1         -1	! [1341-1342] undefined  undefined
-	        -1         -1	! [1343-1344] undefined  undefined
-	        -1         -1	! [1345-1346] undefined  undefined
-	        -1         -1	! [1347-1348] undefined  undefined
-	        -1         -1	! [1349-1350] undefined  undefined
-	        -1         -1	! [1351-1352] undefined  undefined
-	        -1         -1	! [1353-1354] undefined  undefined
-	        -1         -1	! [1355-1356] undefined  undefined
-	        -1         -1	! [1357-1358] undefined  undefined
-	        -1         -1	! [1359-1360] undefined  undefined
-	        -1         -1	! [1361-1362] undefined  undefined
-	        -1         -1	! [1363-1364] undefined  undefined
-	        -1         -1	! [1365-1366] undefined  undefined
-	        -1         -1	! [1367-1368] undefined  undefined
-	        -1         -1	! [1369-1370] undefined  undefined
-	        -1         -1	! [1371-1372] undefined  undefined
-	        -1         -1	! [1373-1374] undefined  undefined
-	        -1         -1	! [1375-1376] undefined  undefined
-	0x00ffffff         -1	! [1377-1378] RGB(255,255,255)  undefined
-	        -1         -1	! [1379-1380] undefined  undefined
-	        -1         -1	! [1381-1382] undefined  undefined
-	        -1		! [1383] undefined
+	0x00ffffff 0x00ffffff	! [1289-1290] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1291-1292] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1293-1294] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1295-1296] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1297-1298] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1299-1300] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1301-1302] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1303-1304] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1305-1306] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1307-1308] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1309-1310] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1311-1312] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1313-1314] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1315-1316] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1317-1318] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1319-1320] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1321-1322] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1323-1324] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1325-1326] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1327-1328] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1329-1330] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1331-1332] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1333-1334] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1335-1336] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1337-1338] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1339-1340] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1341-1342] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1343-1344] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1345-1346] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1347-1348] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1349-1350] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1351-1352] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1353-1354] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1355-1356] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1357-1358] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1359-1360] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1361-1362] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1363-1364] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1365-1366] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1367-1368] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1369-1370] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1371-1372] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1373-1374] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1375-1376] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1377-1378] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1379-1380] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1381-1382] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1383-1384] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [1385-1386] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff		! [1387] RGB(255,255,255)
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -3542,7 +3548,7 @@
 	0 0 0 0 0 0 0 0 0 0 	! [1351 - 1360]
 	0 0 0 0 0 0 0 0 0 0 	! [1361 - 1370]
 	0 0 0 0 0 0 0 0 0 0 	! [1371 - 1380]
-	0 0 0 ! [1381 - 1383]
+	0 0 0 0 0 0 0 ! [1381 - 1387]
 	)
     ..Net_Alpha ( 
 	100 100 100 100 100 100 100 100 100 100 	! [1 - 10]
@@ -3683,7 +3689,7 @@
 	100 100 100 100 100 100 100 100 100 100 	! [1351 - 1360]
 	100 100 100 100 100 100 100 100 100 100 	! [1361 - 1370]
 	100 100 100 100 100 100 100 100 100 100 	! [1371 - 1380]
-	100 100 100 ! [1381 - 1383]
+	100 100 100 100 100 100 100 ! [1381 - 1387]
 	)
     ..Net_Nopaque ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -3824,7 +3830,7 @@
 	F F F F F F F F F F 	! [1351 - 1360]
 	F F F F F F F F F F 	! [1361 - 1370]
 	F F F F F F F F F F 	! [1371 - 1380]
-	F F F ! [1381 - 1383]
+	F F F F F F F ! [1381 - 1387]
 	)
     ..Net_Outline ( 
 	T T T T T T T F F F 	! [1 - 10]
@@ -3839,8 +3845,8 @@
 	F F F F F F F F F F 	! [91 - 100]
 	F F F F F F F F F F 	! [101 - 110]
 	F F F F F F F F F F 	! [111 - 120]
-	F F F F F F F T T T 	! [121 - 130]
-	T T T T T F F F F F 	! [131 - 140]
+	F F F F F F F F F F 	! [121 - 130]
+	F F F F F F F F F F 	! [131 - 140]
 	F F F F F F F F F F 	! [141 - 150]
 	F F F F F F F F F F 	! [151 - 160]
 	F F F F F F F F F F 	! [161 - 170]
@@ -3900,7 +3906,7 @@
 	F F F F F F F T F F 	! [701 - 710]
 	F F F F F F F F F F 	! [711 - 720]
 	F F F F F F F F F F 	! [721 - 730]
-	F F F T F F F F F F 	! [731 - 740]
+	F F F F F F F F F F 	! [731 - 740]
 	F F F F F F F F F T 	! [741 - 750]
 	F F F F F F F F F F 	! [751 - 760]
 	F F F F F F F F F F 	! [761 - 770]
@@ -3934,38 +3940,38 @@
 	F F F F F F T F F F 	! [1041 - 1050]
 	F F F F F F F F F T 	! [1051 - 1060]
 	T F F F F F F F F F 	! [1061 - 1070]
-	F T T T T T T T T T 	! [1071 - 1080]
-	T T T T T T T T T T 	! [1081 - 1090]
-	T T T T T T T T T F 	! [1091 - 1100]
+	F F F F F F F F F F 	! [1071 - 1080]
+	F F F F F F F F F F 	! [1081 - 1090]
+	F F F F F F F F F F 	! [1091 - 1100]
 	F F F F F F F F F F 	! [1101 - 1110]
-	F F F F F F F T T F 	! [1111 - 1120]
+	F F F F F F F F F F 	! [1111 - 1120]
 	F F F F F F F F F F 	! [1121 - 1130]
-	F F F F F T T T T T 	! [1131 - 1140]
-	T T T T T T T T T T 	! [1141 - 1150]
-	T T T T T T T T T T 	! [1151 - 1160]
-	T T T T T T T T T T 	! [1161 - 1170]
-	F F F F T F F F F F 	! [1171 - 1180]
-	F F F F T T T T F F 	! [1181 - 1190]
+	F F F F F F F F F F 	! [1131 - 1140]
+	F F F F F F F F F F 	! [1141 - 1150]
+	F F F F F F F F F F 	! [1151 - 1160]
+	F F F F F F F F F F 	! [1161 - 1170]
+	F F F F F F F F F F 	! [1171 - 1180]
+	F F F F F F F F F F 	! [1181 - 1190]
 	F F F F F F F F F F 	! [1191 - 1200]
-	F F F T F F F F F F 	! [1201 - 1210]
+	F F F F F F F F F F 	! [1201 - 1210]
 	F F F F F F F F F F 	! [1211 - 1220]
 	F F F F F F F F F F 	! [1221 - 1230]
 	F F F F F F F F F F 	! [1231 - 1240]
-	F F F F F F F T F F 	! [1241 - 1250]
-	F F F F F F F T T T 	! [1251 - 1260]
-	T T T T T T T T T T 	! [1261 - 1270]
-	T T T T T T T T T T 	! [1271 - 1280]
-	F F F F F F F F T T 	! [1281 - 1290]
-	T T T T T T T T T T 	! [1291 - 1300]
-	T T T T T T T T T T 	! [1301 - 1310]
-	T T T T T T T T T T 	! [1311 - 1320]
-	T T T T T T T T T T 	! [1321 - 1330]
-	T T T T T T T T T T 	! [1331 - 1340]
-	T T T T T T T T T T 	! [1341 - 1350]
-	T T T T T T T T T T 	! [1351 - 1360]
-	T T T T T T T T T T 	! [1361 - 1370]
-	T T T T T T F T T T 	! [1371 - 1380]
-	T T T ! [1381 - 1383]
+	F F F F F F F F F F 	! [1241 - 1250]
+	F F F F F F F F F F 	! [1251 - 1260]
+	F F F F F F F F F F 	! [1261 - 1270]
+	F F F F F F F F F F 	! [1271 - 1280]
+	F F F F F F F F F F 	! [1281 - 1290]
+	F F F F F F F F F F 	! [1291 - 1300]
+	F F F F F F F F F F 	! [1301 - 1310]
+	F F F F F F F F F F 	! [1311 - 1320]
+	F F F F F F F F F F 	! [1321 - 1330]
+	F F F F F F F F F F 	! [1331 - 1340]
+	F F F F F F F F F F 	! [1341 - 1350]
+	F F F F F F F F F F 	! [1351 - 1360]
+	F F F F F F F F F F 	! [1361 - 1370]
+	F F F F F F F F F F 	! [1371 - 1380]
+	F F F F F F F ! [1381 - 1387]
 	)
     ..Netclass_Color ( 
 	0x00ffffff 0x00ffffff	! [1-2] RGB(255,255,255)  RGB(255,255,255)
@@ -4298,7 +4304,7 @@
 	F F F F F F F F F F 	! [1351 - 1360]
 	F F F F F F F F F F 	! [1361 - 1370]
 	F F F F F F F F F F 	! [1371 - 1380]
-	F F F ! [1381 - 1383]
+	F F F F F F F ! [1381 - 1387]
 	)
     ..Netclass_On ( 
 	False ![1]
@@ -4567,7 +4573,7 @@
 	"[VirtualGlobal].iDC.3D.Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.3D.Options.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.3D.PCBs.CollapsedSectionOrder" "8"
-	"[VirtualGlobal].iDC.ActiveTabId" "5"
+	"[VirtualGlobal].iDC.ActiveTabId" "2"
 	"[VirtualGlobal].iDC.AplyTo" "3"
 	"[VirtualGlobal].iDC.AssemblyItems" "2"
 	"[VirtualGlobal].iDC.Batch.CollapsedSectionOrder" "4"
@@ -4784,9 +4790,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "2"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "34"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "290"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "114"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "158"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "254"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "285"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4800,21 +4806,21 @@
 
 .view "Sayma_AMC"
     ..extrema
-	(241445300,12881233)		! (xmin, ymin)
-	(531444421,152497781)		! (xmax, ymax)
+	(137551520,-21961597)		! (xmin, ymin)
+	(703709309,172599448)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
 	(0, 857)	! ptMinPosition
 	(-8, -31)	! ptMaxPosition
-	(0, 0) (837,490)	! ..rcNormalPosition
+	(64, 110) (901,600)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..Is_Detail_View                     False
     ..Trace_All_Enabled                  True
     ..Pad_All_Enabled                    True
     ..Pad_Layer_On ( 
-	T T T T T T T T T T 	! [1 - 10]
-	T T T T T T T T T T 	! [11 - 20]
+	T F T F T F T F F T 	! [1 - 10]
+	F T T T T T T T T T 	! [11 - 20]
 	T T T T T T T T T T 	! [21 - 30]
 	T T T T T T T T T T 	! [31 - 40]
 	T T T T T T T T T T 	! [41 - 50]
@@ -4841,8 +4847,8 @@
 	T T T T T T ! [251 - 256]
 	)
     ..Trace_Layer_On ( 
-	T T T T T T T T T T 	! [1 - 10]
-	T T T T T T T T T T 	! [11 - 20]
+	T F T F T F T F F T 	! [1 - 10]
+	F T T T T T T T T T 	! [11 - 20]
 	T T T T T T T T T T 	! [21 - 30]
 	T T T T T T T T T T 	! [31 - 40]
 	T T T T T T T T T T 	! [41 - 50]
@@ -4868,22 +4874,22 @@
 	T T T T T T T T T T 	! [241 - 250]
 	T T T T T T ! [251 - 256]
 	)
-    ..Netline_All_Enabled                True
+    ..Netline_All_Enabled                False
     ..Netline_Ordered_Routed_On          False
-    ..Netline_Ordered_Open_On            True
-    ..Netline_All_Open_On                True
+    ..Netline_Ordered_Open_On            False
+    ..Netline_All_Open_On                False
     ..Classline_On                       False
     ..Thru_Pads_On                       True
     ..Thru_Vias_On                       True
     ..Via_Span_Text_On                   True
-    ..Virtual_Pin_All_Enabled            True
+    ..Virtual_Pin_All_Enabled            False
     ..Virtual_Pin_Ref_On                 True
     ..Netline_From_Rt_Targets_On         False
     ..Materials_On ( 
 	F F F F F F F F F F 	! [1 - 10]
 	F F F F F F F F F F 	! [11 - 20]
 	F F F F F F F F F F 	! [21 - 30]
-	F F F F ! [31 - 34]
+	F F T T ! [31 - 34]
 	)
     ..All_Materials_Items_Enabled        True
     ..Bondpadsdrawn                      True
@@ -4898,11 +4904,11 @@
                                          True 	! bottom
     ..Drill_Drawing_Through_On           False
     ..Redline_Layer_On                   False
-    ..All_User_Draft_Enabled             True
+    ..All_User_Draft_Enabled             False
     ..User_Draft_On ( 
-	F F T F F F F F F F 	! [1 - 10]
-	F F F F T F F F F F 	! [11 - 20]
-	T F F F F F F F F F 	! [21 - 30]
+	F F F F F F F F F F 	! [1 - 10]
+	F F F F F F F F F F 	! [11 - 20]
+	F F F F F F F F F F 	! [21 - 30]
 	F F F F F F F F F F 	! [31 - 40]
 	F F F F F F F F F F 	! [41 - 50]
 	F F F F F F F F F F 	! [51 - 60]
@@ -4926,26 +4932,26 @@
 	F F F F F F F F F F 	! [231 - 240]
 	F F F F F F F F F F 	! [241 - 250]
 	)
-    ..All_Board_Items_Enabled            True
-    ..Board_Outline_On                   True
+    ..All_Board_Items_Enabled            False
+    ..Board_Outline_On                   False
     ..Route_Border_On                    True
-    ..Hard_Route_Fence_On                False
-    ..Soft_Route_Fence_On                False
-    ..Contour_On                         True
-    ..Contour_Span_On                    True
-    ..Cavity_On                          True
+    ..Hard_Route_Fence_On                True
+    ..Soft_Route_Fence_On                True
+    ..Contour_On                         False
+    ..Contour_Span_On                    False
+    ..Cavity_On                          False
     ..Milling_On                         False
-    ..Mounting_Hole_On                   True
+    ..Mounting_Hole_On                   False
     ..Other_Hole_On                      True
-    ..Fiducial_On                        True 	! top
-                                         True 	! bottom
-    ..Origin_On                          True
-    ..Nc_Drill_Origin_On                 True
+    ..Fiducial_On                        False	! top
+                                         False	! bottom
+    ..Origin_On                          False
+    ..Nc_Drill_Origin_On                 False
     ..Route_Obstruct_On                  True
     ..Pad_Obstruct_On                    False
     ..Rule_Area_On                       True
-    ..Drc_Window_On                      True
-    ..Manufacturing_Outline_On           True
+    ..Drc_Window_On                      False
+    ..Manufacturing_Outline_On           False
     ..All_Panel_Items_Enabled            True
     ..Panel_Outline_On                   True
     ..Panel_Border_On                    True
@@ -4962,18 +4968,18 @@
     ..Dsp_Active_Route_Layer_Only        False
     ..Display_Legible_Text_Only          True
     ..Mirror_View_On                     False
-    ..All_Text_Items_Enabled             True
-    ..Pin_Property_Text_On               True
-    ..Cell_Property_Text_On              True
-    ..All_Mult_Designers_Enabled         True
+    ..All_Text_Items_Enabled             False
+    ..Pin_Property_Text_On               False
+    ..Cell_Property_Text_On              False
+    ..All_Mult_Designers_Enabled         False
     ..Reserved_Areas_On                  False
-    ..Protected_Areas_On                 True
-    ..Sandboxes_On                       True
-    ..Fixture_Outline_On                 True
-    ..All_Xds_Force_Fields_Enabled       True
-    ..This_Xdc_Handle_On                 True
-    ..Other_Xdcs_On                      True
-    ..Force_Field_Conflicts_On           True
+    ..Protected_Areas_On                 False
+    ..Sandboxes_On                       False
+    ..Fixture_Outline_On                 False
+    ..All_Xds_Force_Fields_Enabled       False
+    ..This_Xdc_Handle_On                 False
+    ..Other_Xdcs_On                      False
+    ..Force_Field_Conflicts_On           False
     ..All_Part_Enabled                   True 	! top
                                          True 	! bottom
     ..Distributed_Part_On                False	! top
@@ -4996,22 +5002,22 @@
                                          False	! bottom
     ..Thermal_Data_On                    True 	! top
                                          True 	! bottom
-    ..All_Assy_Enabled                   True 	! top
+    ..All_Assy_Enabled                   False	! top
                                          False	! bottom
-    ..Assy_Outline_On                    True 	! top
+    ..Assy_Outline_On                    False	! top
                                          False	! bottom
     ..Assy_Part_Number_On                False	! top
                                          False	! bottom
     ..Assy_Ref_Des_On                    False	! top
                                          False	! bottom
-    ..All_Silkscreen_Enabled             True 	! top
-                                         True 	! bottom
-    ..Silk_Outline_On                    True 	! top
-                                         True 	! bottom
-    ..Silk_Part_Number_On                True 	! top
-                                         True 	! bottom
-    ..Silk_Ref_Des_On                    True 	! top
-                                         True 	! bottom
+    ..All_Silkscreen_Enabled             False	! top
+                                         False	! bottom
+    ..Silk_Outline_On                    False	! top
+                                         False	! bottom
+    ..Silk_Part_Number_On                False	! top
+                                         False	! bottom
+    ..Silk_Ref_Des_On                    False	! top
+                                         False	! bottom
     ..Silk_Altered_Data_On               False	! top
                                          False	! bottom
     ..All_Cell_Enabled                   False	! top
@@ -5063,21 +5069,21 @@
 	"[Virtual].iDC.Global.Option.PanSensitivity.Enabled" "1"
 	"[Virtual].iDC.LayersSelection" "65537"
 	"[Virtual].iDC.LayersVisibility" "65537"
-	"[Virtual].iDC.ListSelectableLayersOnly" "1"
+	"[Virtual].iDC.ListSelectableLayersOnly" "0"
 	"[Virtual].iDC.Option.Netlines.DynamicFiltering.Mode.Enabled" "1"
     )
     ..Segments ( 
 	"LayerControl.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
-	"LayerControl.2" "d:1" "e:1" "s:1" "se:1" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"LayerControl.2" "d:0" "e:1" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.3" "d:1" "e:1" "s:1" "se:1" "c:10053222" "a:100" "p:0" "t:0" "o:1"
-	"LayerControl.4" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"LayerControl.4" "d:0" "e:1" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.5" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"LayerControl.6" "d:1" "e:1" "s:1" "se:1" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"LayerControl.6" "d:0" "e:1" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.7" "d:1" "e:1" "s:1" "se:1" "c:8388736" "a:100" "p:0" "t:0" "o:1"
-	"LayerControl.8" "d:1" "e:1" "s:1" "se:1" "c:3407769" "a:100" "p:0" "t:0" "o:1"
-	"LayerControl.9" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"LayerControl.8" "d:0" "e:1" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"LayerControl.9" "d:0" "e:1" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.10" "d:1" "e:1" "s:1" "se:1" "c:13369548" "a:100" "p:0" "t:0" "o:1"
-	"LayerControl.11" "d:1" "e:1" "s:1" "se:1" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"LayerControl.11" "d:0" "e:1" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.12" "d:1" "e:1" "s:1" "se:1" "c:13369344" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.13" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.14" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
@@ -5323,35 +5329,35 @@
 	"LayerControl.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"LayerControl.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"Board.BendArea" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:80" "t:1" "o:1"
-	"Board.BoardOutline" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"Board.Cavity" "d:1" "e:1" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
-	"Board.DRCWindow" "d:1" "e:1" "s:1" "se:1" "c:16737945" "a:100" "p:0" "t:0" "o:1"
-	"Board.FixtureOutline" "d:1" "e:1" "s:1" "se:1" "c:8388608" "a:100" "p:0" "t:0" "o:1"
-	"Board.ManufacturingOutline" "d:1" "e:1" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
+	"Board.BendArea" "d:1" "e:0" "s:1" "se:1" "c:65535" "a:100" "p:80" "t:1" "o:1"
+	"Board.BoardOutline" "d:1" "e:0" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"Board.Cavity" "d:1" "e:0" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
+	"Board.DRCWindow" "d:1" "e:0" "s:1" "se:1" "c:16737945" "a:100" "p:0" "t:0" "o:1"
+	"Board.FixtureOutline" "d:1" "e:0" "s:1" "se:1" "c:8388608" "a:100" "p:0" "t:0" "o:1"
+	"Board.ManufacturingOutline" "d:1" "e:0" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.Part.Top" "d:0" "e:1" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.Part.Bottom" "d:1" "e:1" "s:1" "se:1" "c:13434624" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.TestPoint.Top" "d:0" "e:1" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
 	"Board.Obstruct.TestPoint.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16711782" "a:100" "p:0" "t:0" "o:1"
-	"Board.Origin.Board" "d:1" "e:1" "s:1" "se:1" "c:13434777" "a:100" "p:0" "t:0" "o:1"
-	"Board.Origin.NCDrill" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"Board.Origin.Board" "d:1" "e:0" "s:1" "se:1" "c:13434777" "a:100" "p:0" "t:0" "o:1"
+	"Board.Origin.NCDrill" "d:1" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Board.Room.Top" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:0" "t:0" "o:1"
 	"Board.Room.Bottom" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Board.RouteBorder" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"Board.RouteFence.Hard" "d:0" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"Board.RouteFence.Soft" "d:0" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"Board.Sandbox" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"Board.RouteFence.Hard" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"Board.RouteFence.Soft" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"Board.Sandbox" "d:1" "e:0" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.2" "d:1" "e:1" "s:1" "se:1" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.2" "d:1" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.3" "d:1" "e:1" "s:1" "se:1" "c:10053222" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.4" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.4" "d:1" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.5" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.6" "d:1" "e:1" "s:1" "se:1" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.6" "d:1" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.7" "d:1" "e:1" "s:1" "se:1" "c:8388736" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.8" "d:1" "e:1" "s:1" "se:1" "c:3407769" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.9" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.8" "d:1" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.9" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.10" "d:1" "e:1" "s:1" "se:1" "c:13369548" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.11" "d:1" "e:1" "s:1" "se:1" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.11" "d:1" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.12" "d:1" "e:1" "s:1" "se:1" "c:13369344" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.13" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.14" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
@@ -5597,21 +5603,21 @@
 	"Copper.Pad.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.Fiducial.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Pad.Fiducial.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16764159" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.Fiducial.Top" "d:1" "e:0" "s:1" "se:0" "c:16776960" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Pad.Fiducial.Bottom" "d:1" "e:0" "s:1" "se:0" "c:16764159" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.TestPoint.Top" "d:0" "e:1" "s:1" "se:0" "c:16750950" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Pad.TestPoint.Bottom" "d:0" "e:1" "s:1" "se:0" "c:10040319" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Plane.Data.2" "d:1" "e:1" "s:1" "se:1" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Plane.Data.2" "d:1" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.3" "d:1" "e:1" "s:1" "se:1" "c:10053222" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Plane.Data.4" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Plane.Data.4" "d:1" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.5" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Plane.Data.6" "d:1" "e:1" "s:1" "se:1" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Plane.Data.6" "d:1" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.7" "d:1" "e:1" "s:1" "se:1" "c:8388736" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Plane.Data.8" "d:1" "e:1" "s:1" "se:1" "c:3407769" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Plane.Data.9" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Plane.Data.8" "d:1" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Plane.Data.9" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.10" "d:1" "e:1" "s:1" "se:1" "c:13369548" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Plane.Data.11" "d:1" "e:1" "s:1" "se:1" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Plane.Data.11" "d:1" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.12" "d:1" "e:1" "s:1" "se:1" "c:13369344" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.13" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.14" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
@@ -5858,16 +5864,16 @@
 	"Copper.Plane.Data.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Plane.Data.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Trace.2" "d:1" "e:1" "s:1" "se:1" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Trace.2" "d:1" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.3" "d:1" "e:1" "s:1" "se:1" "c:10053222" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Trace.4" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Trace.4" "d:1" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.5" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Trace.6" "d:1" "e:1" "s:1" "se:1" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Trace.6" "d:1" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.7" "d:1" "e:1" "s:1" "se:1" "c:8388736" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Trace.8" "d:1" "e:1" "s:1" "se:1" "c:3407769" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Trace.9" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Trace.8" "d:1" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Trace.9" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.10" "d:1" "e:1" "s:1" "se:1" "c:13369548" "a:100" "p:0" "t:0" "o:1"
-	"Copper.Trace.11" "d:1" "e:1" "s:1" "se:1" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Copper.Trace.11" "d:1" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.12" "d:1" "e:1" "s:1" "se:1" "c:13369344" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.13" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.14" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
@@ -6113,11 +6119,11 @@
 	"Copper.Trace.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Copper.Trace.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Outline.Top" "d:1" "e:1" "s:1" "se:1" "c:3394611" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Outline.Top" "d:1" "e:0" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.Part.Outline.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Text.PartNumber.Top" "d:0" "e:1" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Text.PartNumber.Top" "d:0" "e:0" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.Part.Text.PartNumber.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Assembly.Part.Text.RefDes.Top" "d:0" "e:1" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Assembly.Part.Text.RefDes.Top" "d:0" "e:0" "s:1" "se:0" "c:3394611" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.Part.Text.RefDes.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16737996" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.TestPoint.Text.RefDes.Top" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Assembly.TestPoint.Text.RefDes.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
@@ -6131,8 +6137,8 @@
 	"Fabrication.BondWires.Level3.Bottom" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.BondWires.Level4.Top" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.BondWires.Level4.Bottom" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Coverlayer.Top" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Coverlayer.Bottom" "d:1" "e:1" "s:1" "se:1" "c:10027008" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Coverlayer.Top" "d:1" "e:0" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Coverlayer.Bottom" "d:1" "e:0" "s:1" "se:1" "c:10027008" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DetailViews" "d:0" "e:1" "s:1" "se:0" "c:16711884" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DiePins.Level0.Top" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DiePins.Level0.Bottom" "d:1" "e:1" "s:1" "se:1" "c:10092543" "a:100" "p:0" "t:0" "o:1"
@@ -6145,22 +6151,22 @@
 	"Fabrication.DiePins.Level4.Top" "d:1" "e:0" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DiePins.Level4.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16711680" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.DrillDrawingThrough" "d:0" "e:0" "s:1" "se:1" "c:6724095" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Hole.Contour" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Hole.Contour.SpanNumbers" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Hole.Mounting" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Hole.Contour" "d:1" "e:0" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Hole.Contour.SpanNumbers" "d:1" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Hole.Mounting" "d:1" "e:0" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Hole.Pin" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Hole.Via" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Material.Mask.1" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Mask.2" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Mask.2" "d:0" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.3" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Mask.4" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Mask.4" "d:0" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.5" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Mask.6" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Mask.6" "d:0" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.7" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Mask.8" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Mask.9" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Mask.8" "d:0" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Mask.9" "d:0" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.10" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Mask.11" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Mask.11" "d:0" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.12" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.13" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.14" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
@@ -6407,16 +6413,16 @@
 	"Fabrication.Material.Mask.255" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Mask.256" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.1" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Overglaze.2" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Overglaze.2" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.3" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Overglaze.4" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Overglaze.4" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.5" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Overglaze.6" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Overglaze.6" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.7" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Overglaze.8" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Overglaze.9" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Overglaze.8" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Overglaze.9" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.10" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.Material.Overglaze.11" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"Fabrication.Material.Overglaze.11" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.12" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.13" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.14" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -6662,40 +6668,40 @@
 	"Fabrication.Material.Overglaze.254" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.255" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"Fabrication.Material.Overglaze.256" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"Fabrication.RedlineLayer" "d:0" "e:1" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Generated.Top" "d:0" "e:1" "s:1" "se:0" "c:16763955" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Generated.Bottom" "d:0" "e:1" "s:1" "se:0" "c:16764159" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Outline.Top" "d:1" "e:1" "s:1" "se:1" "c:6750207" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Outline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:26265" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.PartNumber.Top" "d:1" "e:1" "s:1" "se:1" "c:16750899" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.PartNumber.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16751103" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.RefDes.Top" "d:1" "e:1" "s:1" "se:1" "c:16750899" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Silkscreen.Part.Text.RefDes.Bottom" "d:1" "e:1" "s:1" "se:1" "c:16751103" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.RedlineLayer" "d:0" "e:0" "s:1" "se:1" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Generated.Top" "d:0" "e:0" "s:1" "se:0" "c:16763955" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Generated.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16764159" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Outline.Top" "d:1" "e:0" "s:1" "se:0" "c:6750207" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Outline.Bottom" "d:1" "e:0" "s:1" "se:0" "c:26265" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.PartNumber.Top" "d:1" "e:0" "s:1" "se:0" "c:16750899" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.PartNumber.Bottom" "d:1" "e:0" "s:1" "se:0" "c:16751103" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.RefDes.Top" "d:1" "e:0" "s:1" "se:0" "c:16750899" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Silkscreen.Part.Text.RefDes.Bottom" "d:1" "e:0" "s:1" "se:0" "c:16751103" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Probe.Top" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Probe.Bottom" "d:1" "e:0" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Text.RefDes.Top" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Fabrication.Silkscreen.TestPoint.Text.RefDes.Bottom" "d:0" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Soldermask.Top" "d:0" "e:1" "s:1" "se:1" "c:13382451" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Soldermask.Bottom" "d:0" "e:1" "s:1" "se:1" "c:204" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Solderpaste.Top" "d:0" "e:1" "s:1" "se:1" "c:13382451" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Solderpaste.Bottom" "d:0" "e:1" "s:1" "se:1" "c:204" "a:100" "p:0" "t:0" "o:1"
-	"Fabrication.Stiffener" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Soldermask.Top" "d:0" "e:0" "s:1" "se:1" "c:13382451" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Soldermask.Bottom" "d:0" "e:0" "s:1" "se:1" "c:204" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Solderpaste.Top" "d:0" "e:0" "s:1" "se:1" "c:13382451" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Solderpaste.Bottom" "d:0" "e:0" "s:1" "se:1" "c:204" "a:100" "p:0" "t:0" "o:1"
+	"Fabrication.Stiffener" "d:1" "e:0" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
 	"General.ActiveClearance" "d:0" "e:1" "s:1" "se:1" "c:16750950" "a:50" "p:0" "t:0" "o:1"
 	"General.Color.Background" "d:1" "e:1" "s:1" "se:1" "c:0" "a:100" "p:0" "t:0" "o:1"
 	"General.Color.Highlight" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"General.Color.Selection" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:0" "t:0" "o:1"
 	"General.Color.SelectionShape" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"General.Milling.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:33" "t:0" "o:1"
-	"General.Milling.2" "d:1" "e:1" "s:1" "se:1" "c:3342438" "a:100" "p:33" "t:0" "o:1"
+	"General.Milling.2" "d:0" "e:1" "s:1" "se:0" "c:3342438" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.3" "d:1" "e:1" "s:1" "se:1" "c:10053222" "a:100" "p:33" "t:0" "o:1"
-	"General.Milling.4" "d:1" "e:1" "s:1" "se:1" "c:39423" "a:100" "p:33" "t:0" "o:1"
+	"General.Milling.4" "d:0" "e:1" "s:1" "se:0" "c:39423" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.5" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:33" "t:0" "o:1"
-	"General.Milling.6" "d:1" "e:1" "s:1" "se:1" "c:16711935" "a:100" "p:33" "t:0" "o:1"
+	"General.Milling.6" "d:0" "e:1" "s:1" "se:0" "c:16711935" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.7" "d:1" "e:1" "s:1" "se:1" "c:8388736" "a:100" "p:33" "t:0" "o:1"
-	"General.Milling.8" "d:1" "e:1" "s:1" "se:1" "c:3407769" "a:100" "p:33" "t:0" "o:1"
-	"General.Milling.9" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:33" "t:0" "o:1"
+	"General.Milling.8" "d:0" "e:1" "s:1" "se:0" "c:3407769" "a:100" "p:33" "t:0" "o:1"
+	"General.Milling.9" "d:0" "e:1" "s:1" "se:0" "c:65535" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.10" "d:1" "e:1" "s:1" "se:1" "c:13369548" "a:100" "p:33" "t:0" "o:1"
-	"General.Milling.11" "d:1" "e:1" "s:1" "se:1" "c:3381759" "a:100" "p:33" "t:0" "o:1"
+	"General.Milling.11" "d:0" "e:1" "s:1" "se:0" "c:3381759" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.12" "d:1" "e:1" "s:1" "se:1" "c:13369344" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.13" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.14" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:33" "t:0" "o:1"
@@ -6941,8 +6947,8 @@
 	"General.Milling.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:33" "t:0" "o:1"
 	"General.Milling.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:33" "t:0" "o:1"
-	"General.MultipleDesigners.TeamPCB.ReservedAreas" "d:0" "e:1" "s:1" "se:0" "c:39219" "a:100" "p:0" "t:0" "o:1"
-	"General.MultipleDesigners.Xtreme.ProtectedAreas" "d:1" "e:1" "s:1" "se:1" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"General.MultipleDesigners.TeamPCB.ReservedAreas" "d:0" "e:0" "s:1" "se:0" "c:39219" "a:100" "p:0" "t:0" "o:1"
+	"General.MultipleDesigners.Xtreme.ProtectedAreas" "d:1" "e:0" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
 	"General.Pattern.Fixed" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:34" "t:0" "o:1"
 	"General.Pattern.Locked" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:2" "t:0" "o:1"
 	"General.Pattern.SemiFixed" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:6" "t:0" "o:1"
@@ -15289,13 +15295,13 @@
 	"Material.TICER_TCR_NiCr_50.254" "d:1" "e:0" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:0"
 	"Material.TICER_TCR_NiCr_50.255" "d:1" "e:0" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:0"
 	"Material.TICER_TCR_NiCr_50.256" "d:1" "e:0" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:0"
-	"MultipleDesigners.ForceFields.Conflicts" "d:1" "e:1" "s:1" "se:1" "c:3355596" "a:100" "p:0" "t:0" "o:1"
-	"MultipleDesigners.ForceFields.Other" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
-	"MultipleDesigners.ForceFields.ThisHandle" "d:1" "e:1" "s:1" "se:1" "c:6684774" "a:100" "p:0" "t:0" "o:1"
+	"MultipleDesigners.ForceFields.Conflicts" "d:1" "e:0" "s:1" "se:0" "c:3355596" "a:100" "p:0" "t:0" "o:1"
+	"MultipleDesigners.ForceFields.Other" "d:1" "e:0" "s:1" "se:0" "c:39372" "a:100" "p:0" "t:0" "o:1"
+	"MultipleDesigners.ForceFields.ThisHandle" "d:1" "e:0" "s:1" "se:0" "c:6684774" "a:100" "p:0" "t:0" "o:1"
 	"Netline.Classline" "d:1" "e:0" "s:1" "se:0" "c:16711884" "a:100" "p:0" "t:0" "o:1"
-	"Netline.NonOrderedOpen" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
-	"Netline.OrderedAll" "d:0" "e:1" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
-	"Netline.OrderedOpen" "d:1" "e:1" "s:1" "se:1" "c:13408767" "a:100" "p:0" "t:0" "o:1"
+	"Netline.NonOrderedOpen" "d:1" "e:0" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
+	"Netline.OrderedAll" "d:0" "e:0" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
+	"Netline.OrderedOpen" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
 	"Netline.SLI.1" "d:0" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Netline.SLI.2" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Netline.SLI.3" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
@@ -15322,6 +15328,12 @@
 	"Part.Pin.NumberType.Bottom" "d:1" "e:1" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Part.PlaceOutline.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Part.PlaceOutline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:10027212" "a:100" "p:2" "t:0" "o:1"
+	"Part.RFNode.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Part.RFNode.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Part.RFNode.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Part.RFNode.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Part.RFNode.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Part.RFNode.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"Part.SpecialPlaceOutline.Top" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Part.SpecialPlaceOutline.Bottom" "d:1" "e:1" "s:1" "se:1" "c:10027212" "a:100" "p:2" "t:0" "o:1"
 	"Place.Part.Text.RefDes.Top" "d:0" "e:1" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
@@ -15329,29 +15341,48 @@
 	"Planning.ReuseArea" "d:1" "e:1" "s:1" "se:1" "c:65280" "a:100" "p:0" "t:0" "o:1"
 	"Sheet.SheetOrigin" "d:1" "e:1" "s:1" "se:1" "c:16764057" "a:100" "p:0" "t:0" "o:1"
 	"Sheet.SheetOutline" "d:1" "e:1" "s:1" "se:1" "c:10092441" "a:100" "p:0" "t:0" "o:1"
+	"Topology.TargetArea.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Topology.TargetArea.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Topology.TargetArea.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Topology.TargetArea.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Topology.TargetArea.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Topology.TargetArea.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"Topology.TargetAreaWarnRed" "d:1" "e:1" "s:1" "se:1" "c:255" "a:100" "p:34" "t:1" "o:1"
 	"Topology.TargetAreaWarnYellow" "d:1" "e:1" "s:1" "se:1" "c:65535" "a:100" "p:34" "t:1" "o:1"
-	"User.DRAWTRACE_CLEARANCEGEOM" "d:0" "e:1" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Artiq" "d:1" "e:1" "s:1" "se:1" "c:16751052" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Bottomoverlay" "d:0" "e:1" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Keepoutlayer" "d:0" "e:1" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical1" "d:0" "e:1" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical15" "d:0" "e:1" "s:1" "se:0" "c:7237230" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical16" "d:0" "e:1" "s:1" "se:0" "c:13158" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical2" "d:0" "e:1" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Mechanical8" "d:0" "e:1" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Padholelayer" "d:0" "e:1" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Topoverlay" "d:1" "e:1" "s:1" "se:1" "c:2434341" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Toppaste" "d:0" "e:1" "s:1" "se:0" "c:5592405" "a:100" "p:0" "t:0" "o:1"
-	"User.DXF_Topsolder" "d:0" "e:1" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
-	"User.Unnamed user layer" "d:0" "e:1" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 15" "d:0" "e:1" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 16" "d:0" "e:1" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 17" "d:0" "e:1" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 18" "d:0" "e:1" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 19" "d:1" "e:1" "s:1" "se:1" "c:128" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 24" "d:0" "e:1" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
-	"User.User Layer 8" "d:0" "e:1" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
+	"Topology.UnpackedArea.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Topology.UnpackedArea.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Topology.UnpackedArea.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Topology.UnpackedArea.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Topology.UnpackedArea.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Topology.UnpackedArea.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Topology.VirtualPins.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Topology.VirtualPins.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Topology.VirtualPins.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Topology.VirtualPins.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Topology.VirtualPins.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Topology.VirtualPins.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"User.DRAWTRACE_CLEARANCEGEOM" "d:1" "e:0" "s:1" "se:0" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Artiq" "d:1" "e:0" "s:1" "se:0" "c:16751052" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Bottomoverlay" "d:1" "e:0" "s:1" "se:0" "c:16711680" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Keepoutlayer" "d:1" "e:0" "s:1" "se:0" "c:26367" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical1" "d:1" "e:0" "s:1" "se:0" "c:10092543" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical15" "d:1" "e:0" "s:1" "se:0" "c:7237230" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical16" "d:1" "e:0" "s:1" "se:0" "c:13158" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical2" "d:1" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Mechanical8" "d:1" "e:0" "s:1" "se:0" "c:10079487" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Padholelayer" "d:1" "e:0" "s:1" "se:0" "c:10027008" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Topoverlay" "d:1" "e:0" "s:1" "se:0" "c:2434341" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Toppaste" "d:1" "e:0" "s:1" "se:0" "c:5592405" "a:100" "p:0" "t:0" "o:1"
+	"User.DXF_Topsolder" "d:1" "e:0" "s:1" "se:0" "c:16764057" "a:100" "p:0" "t:0" "o:1"
+	"User.Drill Chart - Through" "d:1" "e:0" "s:1" "se:0" "c:16711884" "a:100" "p:0" "t:0" "o:1"
+	"User.Unnamed user layer" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 15" "d:1" "e:0" "s:1" "se:0" "c:10092441" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 16" "d:1" "e:0" "s:1" "se:0" "c:13408767" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 17" "d:1" "e:0" "s:1" "se:0" "c:32768" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 18" "d:1" "e:0" "s:1" "se:0" "c:255" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 19" "d:1" "e:0" "s:1" "se:0" "c:128" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 24" "d:1" "e:0" "s:1" "se:0" "c:12632256" "a:100" "p:0" "t:0" "o:1"
+	"User.User Layer 8" "d:1" "e:0" "s:1" "se:0" "c:65280" "a:100" "p:0" "t:0" "o:1"
 	"WirebondObjects.WirebondGuides.Top" "d:1" "e:1" "s:1" "se:1" "c:26367" "a:100" "p:0" "t:0" "o:1"
 	"WirebondObjects.WirebondGuides.Bottom" "d:1" "e:1" "s:1" "se:1" "c:128" "a:100" "p:0" "t:0" "o:1"
 	"Board.BundlePath.1" "d:1" "e:1" "s:1" "se:1" "c:13311" "a:100" "p:0" "t:0" "o:1"
@@ -15610,6 +15641,66 @@
 	"Board.BundlePath.254" "d:1" "e:1" "s:1" "se:1" "c:39372" "a:100" "p:0" "t:0" "o:1"
 	"Board.BundlePath.255" "d:1" "e:1" "s:1" "se:1" "c:12632256" "a:100" "p:0" "t:0" "o:1"
 	"Board.BundlePath.256" "d:1" "e:1" "s:1" "se:1" "c:7237230" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.Via.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.Via.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.Via.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.Via.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.Via.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.BusPath.Via.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Data.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Data.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Data.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Data.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Data.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Data.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Shape.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Shape.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Shape.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Shape.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Shape.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.CopperBalancing.Shape.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Pad.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Pad.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Pad.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Pad.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Pad.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Pad.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Plane.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Plane.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Plane.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Plane.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Plane.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Plane.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Trace.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Trace.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Trace.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Trace.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Trace.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.Obstruct.Trace.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.RuleArea.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.RuleArea.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.RuleArea.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.RuleArea.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.RuleArea.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.RuleArea.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Board.SketchPlan.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Board.SketchPlan.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Board.SketchPlan.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Board.SketchPlan.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Board.SketchPlan.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Board.SketchPlan.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
+	"Copper.RFSegment.2" "d:0" "e:0" "s:1" "se:0" "c:3342438" "a:100" "p:0" "t:0" "o:1"
+	"Copper.RFSegment.4" "d:0" "e:0" "s:1" "se:0" "c:39423" "a:100" "p:0" "t:0" "o:1"
+	"Copper.RFSegment.6" "d:0" "e:0" "s:1" "se:0" "c:16711935" "a:100" "p:0" "t:0" "o:1"
+	"Copper.RFSegment.8" "d:0" "e:0" "s:1" "se:0" "c:3407769" "a:100" "p:0" "t:0" "o:1"
+	"Copper.RFSegment.9" "d:0" "e:0" "s:1" "se:0" "c:65535" "a:100" "p:0" "t:0" "o:1"
+	"Copper.RFSegment.11" "d:0" "e:0" "s:1" "se:0" "c:3381759" "a:100" "p:0" "t:0" "o:1"
 	"Hazard.Internal.DpPhaseMatching" "d:1" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineBottom.1" "d:1" "e:1" "s:1" "se:1" "c:10027212" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineBottom.2" "d:1" "e:1" "s:1" "se:1" "c:10027212" "a:100" "p:2" "t:0" "o:1"
@@ -17487,15 +17578,15 @@
 	"[Net].$1N5263" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N5266" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N19382" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N19422" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N19423" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N19424" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDDAT3" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDDAT2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDDAT1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N19438" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N19440" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N20177" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N20179" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N20194" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].$1N20210" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDCLK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDCMD" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDPWR" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SDDAT0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].FMC2_PG_C2M" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].FMC2_PG_M2C" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].FMC2_PRSNT" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -17506,6 +17597,10 @@
 	"[Net].SSP0_SSEL" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N5436" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].$1N5489" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].PS_MODE0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].PS_MODE1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].PS_MODE2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].PS_MODE3" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(Default)" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[NetClass].USR_IO" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].SPI" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -17547,18 +17642,18 @@
 	"[Virtual].iDC.SchemeSelectorName" "User:D:\\...\\Planes"
     )
     ..Named_Options ( 
-	"Internal.Option.FabricationObjects.Propagating" "1"
+	"Internal.Option.FabricationObjects.Propagating" "3"
 	"Option.ActiveLayerOnly" "0"
-	"Option.BoardElements.Enabled" "1"
-	"Option.BoardElements.Selectable" "1"
-	"Option.BoardObjects.Enabled" "1"
-	"Option.BoardObjects.Selectable" "1"
+	"Option.BoardElements.Enabled" "3"
+	"Option.BoardElements.Selectable" "3"
+	"Option.BoardObjects.Enabled" "0"
+	"Option.BoardObjects.Selectable" "3"
 	"Option.BondWiresBottom.Enabled" "0"
 	"Option.BondWiresBottom.Selectable" "3"
 	"Option.BondWiresTop.Enabled" "0"
 	"Option.BondWiresTop.Selectable" "3"
-	"Option.BusPaths.Enabled" "1"
-	"Option.Classlines" "0"
+	"Option.BusPaths.Enabled" "3"
+	"Option.Classlines" "2"
 	"Option.Classlines.Netlines" "2"
 	"Option.ConductiveShapes.Enabled" "1"
 	"Option.ConductiveShapes.Selectable" "1"
@@ -17572,32 +17667,32 @@
 	"Option.DiePinsTop.Selectable" "3"
 	"Option.DrawFabObjects.Enabled" "1"
 	"Option.DrawFabObjects.Selectable" "1"
-	"Option.Fabrication.AssemblyItems.Bottom" "0"
-	"Option.Fabrication.AssemblyItems.Top" "1"
-	"Option.Fabrication.CellItems.Bottom" "0"
-	"Option.Fabrication.CellItems.Top" "0"
+	"Option.Fabrication.AssemblyItems.Bottom" "2"
+	"Option.Fabrication.AssemblyItems.Top" "2"
+	"Option.Fabrication.CellItems.Bottom" "2"
+	"Option.Fabrication.CellItems.Top" "2"
 	"Option.Fabrication.DrillDrawing" "0"
 	"Option.Fabrication.DrillDrawing.Selectable" "3"
-	"Option.Fabrication.SilkscreenItems.Bottom" "1"
-	"Option.Fabrication.SilkscreenItems.Top" "1"
-	"Option.Fabrication.TestPointItems.Bottom" "0"
-	"Option.Fabrication.TestPointItems.Top" "0"
-	"Option.FabricationObjects" "1"
-	"Option.FabricationObjects.Bottom" "1"
-	"Option.FabricationObjects.Selectable" "1"
-	"Option.FabricationObjects.Top" "1"
+	"Option.Fabrication.SilkscreenItems.Bottom" "3"
+	"Option.Fabrication.SilkscreenItems.Top" "3"
+	"Option.Fabrication.TestPointItems.Bottom" "2"
+	"Option.Fabrication.TestPointItems.Top" "2"
+	"Option.FabricationObjects" "0"
+	"Option.FabricationObjects.Bottom" "3"
+	"Option.FabricationObjects.Selectable" "3"
+	"Option.FabricationObjects.Top" "3"
 	"Option.FacementPartsBottom.Selectable" "1"
 	"Option.FacementPartsTop.Selectable" "1"
-	"Option.Fiducials.Enabled" "1"
-	"Option.Fiducials.Selectable" "1"
+	"Option.Fiducials.Enabled" "3"
+	"Option.Fiducials.Selectable" "3"
 	"Option.FillPartOutlineOnSelection" "0"
 	"Option.FillPatterns" "1"
 	"Option.ForceOutline" "0"
 	"Option.ForceSolid" "0"
 	"Option.Grids.Enabled" "1"
 	"Option.HighlightedOnly" "1"
-	"Option.Holes.Enabled" "1"
-	"Option.Holes.Selectable" "1"
+	"Option.Holes.Enabled" "3"
+	"Option.Holes.Selectable" "3"
 	"Option.LegibleTextOnly" "1"
 	"Option.Material.3M_C-Ply" "0"
 	"Option.Material.Copper" "0"
@@ -17608,7 +17703,7 @@
 	"Option.Material.DuPont_Interra_HK10" "0"
 	"Option.Material.Gould_TCC" "0"
 	"Option.Material.Huntsman_ProbelecCFP" "0"
-	"Option.Material.Mask.Enabled" "0"
+	"Option.Material.Mask.Enabled" "1"
 	"Option.Material.OakMitsuiFaradFlex_BC12" "0"
 	"Option.Material.OakMitsuiFaradFlex_BC12TM" "0"
 	"Option.Material.OakMitsuiFaradFlex_BC16" "0"
@@ -17620,7 +17715,7 @@
 	"Option.Material.Ohmega_ply_25" "0"
 	"Option.Material.Ohmega_ply_250" "0"
 	"Option.Material.Ohmega_ply_50" "0"
-	"Option.Material.Overglaze.Enabled" "0"
+	"Option.Material.Overglaze.Enabled" "1"
 	"Option.Material.Partec_RD21" "0"
 	"Option.Material.Sanmina_BC2000" "0"
 	"Option.Material.TICER_TCR_CrSiO_1000" "0"
@@ -17636,20 +17731,20 @@
 	"Option.Materials.Enabled" "1"
 	"Option.Materials.Selectable" "1"
 	"Option.MirrorView" "0"
-	"Option.MountingHolePads.Enabled" "1"
-	"Option.MultipleDesigners" "1"
-	"Option.MultipleDesigners.ForceFields.Enabled" "1"
+	"Option.MountingHolePads.Enabled" "3"
+	"Option.MultipleDesigners" "3"
+	"Option.MultipleDesigners.ForceFields.Enabled" "3"
 	"Option.MultipleDesigners.TeamPCB.ShadowMode" "2"
-	"Option.Netlines.DisplayBetweenMarkedComponents" "1"
-	"Option.Netlines.DisplayFromFilteredNets" "0"
-	"Option.Netlines.DisplayFromMarkedComponents" "1"
-	"Option.Netlines.DisplayFromMarkedNets" "1"
-	"Option.Netlines.DynamicFiltering" "0"
+	"Option.Netlines.DisplayBetweenMarkedComponents" "3"
+	"Option.Netlines.DisplayFromFilteredNets" "2"
+	"Option.Netlines.DisplayFromMarkedComponents" "3"
+	"Option.Netlines.DisplayFromMarkedNets" "3"
+	"Option.Netlines.DynamicFiltering" "2"
 	"Option.Netlines.DynamicFiltering.BothEnds" "2"
 	"Option.Netlines.DynamicFiltering.Freeze" "2"
 	"Option.Netlines.DynamicFiltering.OneEnd" "3"
-	"Option.Netlines.Enabled" "1"
-	"Option.Netlines.Selectable" "1"
+	"Option.Netlines.Enabled" "0"
+	"Option.Netlines.Selectable" "3"
 	"Option.NetlinesForSelectedItems.Enabled" "1"
 	"Option.Pad.Through.AllSameColor" "0"
 	"Option.Pad.Via.AllSameColor" "0"
@@ -17678,10 +17773,10 @@
 	"Option.Planes.Data.Fill" "1"
 	"Option.Planes.Enabled" "1"
 	"Option.Planes.Selectable" "1"
-	"Option.Planes.Shape.Enabled" "0"
+	"Option.Planes.Shape.Enabled" "1"
 	"Option.Planes.Sketch.Enabled" "1"
-	"Option.Planning.Enabled" "1"
-	"Option.Planning.Selectable" "1"
+	"Option.Planning.Enabled" "0"
+	"Option.Planning.Selectable" "3"
 	"Option.RFNodes.Enabled" "1"
 	"Option.RFNodes.Selectable" "1"
 	"Option.RFObjects.Enabled" "1"
@@ -17689,7 +17784,7 @@
 	"Option.RFSegments.Selectable" "1"
 	"Option.RFShapes.Enabled" "1"
 	"Option.RFShapes.Selectable" "1"
-	"Option.ReuseArea.Enabled" "1"
+	"Option.ReuseArea.Enabled" "3"
 	"Option.RouteAreas.Enabled" "1"
 	"Option.RouteAreas.Selectable" "1"
 	"Option.RouteObjects.Enabled" "1"
@@ -17700,10 +17795,10 @@
 	"Option.RouteObstructs.Selectable" "1"
 	"Option.RouteObstructs.Trace.Enabled" "1"
 	"Option.RouteObstructs.TraceVia.Enabled" "1"
-	"Option.RouteObstructs.TuningPattern.Enabled" "0"
-	"Option.RouteObstructs.Via.Enabled" "0"
-	"Option.RoutePlanning" "1"
-	"Option.RouteTargets.Enabled" "0"
+	"Option.RouteObstructs.TuningPattern.Enabled" "1"
+	"Option.RouteObstructs.Via.Enabled" "1"
+	"Option.RoutePlanning" "3"
+	"Option.RouteTargets.Enabled" "2"
 	"Option.RuleAreas.Enabled" "1"
 	"Option.SMDPinPads.Enabled" "1"
 	"Option.SelectableInsidePartOutline" "0"
@@ -17713,30 +17808,30 @@
 	"Option.SelectionAndHighlights.EntireNetOnSelect" "0"
 	"Option.SheetObjects.Enabled" "1"
 	"Option.SheetObjects.Selectable" "1"
-	"Option.SketchPlans.Enabled" "1"
-	"Option.SketchPlans.Selectable" "1"
-	"Option.SketchPlans.Visible" "1"
-	"Option.SketchPlans.Width" "1"
-	"Option.Spacers.Enabled" "0"
-	"Option.Spacers.ShadowModeEnabled" "2"
-	"Option.TargetAreas.Enabled" "0"
+	"Option.SketchPlans.Enabled" "3"
+	"Option.SketchPlans.Selectable" "3"
+	"Option.SketchPlans.Visible" "3"
+	"Option.SketchPlans.Width" "3"
+	"Option.Spacers.Enabled" "1"
+	"Option.Spacers.ShadowModeEnabled" "0"
+	"Option.TargetAreas.Enabled" "2"
 	"Option.Teardrops.Enabled" "1"
 	"Option.Teardrops.Selectable" "1"
-	"Option.TextItems.CellProperties.Enabled" "1"
-	"Option.TextItems.CellProperties.Selectable" "1"
-	"Option.TextItems.Enabled" "1"
-	"Option.TextItems.PinProperties.Enabled" "1"
-	"Option.TextItems.PinProperties.Selectable" "1"
-	"Option.TextItems.Selectable" "1"
+	"Option.TextItems.CellProperties.Enabled" "3"
+	"Option.TextItems.CellProperties.Selectable" "3"
+	"Option.TextItems.Enabled" "3"
+	"Option.TextItems.PinProperties.Enabled" "3"
+	"Option.TextItems.PinProperties.Selectable" "3"
+	"Option.TextItems.Selectable" "3"
 	"Option.Traces.Enabled" "1"
 	"Option.Traces.Selectable" "1"
-	"Option.UnpackedAreas.Enabled" "1"
-	"Option.UserDraftLayers.Enabled" "1"
-	"Option.UserDraftLayers.Selectable" "1"
+	"Option.UnpackedAreas.Enabled" "3"
+	"Option.UserDraftLayers.Enabled" "0"
+	"Option.UserDraftLayers.Selectable" "3"
 	"Option.ViaPads.Enabled" "1"
 	"Option.Vias.Enabled" "1"
 	"Option.Vias.Selectable" "1"
-	"Option.VirtualPins.Enabled" "1"
+	"Option.VirtualPins.Enabled" "3"
 	"Option.WirebondItems.Enabled" "1"
 	"Option.WirebondItems.Selectable" "1"
 	"Option.WirebondItemsBottom.Enabled" "1"
@@ -17751,11 +17846,11 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x776aad70	! flags
-	0x75e768b0	! showCmd
-	(262144, 0)	! ptMinPosition
-	(0, 991216)	! ptMaxPosition
-	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
+	0x00000018	! flags
+	0x00000000	! showCmd
+	(0, 4022272)	! ptMinPosition
+	(1, -1829853354)	! ptMaxPosition
+	(438337264, 942878976) (875837497,262144)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""

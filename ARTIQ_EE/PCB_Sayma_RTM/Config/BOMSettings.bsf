@@ -1,15 +1,18 @@
 .FILETYPE BOM_SETTINGS
 .VERSION "EE2007.1"
 .CREATOR "Mentor Graphics Corporation"
-.DATE "Tuesday, November 17, 2015 09:41 AM"
+.DATE "Friday, February 10, 2017 12:07 AM"
 
+.BOMFileName "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_RTM\\Output\\BOM\\Sayma_RTM.bom"
+
+.EPComponents No
 
 .PartNumber Yes
-..ItemNumber "ITEM_NUMBER"
+..ItemNumber "ITEM_NUMBER" 
 ...Selected Yes
-..PartName "COMPANY PART NO" 
+..PartName "PART NO" 
 ...Selected Yes
-..Geometry "GEOMETRY" 
+..Geometry "CASE" 
 ...Selected Yes
 ..Count "COUNT" 
 ...Selected Yes
@@ -18,23 +21,89 @@
 ..ReferenceName "REFERENCE NAME" 
 ...Selected Yes
 ..Comment "COMMENT" 
-...Selected Yes
+...Selected No
 
 .ReferenceDesignator Yes
 ..ItemNumber "ITEM_NUMBER" 
-...Selected Yes
+...Selected No
 ..PartName "COMPANY PART NO" 
-...Selected Yes
+...Selected No
 ..Geometry "GEOMETRY" 
-...Selected Yes
+...Selected No
 ..Description "DESCRIPTION" 
-...Selected Yes
+...Selected No
 ..ReferenceName "REFERENCE NAME" 
-...Selected Yes
+...Selected No
 ..Comment "COMMENT" 
-...Selected Yes
+...Selected No
 
-.Properties 0
+.Properties 33
+..Prop "Author" 
+...Selected No
+..Prop "Bonding" 
+...Selected No
+..Prop "Case" 
+...Selected Yes
+..Prop "Color" 
+...Selected No
+..Prop "Comment" 
+...Selected Yes
+..Prop "Component Kind" 
+...Selected No
+..Prop "Component Layer" 
+...Selected No
+..Prop "Component Type" 
+...Selected No
+..Prop "ComponentHeight" 
+...Selected No
+..Prop "ComponentLink1Description" 
+...Selected No
+..Prop "ComponentLink1URL" 
+...Selected No
+..Prop "CreateDate" 
+...Selected No
+..Prop "Desc" 
+...Selected No
+..Prop "Device" 
+...Selected No
+..Prop "Family" 
+...Selected No
+..Prop "Footprint" 
+...Selected No
+..Prop "HelpURL" 
+...Selected No
+..Prop "LatestRevisionDate" 
+...Selected No
+..Prop "Manufacturer" 
+...Selected Yes
+..Prop "Manufacturer Part Number" 
+...Selected Yes
+..Prop "Mounted" 
+...Selected No
+..Prop "PackageDescription" 
+...Selected No
+..Prop "Part Description" 
+...Selected Yes
+..Prop "Part Number" 
+...Selected Yes
+..Prop "Pin Count" 
+...Selected No
+..Prop "Power" 
+...Selected No
+..Prop "PressFit" 
+...Selected No
+..Prop "Sense" 
+...Selected No
+..Prop "SMD" 
+...Selected No
+..Prop "Socket" 
+...Selected No
+..Prop "Status" 
+...Selected No
+..Prop "Type" 
+...Selected No
+..Prop "Value" 
+...Selected Yes
 
 .AllComponents Yes
 .CommonComponents No
@@ -44,5 +113,7 @@
 
 .MechanicalCells Yes
 
-.SCHEME "BOMSettings"
+.UserProperties No
+
 .SCHEMELOCATION "Local"
+.SCHEME "BOMSettings"

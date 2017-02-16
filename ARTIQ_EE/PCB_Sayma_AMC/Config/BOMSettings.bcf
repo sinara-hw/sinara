@@ -1,50 +1,148 @@
 .FILETYPE BOM_SETTINGS
 .VERSION "EE2007.1"
 .CREATOR "Mentor Graphics Corporation"
-.DATE "Tuesday, November 17, 2015 09:41 AM"
+.DATE "Thursday, February 09, 2017 10:37 PM"
 
-.BOMFileName "D:\\Users\\Greg\\Documents\\PW\\projekty badawcze\\ORPAL\\Orpal_EXP\\ORPAL\\PCB\\Output\\BOM\\ORPAL.bom"
+.BOMFileName "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\BOM\\Sayma_AMC.bom"
 
 .EPComponents No
 
 .PartNumber Yes
 ..ItemNumber "ITEM_NUMBER" 
 ...Selected Yes
-..PartName "COMPANY PART NO" 
+..PartName "PART NO" 
 ...Selected Yes
-..Geometry "GEOMETRY" 
+..Geometry "CASE" 
 ...Selected Yes
 ..Count "COUNT" 
 ...Selected Yes
 ..Description "DESCRIPTION" 
 ...Selected Yes
+..Comment "COMMENT" 
+...Selected No
 ..ReferenceName "REFERENCE NAME" 
 ...Selected Yes
-..Comment "COMMENT" 
-...Selected Yes
 
-.ReferenceDesignator Yes
+.ReferenceDesignator No
 ..ItemNumber "ITEM_NUMBER" 
-...Selected Yes
+...Selected No
 ..PartName "COMPANY PART NO" 
-...Selected Yes
+...Selected No
 ..Geometry "GEOMETRY" 
-...Selected Yes
+...Selected No
 ..Description "DESCRIPTION" 
-...Selected Yes
+...Selected No
 ..ReferenceName "REFERENCE NAME" 
-...Selected Yes
+...Selected No
 ..Comment "COMMENT" 
-...Selected Yes
+...Selected No
 
-.Properties 4
-..Prop "Component Layer" 
+.Properties 53
+..Prop "ALLOWED_MOUNT_SIDE" 
 ...Selected No
-..Prop "Desc" 
+..Prop "Author" 
 ...Selected No
-..Prop "Source Path" 
+..Prop "Bonding" 
 ...Selected No
+..Prop "Case" 
+...Selected Yes
+..Prop "Cell Name" 
+...Selected No
+..Prop "ClassName" 
+...Selected No
+..Prop "Color" 
+...Selected No
+..Prop "Comment" 
+...Selected Yes
+..Prop "Component Kind" 
+...Selected No
+..Prop "Component Type" 
+...Selected No
+..Prop "Component_InstanceModification" 
+...Selected No
+..Prop "ComponentHeight" 
+...Selected No
+..Prop "ComponentLink1Description" 
+...Selected No
+..Prop "ComponentLink1URL" 
+...Selected No
+..Prop "CreateDate" 
+...Selected No
+..Prop "Datasheet Version" 
+...Selected No
+..Prop "Device" 
+...Selected No
+..Prop "DXDB_LIBNAME" 
+...Selected No
+..Prop "Family" 
+...Selected No
+..Prop "HelpURL" 
+...Selected No
+..Prop "LatestRevisionDate" 
+...Selected No
+..Prop "Manufacturer" 
+...Selected Yes
+..Prop "Manufacturer Part Number" 
+...Selected Yes
+..Prop "Manufacturer1 ComponentHeight" 
+...Selected No
+..Prop "Manufacturer1 Example" 
+...Selected No
+..Prop "Manufacturer1 Part Number" 
+...Selected No
+..Prop "Mating Connector" 
+...Selected No
+..Prop "MGC_UNIGROUP" 
+...Selected No
+..Prop "Mounted" 
+...Selected No
+..Prop "Package Reference" 
+...Selected No
+..Prop "Package Version" 
+...Selected No
+..Prop "PackageDescription" 
+...Selected No
+..Prop "Part Description" 
+...Selected Yes
+..Prop "Part Name" 
+...Selected No
+..Prop "Part Number" 
+...Selected Yes
+..Prop "Pin Count" 
+...Selected No
+..Prop "POWER" 
+...Selected No
+..Prop "PressFit" 
+...Selected No
+..Prop "Protel.FootprintDescription" 
+...Selected No
+..Prop "Publisher" 
+...Selected No
+..Prop "Resistance" 
+...Selected No
+..Prop "Sense" 
+...Selected No
+..Prop "SMD" 
+...Selected No
+..Prop "Socket" 
+...Selected No
+..Prop "SPath" 
+...Selected No
+..Prop "SSheet" 
+...Selected No
+..Prop "Status" 
+...Selected No
+..Prop "Table" 
+...Selected No
+..Prop "TC" 
+...Selected No
+..Prop "Tolerance" 
+...Selected Yes
 ..Prop "Type" 
+...Selected No
+..Prop "Value" 
+...Selected Yes
+..Prop "Voltage" 
 ...Selected No
 
 .AllComponents Yes
@@ -55,4 +153,4 @@
 
 .MechanicalCells Yes
 
-.UserProperties No
+.UserProperties Yes

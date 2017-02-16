@@ -1,11 +1,11 @@
 .FILETYPE GerberPlotSetupFile
 .VERSION "VB99.0"
 .CREATOR "Xpedition xPCB Layout Gerber Output"
-.DATE "Wednesday, February 08, 2017 05:31 PM"
+.DATE "Thursday, February 09, 2017 11:51 PM"
 
 .BaseUnits "1NM"
 
-.GerberOutputDir "Output\\Gerber"
+.GerberOutputDir "Output\\Gerber\\"
 
 .DataOffset 0 0
 .DataCopies 1 1
@@ -140,43 +140,6 @@
    ...CellItem SilkscreenOutline
    ...CellItem SilkscreenReferenceDesignator
 
-.GerberOutputFile "GeneratedSilkscreenBottom.gbr"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\GeneratedSilkscreenBottom.gbr"
- ..HeaderText
-   ...CommentLine "Silk bot"
- ..BoardItem BoardCavities
- ..BoardItem BoardOutline
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
- ..CellItemsSide Bottom
-   ...CellItemsLayer 12
-   ...CellItem BondWires
-   ...CellItem SilkscreenOutline
-   ...CellItem SilkscreenReferenceDesignator
-
 .GerberOutputFile "EtchLayer9Neg.gbr"
  ..ProcessFile Yes
  ..FlashPads Yes
@@ -288,10 +251,10 @@
  ..CellType Mechanical
  ..CellType TestPoint
 
-.GerberOutputFile "EtchLayer6Neg.gbr"
+.GerberOutputFile "EtchLayer6.gbr"
  ..ProcessFile Yes
  ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\EtchLayer6Neg.gbr"
+ ..GerberOutputPath "Output\\Gerber\\EtchLayer6.gbr"
  ..HeaderText
    ...CommentLine "L6"
  ..ConductiveLayer 6
@@ -498,13 +461,11 @@
  ..CellType Mechanical
  ..CellType TestPoint
 
-.GerberOutputFile "EtchLayer12Bottom.gbr"
+.GerberOutputFile "EtchLayer10Bot.gbr"
  ..ProcessFile Yes
  ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\EtchLayer12Bottom.gbr"
- ..HeaderText
-   ...CommentLine "L12"
- ..ConductiveLayer 12
+ ..GerberOutputPath "Output\\Gerber\\EtchLayer10Bot.gbr"
+ ..ConductiveLayer 10
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
@@ -514,84 +475,6 @@
    ...ConductiveItem PlaneData
    ...ConductiveItem ResistorAreas
    ...ConductiveItem Traces
-   ...ConductiveItem ViaHoles
-   ...ConductiveItem ViaPads
-   ...ConductiveItem CopperBalancing
-   ...ConductiveItem EmbeddedCapPads
-   ...ConductiveItem EmbeddedResPads
-   ...ProcessUnconnectedPads Yes
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
-
-.GerberOutputFile "EtchLayer11Neg.gbr"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\EtchLayer11Neg.gbr"
- ..HeaderText
-   ...CommentLine "L11"
- ..ConductiveLayer 11
-   ...ConductiveItem PlaneData
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
-
-.GerberOutputFile "EtchLayer10.gbr"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\EtchLayer10.gbr"
- ..HeaderText
-   ...CommentLine "L10"
- ..ConductiveLayer 10
-   ...ConductiveItem BondPads
-   ...ConductiveItem EtchedText
-   ...ConductiveItem Fiducials
-   ...ConductiveItem PartPadsSMD
-   ...ConductiveItem PartPadsThru
-   ...ConductiveItem PlaneData
-   ...ConductiveItem ResistorAreas
-   ...ConductiveItem Traces
-   ...ConductiveItem ViaHoles
    ...ConductiveItem ViaPads
    ...ConductiveItem CopperBalancing
    ...ConductiveItem EmbeddedCapPads
@@ -716,5 +599,5 @@
    ...CellItem AssemblyOutline
    ...CellItem SilkscreenReferenceDesignator
 .SchemeChanged No 
-.Scheme "GerberPlot"
-.SchemeLocation "Local"
+.Scheme "D:\\Dropbox\\DESIGNS\\COMMON_LIBS\\Xpedition_lib\\Expedition settings\\GerberPlot10"
+.SchemeLocation "User"

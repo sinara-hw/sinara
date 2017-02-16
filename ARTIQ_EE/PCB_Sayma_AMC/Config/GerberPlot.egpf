@@ -1,7 +1,7 @@
 .FILETYPE GerberPlotSetupFile
 .VERSION "VB99.0"
-.CREATOR "Expedition PCB Gerber Output"
-.DATE "Wednesday, January 13, 2016 01:32 AM"
+.CREATOR "Xpedition xPCB Layout Gerber Output"
+.DATE "Thursday, February 09, 2017 11:32 PM"
 
 .BaseUnits "1NM"
 
@@ -716,5 +716,5 @@
    ...CellItem AssemblyOutline
    ...CellItem SilkscreenReferenceDesignator
 .SchemeChanged No 
-.Scheme "PlotSetup"
-.SchemeLocation "System"
+.Scheme "D:\\Dropbox\\DESIGNS\\COMMON_LIBS\\Xpedition_lib\\Expedition settings\\GerberPlot"
+.SchemeLocation "User"

@@ -1123,6 +1123,10 @@
 \PHY_CFG_SPD0\    \IC38\-\E4\ 
 \PHY_CFG_SPD1\    \IC38\-\E1\ 
 \PHY_RESETn\    \IC38\-\N4\ 
+\PS_MODE0\    \IC38\-\P9\ 
+\PS_MODE1\    \IC38\-\P11\ 
+\PS_MODE2\    \IC38\-\P3\ 
+\PS_MODE3\    \IC38\-\N5\ 
 \P1\    \IC38\-\G5\ \R259\-\2\ \R260\-\2\ \R261\-\2\ 
 \P2\    \IC38\-\D3\ \R271\-\2\ 
 \P2_BLUE\    \LD4\-\1\ \R271\-\1\ 

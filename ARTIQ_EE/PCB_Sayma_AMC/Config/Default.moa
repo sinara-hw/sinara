@@ -1,5 +1,5 @@
 .FILETYPE MOA_EXPORT_SETTINGS
-.DATE "11/17/2015 09:41:01"
+.DATE "02/09/2017 22:39:18"
 .SCHEMA_VER 1
 .exec_order 
  ..appname PCB_JOB
@@ -22,93 +22,93 @@
   ...dlgname "ExtendedPrint"
   ...dlgname "CCZ"
 .grid 
- ..apptype PNL_JOB
-  ...outputname "IDF"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "Gerber"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "NCDrill"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "ODB"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "Neutral"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "GDSII"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "ExtendedPrint"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
-  ...outputname "CCZ"
-    ....check 0
-    ....confile ""
-    ....preconf ""
-    ....postconf ""
  ..apptype PCB_JOB
   ...outputname "IDF"
     ....check 0
-    ....confile ""
+    ....confile "Sys: IDF.idf"
     ....preconf ""
     ....postconf ""
   ...outputname "Gerber"
-    ....check 0
-    ....confile ""
+    ....check 1
+    ....confile "D:\\Dropbox\\DESIGNS\\COMMON_LIBS\\Xpedition_lib\\Expedition settings\\GerberPlot10.gpf"
     ....preconf ""
     ....postconf ""
   ...outputname "NCDrill"
     ....check 0
-    ....confile ""
+    ....confile "Sys: Drill.dsf"
     ....preconf ""
     ....postconf ""
   ...outputname "ODB"
     ....check 0
-    ....confile ""
+    ....confile "Sys: ODBSetup.ocf"
     ....preconf ""
     ....postconf ""
   ...outputname "Neutral"
     ....check 0
-    ....confile ""
+    ....confile "Sys: XENeutral.eneu"
     ....preconf ""
     ....postconf ""
   ...outputname "GDSII"
     ....check 0
-    ....confile ""
+    ....confile "Sys: GDSSetup.gcf"
     ....preconf ""
     ....postconf ""
   ...outputname "ExtendedPrint"
     ....check 0
-    ....confile ""
+    ....confile "Sys: ExtendedPrint.pcf"
     ....preconf ""
     ....postconf ""
   ...outputname "CCZ"
-    ....check 0
-    ....confile ""
+    ....check 1
+    ....confile "Sys: CCZOut.eccz"
     ....preconf ""
     ....postconf ""
   ...outputname "BOM"
-    ....check 0
-    ....confile ""
+    ....check 1
+    ....confile "Sys: BOMSettings.bcf"
+    ....preconf ""
+    ....postconf ""
+ ..apptype PNL_JOB
+  ...outputname "IDF"
+    ....check 1
+    ....confile "Sys: IDF-Panel.idfp"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "Gerber"
+    ....check 1
+    ....confile "Sys: Gerber_08Layer.gpf"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "NCDrill"
+    ....check 1
+    ....confile "Sys: Drill.dsf"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "ODB"
+    ....check 1
+    ....confile "Sys: ODBSetup.ocf"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "Neutral"
+    ....check 1
+    ....confile "Sys: XENeutral.eneu"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "GDSII"
+    ....check 1
+    ....confile "Sys: GDSSetup.gcf"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "ExtendedPrint"
+    ....check 1
+    ....confile "Sys: ExtendedPrint.pcf"
+    ....preconf ""
+    ....postconf ""
+  ...outputname "CCZ"
+    ....check 1
+    ....confile "Sys: CCZOut.eccz"
     ....preconf ""
     ....postconf ""
 .chk_delgen 0
-.chk_stopgen 1
+.chk_stopgen 0
 .chk_deldata 0

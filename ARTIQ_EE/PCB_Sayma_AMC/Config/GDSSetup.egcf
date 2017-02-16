@@ -1,0 +1,221 @@
+.FILETYPE GDSII_EXPORT_FILE
+.VERSION "VB99.0"
+.CREATOR "Xpedition xPCB Layout GDSII Output"
+.DATE "Thursday, February 09, 2017 09:56 PM"
+
+.BaseUnits "1NM"
+
+.GDSII_FILENAME ".\\Output\\GDS\\SystemDesign.gds"
+.GDSII_STRUCTURE_NAME "PCBSTRUCTURE"
+.PATH_TYPE  ROUND
+.DesignUnits "TH"
+.LineSegmentsPerCircle "64"
+.StrokesForTextString Yes
+.HierarchicalStructures Yes
+.MAXLAYERS 256LAYERS
+.VIASASSHAPESORSREFS SHAPES
+
+
+.GDSIILayer "Layer 1"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 1
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+
+ ..ConductiveLayer 2
+   ...ProcessLayer No
+
+ ..ConductiveLayer 3
+   ...ProcessLayer No
+
+ ..ConductiveLayer 4
+   ...ProcessLayer No
+
+ ..ConductiveLayer 5
+   ...ProcessLayer No
+
+ ..ConductiveLayer 6
+   ...ProcessLayer No
+
+ ..ConductiveLayer 7
+   ...ProcessLayer No
+
+ ..ConductiveLayer 8
+   ...ProcessLayer No
+
+ ..ConductiveLayer 9
+   ...ProcessLayer No
+
+ ..ConductiveLayer 10
+   ...ProcessLayer No
+
+ ..ConductiveLayer 11
+   ...ProcessLayer No
+
+ ..ConductiveLayer 12
+   ...ProcessLayer No
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 2"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 2
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 3"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 3
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 4"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 4
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 5"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 5
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 6"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 6
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 7"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 7
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+
+.GDSIILayer "Layer 8"
+ ..ProcessGDSIILayer Yes
+
+ ..ConductiveLayer 8
+   ...ProcessLayer Yes
+   ...ConductiveItem BondPads
+   ...ConductiveItem Thieving
+   ...ConductiveItem EmbeddedCapPads
+   ...ConductiveItem EmbeddedResPads
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+ ..BoardItem BoardOutline
+.SchemeChanged No 
+.Scheme "GDSSetup"
+.SchemeLocation "Local"

@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 01/23/17 17:42:31
+! Created 02/13/17 01:53:21
 !
 
 .Global_Constants 1373 31
@@ -15,7 +15,7 @@
 	0x00000003	! showCmd
 	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2024, 21) (3704,1027)	! ..rcNormalPosition
+	(2198, 155) (3234,928)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -4661,9 +4661,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "2"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "72"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "237"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "421"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "70"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "262"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "365"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4677,8 +4677,8 @@
 
 .view "Metlino"
     ..extrema
-	(370516641,168758157)		! (xmin, ymin)
-	(707045640,336328578)		! (xmax, ymax)
+	(195749048,243180126)		! (xmin, ymin)
+	(667112482,405164937)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -17632,11 +17632,11 @@
 	(0,0)		! (xmin, ymin)
 	(0,0)		! (xmax, ymax)
     ..WindowPlacement
-	0x772cad70	! flags
-	0x757968b0	! showCmd
-	(262144, 0)	! ptMinPosition
-	(0, 928292)	! ptMaxPosition
-	(0, 942878976) (875837497,1700608)	! ..rcNormalPosition
+	0x00000018	! flags
+	0x00000000	! showCmd
+	(0, 2768896)	! ptMinPosition
+	(1, 440960551)	! ptMaxPosition
+	(60487648, 942878976) (875837497,262144)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""
