@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 02/13/17 01:53:21
+! Created 02/19/17 15:15:27
 !
 
 .Global_Constants 1373 31
@@ -15,7 +15,7 @@
 	0x00000003	! showCmd
 	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(2198, 155) (3234,928)	! ..rcNormalPosition
+	(-1583, 128) (-547,901)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -4661,9 +4661,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "2"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "2"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "70"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "262"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "365"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "68"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "290"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "367"
 	"[VirtualGlobal].iDC.TestPointItems" "2"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "2"
 	"[VirtualGlobal].iDC.User Draft Layers.CollapsedSectionOrder" "9"
@@ -4677,8 +4677,8 @@
 
 .view "Metlino"
     ..extrema
-	(195749048,243180126)		! (xmin, ymin)
-	(667112482,405164937)		! (xmax, ymax)
+	(377195566,143656920)		! (xmin, ymin)
+	(918411664,375647241)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -17634,9 +17634,9 @@
     ..WindowPlacement
 	0x00000018	! flags
 	0x00000000	! showCmd
-	(0, 2768896)	! ptMinPosition
-	(1, 440960551)	! ptMaxPosition
-	(60487648, 942878976) (875837497,262144)	! ..rcNormalPosition
+	(0, 3301376)	! ptMinPosition
+	(1, 1274703221)	! ptMaxPosition
+	(338956704, 942878976) (875837497,262144)	! ..rcNormalPosition
     ..Is_Float_View                      False
     ..View_Type 0
     ..View_Id  ""
@@ -17660,8 +17660,8 @@
 	"[Virtual].3D.FlexObjects.Adhesive" "0"
 	"[Virtual].3D.FlexObjects.Coverlay" "0"
 	"[Virtual].3D.FlexObjects.Stiffener" "0"
-	"[Virtual].3D.Mechanical.{F2A7F367-569B-4D70-8460-A61A89987FA9}.Appearance" "3"
-	"[Virtual].3D.Mechanical.{F2A7F367-569B-4D70-8460-A61A89987FA9}.Visibility" "0"
+	"[Virtual].3D.Mechanical.{F2A7F367-569B-4D70-8460-A61A89987FA9}.Appearance" "1"
+	"[Virtual].3D.Mechanical.{F2A7F367-569B-4D70-8460-A61A89987FA9}.Visibility" "1"
 	"[Virtual].3D.Mechanicals" "1"
 	"[Virtual].3D.Objects" "1"
 	"[Virtual].3D.Objects.Board" "1"
@@ -17703,10 +17703,10 @@
 	"[Virtual].3D.Options.TestPointMarkers" "1"
 	"[Virtual].3D.Options.Wireframe" "0"
 	"[Virtual].3D.Options.Z-AxisScaling" "0"
-	"[Virtual].3D.PCB.{10C584BC-7BE8-4BC2-B9B8-BC82FA3B14EF}.Appearance" "3"
-	"[Virtual].3D.PCB.{10C584BC-7BE8-4BC2-B9B8-BC82FA3B14EF}.Visibility" "0"
-	"[Virtual].3D.PCB.{BC8D21D1-F9F9-4B5F-925F-91AE4524BF76}.Appearance" "3"
-	"[Virtual].3D.PCB.{BC8D21D1-F9F9-4B5F-925F-91AE4524BF76}.Visibility" "0"
+	"[Virtual].3D.PCB.{10C584BC-7BE8-4BC2-B9B8-BC82FA3B14EF}.Appearance" "1"
+	"[Virtual].3D.PCB.{10C584BC-7BE8-4BC2-B9B8-BC82FA3B14EF}.Visibility" "1"
+	"[Virtual].3D.PCB.{BC8D21D1-F9F9-4B5F-925F-91AE4524BF76}.Appearance" "1"
+	"[Virtual].3D.PCB.{BC8D21D1-F9F9-4B5F-925F-91AE4524BF76}.Visibility" "1"
 	"[Virtual].3D.PCBs" "1"
 	"[Virtual].iDC.ListSelectableLayersOnly" "0"
 	"[Virtual].iDC.[Virtual].3D.Options.ScaleFactor.Enabled" "1"
