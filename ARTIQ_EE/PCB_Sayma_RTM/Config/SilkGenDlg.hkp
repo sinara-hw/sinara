@@ -1,14 +1,16 @@
 .FILETYPE SILKSCREEN_GENERATOR_DEFINITION
 .VERSION "2.0"
-.DATE "Friday, December 09, 2016"
+.DATE "Saturday, March 04, 2017"
 
 .BaseUnits 0    ! kBaseUnit1NM
 
 .ProcessSide Both
 .ProcessSideTop
  ..SilkOutline
+ ..UserLayer 10
 .ProcessSideBottom
  ..SilkOutline
+ ..UserLayer 10
 .ProcessAllPkgGroups
 .BreakUsing SoldermaskPads
 .BreakGraphicsPad 1, 0
