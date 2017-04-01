@@ -1,0 +1,131 @@
+********************************************************************************
+***                                                                          ***
+*** ADIsimPE Version 8.00p (x86) - 2017-02-28 14:49                          ***
+*** Platform: Windows 10                                                     ***
+*** Architecture: x64                                                        ***
+*** Serial Number:                                                           ***
+*** User:                                                                    ***
+***                                                                          ***
+*** TITLE:   * D:\Projects\ARTIQ\filters\RFI\adisim\adc_FE.wxsch             ***
+*** NETLIST: D:\Projects\ARTIQ\filters\RFI\adisim\design.net                 ***
+***                                                                          ***
+********************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+#SIMETRIX
+V1 V1_P 0 5
+V2 U2_-Vs 0 -5
+R1 0 R1_N 56
+V3 U1_+Vs 0 12
+R2 U2_pin R1_N 332
+V4 V4_P 0 -12
+R3 R3_P U2_pin 332
+V5 V5_P 0 1.25
+R4 R4_P OUT1 332
+V6 IN 0 0
+R5 0 OUT1 56
+R6 R6_P R4_P 332
+R7 R7_P IN 1.5k
+R8 C3_N R10_P 1.5k
+R9 IN 0 100k
+R10 R10_P 0 100k
+R11 U2_+OUT U2_-OUT 56
+R12 dp U2_-OUT 49.9
+R13 dn U2_+OUT 49.9
+R14 dn dp 2.6k
+X$U1 C3_N 0 V4_P U1_+Vs U1_+Vs V4_P OUT1 U1_+Vs 0 R7_P AD8253 pinnames: -IN DGND -Vs A0 A1 nWR OUT +Vs REF +IN
+X$U2 R3_P R6_P U2_pin R4_P V1_P U2_-Vs U2_+OUT U2_-OUT V5_P ADA4927 pinnames: FB- FB+ pin Nin +Vs -Vs +OUT -OUT Vocm
+C1 R7_P 0 18p  
+C2 0 C3_N 18p  
+C3 R7_P C3_N 180p  
+C4 dp dn 10p  
+C5 dp dn 10p  
+*.TRAN 1m
+*.AC DEC 25 1 100Meg
+.TF FREQ DEC 25 1 100Meg V=OUT1 VN=0
+.ENDS ADA4927
+*$
+.ENDS AD8253
+
+********************************************************************************
+***                                                                          ***
+*** Starting Transfer Function analysis at 14:49                             ***
+***                                                                          ***
+*** Analysis card: .TF FREQ DEC 25 1 100Meg V=OUT1 VN=0                      ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-012
+VNTOL                     1e-006
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-012
+Matrix Solver             UF KLU Version 1.1
+
+
+
+********************************************************************************
+***                                                                          ***
+***                             Device parameters                            ***
+***                                                                          ***
+********************************************************************************
+
+
+
+Model parameters for devices of type Resistor
+=============================================
+Model:       $Resistor    
+
+t_abs        0            
+
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 23
+Transient iterations = 0
+Transient timepoints = 0
+Accepted timepoints = 0
+Total analysis time = 0.063
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0.015
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 23
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 0
+PTA iterations = 0
+Number of matrix fill ins = 269
+Number of initial matrix elements = 1215
+Circuit equations = 299
+State vector size = 3776
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0.032
+Total run time = 0.11 seconds
+Analysis concluded 2017-02-28 14:49
