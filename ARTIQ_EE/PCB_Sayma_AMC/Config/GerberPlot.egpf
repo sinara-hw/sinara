@@ -1,7 +1,7 @@
 .FILETYPE GerberPlotSetupFile
 .VERSION "VB99.0"
 .CREATOR "Xpedition xPCB Layout Gerber Output"
-.DATE "Monday, February 20, 2017 02:01 PM"
+.DATE "Monday, April 03, 2017 01:02 PM"
 
 .BaseUnits "1NM"
 
@@ -72,6 +72,76 @@
    ...CommentLine "Paste bot"
  ..BoardItem SolderpasteBottom
 
+.GerberOutputFile "SilkscreenTop.gbr"
+ ..ProcessFile Yes
+ ..FlashPads Yes
+ ..GerberOutputPath "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\Production_Outputs\\Gerber\\SilkscreenTop.gbr"
+ ..HeaderText
+   ...CommentLine "Silk top"
+ ..BoardItem AlteredSilkscreenTop
+ ..CellType Buried
+ ..CellType Connector
+ ..CellType DiscreteAxial
+ ..CellType DiscreteChip
+ ..CellType DiscreteOther
+ ..CellType DiscreteRadial
+ ..CellType EdgeConnector
+ ..CellType EmbeddedPassive
+ ..CellType General
+ ..CellType Graphic
+ ..CellType ICBareDie
+ ..CellType ICBGA
+ ..CellType ICDIP
+ ..CellType ICFlipChip
+ ..CellType ICLCC
+ ..CellType ICOther
+ ..CellType ICPGA
+ ..CellType ICPLCC
+ ..CellType ICSIP
+ ..CellType ICSOIC
+ ..CellType Jumper
+ ..CellType Mechanical
+ ..CellType TestPoint
+ ..CellItemsSide Bottom
+   ...CellItemsLayer 1
+   ...CellItem SilkscreenOutline
+   ...CellItem SilkscreenReferenceDesignator
+
+.GerberOutputFile "SilkscreenBottom.gbr"
+ ..ProcessFile Yes
+ ..FlashPads Yes
+ ..GerberOutputPath "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\Production_Outputs\\Gerber\\SilkscreenBottom.gbr"
+ ..HeaderText
+   ...CommentLine "Silk bot"
+ ..BoardItem AlteredSilkscreenBottom
+ ..CellType Buried
+ ..CellType Connector
+ ..CellType DiscreteAxial
+ ..CellType DiscreteChip
+ ..CellType DiscreteOther
+ ..CellType DiscreteRadial
+ ..CellType EdgeConnector
+ ..CellType EmbeddedPassive
+ ..CellType General
+ ..CellType Graphic
+ ..CellType ICBareDie
+ ..CellType ICBGA
+ ..CellType ICDIP
+ ..CellType ICFlipChip
+ ..CellType ICLCC
+ ..CellType ICOther
+ ..CellType ICPGA
+ ..CellType ICPLCC
+ ..CellType ICSIP
+ ..CellType ICSOIC
+ ..CellType Jumper
+ ..CellType Mechanical
+ ..CellType TestPoint
+ ..CellItemsSide Bottom
+   ...CellItemsLayer 12
+   ...CellItem SilkscreenOutline
+   ...CellItem SilkscreenReferenceDesignator
+
 .GerberOutputFile "Outline.gbr"
  ..ProcessFile Yes
  ..FlashPads Yes
@@ -102,80 +172,6 @@
  ..CellType Jumper
  ..CellType Mechanical
  ..CellType TestPoint
-
-.GerberOutputFile "GeneratedSilkscreenTop.gbr"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\Production_Outputs\\Gerber\\GeneratedSilkscreenTop.gbr"
- ..HeaderText
-   ...CommentLine "Silk top"
- ..BoardItem BoardCavities
- ..BoardItem BoardOutline
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
- ..CellItemsSide Bottom
-   ...CellItemsLayer 1
-   ...CellItem DiePins
-   ...CellItem SilkscreenOutline
-   ...CellItem SilkscreenReferenceDesignator
-
-.GerberOutputFile "GeneratedSilkscreenBottom.gbr"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\Production_Outputs\\Gerber\\GeneratedSilkscreenBottom.gbr"
- ..HeaderText
-   ...CommentLine "Silk bot"
- ..BoardItem BoardCavities
- ..BoardItem BoardOutline
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
- ..CellItemsSide Bottom
-   ...CellItemsLayer 12
-   ...CellItem BondWires
-   ...CellItem SilkscreenOutline
-   ...CellItem SilkscreenReferenceDesignator
 
 .GerberOutputFile "EtchLayer9Neg.gbr"
  ..ProcessFile Yes
@@ -220,6 +216,8 @@
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
+   ...ConductiveItem MountingHolesByLayer
+   ...ConductiveItem PartHolesByLayer
    ...ConductiveItem PartPadsSMD
    ...ConductiveItem PartPadsThru
    ...ConductiveItem PlaneData
@@ -331,6 +329,8 @@
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
+   ...ConductiveItem MountingHolesByLayer
+   ...ConductiveItem PartHolesByLayer
    ...ConductiveItem PartPadsSMD
    ...ConductiveItem PartPadsThru
    ...ConductiveItem PlaneData
@@ -408,6 +408,8 @@
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
+   ...ConductiveItem MountingHolesByLayer
+   ...ConductiveItem PartHolesByLayer
    ...ConductiveItem PartPadsSMD
    ...ConductiveItem PartPadsThru
    ...ConductiveItem PlaneData
@@ -462,6 +464,8 @@
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
+   ...ConductiveItem MountingHolesByLayer
+   ...ConductiveItem PartHolesByLayer
    ...ConductiveItem PartPadsSMD
    ...ConductiveItem PartPadsTest
    ...ConductiveItem PartPadsThru
@@ -497,6 +501,7 @@
  ..CellType Jumper
  ..CellType Mechanical
  ..CellType TestPoint
+ ..UserLayer "Stackup - All Layers"
 
 .GerberOutputFile "EtchLayer12Bottom.gbr"
  ..ProcessFile Yes
@@ -508,6 +513,8 @@
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
+   ...ConductiveItem MountingHolesByLayer
+   ...ConductiveItem PartHolesByLayer
    ...ConductiveItem PartPadsSMD
    ...ConductiveItem PartPadsTest
    ...ConductiveItem PartPadsThru
@@ -586,6 +593,8 @@
    ...ConductiveItem BondPads
    ...ConductiveItem EtchedText
    ...ConductiveItem Fiducials
+   ...ConductiveItem MountingHolesByLayer
+   ...ConductiveItem PartHolesByLayer
    ...ConductiveItem PartPadsSMD
    ...ConductiveItem PartPadsThru
    ...ConductiveItem PlaneData
@@ -716,5 +725,5 @@
    ...CellItem AssemblyOutline
    ...CellItem SilkscreenReferenceDesignator
 .SchemeChanged No 
-.Scheme "D:\\Dropbox\\DESIGNS\\COMMON_LIBS\\Xpedition_lib\\Expedition settings\\GerberPlot"
+.Scheme "D:\\Dropbox\\DESIGNS\\COMMON_LIBS\\Xpedition_lib\\Expedition settings\\GerberPlot12"
 .SchemeLocation "User"

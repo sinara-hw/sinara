@@ -1,10 +1,10 @@
 .FILETYPE CCZ_EXPORT_SETTINGS
 .VERSION "VB99.1"
-.DATE "12/09/2016 01:16:53"
+.DATE "03/26/2017 22:25:00"
 
 !  This file contains settings for the most recent CCZ export session
 
-.OUTPUT_FILE "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\Sayma_AMC.cce"
+.OUTPUT_FILE "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_AMC\\Output\\Sayma_AMC_ddr.cce"
 .UNITS in
 
 .CELL_LIBRARY 0

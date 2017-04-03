@@ -1,11 +1,11 @@
 .FILETYPE NC_DRILL_PREFERENCES
 .VERSION "2.0"
 .CREATOR "Mentor Graphics Corporation"
-.DATE "Thursday February 09 23:53:40 2017"
+.DATE "Monday April 03 11:15:41 2017"
 
 .Units mm
 
-.DrillOutputDir  "Output\\NCDrill\\"
+.DrillOutputDir  "D:\\Dropbox\\DESIGNS\\MTCA projects\\SINARA\\ARTIQ_EE\\PCB_Sayma_RTM\\Output\\Production_Outputs\\NCDrill\\"
 
 .SelectMillingLayer NO
 
@@ -73,6 +73,8 @@
    ...HoleFCF "Rnd 23.62"
     ....valFCF "" "" "" "" ""
    ...HoleFCF "Rnd 25.59 Non-Plated"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Rnd 3.05P"
     ....valFCF "" "" "" "" ""
    ...HoleFCF "Rnd 3.30N"
     ....valFCF "" "" "" "" ""

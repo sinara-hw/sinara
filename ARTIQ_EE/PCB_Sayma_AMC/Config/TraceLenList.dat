@@ -1,9 +1,8 @@
 CurrentWorkAreaID=0
 WorkAreaNo=0
-NetClassFilter="ADC_CLK"
+NetClassFilter=
 LayerFilter=00000000000000
 ObjectFilter=7
-BaseNet="A2CLK_N"
 Allowance=0
 ExcludeNets=
 ExcludeNetDisplay=0
