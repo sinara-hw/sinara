@@ -120,7 +120,7 @@ Configuration4_Item15=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Ful
 PcbPrintPreferences4=
 
 [PublishSettings]
-OutputFilePath2=.\3U_ADC.PDF
+OutputFilePath2=D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_ALTIUM\PA_8CH\.\PA_8CH_CTRL.PDF
 ReleaseManaged2=0
 OutputBasePath2=.\
 OutputPathMedia2=
@@ -147,7 +147,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 OutputFilePath3=
 ReleaseManaged3=1
-OutputBasePath3=Project Outputs for Free Documents
+OutputBasePath3=Project Outputs for PA_8CH_CTRL
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=[Output Type]
@@ -160,7 +160,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for Free Documents
+OutputBasePath4=Project Outputs for PA_8CH_CTRL
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -197,7 +197,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=.\3U_ADC.PDF
+RelativeOutputPath2=D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_ALTIUM\PA_8CH\.\PA_8CH_CTRL.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1
