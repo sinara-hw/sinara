@@ -5,7 +5,7 @@ ChannelRoomNamingStyle=0
 ReleasesFolder=
 ReleaseVaultGUID=
 ReleaseVaultName=
-ChannelDesignatorFormatString=$Component$ChannelAlpha
+ChannelDesignatorFormatString=$Component_$ChannelIndex
 ChannelRoomLevelSeperator=_
 OpenOutputs=1
 ArchiveProject=0
@@ -53,7 +53,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=FHHQJIJP
+DocumentUniqueId=SHIXJERX
 
 [Document2]
 DocumentPath=PCB_3U_DAC.schdoc
@@ -70,7 +70,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=EXWNFARM
+DocumentUniqueId=JXQBTKEK
 
 [Document3]
 DocumentPath=DAC_32CH.SchDoc
@@ -87,7 +87,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=OJDSOFRW
+DocumentUniqueId=XRBWHJGJ
 
 [Document4]
 DocumentPath=IDC2BNC.SchDoc
@@ -107,23 +107,6 @@ GenerateClassCluster=0
 DocumentUniqueId=WYLUUQVG
 
 [Document5]
-DocumentPath=LVDS_IFC.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MJNKMGWL
-
-[Document6]
 DocumentPath=Output_channel.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,8 +123,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGHKQHJX
 
-[Document7]
-DocumentPath=Supply.SchDoc
+[Document6]
+DocumentPath=Supply_DAC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -155,9 +138,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DEMTEDLO
+DocumentUniqueId=RGNJYCWR
 
-[Document8]
+[Document7]
 DocumentPath=Thermal_MGM.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -172,7 +155,41 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=UDFBQDBD
+DocumentUniqueId=LFRGKINA
+
+[Document8]
+DocumentPath=PCB_3U_DAC.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=LVDS_IFC_DAC.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IUEWJVWM
 
 [GeneratedDocument1]
 DocumentPath=C:\Users\Public\Documents\Altium\AD161\Templates\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC.htm
@@ -195,6 +212,9 @@ ReleaseItemId=
 CurrentRevision=
 Variant=[No Variations]
 OutputJobsCount=0
+
+[Generic_EDE]
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
