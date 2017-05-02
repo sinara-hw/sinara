@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for PCB_3U_SMA
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -72,6 +72,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JNOTGVFS
 
+[Document3]
+DocumentPath=PCB_3U_SMA.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=C:\Users\Public\Documents\Altium\AD161\Templates\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC.htm
 DItemRevisionGUID=
@@ -93,6 +110,9 @@ ReleaseItemId=
 CurrentRevision=
 Variant=[No Variations]
 OutputJobsCount=0
+
+[Generic_EDE]
+OutputDir=Project Outputs for PCB_3U_SMA
 
 [OutputGroup1]
 Name=Netlist Outputs
