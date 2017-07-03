@@ -57,3 +57,11 @@ __Previews
 
 # ???
 FPGA_ARTM
+ARTIQ_EE/PCB_Metlino/Config/Paweł/Graphics Settings.hkp
+ARTIQ_EE/PCB_Metlino/Config/Paweł/UserSettings.upf
+ARTIQ_EE/PCB_Sayma_AMC/Config/Paweł/Graphics Settings.hkp
+ARTIQ_EE/PCB_Sayma_AMC/Config/Paweł/UserSettings.upf
+ARTIQ_EE/PCB_Sayma_RTM/Config/Paweł/Graphics Settings.hkp
+ARTIQ_EE/PCB_Sayma_RTM/Config/Paweł/UserSettings.upf
+ARTIQ_EE/database/cdbsvr/backup.lck
+sh.exe.stackdump
