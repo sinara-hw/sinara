@@ -1,0 +1,12 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=PA_Channel\PA_Channel_SUP_CTRL\PA_Channel_SUP_CTRL\PA_Channel_SUP_CTRL.PrjPcb
+[Project2]
+ProjectPath=PA_Channel\PA_Channel\PA_Channel.PrjPcb
+[Project3]
+ProjectPath=PA_8CH_CTRL\PA_8CH_CTRL.PrjPcb
+[Project4]
+ProjectPath=User_Interface\PA_8CH_USER_IFC\PA_8CH_USER_IFC.PrjPcb
+[Project5]
+ProjectPath=..\PCB_mezzanine_analog_template\PCB_mezzanine_analog_template .PrjPCB
