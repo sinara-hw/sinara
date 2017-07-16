@@ -89,6 +89,16 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JHMBVTTY
 
+[ProjectVariant1]
+UniqueID=89E2C48F-DC41-4BA2-9610-55A712E1B1B8
+Description=Murata_DCDC
+AllowFabrication=0
+ParameterCount=0
+VariationCount=2
+Variation1=Designator=IC31|UniqueId=\JPMSXSKV|Kind=1|AlternatePart= 
+Variation2=Designator=IC12|UniqueId=\IUPTGUOR|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
