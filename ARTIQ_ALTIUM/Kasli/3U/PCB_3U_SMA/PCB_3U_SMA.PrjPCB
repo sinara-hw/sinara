@@ -89,6 +89,16 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[ProjectVariant1]
+UniqueID=6789D33B-1B00-40BD-B6C5-70869FF8839A
+Description=SMD_DCDC
+AllowFabrication=0
+ParameterCount=0
+VariationCount=2
+Variation1=Designator=IC46|UniqueId=\JPMSXSKV|Kind=1|AlternatePart= 
+Variation2=Designator=IC53|UniqueId=\IUPTGUOR|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [GeneratedDocument1]
 DocumentPath=C:\Users\Public\Documents\Altium\AD161\Templates\Eurocard VME 3U (3.937 x 6.299 inches).PCBDOC.htm
 DItemRevisionGUID=
