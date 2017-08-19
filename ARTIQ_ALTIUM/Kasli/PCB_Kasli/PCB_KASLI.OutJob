@@ -18,7 +18,7 @@ RevisionNamingSchemeGUID=
 Name=PCB_KASLI.OutJob
 Description=
 TargetOutputMedium=PDF
-VariantName=[No Variations]
+VariantName=standard
 VariantScope=1
 CurrentConfigurationName=
 TargetPrinter=Virtual Printer
@@ -74,7 +74,7 @@ OutputEnabled3_OutputMedium4=0
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.86|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39390063|ViewY=13602661|LookAtX=49004724|LookAtY=41584644|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.0205619625437E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ViewConfig= 
+Configuration3_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39390063|ViewY=13602661|LookAtX=49004724|LookAtY=41584644|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.0205619625437E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ViewConfig=
 OutputType4=PCB Print
 OutputName4=PCB Prints
 OutputCategory4=Documentation
@@ -236,7 +236,7 @@ Configuration9_Name7=VisibleOrder
 Configuration9_Item7=Comment=100|Description=100|Designator=100|Footprint=100|Manufacturer=100|Manufacturer Part Number=100|Manufacturer1 ComponentHeight=100|Manufacturer1 Example=100|Manufacturer1 Part Number=100|Part Description=100|Part Number=100|Quantity=100
 
 [PublishSettings]
-OutputFilePath2=D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_ALTIUM\Kasli\PCB_Kasli\.\3U_DAC.PDF
+OutputFilePath2=D:\OneDrive\Studia\Magisterka\Kasli\PCB_Kasli\.\KASLI.PDF
 ReleaseManaged2=0
 OutputBasePath2=.\
 OutputPathMedia2=
@@ -261,6 +261,8 @@ MarkPortsId2=1
 GenerateTOC2=1
 ShowComponentParameters2=1
 GlobalBookmarks2=0
+PDFACompliance2=Disabled
+PDFVersion2=Default
 OutputFilePath3=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\Kasli\PCB_Kasli\Project Outputs for Kasli\
 ReleaseManaged3=0
 OutputBasePath3=Project Outputs for Kasli\
@@ -313,7 +315,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=D:\Dropbox\DESIGNS\MTCA projects\SINARA\ARTIQ_ALTIUM\Kasli\PCB_Kasli\.\3U_DAC.PDF
+RelativeOutputPath2=D:\OneDrive\Studia\Magisterka\Kasli\PCB_Kasli\.\KASLI.PDF
 OpenOutputs2=1
 RelativeOutputPath3=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\Kasli\PCB_Kasli\Project Outputs for Kasli\
 OpenOutputs3=0
