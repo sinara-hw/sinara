@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=PCB_3U_RJ45.OutJob
+Name=PCB_3U_CamLink.OutJob
 Description=
 TargetOutputMedium=PDF
 VariantName=[No Variations]
@@ -50,7 +50,7 @@ Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowPr
 OutputType2=PCB 3D Print
 OutputName2=PCB 3D Print
 OutputCategory2=Documentation
-OutputDocumentPath2=PCB_3U_RJ45.PCBDOC
+OutputDocumentPath2=
 OutputVariantName2=
 OutputEnabled2=1
 OutputEnabled2_OutputMedium1=0
@@ -64,7 +64,7 @@ Configuration2_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39390063|View
 OutputType3=PCB 3D Print
 OutputName3=Copy of PCB 3D Print
 OutputCategory3=Documentation
-OutputDocumentPath3=PCB_3U_RJ45.PCBDOC
+OutputDocumentPath3=
 OutputVariantName3=
 OutputEnabled3=1
 OutputEnabled3_OutputMedium1=0
@@ -78,7 +78,7 @@ Configuration3_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39390063|View
 OutputType4=PCB Print
 OutputName4=PCB Prints
 OutputCategory4=Documentation
-OutputDocumentPath4=PCB_3U_RJ45.PCBDOC
+OutputDocumentPath4=
 OutputVariantName4=
 OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
