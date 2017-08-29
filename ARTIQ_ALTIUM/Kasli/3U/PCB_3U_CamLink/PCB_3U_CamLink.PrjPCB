@@ -106,6 +106,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OCSPQQPF
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PCB_3U_CamLink\Design Rule Check - PCB_3U_CamLink.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
