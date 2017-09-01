@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for PANELS
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -53,9 +53,26 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=IXBSKEHY
+DocumentUniqueId=QJSBKNFY
 
 [Document2]
+DocumentPath=PANELS.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document3]
 DocumentPath=PANEL_3U_ADC.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -72,7 +89,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VHNQPASN
 
-[Document3]
+[Document4]
 DocumentPath=PANEL_3U_BNC.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -89,7 +106,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YFXEDKUQ
 
-[Document4]
+[Document5]
 DocumentPath=PANEL_3U_RJ45.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -106,7 +123,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CIFDVLDX
 
-[Document5]
+[Document6]
 DocumentPath=PANEL_3U_VHDCI_Breakout.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -123,7 +140,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RWOYXBYP
 
-[Document6]
+[Document7]
 DocumentPath=PANEL_3U_Tester.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,7 +157,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FQIPYYAJ
 
-[Document7]
+[Document8]
 DocumentPath=PANEL_3U_SMA.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -155,7 +172,35 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JITXXPTR
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_ADC.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_BNC.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_DAC.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_RJ45.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_SMA.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_Tester.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_VHDCI_Breakout.DXF
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
@@ -165,6 +210,9 @@ ReleaseItemId=
 CurrentRevision=
 Variant=[No Variations]
 OutputJobsCount=0
+
+[Generic_EDE]
+OutputDir=Project Outputs for PANELS
 
 [OutputGroup1]
 Name=Netlist Outputs
