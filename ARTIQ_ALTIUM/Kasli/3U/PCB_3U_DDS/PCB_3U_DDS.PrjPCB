@@ -642,7 +642,7 @@ UniqueID=FEAE5F34-7034-4CF5-B6A8-CC3177A39812
 Description=AD9910
 AllowFabrication=0
 ParameterCount=0
-VariationCount=11
+VariationCount=13
 Variation1=Designator=TR?|UniqueId=\SBSHMORP\YTGHMPCL|Kind=1|AlternatePart= 
 Variation2=Designator=TR2|UniqueId=\SBSHMORP\TSIBDUMJ|Kind=1|AlternatePart= 
 Variation3=Designator=C?|UniqueId=\SBSHMORP\RGHKWKRL|Kind=1|AlternatePart= 
@@ -654,6 +654,8 @@ Variation8=Designator=R58A|UniqueId=\CRRIXVEK\SCYBKPSK|Kind=1|AlternatePart=
 Variation9=Designator=R33A|UniqueId=\CRRIXVEK\GAEMBRLF|Kind=1|AlternatePart= 
 Variation10=Designator=OSC1|UniqueId=\SBSHMORP\EBAUQXFN|Kind=1|AlternatePart= 
 Variation11=Designator=C103|UniqueId=\SBSHMORP\CFHUVRPI|Kind=1|AlternatePart= 
+Variation12=Designator=R47|UniqueId=\SBSHMORP\MTKMSNKM|Kind=1|AlternatePart= 
+Variation13=Designator=R52|UniqueId=\SBSHMORP\PXCIWGUL|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [Configuration1]
