@@ -106,10 +106,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LCXBUSSE
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for PCB_3U_RJ45\Design Rule Check - PCB_3U_RJ45.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -251,16 +247,6 @@ OutputName23=WireList Netlist
 OutputDocumentPath23=
 OutputVariantName23=
 OutputDefault23=0
-OutputType24=SIMetrixNetlist
-OutputName24=SIMetrix
-OutputDocumentPath24=
-OutputVariantName24=
-OutputDefault24=0
-OutputType25=SIMPLISNetlist
-OutputName25=SIMPLIS
-OutputDocumentPath25=
-OutputVariantName25=
-OutputDefault25=0
 
 [OutputGroup2]
 Name=Simulator Outputs
@@ -272,16 +258,6 @@ OutputName1=Mixed Sim
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs

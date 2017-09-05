@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for PCB_3U_CLK_Dist
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -89,10 +89,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for PCB_3U_CLK_Dist\Design Rule Check - PCB_3U_CLK_DIST.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -103,7 +99,7 @@ Variant=[No Variations]
 OutputJobsCount=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for PCB_3U_CLK_Dist
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
