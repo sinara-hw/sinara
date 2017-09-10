@@ -72,11 +72,16 @@ void psu_init (void) {
 			  	LPC_GPIO4->DIR |= (1 << 30);//lpsel5 RTM JTAG
 			  	LPC_GPIO4->DIR |= (1 << 31);//lpsel6 PS JTAG
 			  	LPC_GPIO4->DIR |= (1 << 19);//stitcher mode
+			  	LPC_GPIO0->DIR &= ~(1 << 29);     // Make  the Port pin input - RTM present
+			  	LPC_GPIO0->DIR &= ~(1 << 5);     // Make  the Port pins inputs - DONE pin
+
+
 
 				LPC_GPIO1->SET |= (1 << 28); //EN VCCINT
 				LPC_GPIO1->SET |= (1 << 29); //EN P5V0
 				LPC_GPIO1->SET |= (1 << 31); //EN PSU CH
 				delay_ms(200); //wait for power supplies to boot
+
 
 				//LEDs
 				LPC_GPIO3->DIR |= (1 << 5);
@@ -119,8 +124,7 @@ void psu_init (void) {
 			  	LPC_GPIO2->CLR |= (1 << 28);
 				// i2c mux 0x70 address
 
-			  	LPC_GPIO0->DIR &= ~(1 << 29);     // Make  the Port pin input - RTM present
-			  	LPC_GPIO0->DIR &= ~(1 << 5);     // Make  the Port pins inputs - DONE pin
+
 				LPC_GPIO1->CLR |= (1 << 30); //RTM 3.3MP power off
 		   		LPC_GPIO1->CLR |= (1 << 26);// 12V power off
 		        LPC_GPIO1->DIR |= (1 << 26); //RTM 12V PWR pin
