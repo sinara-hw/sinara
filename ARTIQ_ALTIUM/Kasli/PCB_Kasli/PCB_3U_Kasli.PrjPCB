@@ -365,7 +365,7 @@ UniqueID=7B06FB3C-00CE-463C-ACDB-F389B2290E9F
 Description=standard
 AllowFabrication=0
 ParameterCount=0
-VariationCount=28
+VariationCount=30
 Variation1=Designator=U1|UniqueId=\XHDMXMMK\QHRGMXTJ|Kind=1|AlternatePart= 
 Variation2=Designator=C159|UniqueId=\XHDMXMMK\NBTCUTKP|Kind=1|AlternatePart= 
 Variation3=Designator=C160|UniqueId=\XHDMXMMK\YIIWLIIV|Kind=1|AlternatePart= 
@@ -384,16 +384,18 @@ Variation15=Designator=C33|UniqueId=\OIQTLDDY\TTAERFON|Kind=1|AlternatePart=
 Variation16=Designator=TR1|UniqueId=\OIQTLDDY\AYHXCPMC|Kind=1|AlternatePart= 
 Variation17=Designator=C9|UniqueId=\OIQTLDDY\UDPFCDJG|Kind=1|AlternatePart= 
 Variation18=Designator=C13|UniqueId=\OIQTLDDY\TFWDLSLB|Kind=1|AlternatePart= 
-Variation19=Designator=R42|UniqueId=\GNHKTQUG\NNRCCOPS|Kind=0|AlternatePart= 
-Variation20=Designator=R50|UniqueId=\UWHPBIQD\YSRKANPB|Kind=1|AlternatePart= 
-Variation21=Designator=C48|UniqueId=\UWHPBIQD\URDBKBNR|Kind=1|AlternatePart= 
-Variation22=Designator=IC5|UniqueId=\UWHPBIQD\XECFQKMT|Kind=1|AlternatePart= 
-Variation23=Designator=C47|UniqueId=\UWHPBIQD\YYAAJAMI|Kind=1|AlternatePart= 
-Variation24=Designator=C46|UniqueId=\UWHPBIQD\QXHUHTCA|Kind=1|AlternatePart= 
-Variation25=Designator=R49|UniqueId=\UWHPBIQD\UGQQIDET|Kind=1|AlternatePart= 
-Variation26=Designator=R11|UniqueId=\OIQTLDDY\CLOOITTT|Kind=1|AlternatePart= 
-Variation27=Designator=R43|UniqueId=\GNHKTQUG\KDGDSGUR|Kind=1|AlternatePart= 
-Variation28=Designator=W1|UniqueId=\OIQTLDDY\HFESLCWH|Kind=1|AlternatePart= 
+Variation19=Designator=R50|UniqueId=\UWHPBIQD\YSRKANPB|Kind=1|AlternatePart= 
+Variation20=Designator=C48|UniqueId=\UWHPBIQD\URDBKBNR|Kind=1|AlternatePart= 
+Variation21=Designator=IC5|UniqueId=\UWHPBIQD\XECFQKMT|Kind=1|AlternatePart= 
+Variation22=Designator=C47|UniqueId=\UWHPBIQD\YYAAJAMI|Kind=1|AlternatePart= 
+Variation23=Designator=C46|UniqueId=\UWHPBIQD\QXHUHTCA|Kind=1|AlternatePart= 
+Variation24=Designator=R49|UniqueId=\UWHPBIQD\UGQQIDET|Kind=1|AlternatePart= 
+Variation25=Designator=R11|UniqueId=\OIQTLDDY\CLOOITTT|Kind=1|AlternatePart= 
+Variation26=Designator=R43|UniqueId=\GNHKTQUG\KDGDSGUR|Kind=1|AlternatePart= 
+Variation27=Designator=W1|UniqueId=\OIQTLDDY\HFESLCWH|Kind=1|AlternatePart= 
+Variation28=Designator=J25|UniqueId=\XHDMXMMK\LMMGTJCO|Kind=1|AlternatePart= 
+Variation29=Designator=J20|UniqueId=\ESOUUFNI\FEOHVUOT|Kind=1|AlternatePart= 
+Variation30=Designator=J24|UniqueId=\TCPEGTAL\MDYYLENS|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -401,7 +403,7 @@ UniqueID=7B06FB3C-00CE-463C-ACDB-F389B2290E9F
 Description=with_baluns
 AllowFabrication=0
 ParameterCount=0
-VariationCount=22
+VariationCount=26
 Variation1=Designator=U1|UniqueId=\XHDMXMMK\QHRGMXTJ|Kind=1|AlternatePart= 
 Variation2=Designator=C159|UniqueId=\XHDMXMMK\NBTCUTKP|Kind=1|AlternatePart= 
 Variation3=Designator=C160|UniqueId=\XHDMXMMK\YIIWLIIV|Kind=1|AlternatePart= 
@@ -556,7 +558,13 @@ ParamVariation66=ParameterName=Value|VariantValue=100
 ParamDesignator66=R9
 Variation21=Designator=R32|UniqueId=\OIQTLDDY\WIPGJOEI|Kind=1|AlternatePart= 
 Variation22=Designator=R43|UniqueId=\GNHKTQUG\KDGDSGUR|Kind=1|AlternatePart= 
-ParamVariationCount=66
+Variation23=Designator=R9|UniqueId=\OIQTLDDY\XUDGHLHR|Kind=2|AlternatePart==Value|AltLibLink_LibIdentifierKind=Library Name And Type|AltLibLink_LibraryIdentifier=Resistors.DbLib/Resistors SMD|AltLibLink_SymbolReference=Resistor - 1%|AltLibLink_DesignItemID=R0402_100R_1%_0.0625W_100PPM|AltLibLink_UseLibraryName=True|AltLibLink_SourceLibraryName=Resistors.DbLib|AltLibLink_UseDBTableName=True|AltLibLink_DatabaseTableName=Resistors SMD|AltLibLink_VaultGUID= |AltLibLink_ItemGUID= |AltLibLink_RevisionGUID= |AltLibLink_Footprint=RESC1005X40N|AltLibLink_IsSameFootprint=False
+ParamVariation67=ParameterName=Comment|VariantValue==Value
+ParamDesignator67=R9
+Variation24=Designator=J25|UniqueId=\XHDMXMMK\LMMGTJCO|Kind=1|AlternatePart= 
+Variation25=Designator=J24|UniqueId=\TCPEGTAL\MDYYLENS|Kind=1|AlternatePart= 
+Variation26=Designator=J20|UniqueId=\ESOUUFNI\FEOHVUOT|Kind=1|AlternatePart= 
+ParamVariationCount=67
 
 [SearchPath1]
 Path=..\..\..\..\CernLib\*.*
