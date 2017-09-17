@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=PCB_KASLI.OutJob
 Description=
 TargetOutputMedium=PDF
 VariantName=standard
@@ -273,7 +273,7 @@ OutputFileNameMulti2=
 UseOutputNameForMulti2=0
 OutputFileNameSpecial2=
 OpenOutput2=1
-PromptOverwrite2=1
+PromptOverwrite2=0
 PublishMethod2=0
 ZoomLevel2=50
 FitSCHPrintSizeToDoc2=1
