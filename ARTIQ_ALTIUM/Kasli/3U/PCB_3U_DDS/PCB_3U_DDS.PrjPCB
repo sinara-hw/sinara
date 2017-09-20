@@ -13,7 +13,7 @@ TimestampOutput=0
 SeparateFolders=0
 TemplateLocationPath=
 PinSwapBy_Netlabel=1
-PinSwapBy_Pin=1
+PinSwapBy_Pin=0
 AllowPortNetNames=0
 AllowSheetEntryNetNames=1
 AppendSheetNumberToLocalNets=0
@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for PCB_3U_DDS
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -230,7 +230,7 @@ UniqueID=5014FADA-78CE-42B7-BEF1-27D882D7ECD8
 Description=AD9912
 AllowFabrication=0
 ParameterCount=0
-VariationCount=242
+VariationCount=262
 Variation1=Designator=C30A|UniqueId=\CRRIXVEK\DHJLXCYV|Kind=1|AlternatePart= 
 Variation2=Designator=C30B|UniqueId=\GEOSQBAC\DHJLXCYV|Kind=1|AlternatePart= 
 Variation3=Designator=C43B|UniqueId=\UCYIPTSN\LKDMCPHH|Kind=1|AlternatePart= 
@@ -400,9 +400,9 @@ Variation166=Designator=R72|UniqueId=\JBOQDPNK\JXWLAIQO|Kind=1|AlternatePart=
 Variation167=Designator=R70|UniqueId=\JBOQDPNK\FHOWHSNR|Kind=1|AlternatePart= 
 Variation168=Designator=OSC1|UniqueId=\JBOQDPNK\EBAUQXFN|Kind=1|AlternatePart= 
 Variation169=Designator=C103|UniqueId=\JBOQDPNK\CFHUVRPI|Kind=1|AlternatePart= 
-Variation170=Designator=L9|UniqueId=\JBOQDPNK\GOQQAGGY|Kind=1|AlternatePart= 
-Variation171=Designator=C101|UniqueId=\JBOQDPNK\BXTBSKWL|Kind=1|AlternatePart= 
-Variation172=Designator=C102|UniqueId=\JBOQDPNK\DIFRCVIC|Kind=1|AlternatePart= 
+Variation170=Designator=L9|UniqueId=\JBOQDPNK\GOQQAGGY|Kind=0|AlternatePart= 
+Variation171=Designator=C101|UniqueId=\JBOQDPNK\BXTBSKWL|Kind=0|AlternatePart= 
+Variation172=Designator=C102|UniqueId=\JBOQDPNK\DIFRCVIC|Kind=0|AlternatePart= 
 Variation173=Designator=R109|UniqueId=\JBOQDPNK\JKRGTGFB|Kind=1|AlternatePart= 
 Variation174=Designator=R108|UniqueId=\JBOQDPNK\YDCWBVKK|Kind=1|AlternatePart= 
 Variation175=Designator=C164A|UniqueId=\CRRIXVEK\CRXUIYEW|Kind=1|AlternatePart= 
@@ -473,6 +473,26 @@ Variation239=Designator=R8A|UniqueId=\CRRIXVEK\QMCUOGJS|Kind=1|AlternatePart=
 Variation240=Designator=R8B|UniqueId=\GEOSQBAC\QMCUOGJS|Kind=1|AlternatePart= 
 Variation241=Designator=R8C|UniqueId=\AMPHYOUH\QMCUOGJS|Kind=1|AlternatePart= 
 Variation242=Designator=R8D|UniqueId=\RHJTULWQ\QMCUOGJS|Kind=1|AlternatePart= 
+Variation243=Designator=R48A|UniqueId=\CRRIXVEK\QCUWBDOG|Kind=1|AlternatePart= 
+Variation244=Designator=R49A|UniqueId=\CRRIXVEK\IXJXGSES|Kind=1|AlternatePart= 
+Variation245=Designator=R50A|UniqueId=\CRRIXVEK\AYOXPCBP|Kind=1|AlternatePart= 
+Variation246=Designator=R51A|UniqueId=\CRRIXVEK\HKXVQMKY|Kind=1|AlternatePart= 
+Variation247=Designator=R113A|UniqueId=\MXBKQYLN\SFXODQXW|Kind=1|AlternatePart= 
+Variation248=Designator=C44A|UniqueId=\MXBKQYLN\QTBBLMVE|Kind=1|AlternatePart= 
+Variation249=Designator=C30A|UniqueId=\MXBKQYLN\GLXVIWOT|Kind=1|AlternatePart= 
+Variation250=Designator=R112A|UniqueId=\MXBKQYLN\SAYNOGFQ|Kind=1|AlternatePart= 
+Variation251=Designator=R112B|UniqueId=\UCYIPTSN\SAYNOGFQ|Kind=1|AlternatePart= 
+Variation252=Designator=R113B|UniqueId=\UCYIPTSN\SFXODQXW|Kind=1|AlternatePart= 
+Variation253=Designator=C30B|UniqueId=\UCYIPTSN\GLXVIWOT|Kind=1|AlternatePart= 
+Variation254=Designator=C44B|UniqueId=\UCYIPTSN\QTBBLMVE|Kind=1|AlternatePart= 
+Variation255=Designator=R112C|UniqueId=\OXLGYXQQ\SAYNOGFQ|Kind=1|AlternatePart= 
+Variation256=Designator=R113C|UniqueId=\OXLGYXQQ\SFXODQXW|Kind=1|AlternatePart= 
+Variation257=Designator=C30C|UniqueId=\OXLGYXQQ\GLXVIWOT|Kind=1|AlternatePart= 
+Variation258=Designator=C44C|UniqueId=\OXLGYXQQ\QTBBLMVE|Kind=1|AlternatePart= 
+Variation259=Designator=R112D|UniqueId=\TEFEPBKP\SAYNOGFQ|Kind=1|AlternatePart= 
+Variation260=Designator=C30D|UniqueId=\TEFEPBKP\GLXVIWOT|Kind=1|AlternatePart= 
+Variation261=Designator=R113D|UniqueId=\TEFEPBKP\SFXODQXW|Kind=1|AlternatePart= 
+Variation262=Designator=C44D|UniqueId=\TEFEPBKP\QTBBLMVE|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -692,7 +712,7 @@ UniqueID=FEAE5F34-7034-4CF5-B6A8-CC3177A39812
 Description=AD9910
 AllowFabrication=0
 ParameterCount=0
-VariationCount=265
+VariationCount=293
 Variation1=Designator=R57A|UniqueId=\CRRIXVEK\DMPFRFXU|Kind=1|AlternatePart= 
 Variation2=Designator=R58A|UniqueId=\CRRIXVEK\SCYBKPSK|Kind=1|AlternatePart= 
 Variation3=Designator=OSC1|UniqueId=\JBOQDPNK\EBAUQXFN|Kind=1|AlternatePart= 
@@ -933,9 +953,9 @@ Variation237=Designator=R62|UniqueId=\JBOQDPNK\SEGSFSWA|Kind=1|AlternatePart=
 Variation238=Designator=R63|UniqueId=\JBOQDPNK\NYQEADSG|Kind=1|AlternatePart= 
 Variation239=Designator=R69|UniqueId=\JBOQDPNK\AAPSQUHF|Kind=1|AlternatePart= 
 Variation240=Designator=R77|UniqueId=\JBOQDPNK\OGLBVHQL|Kind=1|AlternatePart= 
-Variation241=Designator=L9|UniqueId=\JBOQDPNK\GOQQAGGY|Kind=1|AlternatePart= 
-Variation242=Designator=C101|UniqueId=\JBOQDPNK\BXTBSKWL|Kind=1|AlternatePart= 
-Variation243=Designator=C102|UniqueId=\JBOQDPNK\DIFRCVIC|Kind=1|AlternatePart= 
+Variation241=Designator=L9|UniqueId=\JBOQDPNK\GOQQAGGY|Kind=0|AlternatePart= 
+Variation242=Designator=C101|UniqueId=\JBOQDPNK\BXTBSKWL|Kind=0|AlternatePart= 
+Variation243=Designator=C102|UniqueId=\JBOQDPNK\DIFRCVIC|Kind=0|AlternatePart= 
 Variation244=Designator=R103|UniqueId=\JBOQDPNK\XFAFKTCF|Kind=1|AlternatePart= 
 Variation245=Designator=R110|UniqueId=\JBOQDPNK\NMGACSKG|Kind=1|AlternatePart= 
 Variation246=Designator=C30A|UniqueId=\CRRIXVEK\DHJLXCYV|Kind=1|AlternatePart= 
@@ -958,6 +978,34 @@ Variation262=Designator=R38C|UniqueId=\AMPHYOUH\OMFYRWQX|Kind=0|AlternatePart=
 Variation263=Designator=R54C|UniqueId=\AMPHYOUH\MLWUKPCL|Kind=0|AlternatePart= 
 Variation264=Designator=R38D|UniqueId=\RHJTULWQ\OMFYRWQX|Kind=0|AlternatePart= 
 Variation265=Designator=R54D|UniqueId=\RHJTULWQ\MLWUKPCL|Kind=0|AlternatePart= 
+Variation266=Designator=R48A|UniqueId=\CRRIXVEK\QCUWBDOG|Kind=1|AlternatePart= 
+Variation267=Designator=R49A|UniqueId=\CRRIXVEK\IXJXGSES|Kind=1|AlternatePart= 
+Variation268=Designator=R50A|UniqueId=\CRRIXVEK\AYOXPCBP|Kind=1|AlternatePart= 
+Variation269=Designator=R51A|UniqueId=\CRRIXVEK\HKXVQMKY|Kind=1|AlternatePart= 
+Variation270=Designator=R48B|UniqueId=\GEOSQBAC\QCUWBDOG|Kind=1|AlternatePart= 
+Variation271=Designator=R49B|UniqueId=\GEOSQBAC\IXJXGSES|Kind=1|AlternatePart= 
+Variation272=Designator=R50B|UniqueId=\GEOSQBAC\AYOXPCBP|Kind=1|AlternatePart= 
+Variation273=Designator=R51B|UniqueId=\GEOSQBAC\HKXVQMKY|Kind=1|AlternatePart= 
+Variation274=Designator=R48C|UniqueId=\AMPHYOUH\QCUWBDOG|Kind=1|AlternatePart= 
+Variation275=Designator=R49C|UniqueId=\AMPHYOUH\IXJXGSES|Kind=1|AlternatePart= 
+Variation276=Designator=R50C|UniqueId=\AMPHYOUH\AYOXPCBP|Kind=1|AlternatePart= 
+Variation277=Designator=R51C|UniqueId=\AMPHYOUH\HKXVQMKY|Kind=1|AlternatePart= 
+Variation278=Designator=R48D|UniqueId=\RHJTULWQ\QCUWBDOG|Kind=1|AlternatePart= 
+Variation279=Designator=R49D|UniqueId=\RHJTULWQ\IXJXGSES|Kind=1|AlternatePart= 
+Variation280=Designator=R50D|UniqueId=\RHJTULWQ\AYOXPCBP|Kind=1|AlternatePart= 
+Variation281=Designator=R51D|UniqueId=\RHJTULWQ\HKXVQMKY|Kind=1|AlternatePart= 
+Variation282=Designator=R12A|UniqueId=\MXBKQYLN\UNXDCDFF|Kind=1|AlternatePart= 
+Variation283=Designator=R12B|UniqueId=\UCYIPTSN\UNXDCDFF|Kind=1|AlternatePart= 
+Variation284=Designator=R12C|UniqueId=\OXLGYXQQ\UNXDCDFF|Kind=1|AlternatePart= 
+Variation285=Designator=R12D|UniqueId=\TEFEPBKP\UNXDCDFF|Kind=1|AlternatePart= 
+Variation286=Designator=R15D|UniqueId=\TEFEPBKP\DCNSUOBA|Kind=1|AlternatePart= 
+Variation287=Designator=R92D|UniqueId=\TEFEPBKP\RJQMKTWN|Kind=1|AlternatePart= 
+Variation288=Designator=R15C|UniqueId=\OXLGYXQQ\DCNSUOBA|Kind=1|AlternatePart= 
+Variation289=Designator=R92C|UniqueId=\OXLGYXQQ\RJQMKTWN|Kind=1|AlternatePart= 
+Variation290=Designator=R15B|UniqueId=\UCYIPTSN\DCNSUOBA|Kind=1|AlternatePart= 
+Variation291=Designator=R92B|UniqueId=\UCYIPTSN\RJQMKTWN|Kind=1|AlternatePart= 
+Variation292=Designator=R92A|UniqueId=\MXBKQYLN\RJQMKTWN|Kind=1|AlternatePart= 
+Variation293=Designator=R15A|UniqueId=\MXBKQYLN\DCNSUOBA|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [Configuration1]
@@ -1011,7 +1059,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for PCB_3U_DDS
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
