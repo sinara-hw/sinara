@@ -1,6 +1,6 @@
 [Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=2
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ReleaseVaultGUID=
@@ -1007,6 +1007,10 @@ Variation291=Designator=R92B|UniqueId=\UCYIPTSN\RJQMKTWN|Kind=1|AlternatePart=
 Variation292=Designator=R92A|UniqueId=\MXBKQYLN\RJQMKTWN|Kind=1|AlternatePart= 
 Variation293=Designator=R15A|UniqueId=\MXBKQYLN\DCNSUOBA|Kind=1|AlternatePart= 
 ParamVariationCount=0
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PCB_3U_DDS\Design Rule Check - PCB_3U_DDS.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
