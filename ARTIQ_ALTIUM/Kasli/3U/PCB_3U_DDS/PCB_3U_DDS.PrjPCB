@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for PCB_3U_DDS
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -230,7 +230,7 @@ UniqueID=5014FADA-78CE-42B7-BEF1-27D882D7ECD8
 Description=AD9912
 AllowFabrication=0
 ParameterCount=0
-VariationCount=262
+VariationCount=269
 Variation1=Designator=C30A|UniqueId=\CRRIXVEK\DHJLXCYV|Kind=1|AlternatePart= 
 Variation2=Designator=C30B|UniqueId=\GEOSQBAC\DHJLXCYV|Kind=1|AlternatePart= 
 Variation3=Designator=C43B|UniqueId=\UCYIPTSN\LKDMCPHH|Kind=1|AlternatePart= 
@@ -493,6 +493,13 @@ Variation259=Designator=R112D|UniqueId=\TEFEPBKP\SAYNOGFQ|Kind=1|AlternatePart=
 Variation260=Designator=C30D|UniqueId=\TEFEPBKP\GLXVIWOT|Kind=1|AlternatePart= 
 Variation261=Designator=R113D|UniqueId=\TEFEPBKP\SFXODQXW|Kind=1|AlternatePart= 
 Variation262=Designator=C44D|UniqueId=\TEFEPBKP\QTBBLMVE|Kind=1|AlternatePart= 
+Variation263=Designator=R114|UniqueId=\OTEHXVDQ|Kind=1|AlternatePart= 
+Variation264=Designator=C45|UniqueId=\RNBXPHFM|Kind=1|AlternatePart= 
+Variation265=Designator=L8|UniqueId=\VSHEIWSD|Kind=1|AlternatePart= 
+Variation266=Designator=R33A|UniqueId=\CRRIXVEK\OYNPIKLX|Kind=1|AlternatePart= 
+Variation267=Designator=R33B|UniqueId=\GEOSQBAC\OYNPIKLX|Kind=1|AlternatePart= 
+Variation268=Designator=R33C|UniqueId=\AMPHYOUH\OYNPIKLX|Kind=1|AlternatePart= 
+Variation269=Designator=R33D|UniqueId=\RHJTULWQ\OYNPIKLX|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -712,7 +719,7 @@ UniqueID=FEAE5F34-7034-4CF5-B6A8-CC3177A39812
 Description=AD9910
 AllowFabrication=0
 ParameterCount=0
-VariationCount=293
+VariationCount=297
 Variation1=Designator=R57A|UniqueId=\CRRIXVEK\DMPFRFXU|Kind=1|AlternatePart= 
 Variation2=Designator=R58A|UniqueId=\CRRIXVEK\SCYBKPSK|Kind=1|AlternatePart= 
 Variation3=Designator=OSC1|UniqueId=\JBOQDPNK\EBAUQXFN|Kind=1|AlternatePart= 
@@ -1006,6 +1013,10 @@ Variation290=Designator=R15B|UniqueId=\UCYIPTSN\DCNSUOBA|Kind=1|AlternatePart=
 Variation291=Designator=R92B|UniqueId=\UCYIPTSN\RJQMKTWN|Kind=1|AlternatePart= 
 Variation292=Designator=R92A|UniqueId=\MXBKQYLN\RJQMKTWN|Kind=1|AlternatePart= 
 Variation293=Designator=R15A|UniqueId=\MXBKQYLN\DCNSUOBA|Kind=1|AlternatePart= 
+Variation294=Designator=R33A|UniqueId=\CRRIXVEK\OYNPIKLX|Kind=1|AlternatePart= 
+Variation295=Designator=R33B|UniqueId=\GEOSQBAC\OYNPIKLX|Kind=1|AlternatePart= 
+Variation296=Designator=R33C|UniqueId=\AMPHYOUH\OYNPIKLX|Kind=1|AlternatePart= 
+Variation297=Designator=R33D|UniqueId=\RHJTULWQ\OYNPIKLX|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
@@ -1063,7 +1074,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for PCB_3U_DDS
 
 [OutputGroup1]
 Name=Netlist Outputs
