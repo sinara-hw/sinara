@@ -365,7 +365,7 @@ OutputDefault14=0
 Configuration14_Name1=OutputConfigurationParameter1
 Configuration14_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True
 OutputType15=BOM_PartType
-OutputName15=Copy of Bill of Materials
+OutputName15=Bill of Materials
 OutputCategory15=Report
 OutputDocumentPath15=
 OutputVariantName15=AD9912
