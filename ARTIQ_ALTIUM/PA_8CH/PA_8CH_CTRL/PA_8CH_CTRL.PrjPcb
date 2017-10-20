@@ -104,7 +104,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TLPPBNGX
+DocumentUniqueId=BRGJBYCT
 
 [Document5]
 DocumentPath=PA_8CH_CTRL.PcbDoc
@@ -121,7 +121,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TNCTACME
+DocumentUniqueId=QWIYLQRK
 
 [Document6]
 DocumentPath=PA_8CH_CTRL.OutJob
@@ -140,9 +140,22 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for PA_8CH_CTRL\Design Rule Check - PA_8CH_CTRL.html
+[Document7]
+DocumentPath=TEMP_MGT.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=6
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
 DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=CJRAFYTD
 
 [Configuration1]
 Name=Default Configuration
