@@ -21,7 +21,7 @@ TargetOutputMedium=Folder Structure
 VariantName=standard
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon_MG3600_series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -287,7 +287,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=D:\OneDrive\Studia\Magisterka\Kasli\PCB_Kasli\Project Outputs for Kasli\
+OutputFilePath3=E:\Studia\Magisterka\Kasli\PCB_Kasli\Project Outputs for Kasli\
 ReleaseManaged3=0
 OutputBasePath3=Project Outputs for Kasli\
 OutputPathMedia3=
@@ -341,7 +341,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=D:\OneDrive\Studia\Magisterka\Kasli\PCB_Kasli\Project Outputs for Kasli\KASLI.PDF
 OpenOutputs2=1
-RelativeOutputPath3=D:\OneDrive\Studia\Magisterka\Kasli\PCB_Kasli\Project Outputs for Kasli\
+RelativeOutputPath3=E:\Studia\Magisterka\Kasli\PCB_Kasli\Project Outputs for Kasli\
 OpenOutputs3=0
 AddToProject3=0
 TimestampFolder3=0
