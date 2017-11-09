@@ -121,7 +121,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=QWIYLQRK
+DocumentUniqueId=YRPBSAGQ
 
 [Document6]
 DocumentPath=PA_8CH_CTRL.OutJob
@@ -156,6 +156,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CJRAFYTD
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PA_8CH_CTRL\Design Rule Check - PA_8CH_CTRL.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration

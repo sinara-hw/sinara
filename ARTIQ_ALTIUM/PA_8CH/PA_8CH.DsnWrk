@@ -3,8 +3,10 @@ Version=1.0
 [Project1]
 ProjectPath=User_Interface\PA_8CH_USER_IFC\PA_8CH_USER_IFC.PrjPcb
 [Project2]
-ProjectPath=PA_Channel\PA_Channel\PA_Channel.PrjPcb
-[Project3]
 ProjectPath=PA_Channel\PA_Channel_SUP_CTRL\PA_Channel_SUP_CTRL.PrjPcb
-[Project4]
+[Project3]
 ProjectPath=PA_8CH_CTRL\PA_8CH_CTRL.PrjPcb
+[Project4]
+ProjectPath=PA_Channel\PA_Channel_RF\PA_Channel.PrjPcb
+[Project5]
+ProjectPath=..\Kasli\PCB_Kasli\PCB_3U_Kasli.PrjPCB
