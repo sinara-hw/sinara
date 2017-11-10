@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for PANELS
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -191,6 +191,40 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JITXXPTR
 
+[Document10]
+DocumentPath=PANEL_3U_DDS.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PGNDFEYD
+
+[Document11]
+DocumentPath=PANEL_3U_KASLI.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UTUGWHAJ
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_ADC.DXF
 DItemRevisionGUID=
@@ -200,22 +234,34 @@ DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_BNC.DXF
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_DAC.DXF
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\Panel_3U_CLK_DIS.DXF
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_RJ45.DXF
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_DAC.DXF
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_SMA.DXF
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_DDS.DXF
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_Tester.DXF
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_KASLI.DXF
 DItemRevisionGUID=
 
 [GeneratedDocument7]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_RJ45.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_SMA.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_Tester.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument10]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_VHDCI_Breakout.DXF
 DItemRevisionGUID=
 
@@ -229,7 +275,7 @@ Variant=[No Variations]
 OutputJobsCount=0
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for PANELS
 
 [OutputGroup1]
 Name=Netlist Outputs
