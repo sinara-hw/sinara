@@ -174,6 +174,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MJNKMGWL
 
+[ProjectVariant1]
+UniqueID=91D7E02D-192B-4E49-B55D-86EE28FE8439
+Description=STD
+AllowFabrication=0
+ParameterCount=0
+VariationCount=9
+Variation1=Designator=C17B|UniqueId=\TPYPAHFA\SIJXDMPB|Kind=1|AlternatePart= 
+Variation2=Designator=C17A|UniqueId=\JFPIWLDT\SIJXDMPB|Kind=1|AlternatePart= 
+Variation3=Designator=C17C|UniqueId=\ISEIDXAA\SIJXDMPB|Kind=1|AlternatePart= 
+Variation4=Designator=C17D|UniqueId=\GKDKNQST\SIJXDMPB|Kind=1|AlternatePart= 
+Variation5=Designator=C17E|UniqueId=\EWIMRNRU\SIJXDMPB|Kind=1|AlternatePart= 
+Variation6=Designator=C17F|UniqueId=\HPIWHVHY\SIJXDMPB|Kind=1|AlternatePart= 
+Variation7=Designator=C17G|UniqueId=\CHFLETYN\SIJXDMPB|Kind=1|AlternatePart= 
+Variation8=Designator=C17H|UniqueId=\TNOOVCKN\SIJXDMPB|Kind=1|AlternatePart= 
+Variation9=Designator=R7|UniqueId=\YTXDVDYF\DYTPKYIV|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
