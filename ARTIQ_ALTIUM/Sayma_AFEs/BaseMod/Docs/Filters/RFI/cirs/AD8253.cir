@@ -1,0 +1,488 @@
+* AD8253 SPICE Macromodel     Rev F. 7/2015     
+* Function: PGIA
+* Description:
+* This spice model covers the AD8253 Programmable Gain Instrumentation Amplifier (PGIA). 
+* Gain options are 1, 10, 100, and 1000
+* Revision History:
+* Rev D. Prior releases, 5/2011
+* Rev E. 10/2013 - Relocates .ends for AD8253 subcircuit to before the digital section to 
+*					accommodate spice errors in some SPICE packages. (Where Sub circuit nesting is not allowed)
+* Rev F. 7/2015 - Replace flipflops and gates with equivalent MOSFET circuit to package the model without any more additional subcircuit.
+* Developed by: ADI
+*
+* Spice model Copyright 2013 Analog Devices Inc
+*
+* Temperature variations for the AD8250 are NOT included
+* in this model.
+*
+* Voltage Noise parameters for this model will closely model
+* typical AD8253 characteristics.  Current Noise parameters
+* will be slightly higher than typical AD8253 characteristics
+* due to modeling limitations.
+* 
+* Node Assignments
+*					 inverting input
+*                     |   digital ground
+*                     |   |   negative supply
+*                     |   |   |  A0 (digital gain control)
+*                     |   |   |  |  A1 (digital gain control)
+*                     |   |   |  |  |   Digital Write
+*                     |   |   |  |  |   |  output
+*                     |   |   |  |  |   |  |  positive supply
+*                     |   |   |  |  |   |  |  |   reference
+*                     |   |   |  |  |   |  |  |   |   non-inverting input
+*$
+.SUBCKT AD8253       -IN DGND -Vs A0 A1 WR OUT +Vs REF +IN
+*
+*Power Supply
+*
+*Analog Power Supply
+R6 0 90 0.0001 
+R5 0 AGND_1 0.0001 
+I2 90 -Vs 0.0045 
+I1 +Vs AGND_1 0.0046 
+EV6 50 90 -Vs 90 1
+EV5 99 AGND_1 +Vs AGND_1 1
+*
+*Digital power supply 
+VDD1 D99 0 5 
+*
+*power consumption correction
+ICORR_P1 99 0 1.6m 
+ICORR_N1 0 50 1.5m
+*
+*Internal Voltage Reference
+EREF1 98 0 40 0 1
+CREF1 40 0 5e-006
+RREF2 40 50 500000 
+RREF1 99 40 500000 
+*
+*
+*GAIN CONTROL
+*
+*gain of 1000
+Rfb9 104 116 49.95k 
+Rfb8 116 115 100
+Rfb7 103 115 49.95k 
+SGC16 116 72 A1int 0 SW1 
+SGC15 72 Rg+ A0int 0 SW1 
+SGC14 13 115 A1int 0 SW1 
+SGC13 Rg- 13 A0int 0 SW1 
+*
+*gain of 100
+Rfb6 104 112 19.8k
+Rfb5 112 111 400
+Rfb4 103 111 19.8k 
+SGC12 114 Rg+ A0barint 0 SW1 
+SGC11 112 114 A1int 0 SW1 
+SGC10 6 111 A1int 0 SW1 
+SGC9 Rg- 6 A0barint 0 SW1 
+*
+*Gain of 10
+Rfb3 104 108 6750 
+Rfb2 108 107 1.5k 
+Rfb1 103 107 6750 
+SGC8 110 Rg+ A0int 0 SW1 
+SGC7 108 110 A1barint 0 SW1 
+SGC6 5 107 A1barint 0 SW1 
+SGC5 Rg- 5 A0int 0 SW1 
+*
+*Gain of 1
+SGC4 104 134 A1barint 0 SW1 
+SGC3 134 Rg+ A0barint 0 SW1 
+SGC2 7 103 A1barint 0 SW1 
+SGC1 Rg- 7 A0barint 0 SW1 
+*
+*Switches for bypassing flipflops
+*If WR is less than -3V, flipflops are
+*bypassed and A0 and A1 are passed 
+*directly through
+*
+SBP4 A1bar A1barint 0 WR SW2 
+SBP3 A1 A1int 0 WR SW2 
+MN2 A1bar A1 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MI2 A1bar A1 DGND DGND NMOS  L=3e-006  W=6e-006
+SBP2 A0bar A0barint 0 WR SW2 
+SBP1 A0 A0int 0 WR SW2 
+MN1 A0bar A0 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MI1 A0bar A0 DGND DGND NMOS  L=3e-006  W=6e-006
+*
+*
+*Switches for latched mode
+*falling clock edge data latches with 
+*switches. If WR is higher than -1.5V,
+*switches pass latched data through, which
+*is latched on falling clock edge
+*
+Vcntlin1 cntlV 0 3
+*
+*DFF for A1
+*
+SLAT4 A1bLAT A1barint WR cntlV SW1 
+SLAT3 A1LAT A1int WR cntlV SW1 
+*
+MN70 FFWRb_1 WR D99 D99 PMOS  L=3e-006  W=1.5e-005
+MI6 FFWRb_1 WR DGND DGND NMOS  L=3e-006  W=6e-006
+MN69 FFDb_1 A1 D99 D99 PMOS L=3e-006  W=1.5e-005
+MI5 FFDb_1 A1 DGND DGND NMOS  L=3e-006  W=6e-006
+MN68 A1bLAT A1LAT D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN67 A1bLAT 132 D99 D99 PMOS L=3e-006  W=1.5e-005
+MN66 123 132 DGND DGND NMOS  L=3e-006  W=6e-006
+MN65 A1bLAT A1LAT 123 DGND NMOS L=3e-006  W=6e-006
+MN64 132 FFWRb_1 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN63 132 130 D99 D99 PMOS L=3e-006  W=1.5e-005
+MN62 122 130 DGND DGND NMOS L=3e-006  W=6e-006
+MN61 132 FFWRb_1 122 DGND NMOS L=3e-006  W=6e-006
+MN60 A1LAT A1bLAT D99 D99 PMOS L=3e-006  W=1.5e-005
+MN59 A1LAT 135 D99 D99 PMOS L=3e-006  W=1.5e-005
+MN58 124 135 DGND DGND NMOS L=3e-006  W=6e-006
+MN57 A1LAT A1bLAT 124 DGND NMOS  L=3e-006  W=6e-006
+MN56 135 FFWRb_1 D99 D99 PMOS L=3e-006  W=1.5e-005
+MN55 135 131 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN54 121 131 DGND DGND NMOS  L=3e-006  W=6e-006
+MN53 135 FFWRb_1 121 DGND NMOS  L=3e-006  W=6e-006
+MN52 130 131 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN51 130 136 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN50 125 136 DGND DGND NMOS  L=3e-006  W=6e-006
+MN49 130 131 125 DGND NMOS  L=3e-006  W=6e-006
+MN48 136 WR D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN47 136 FFDb_1 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN46 120 FFDb_1 DGND DGND NMOS  L=3e-006  W=6e-006
+MN45 136 WR 120 DGND NMOS  L=3e-006  W=6e-006
+MN44 131 130 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN43 131 129 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN42 126 129 DGND DGND NMOS  L=3e-006  W=6e-006
+MN41 131 130 126 DGND NMOS  L=3e-006  W=6e-006
+MN40 129 WR D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN39 129 A1 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN38 119 A1 DGND DGND NMOS  L=3e-006  W=6e-006
+MN37 129 WR 119 DGND NMOS  L=3e-006  W=6e-006
+MN36 FFWRb WR D99 D99 PMOS  L=3e-006  W=1.5e-005
+*
+*DFF for A0
+*
+SLAT2 A0bLAT A0barint WR cntlV SW1 
+SLAT1 A0LAT A0int WR cntlV SW1 
+*
+MI4 FFWRb WR DGND DGND NMOS  L=3e-006  W=6e-006
+MN35 FFDb A0 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MI3 FFDb A0 DGND DGND NMOS  L=3e-006  W=6e-006
+MN34 A0bLAT A0LAT D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN33 A0bLAT 4 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN32 91 4 DGND DGND NMOS  L=3e-006  W=6e-006
+MN31 A0bLAT A0LAT 91 DGND NMOS  L=3e-006  W=6e-006
+MN30 4 FFWRb D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN29 4 12 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN28 64 12 DGND DGND NMOS  L=3e-006  W=6e-006
+MN27 4 FFWRb 64 DGND NMOS  L=3e-006  W=6e-006
+MN26 A0LAT A0bLAT D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN25 A0LAT 127 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN24 94 127 DGND DGND NMOS  L=3e-006  W=6e-006
+MN23 A0LAT A0bLAT 94 DGND NMOS  L=3e-006  W=6e-006
+MN22 127 FFWRb D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN21 127 11 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN20 61 11 DGND DGND NMOS  L=3e-006  W=6e-006
+MN19 127 FFWRb 61 DGND NMOS  L=3e-006  W=6e-006
+MN18 12 11 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN17 12 128 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN16 118 128 DGND DGND NMOS  L=3e-006  W=6e-006
+MN15 12 11 118 DGND NMOS  L=3e-006  W=6e-006
+MN14 128 WR D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN13 128 FFDb D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN12 27 FFDb DGND DGND NMOS  L=3e-006  W=6e-006
+MN11 128 WR 27 DGND NMOS  L=3e-006  W=6e-006
+MN10 11 12 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN9 11 3 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN8 10 3 DGND DGND NMOS  L=3e-006  W=6e-006
+MN7 11 12 10 DGND NMOS  L=3e-006  W=6e-006
+MN6 3 WR D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN5 3 A0 D99 D99 PMOS  L=3e-006  W=1.5e-005
+MN4 20 A0 DGND DGND NMOS  L=3e-006  W=6e-006
+MN3 3 WR 20 DGND NMOS  L=3e-006  W=6e-006
+*
+*Resistor fb Network, output op amp
+R4 201 OUT 10000 
+R3 103 201 10000 
+R2 202 REF 10000 
+R1 104 202 10000 
+*
+* OUTPUT AMPLIFIER
+*+PS perturbation stage output amp
+EPSC2 34 98 99 0 1
+RPSC4 98 37 0.29 
+CPSC2 37 34 5.2e-010
+RPSC3 37 34 100000 
+*
+*CM voltage stage output amp
+ECMC3 109 98 +IN 98 1
+RCMC2 98 81 0.29 
+CCMC1 81 113 2.5e-010
+RCMC1 81 113 100000 
+ECMC2 113 109 -IN 98 1
+*
+*output stage output amp
+VMO9 100 OUT 0 
+VMO8 102 50 0 
+VMO7 99 101 0 
+ROUT6 102 100 10 
+ROUT5 100 101 10 
+GOUT6 102 100 95 50 0.1
+GOUT5 100 101 99 95 0.1
+*
+*Current limiting output amp
+VILIM6 97 100 0.415 
+VILIM5 100 96 0.415 
+DILIM6 97 95 DIODE4
+DILIM5 95 96 DIODE3
+*
+*Supply current adjustment output amp
+FADJ4 0 99 VLIM6 1
+FADJ3 50 0 VLIM5 1
+*
+*voltage limiting circuitry output amp
+VLIM6 99 92 1.96
+VLIM5 93 50 2.1
+DOUT6 93 89 DIODE6
+DOUT5 89 92 DIODE5
+*
+*Intermediate gain stage output amp
+RP6 98 95 1000 
+GP5 95 98 89 98 0.001
+CP4 95 98 1e-011
+*
+*Gain stage with dominant pole = 13 Hz output amp 
+GP6 89 98 52 83 1
+CP3 89 98 2.1e-007
+RP5 98 89 10000000
+*
+*-PS perturbation output amp
+EPSC1 88 98 50 0 1
+RPSC2 87 88 100000 
+CPSC1 87 88 2e-008
+RPSC1 98 87 0.39 
+*
+*Voltage Noise stage output amp
+VN3 86 98 0.618 
+DN3 86 85 DIODE1
+RNOI6 98 85 0.0004 
+VMEASC1 85 98 0 
+F3 84 98 VMEASC1 1
+RNOI5 98 84 1 
+*
+*Offset V, CM, PS, voltage noise introduction
+D6 202 99 DIODE2
+D5 50 202 DIODE2
+EPSRC_P1 202 82 37 98 1
+VOSC1 80 79 0.0006425 
+ENOISC1 106 80 84 98 1
+ECMC1 82 106 81 98 1
+EPSRC_N1 201 117 87 98 1
+VPSRC1 117 78 5.85e-005 
+*
+*Input stage output amplifier
+Q5 52 78 133 PNP
+Q6 83 79 55 PNP
+RC6 50 52 5750 
+RC5 50 83 5750 
+RE6 59 133 175 
+RE5 59 55 175
+IBIASC1 99 59 0.001
+CC1 52 83 7e-013
+*
+*COMP AMPLIFIER 2
+*
+*Output stage comp amp 2
+VMO6 68 104 0 
+VMO5 70 50 0 
+VMO4 99 69 0
+ROUT4 70 68 10 
+ROUT3 68 69 10 
+GOUT4 70 68 65 50 0.1
+GOUT3 68 69 99 65 0.1
+*
+*Current limiting comp amp 2
+VILIM4 67 68 0.415
+VILIM3 68 66 0.415 
+DILIM4 67 65 DIODE4
+DILIM3 65 66 DIODE3
+*
+*Voltage limiting circuitry comp amp 2
+VLIM4 99 62 1.5 
+VLIM3 63 50 1.75
+DOUT4 63 60 DIODE6
+DOUT3 60 62 DIODE5
+*
+*Supply Current adjustment amp2
+FADJ6 50 0 VLIM3 1
+FADJ5 0 99 VLIM4 1
+*
+*Gain stage with dominant pole=0.8Hz comp amp 2
+GP4 60 98 44 56 1
+RP3 98 60 10000000 
+CP2 60 98 5e-008
+*
+*Intermediate gain stage comp amp 2
+GP3 65 98 60 98 0.001
+RP4 98 65 1000 
+*
+*+PS Perturbation stage comp amp 2
+EPSB1 77 98 99 0 1
+RPSB2 74 77 100000 
+CPSB1 74 77 1e+017
+RPSB1 98 74 0.1 
+*
+*Voltage noise stage comp amp 2
+VN2 58 98 0.623
+DN2 58 57 DIODE1
+RNOI4 98 57 0.000135 
+VMEASB1 57 98 0 
+F2 51 98 VMEASB1 1
+RNOI3 98 51 1 
+*
+*Common mode voltage stage comp amp 2
+ECMB3 73 98 -IN 98 1
+RCMB2 98 76 0.19 
+CCMB1 76 54 5e-011
+RCMB1 76 54 100000 
+ECMB2 54 73 +IN 98 1
+*
+*CM, +PS, Noise introduction
+D4 +IN 99 DIODE2
+D3 50 +IN DIODE2
+ECMB1 +IN 1 76 98 1
+EPSRB1 75 49 74 98 1
+ENOISB1 1 75 51 98 1
+*
+*Bias Current Compensation
+FBIASCMPB1 +IN 0 VBIASMONB1 0.9988
+VBIASMONB1 49 48 0 
+*
+*Input stage compare amplifier 2
+Q3 44 Rg+ 43 PNP
+Q4 56 48 45 PNP
+RC4 47 44 5000 
+RC3 47 56 5000 
+RE4 46 43 415 
+RE3 46 45 415 
+IBIASB1 99 46 0.001 
+VADJB1 50 47 1.5 
+*
+*COMP AMPLIFIER 1
+*Output stage comp amp 1
+VMO3 39 103 0 
+VMO2 41 50 0 
+VMO1 99 42 0
+ROUT2 41 39 10 
+ROUT1 39 42 10 
+GOUT2 41 39 36 50 0.1
+GOUT1 39 42 99 36 0.1
+*
+*Current limiting comp amp 1
+VILIM2 38 39 0.415 
+VILIM1 39 35 0.415
+DILIM2 38 36 DIODE4
+DILIM1 36 35 DIODE3
+*
+*Supply current adjustment comp amp 1
+FADJ2 0 99 VLIM2 1
+FADJ1 50 0 VLIM1 1
+*
+*Voltage limiting circuitry comp amp 1
+VLIM2 99 29 1.5
+VLIM1 33 50 1.75 
+DOUT2 33 32 DIODE6
+DOUT1 32 29 DIODE5
+*
+*Intermediate gain stage comp amp 1
+GP1 36 98 32 98 0.001
+RP2 98 36 1000 
+*
+*Gain stage with dominant pole=0.8Hz comp amp 1
+GP2 32 98 18 16 1
+CP1 32 98 5e-008
+RP1 98 32 10000000 
+*
+*-PS Perturbation stage comp amp 1
+EPSA1 31 98 50 0 1
+RPSA2 30 98 0.15 
+CPSA1 31 30 4.5e-010
+RPSA1 31 30 100000 
+*
+*Voltage noise stage comp amp 1
+VN1 26 98 0.623 
+DN1 26 24 DIODE1
+RNOI2 98 24 0.000135 
+VMEASA1 24 98 0 
+F1 28 98 VMEASA1 1
+RNOI1 98 28 1 
+*
+* noise, -PS offset V introduction
+D2 -IN 99 DIODE2
+D1 50 -IN DIODE2
+VPSRA_N1 23 A9 0.0001408 
+EPSRA_N1 Rg- 23 98 30 1
+VOSA1 25 19 0.000158 
+ENOISA1 -IN 25 28 98 1
+*
+*Bias Current Compensation
+FBIASCMPA1 -IN 0 VBIASMONA1 0.9988
+VBIASMONA1 19 2 0
+*
+*Input stage compare amplifier 1
+Q1 18 A9 15 PNP
+Q2 16 2 8 PNP
+RC2 21 18 5000 
+RC1 21 16 5000 
+RE2 22 15 415 
+RE1 22 8 415 
+IBIASA1 99 22 0.001 
+VADJA1 50 21 1.5 
+*
+.model PMOS pmos
++ (
++  Level=2 VTO=-0.738861 KP=2.7e-005 GAMMA=0.58 PHI=0.6 LAMBDA=0.0612279
++  PB=0.64 CGSO=4.3e-010 CGDO=4.3e-010 RSH=120.6 CJ=0.0005 MJ=0.5052
++  CJSW=1.349e-010 MJSW=0.2417 TOX=2e-007 LD=1.5e-007 U0=261.977
++  NSUB=4.3318e+015 TPG=-1 NSS=100000000000 DELTA=1.79192 UEXP=0.323932
++  UCRIT=65719.8 VMAX=25694 XJ=2.5e-007 NEFF=1.001 NFS=1000000000000
++ )
+.model NMOS nmos
++ (
++  Level=2 VTO=0.743469 KP=8.00059e-005 GAMMA=0.543 PHI=0.6 LAMBDA=0.0367072
++  PB=0.58 CGSO=4.3e-010 CGDO=4.3e-010 RSH=70 CJ=0.0003 MJ=0.6585
++  CJSW=8e-010 MJSW=0.2402 TOX=2e-007 LD=1.5e-007 U0=655.881 NSUB=5.36726e+015
++  TPG=1 NSS=100000000000 DELTA=2.39824 UEXP=0.157282 UCRIT=31443.8
++  VMAX=55260.9 XJ=2.5e-007 NEFF=1.001 NFS=1000000000000
++ )
+.model DIODE4  D
++ (
++  IS=5e-012
++ )
+.model DIODE3  D
++ (
++  IS=5e-012
++ )
+.model DIODE6  D
++ (
++  IS=5e-012
++ )
+.model DIODE5  D
++ (
++  IS=5e-012
++ )
+.model DIODE1  D
++ (
++  KF=2e-010 AF=1.5
++ )
+.model DIODE2  D
++ (
++  IS=1e-016
++ )
+.model PNP PNP
++ (
++  Level=1 VAF=100
++ )
+.model sw1 vswitch(Von=1.5 Voff=1.2 Ron=0.01 Roff=100000000)
+.model sw2 vswitch(Von=3 Voff=2.7 Ron=0.01 Roff=100000000)
+.ENDS AD8253
+
