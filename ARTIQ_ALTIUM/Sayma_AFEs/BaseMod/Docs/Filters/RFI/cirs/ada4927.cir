@@ -1,0 +1,198 @@
+* ADA4927 SPICE Macro-model     
+* Description: Amplifier
+* Generic Desc: UltraLow Dist Current Feedbck ADC Driver
+* Developed by: CK
+* Revision History: 08/10/2012 - Updated to new header style
+* 2.0 (07/2011)
+* Copyright 2006, 2012 by Analog Devices, Inc.
+*
+* Refer to http://www.analog.com/Analog_Root/static/techSupport/designTools/spiceModels/license/spice_general.html for License Statement. Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+*
+* BEGIN Notes:
+*
+* Not Modeled:
+*     distortion is not characterized
+*     cmrr is not  characterized in this version.
+*
+* Parameters modeled include:
+*     closed loop gain and phase vs bandwidth
+*     output current and voltage limiting
+*     offset voltage (is  non-static, will  vary with gain)
+*     ibias (again, is static, will not vary with vcm)
+*     slew rate and step response performance
+*     (slew rate is based on 10-90% of step response)
+*     current on output will be reflected to the supplies 
+*     vnoise, is included in this version
+*     inoise, is included in this version
+*     Vocm is varable and include input typical offset
+*
+* END Notes:
+*
+* Node assignments
+*              	FD output negative
+*              	|   FD output positive
+* 		|   |    non-inverting input
+*		|   |    |    inverting input
+*		|   |    |    |   positive supply
+*		|   |    |    |   |   negative supply
+*		|   |    |    |   |   |    output positive
+*		|   |    |    |   |   |    |     output negative
+*		|   |    |    |   |   |    |     |     vocm input
+*		|   |    |    |   |   |    |     |     |
+.SUBCKT ADA4927 9b 3b    3a   9   99  50  71b    71   110
+
+***************Positive Input Stage********************
+
+I_I1            99 5 8E-4  
+Q_Q1        50 2 5 QX   
+V_Vos       2 3A 1.3E-3
+
+***************Negative Input Stage********************
+
+I_I2           99 6 8E-4  
+Q_Q2       50 9 6 QX
+
+****************Rail Clipping**************************
+
+D_DL+         75A 14B DX
+V_VL+         99 14B 1.7  
+D_DL          14C 75A DX
+V_VL          14C 50 1.7
+D_DL-         13B 76A DX
+V_VL-         13B 50 1.7
+D_DLb-        76A 13C DX
+V_VLb-        99 13C 1.7
+
+***************Input Capacitance***********************
+
+C_Cin         3A 9  0.2p      
+
+
+*************Dominant Pole-Zero Stage******************
+
+G_G1          13 14 5 6 5E-3
+C_C1          14 13  1f  
+C_C2          98 13  0.5p  
+C_C3          98 14  0.5p
+R_R11         98 13  RX 250k  
+R_R12         98 14  RX 250k  
+
+*****************Positive Pole Zero********************
+
+G_Gp1         0 75 14 98 1
+R_Rp1         75 0  RX 1  
+C_Cp1         0 75  3E-16  
+
+*****************Negative Pole Zero********************
+
+G_Gp2         0 76 13 98 1
+R_Rp2         76 0  RX 1  
+C_Cp2         0 76  3E-16
+
+*****************Negative Current Noise********************
+
+F_FNnoise         0 2 V_VNnoise 1
+V_VNnoise         0 500 0  
+D_DNnoise         0 500 Dnoise  
+R_RNnoise         0 500 Rnoise 40  
+
+*****************Positive Current Noise********************
+
+F_FPnoise         0 9 V_VPnoise 1
+V_VPnoise         0 501 0  
+D_DPnoise         0 501 Dnoise  
+R_RPnoise         0 501 Rnoise 40  
+
+*************Negative Output Stage*********************
+
+D_D17         76 84 DX
+V_VO1         84 70 0.977
+V_VO2         70 85 0.977
+D_D16         85 76 DX
+G_G30         70 99C 99 76 91E-3
+G_G31         98C 70 76 50 91E-3
+R_RO30        70 99C  RX 11  
+R_RO31        98C 70  RX 11 
+V_VIO1        99 99C 0V
+V_VIO2        98C 50 0V
+V_VIO3        70 71 0V
+
+*************Positive Output Stage********************* 
+
+D_D17b        75 84B DX
+V_VO1b        84B 70B 0.977
+V_VO2b        70B 85B 0.977
+D_D16b        85B 75 DX
+G_G30b        70B 99D 99 75 91E-3
+G_G31b        98D 70B 75 50 91E-3
+R_RO30b       70B 99D  RX 11  
+R_RO31b       98D 70B  RX 11
+V_VIOb1       99 99D 0V
+V_VIOb3       70B 71B 0V
+V_VIOb2       98D 50 0V 
+
+*******************VOCM Stage**************************
+
+G_Gcma        0 75 110 0 1
+G_Gcmb        0 76 110 0 1
+R_Rcm1        100 99  RX 400k 
+R_Rcm2        50 100  RX 400k
+V_Vofst       100 110 -1E-3
+
+*************VOCM Rail Clipping************************
+
+D_Docma       100 100A DX
+D_Docmb       100B 100 DX
+V_Vocmb       100B 50 2.3
+V_Vocma       99 100A 2.3
+
+*************Positive Supply Current Mirror************
+
+F_FO1         0 99 POLY(2) V_VIO1 V_VI1 -19.803E-3 1 -1
+F_FO2         0 50 POLY(2) V_VIO2 V_VI2 -19.803E-3 1 -1
+F_FO3         0 400 V_VIO1 1
+V_VI1         401 0 0V
+V_VI2         402 0 0V
+D_DM1         400 401 DX
+D_DM2         402 400 DX
+
+*************Negative Supply Current Mirror************
+
+F_FO1B        0 99 POLY(2) V_VIOb1 V_VIB1 -19.803E-3 1 -1
+F_FO2B        0 50 POLY(2) V_VIOb2 V_VIB2 -19.803E-3 1 -1
+F_FO3B        0 400B V_VIOb1 1
+V_VIB1        401B 0 0V
+V_VIB2        402B 0 0V
+D_DMB1        400B 401B DX
+D_DMB2        402B 400B DX
+
+******Reference Stage***************************
+
+E_Eref        98 0 POLY(2) 99 0 50 0 0 0.5 0.5 
+
+****************Buffer Stage***************************
+
+V_V3          76 76A 0
+V_V4          75 75A 0
+
+*** Feadback output ***
+
+Vfd+ 3b 71b 0
+Vfd- 9b 71  0
+ 
+*******************************************************
+.MODEL QX PNP (BF=228.57 Is=1E-15 KF=1E-14 AF=1)
+.ModEl DX D (Is=1E-15 KF=2E-14 AF=1)
+.MODEL RX Res (T_abs=-260)
+.ModEl Dnoise D (Is=1E-15 KF=2E-14 AF=1)
+.MODEL Rnoise Res 
+.ENDS
+*$
+;$SpiceType=AMBIGUOUS
+
+
+
+
+
