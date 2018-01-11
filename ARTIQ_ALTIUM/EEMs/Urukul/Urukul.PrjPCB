@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for Urukul
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -230,7 +230,7 @@ UniqueID=5014FADA-78CE-42B7-BEF1-27D882D7ECD8
 Description=AD9912
 AllowFabrication=0
 ParameterCount=0
-VariationCount=267
+VariationCount=268
 Variation1=Designator=C43B|UniqueId=\UCYIPTSN\LKDMCPHH|Kind=1|AlternatePart= 
 Variation2=Designator=C105D|UniqueId=\TEFEPBKP\UXVNVEJB|Kind=1|AlternatePart= 
 Variation3=Designator=C43D|UniqueId=\TEFEPBKP\LKDMCPHH|Kind=1|AlternatePart= 
@@ -498,6 +498,7 @@ Variation264=Designator=R69|UniqueId=\JBOQDPNK\AAPSQUHF|Kind=1|AlternatePart=
 Variation265=Designator=R77|UniqueId=\JBOQDPNK\OGLBVHQL|Kind=1|AlternatePart= 
 Variation266=Designator=R17|UniqueId=\JBOQDPNK\TUAKSKUV|Kind=1|AlternatePart= 
 Variation267=Designator=R22|UniqueId=\JBOQDPNK\DDFKYGWS|Kind=1|AlternatePart= 
+Variation268=Designator=R148|UniqueId=\EXDPRCSK\VEHMMABC|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -1008,7 +1009,7 @@ Variation291=Designator=R102|UniqueId=\JBOQDPNK\WBCERLAU|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for PCB_3U_DDS\Design Rule Check - PCB_3U_DDS.html
+DocumentPath=Project Outputs for Urukul\Design Rule Check - Urukul.html
 DItemRevisionGUID=
 
 [Configuration1]
@@ -1064,7 +1065,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for Urukul
 
 [OutputGroup1]
 Name=Netlist Outputs
