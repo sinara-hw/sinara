@@ -1,0 +1,24 @@
+##### NAT-MCH Configuration Script for ARTIQ Sinara #####
+# 11/20/2017 github.com/jbqubit
+
+# configuration file details and syntax is in NAT MCH user manual
+# http://www.nateurope.com/manuals/nat_mch_man_usr.pdf
+
+fw_ver = "V2.18"
+mch_id = 0
+mez_id = 0
+ins_id = 0
+
+# activate the payload power of unmanaged AMC modules (eg Sayma v1.0)
+# amc_pwr_on = fru_id, current_max, t_delay
+#    fru_id is 5,6,7...17 for AMCs 1,2,3...12  
+#    current_max in 100 mA steps
+#    t_delay is power on delay in 1 sec steps
+amc_pwr_on = 5, 40, 1 
+amc_pwr_on = 6, 40, 2
+amc_pwr_on = 7, 40, 3 
+amc_pwr_on = 8, 40, 4
+
+wd_exception_reset = 0
+wd_task_lost_reset = 0
+wd_shutdown_after_reset = 0	
