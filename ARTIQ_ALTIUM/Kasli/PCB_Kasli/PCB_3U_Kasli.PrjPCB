@@ -3,8 +3,6 @@ Version=1.0
 HierarchyMode=0
 ChannelRoomNamingStyle=0
 ReleasesFolder=
-ReleaseVaultGUID=
-ReleaseVaultName=
 ChannelDesignatorFormatString=$Component$ChannelAlpha
 ChannelRoomLevelSeperator=_
 OpenOutputs=1
@@ -33,6 +31,7 @@ FSMEncodingStyle=eFMSDropDownList_OneHot
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
+IncludeDesignInRelease=0
 
 [Preferences]
 PrefsVaultGUID=
@@ -429,7 +428,7 @@ Variation25=Designator=R11|UniqueId=\OIQTLDDY\CLOOITTT|Kind=1|AlternatePart=
 Variation26=Designator=R43|UniqueId=\GNHKTQUG\KDGDSGUR|Kind=1|AlternatePart= 
 Variation27=Designator=W1|UniqueId=\OIQTLDDY\HFESLCWH|Kind=1|AlternatePart= 
 Variation28=Designator=J25|UniqueId=\XHDMXMMK\LMMGTJCO|Kind=0|AlternatePart= 
-Variation29=Designator=J20|UniqueId=\ESOUUFNI\FEOHVUOT|Kind=1|AlternatePart= 
+Variation29=Designator=J20|UniqueId=\ESOUUFNI\FEOHVUOT|Kind=0|AlternatePart= 
 Variation30=Designator=J24|UniqueId=\TCPEGTAL\MDYYLENS|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
@@ -610,18 +609,20 @@ Name=Default Configuration
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
-CurrentRevision=
 Variant=[No Variations]
 OutputJobsCount=0
+ContentTypeGUID=
+ConfigurationType=
 
 [Configuration2]
 Name=Default Configuration
 ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
-CurrentRevision=
 Variant=[No Variations]
 OutputJobsCount=0
+ContentTypeGUID=
+ConfigurationType=
 
 [Generic_EDE]
 OutputDir=
@@ -629,134 +630,109 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=PCADNetlist
 OutputName1=PCAD Netlist
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=XSpiceNetlist
-OutputName2=XSpice Netlist
+OutputType2=CadnetixNetlist
+OutputName2=Cadnetix Netlist
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=CadnetixNetlist
-OutputName3=Cadnetix Netlist
+OutputType3=CalayNetlist
+OutputName3=Calay Netlist
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
-OutputType4=CalayNetlist
-OutputName4=Calay Netlist
+OutputType4=EDIF
+OutputName4=EDIF for PCB
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
-OutputType5=EDIF
-OutputName5=EDIF for PCB
+OutputType5=EESofNetlist
+OutputName5=EESof Netlist
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-OutputType6=EESofNetlist
-OutputName6=EESof Netlist
+OutputType6=IntergraphNetlist
+OutputName6=Intergraph Netlist
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-OutputType7=IntergraphNetlist
-OutputName7=Intergraph Netlist
+OutputType7=MentorBoardStationNetlist
+OutputName7=Mentor BoardStation Netlist
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
-OutputType8=MentorBoardStationNetlist
-OutputName8=Mentor BoardStation Netlist
+OutputType8=MultiWire
+OutputName8=MultiWire
 OutputDocumentPath8=
 OutputVariantName8=
 OutputDefault8=0
-OutputType9=MultiWire
-OutputName9=MultiWire
+OutputType9=OrCadPCB2Netlist
+OutputName9=Orcad/PCB2 Netlist
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=OrCadPCB2Netlist
-OutputName10=Orcad/PCB2 Netlist
+OutputType10=Pcad
+OutputName10=Pcad for PCB
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
-OutputType11=Pcad
-OutputName11=Pcad for PCB
+OutputType11=PCADnltNetlist
+OutputName11=PCADnlt Netlist
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=PCADnltNetlist
-OutputName12=PCADnlt Netlist
+OutputType12=Protel2Netlist
+OutputName12=Protel2 Netlist
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
-OutputType13=Protel2Netlist
-OutputName13=Protel2 Netlist
+OutputType13=ProtelNetlist
+OutputName13=Protel
 OutputDocumentPath13=
 OutputVariantName13=
 OutputDefault13=0
-OutputType14=ProtelNetlist
-OutputName14=Protel
+OutputType14=RacalNetlist
+OutputName14=Racal Netlist
 OutputDocumentPath14=
 OutputVariantName14=
 OutputDefault14=0
-OutputType15=RacalNetlist
-OutputName15=Racal Netlist
+OutputType15=RINFNetlist
+OutputName15=RINF Netlist
 OutputDocumentPath15=
 OutputVariantName15=
 OutputDefault15=0
-OutputType16=RINFNetlist
-OutputName16=RINF Netlist
+OutputType16=SciCardsNetlist
+OutputName16=SciCards Netlist
 OutputDocumentPath16=
 OutputVariantName16=
 OutputDefault16=0
-OutputType17=SciCardsNetlist
-OutputName17=SciCards Netlist
+OutputType17=TangoNetlist
+OutputName17=Tango Netlist
 OutputDocumentPath17=
 OutputVariantName17=
 OutputDefault17=0
-OutputType18=TangoNetlist
-OutputName18=Tango Netlist
+OutputType18=TelesisNetlist
+OutputName18=Telesis Netlist
 OutputDocumentPath18=
 OutputVariantName18=
 OutputDefault18=0
-OutputType19=TelesisNetlist
-OutputName19=Telesis Netlist
+OutputType19=WireListNetlist
+OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=WireListNetlist
-OutputName20=WireList Netlist
-OutputDocumentPath20=
-OutputVariantName20=
-OutputDefault20=0
-OutputType21=PADSNetlist
-OutputName21=PADS ASCII Netlist
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=Verilog
-OutputName22=Verilog File
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
-OutputType23=VHDL
-OutputName23=VHDL File
-OutputDocumentPath23=
-OutputVariantName23=
-OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -811,77 +787,23 @@ OutputDocumentPath8=
 OutputVariantName8=
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4
-OutputType9=Wave Print
-OutputName9=Wave Prints
+OutputType9=PDF3D
+OutputName9=PDF3D
 OutputDocumentPath9=
-OutputVariantName9=
+OutputVariantName9=[No Variations]
 OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4
-OutputType10=WaveSim Print
-OutputName10=WaveSim Prints
+PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType10=PCBDrawing
+OutputName10=Draftsman
 OutputDocumentPath10=
-OutputVariantName10=
+OutputVariantName10=[No Variations]
 OutputDefault10=0
-PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4
-OutputType11=PDF3D
-OutputName11=PDF3D
-OutputDocumentPath11=
-OutputVariantName11=[No Variations]
-OutputDefault11=0
-PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType12=PCBDrawing
-OutputName12=Draftsman
-OutputDocumentPath12=
-OutputVariantName12=[No Variations]
-OutputDefault12=0
-PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType13=Assembler Source Print
-OutputName13=Assembler Source Prints
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType14=C Source Print
-OutputName14=C Source Prints
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType15=C/C++ Header Print
-OutputName15=C/C++ Header Prints
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-PageOptions15=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType16=C++ Source Print
-OutputName16=C++ Source Prints
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-PageOptions16=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType17=FSM Print
-OutputName17=FSM Prints
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
-PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType18=OpenBus Print
-OutputName18=OpenBus Prints
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType19=VHDL Print
-OutputName19=VHDL Prints
-OutputDocumentPath19=
-OutputVariantName19=
-OutputDefault19=0
-PageOptions19=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -903,7 +825,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -975,7 +897,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=SimpleBOM
 OutputName1=Simple BOM
@@ -1026,7 +948,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -1206,7 +1128,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Design Rules Check
 OutputName1=Design Rules Check
@@ -1245,7 +1167,7 @@ OutputDefault6=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=HP-LAB230 (HP LaserJet M1536dnf MFP)
+TargetPrinter=Canon MG3600 series Printer WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -1267,11 +1189,42 @@ OutputName4=Export STEP
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
-OutputType5=NetList Sch
-OutputName5=NetList Sch
+OutputType5=ExportPARASOLID
+OutputName5=Export PARASOLID
 OutputDocumentPath5=
-OutputVariantName5=
+OutputVariantName5=[No Variations]
 OutputDefault5=0
+OutputType6=ExportVRML
+OutputName6=Export VRML
+OutputDocumentPath6=
+OutputVariantName6=[No Variations]
+OutputDefault6=0
+OutputType7=Save As/Export PCB
+OutputName7=Save As/Export PCB
+OutputDocumentPath7=
+OutputVariantName7=
+OutputDefault7=0
+OutputType8=Save As/Export Schematic
+OutputName8=Save As/Export Schematic
+OutputDocumentPath8=
+OutputVariantName8=
+OutputDefault8=0
+OutputType9=Specctra Design PCB
+OutputName9=Specctra Design PCB
+OutputDocumentPath9=
+OutputVariantName9=
+OutputDefault9=0
+
+[OutputGroup10]
+Name=PostProcess Outputs
+Description=
+TargetPrinter=Canon MG3600 series Printer WS
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputType1=Copy Files
+OutputName1=Copy Files
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
 
 [Modification Levels]
 Type1=1
@@ -1354,6 +1307,37 @@ Type77=1
 Type78=1
 Type79=1
 Type80=1
+Type81=1
+Type82=1
+Type83=1
+Type84=1
+Type85=1
+Type86=1
+Type87=1
+Type88=1
+Type89=1
+Type90=1
+Type91=1
+Type92=1
+Type93=1
+Type94=1
+Type95=1
+Type96=1
+Type97=1
+Type98=1
+Type99=1
+Type100=1
+Type101=1
+Type102=1
+Type103=1
+Type104=1
+Type105=1
+Type106=1
+Type107=1
+Type108=1
+Type109=1
+Type110=1
+Type111=1
 
 [Difference Levels]
 Type1=1
@@ -1401,6 +1385,23 @@ Type42=1
 Type43=1
 Type44=0
 Type45=1
+Type46=1
+Type47=1
+Type48=1
+Type49=1
+Type50=1
+Type51=1
+Type52=1
+Type53=1
+Type54=1
+Type55=1
+Type56=1
+Type57=1
+Type58=1
+Type59=1
+Type60=1
+Type61=1
+Type62=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1514,6 +1515,16 @@ Type108=2
 Type109=1
 Type110=1
 Type111=1
+Type112=1
+Type113=1
+Type114=2
+Type115=2
+Type116=2
+Type117=3
+Type118=3
+Type119=3
+MultiChannelAlternate=2
+AlternateItemFail=3
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
@@ -2442,7 +2453,7 @@ ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=
 ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=0|InclAllRules=0
-ComparisonOptions5=Kind=Code Memory|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4
