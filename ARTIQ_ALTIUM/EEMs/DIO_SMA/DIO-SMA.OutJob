@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=DIO-SMA.OutJob
 Description=
 TargetOutputMedium=Folder Structure
 VariantName=SMD_DCDC
@@ -102,7 +102,7 @@ Configuration4_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full
 Configuration4_Name7=OutputConfigurationParameter7
 Configuration4_Item7=IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=2|Mirror=False|Name=Mid1|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False
 Configuration4_Name8=OutputConfigurationParameter8
-Configuration4_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=InternalPlane1|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer
+Configuration4_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=MidLayer1|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer
 Configuration4_Name9=OutputConfigurationParameter9
 Configuration4_Item9=IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=3|Mirror=False|Name=MId2|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False
 Configuration4_Name10=OutputConfigurationParameter10
@@ -263,9 +263,9 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\EEMs\DIO_SMA\Project Outputs for DIO-MA\
+OutputFilePath3=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\EEMs\DIO_SMA\Project Outputs for DIO-SMA\
 ReleaseManaged3=0
-OutputBasePath3=Project Outputs for DIO-MA\
+OutputBasePath3=Project Outputs for DIO-SMA\
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=[Output Type]
@@ -278,7 +278,7 @@ OutputFileNameSpecial3=
 OpenOutput3=0
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for PCB_3U_SMA
+OutputBasePath4=Project Outputs for DIO_SMA
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -317,7 +317,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\EEMs\DIO_SMA\.\3U_SMA.PDF
 OpenOutputs2=1
-RelativeOutputPath3=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\EEMs\DIO_SMA\Project Outputs for DIO-MA\
+RelativeOutputPath3=D:\Dropbox\DESIGNS\MTCA_projects\SINARA\ARTIQ_ALTIUM\EEMs\DIO_SMA\Project Outputs for DIO-SMA\
 OpenOutputs3=0
 AddToProject3=0
 TimestampFolder3=0

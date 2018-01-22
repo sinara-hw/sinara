@@ -242,44 +242,69 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VHNQPASN
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_ADC.DXF
+[Document13]
+DocumentPath=PANEL_HD68-IDC_Adapter.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
 DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AHMDEGMN
 
-[GeneratedDocument2]
+[GeneratedDocument1]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_BNC.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument3]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\Panel_3U_CLK_DIS.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument4]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_DAC.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument5]
-DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_DDS.DXF
-DItemRevisionGUID=
-
-[GeneratedDocument6]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_KASLI.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_RJ45.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_SMA.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_Tester.DXF
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_3U_VHDCI_Breakout.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_DAC_BNC_Adapter.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\PANEL_HD68-IDC_Adapter.DWG
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\Panel_Urukul.DXF
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for PANELS\AutoCAD PCB\Sampler.DXF
 DItemRevisionGUID=
 
 [Configuration1]

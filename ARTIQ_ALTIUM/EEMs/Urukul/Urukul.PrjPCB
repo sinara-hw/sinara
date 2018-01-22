@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for Urukul
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -56,7 +56,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MJNKMGWL
 
 [Document2]
-DocumentPath=PCB_3U_DDS.OutJob
+DocumentPath=Urukul.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1065,7 +1065,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for Urukul
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
