@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for Zotino
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -178,7 +178,7 @@ ContentTypeGUID=
 ConfigurationType=
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for Zotino
 
 [OutputGroup1]
 Name=Netlist Outputs
