@@ -1,0 +1,39 @@
+\section{Housekeeping Signals}
+\subsection{sensors}
+Temperature:\\
+%\begin{itemize}
+%	\item IC8 (0x4B) -NOR Flash
+%	\item IC34 (0x49) -FPGA
+%	\item IC35 (0x4A)-under SFPs
+%	\item IC36 (0x4F)-power section
+%	\item IC37 (0x24) -middle od the board
+%\end{itemize}
+\begin{longtable}{|c|c|c|c|c|}\hline
+	No & Addr. & placement & Type & Accuracy \\ \hline
+	IC8 & 0x4B & NOR Flash & LM75 & +/- 2 \\ \hline
+	IC34 & 0x49 & FPGA & LM75 & +/- 2  \\ \hline
+	IC35 & 0x4A & Under SFPs & LM75 & +/- 2  \\ \hline	
+	IC36 & 0x4F & power section & LM75 & +/- 2  \\ \hline
+	IC37 & 0x24 & middle of the board & MAX664A & +/- 1 \\ \hline
+\end{longtable}
+
+All temperature sensors are tied tohether to one I2C bus - I2C\_SENS. \\
+
+
+Current:
+%\begin{itemize}
+%	\item IC27 (0x40)-RTM\_P12V0
+%	\item IC28 (0x41)-FMC\_P12V0
+%\end{itemize}
+\begin{longtable}{|c|c|c|c|c|}\hline
+		No & Addr. & placement & Type & Accuracy \\ \hline
+		IC27 & 0x40 &RTM\_P12V0& INA219 & +/- 0.2\% \\ \hline
+		IC28 & 0x41 &FMC\_P12V0& INA219 & +/- 0.2\% \\ \hline
+\end{longtable}
+
+
+All current sensors are tied tohether to one I2C bus - PM\_I2C. \\
+
+\subsection{Safety interlocks}
+
+\todo[inline]{TBD OVERTEMPn}
