@@ -1,0 +1,92 @@
+%\section{Project description}
+%	
+%The Sayma AMC is a Advanced Mezzanine Card carrier board to carry FMC cards and connect RTM modules.
+%
+%	
+
+\section{Functional specifications}
+
+\noindent
+
+\textbf{Programmable resources:}
+
+\begin{itemize}
+\item Xilinx Kintex UltraScale – XCKU040-1FFVA-1156C    FPGA
+	\begin{itemize}
+		\item speed grade: -1
+		\item 20 GTH transceivers (Max Preformance 16.3 Gb/s)
+	\end{itemize}
+\item MMC: LPC17762984
+\end{itemize}	
+
+\textbf{Memory:}
+
+\begin{itemize}
+	\item 512Mb  DDR3 SDRAM (32-bit interface), 800MHz (clock)
+	\item 1Gb  DDR3 SDRAM (64-bit interface), 800MHz (clock)
+	\item SPI Flash for FPGA configuration. Accessible by MMC
+	\item SPI Flash for user data storage
+	\item EEPROM with MAC and unique ID 
+	
+\end{itemize}
+
+\textbf{Connectivity:}
+
+\begin{itemize}
+	\item 1 high pin count (HPC) FMC slot for single width mezzanine card
+	\item Micro-USB UART connected to FPGA or MMC
+	\item Stand-alone 12V power connector 
+	\item MGT (Multi-Gigabit Transceiver) connected to:
+	\begin{itemize}
+%		\item FMC x1
+		\item RTM x16
+		\item Fat\_Pipe1 x2
+%		\item AMC P2P x4
+%		\item Port 0 – possibility connected to SATA
+		\item SFP x2
+	\end{itemize}
+%	\item RTM connector with 8 GTP routed to it. Compatible with Sayma RTM module.
+	\item  Port 0 – possibility connected to SATA
+	\item RTM connector compatible with Sayma RTM module
+	
+\end{itemize}
+
+\textbf{Supply:}
+
+\begin{itemize}
+	\item Monitoring of voltage and Power supply for RTM 12V and FMC 12V
+	\item FMC VADJ fixed to 1V8
+	\item Monitoring current of all FMC buses
+	\item Stand-alone power connectore
+%	\item Czy Exar monitoruje powera? 
+	
+\end{itemize}
+
+
+\textbf{Clocking:}
+
+\begin{itemize}
+	\item Clock recovery Si5324
+	\item UFL CLK input
+	\item SMA CLK output
+ 
+	
+\end{itemize}
+
+
+\textbf{Other:}
+
+\begin{itemize}
+	\item Temperature, voltage and current monitoring for critical power buses
+	\item Temperature monitoring: FMC1, supply, FPGA core, DDR memory
+	\item JTAG multiplexer (SCANSTA) for FMC access, local JTAG port and remote debug/Chipscope via Ethernet
+	
+\end{itemize}
+
+
+
+
+
+
+
+

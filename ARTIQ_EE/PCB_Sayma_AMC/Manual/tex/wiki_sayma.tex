@@ -1,0 +1,153 @@
+\section{Sayma Smart Arbitrary Waveform
+Generator}\label{sayma-smart-arbitrary-waveform-generator}
+
+Sayma is a smart arbitrary waveform generator, providing 8 channels of
+1.2 GSPS 16-bit DACs (2.4 GHz DAC clock) and 125 MSPS 16-bit ADCs. It
+consists of an AMC, providing the high-speed digital logic, and a RTM,
+holding the data converters and analog components.
+
+The design files are located in
+\href{https://github.com/m-labs/sinara/tree/master/ARTIQ_EE/PCB_Sayma_AMC}{ARTIQ\_EE/PCB\_Sayma\_AMC}
+and
+\href{https://github.com/m-labs/sinara/tree/master/ARTIQ_EE/PCB_Sayma_RTM}{ARTIQ\_EE/PCB\_Sayma\_RTM}
+and, the AMC schematic is
+\href{https://github.com/m-labs/sinara/blob/master/ARTIQ_EE/Sayma_AMC.pdf}{here}
+and the RTM schematic is
+\href{https://github.com/m-labs/sinara/blob/master/ARTIQ_EE/Sayma_RTM.pdf}{here}.
+The PCBs are double width, mid height AMC module. Sayma AMC
+
+\subsection{Features}\label{features}
+
+\begin{itemize}
+
+\item
+  May be used in a uTCA rack or stand-alone operation with fibre-based
+  DRTIO link
+\item
+  Analog input and output front-ends provided by plug-in
+  \href{SaymaAFE}{analog front-end modules} (eg BaseMod) for maximum
+  flexibility.
+\item
+  Extremely flexible \href{SinaraClocking}{clocking options}
+\item
+  Flexible feedback to SAWG parameters planned. Specification
+  \href{Servo}{here}.
+\end{itemize}
+
+\subsection{Key AMC Components}\label{key-amc-components}
+
+\begin{itemize}
+
+\item
+  \textbf{FPGA}: XCKU040-1FFVA1156C Kintex Ultrascale, 520 I/O, 530K
+  Logic Cells, Speed Grade 1, 20 GTH transceivers (up to 16.3 Gb/s) --
+  motivation for this FPGA choice is
+  \href{https://github.com/m-labs/sinara/wiki/artiq_hardware\#recommendation}{here}
+\item
+  \textbf{DRAM}: MT41K256M16TW-107:P, DDR3, 32 MB x 16 x 8 banks = 4 GB
+\item
+  \textbf{clock recovery}: Si5324 is a precision clock multiplier and
+  jitter attenuator
+\end{itemize}
+
+\subsection{Key RTM Components}\label{key-rtm-components}
+
+\begin{itemize}
+
+\item
+  \textbf{DAC}: AD9154 4-channel high-speed data converter
+
+  \begin{itemize}
+
+  \item
+    data rate is 1.2 GS/s at 16-bit
+  \item
+    clock is up to 2.4 GHz (1x, 2x, 4x and 8x interpolating modes)
+  \item
+    supports mix-mode to emphasize power in 3rd Nyquist Zone
+  \item
+    interface is 8-lane JESD204B (subclass 1)
+  \item
+    power consumption is 2.11 W
+  \item
+    each Sayma has 2 AD9154
+  \end{itemize}
+\item
+  \textbf{ADC}: AD9656 is a 4-channel high-speed digitizer
+
+  \begin{itemize}
+
+  \item
+    data rate is 125 MS/s at 16-bit
+  \item
+    clock is up to 125 MHz
+  \item
+    650 MHz analog bandwidth
+  \item
+    interface is 8-lane, 8 Gb/s per lane, JESD204B (subclass 1)
+  \item
+    each Sayma has 2 AD9656
+  \end{itemize}
+\item
+  \textbf{clock generation}: (summarized \href{SinaraClocking}{here})
+
+  \begin{itemize}
+
+  \item
+    Sayma has several distinct clock domains
+
+    \begin{itemize}
+
+    \item
+      DAC, JESB204B output clock
+    \item
+      ADC, JESD204B input clock
+    \item
+      LO for analog mezzanines
+    \end{itemize}
+  \item
+    These clocks may be generated using a low phase noise
+    \href{ClockMezzanines}{Clock Mezzanine} PCB. A single Clock
+    Mezzanine can be shared by several Sayma in a uTCA crate using
+    {[}Baikal{]} PCB and an RTM RF backplane. Alternately, each Sayma
+    can have its own distinct Clock Mezzanine (local generation).
+  \end{itemize}
+\item
+  \textbf{clock distribution}
+
+  \begin{itemize}
+
+  \item
+    HMC7043 SPI 14-Output Fanout Buffer for JESD204B
+  \item
+    HMC830 SPI fractional-N PLL
+  \end{itemize}
+\item
+  \textbf{calibration ADC}: AD7194BCPZ is a 20-bit ADC for
+  monitoring/calibration
+\end{itemize}
+
+\subsection{Transceiver/connector
+usage}\label{transceiverconnector-usage}
+
+\begin{itemize}
+
+\item
+  SFP1: DRTIO downstream
+\item
+  SFP2: DRTIO downstream
+\item
+  SATA1: DRTIO upstream (different bitstream probably)
+\item
+  SATA2 (swapped): DRTIO downstream
+\item
+  FAT\_PIPE1 (FABRICD): DRTIO upstream
+\item
+  FAT\_PIPE2 (FABRICE): not used
+\item
+  FMC:
+\item
+  LA: FMC DIO32: TTL IO
+\end{itemize}
+
+
