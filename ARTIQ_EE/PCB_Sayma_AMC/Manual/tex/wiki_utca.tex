@@ -1,4 +1,4 @@
-\section{Overview}\label{overview}
+\section{uTCA.4 Overview}
 
 MicroTCA (uTCA) is Sinara's preferred form-factor for hardware with
 high-speed data converters requiring deterministic phase control, such
@@ -11,7 +11,7 @@ TCA Carrier Hub (MCH) -- to control multiple slave boards, known as
 Advanced Mezzanine Cards (AMCs) via a high-speed digital backplane. uTCA
 chassis and backplanes are available commercially of the shelf (COTS).
 
-We make use of the most recent extension to the uTCA standard, uTCA.4.
+We make use one of the most recent extension to the uTCA standard, uTCA.4.
 Originating in the high-energy and particle physics (HEPP) community,
 uTCA.4 introduces rear-transition modules (RTMs) along with a second
 backplane for low-noise RF signals (RFBP). Each RTM connects to an AMC
@@ -25,9 +25,11 @@ high-speed digital logic.
 
 \begin{figure}[htbp!]
 \centering
-\includegraphics[width=15cm]{img/MTCA_Front.jpg}
+\includegraphics[width=15cm]{img/MTCA_Front1.jpg}
 \caption{Micro TCA chassis with 3 Sayma AMC modules inserted}
 \end{figure}
+
+\todo[inline]{New Figure: add photo of Sayma\_AMC attached to Sayma\_RTM sitting on bench so how they're connected is clear.}
 
 (above) Micro TCA chassis with 3 Sayma AMC modules inserted.
 
@@ -41,33 +43,32 @@ BaseMod AFE mezzanines installed.
 4 BaseMod AFE mezzanines installed.}
 \end{figure}
 
-\section{uTCA.4 RF Backplane}\label{utca.4-rf-backplane}
 
-\href{http://mtca.desy.de/sites/site_mtca/content/e172206/e205636/e212584/e248086/uRFB_concept_Datasheet_19.12.2014_eng.pdf}{RF
+\href{http://www.nateurope.com/products/NAT-LLRF-Backplane.html}{RF
 BP datasheet}
-\href{http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7097413\&tag=1}{RF
-BP measurements}
 
-\section{uTCA in Sinara}\label{utca-in-sinara}
 
-\href{Metlino}{\emph{Metlino}} has been developed as an MCH optimised
-for use in Sinara. It can either be the ARTIQ master or a slave,
-connected to the master via DRTIO.
-
-uTCA hardware interfaces with the extension modules either directly,
-using a \href{VHDCICarrier}{VHDCI carrier}, or indirectly, using a Kasli
-DRTIO slave.
-
-To do: * Some images to illustrate what uTCA systems look like * Explain
-how Baikal etc fit in * Add BP schematics that show what the
-connectivity is * Any more useful information?
 
 \section{uTCA parts and suppliers}\label{utca-parts-and-suppliers}
 
-Add parts and suppliers from the issues list\ldots{}
+\begin{itemize}
+\item NAT AC 600D, qty 1
+\item NAT MCH-Basic v3.5, mid-size front panel, qty 1
+\item NAT Native-R5, qty 1
+\end{itemize}
 
 \section{Schematic / Layout Viewer}\label{schematic-layout-viewer}
 
+
+Hardware was designed under Mentor Graphics Xpedition Enterprise and Altium Designer CAD tools.
+Project resources are in two separate folders:
+\begin{itemize}
+	\item ARTIQ\_EE folder is for designs made with the Mentor Graphics Xpedition Enterprise CAD tool.
+	\item ARTIQ\_ALTIUM folder is for designs made with Altium Designer CAD tool.
+\end{itemize}
+Read-only access to PCB schematics and layout designs is possible using free tools.\\
 Mentor has a free tool called
 \href{https://www.mentor.com/pcb/downloads/visecad-viewer/}{visECAD
-Viewer}.
+Viewer}.\\
+Altium has a free tool called 
+\href{http://www.altium.com/altium-designer-viewer}{Altium Designer viewer}

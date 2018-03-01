@@ -1,4 +1,6 @@
 \section{Housekeeping Signals}
+Both MMC and FPGA can acces to any of I2C buses as is in Figure \ref{I2C}. MMC collects all data from all sensors connected to I2C bus. Then the data can be transfered via IPMI to MCH. For now MCH get only information about AMC and RTM to allow power supply.
+
 \subsection{sensors}
 Temperature:\\
 %\begin{itemize}
@@ -17,7 +19,7 @@ Temperature:\\
 	IC37 & 0x24 & middle of the board & MAX664A & +/- 1 \\ \hline
 \end{longtable}
 
-All temperature sensors are tied tohether to one I2C bus - I2C\_SENS. \\
+All temperature sensors are tied tohether to one I2C bus - SENS\_I2C. \\
 
 
 Current:
@@ -36,4 +38,5 @@ All current sensors are tied tohether to one I2C bus - PM\_I2C. \\
 
 \subsection{Safety interlocks}
 
-\todo[inline]{TBD OVERTEMPn}
+
+Temperature interlock is available on RTM board only and gets activated after reaching 80 degrees. This is hardware interlock and cannot be deactivated. Dedicated LED (LD15) gets on and RTM power supply is off until the temperature is exceeded

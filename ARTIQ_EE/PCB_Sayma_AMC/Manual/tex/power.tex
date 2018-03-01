@@ -1,13 +1,15 @@
 \section{Power}
 \subsection{Power supply}
-
+The card can operate as stand alone devide, or plugged into a uTCA crate. While working standalone the power is provided by Molex Connector(39-28-1043) -J4. The pinout is shown in Figure  \ref{power}.\\
+When the card is inserted to the crate the power is applied from AMC connector -J2, +12V (8 power lines) and +3.3\_MP(1 line).
+At the begening +3.3\_MP power up the MMC, then +12 is converted to lower voltages, simplified power map is in figure \ref{powermap}. All on board voltages (exept P3V3\_MP) are enabled by MMC. There are two types of power distributors, fixed LDOs and Exar chip - quad channel digital Pulse Width Modulated (PWM) step down (buck) controller. Exar allows for adjust power parameters and for set particular power oorder. Exar firmware monitors current and responds if its too high.  Additionaly all LDOs have connected PowerGood outputs so it is possible to read the proper state of all power busses. 
+\todo[inline]{TBD Can MMC readout Exar debug information?}
 \todo[inline]{TBD voltage noise}
-The 12V power can be connected either from AMC connector or from Stand alone power supply connected to Molex Connector(39-28-1043).
 
 	\begin{figure}[htbp!]
 		\centering
 		\includegraphics[scale=0.2]{img/molex.jpg}\\
-		\caption{Power connector} 
+		\caption{Power connector} \label{power}
 	\end{figure}
 \begin{center}
 \begin{tabular}{|c|c|} \hline
@@ -27,6 +29,28 @@ Maximum board(AMC+RTM module) power consumption estimate to 3A @ 12V.\\
 \item The board needs active cooling. Approx. 20CFM in 20 C air.\\
 
 \end{itemize}
+
+Exar chips are configured via PM\_I2C bus (I2CMUX5) or directly by connecting to W1 (call-out 28) header. For proper configuration \textbf{Exar Power Architect} in version \textbf{5.2-r1} is needed.
+% Configuration files can be found at github in folder \href{https://github.com/m-labs/sinara/tree/master/EXAR\_config}{m-labs/sinara/Exar\_config}\\
+
+\noindent
+\textbf{Exar Power Archtect 5.2-r1:}
+\href{https://www.exar.com/content/document.ashx?id=21632}{https://www.exar.com/content/document.ashx?id=21632}\\
+\textbf{Configuration files:}
+\href{https://github.com/m-labs/sinara/tree/master/EXAR\_config}{https://github.com/m-labs/sinara/tree/master/EXAR\_config}\\
+\textbf{Datasheet:}\href{https://www.exar.com/ds/xr77129_1a_120514.pdf}{https://www.exar.com/ds/xr77129\_1a\_120514.pdf}\\
+\textbf{Quick Start Guide:} \href{https://www.exar.com/files/powerxr/PA5-QSG_110_010614.pdf}{https://www.exar.com/files/powerxr/PA5-QSG\_110\_010614.pdf}\\
+
+
+Actual voltages and current consumption, temperature can be found in Chip Dashboard. There is also oportunity to adjust settings.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[scale=0.6]{img/exarprog.png}\\
+	\caption{Chip Dashboard} 
+\end{figure}
+
+
 \subsection{Power configuration} 
 
 \subsubsection{Power map}
@@ -35,7 +59,7 @@ Maximum board(AMC+RTM module) power consumption estimate to 3A @ 12V.\\
 	\begin{figure}[htbp!]
 		\centering
 		\includegraphics[scale=0.3]{img/pwr.eps}\\
-		\caption{Power map} 
+		\caption{Power map} \label{powermap}
 	\end{figure}
 \clearpage	
 
@@ -60,43 +84,46 @@ P5V0 & 5.0V & 0.5A\\ \hline
 	
 \subsubsection{Exar parameters}
 
-Exar chip has 4 configurable outputs with configirable current limits. Channels 1, 3, 4 are power un on chip enable with 10ms delay. Channel 2 is power on 'EN\_PSU\_CH' signal. \\
-%3V3 LDO is power on independently. \\
+Exar chip(XR77129) has 4 configurable outputs with configirable current limits. Each channel can be confugured individually. It is possible to set voltage, current limit and power sequencing. In Figure \ref{exar1} we can see that main power supply is 12V, Under Voltage Lockout(UVLO) is set to 6V, so below this value chip will shutdown all channels. When the temperature rise under Over Temperature Protection (OTP) 105 degrees, the chip will generate warning event and restart. \\
+All 4 channells can be grouped together and will start-up and shut-down in an user defined sequwnce. Selecting none means channels will not be assigned to any group and therefore, will be controlled independently. Group 0 is controlled by ENABLE or PM\_I2C command. Group 1 can be controlled by GPIO or by PM\_I2C command. By selecting 'Wait PGOOD' next channel will not power up untill current channel reaches the target level. Delay is an additional delay time which postpone after power up one and another channel in group.\\
+In on-going Exar configuration - Figure \ref{exar2}, power sequencing looks like this: After Enable from MMC P1V0 start-up, after it reaches proper value, Exar waits 10ms and turn ramp up another channel in this group - P1V8. In the same order is ramp up last channel in this group. Finally on command 'EN\_PSU\_CH' P3V3 ramp up.
+
+
 
 	\begin{figure}[htbp!]
 		\centering
-		\includegraphics[scale=0.6]{img/exar1.png}\\
-		\caption{Exar configuration} 
+		\includegraphics[scale=0.5]{img/exar1.png}\\
+		\caption{Exar configuration} \label{exar1}
 	\end{figure}
 	
 	\begin{figure}[htbp!]
 		\centering
-		\includegraphics[scale=0.6]{img/exar2.png}\\
-		\caption{Exar power on delays} 
+		\includegraphics[scale=0.5]{img/exar2.png}\\
+		\caption{Exar power on delays} \label{exar2}
 	\end{figure}	
 	
 \clearpage	
 
 
-\subsubsection{Exar configuration}
-Exar chips are configured via I2C bus (MUX Port 5) or directly by connecting to W1 (call-out 28) header. For proper configuration \textbf{Exar Power Architect} in version \textbf{5.2-r1} is needed.
-% Configuration files can be found at github in folder \href{https://github.com/m-labs/sinara/tree/master/EXAR\_config}{m-labs/sinara/Exar\_config}\\
-
-\noindent
-\textbf{Exar Power Archtect 5.2-r1:}
-\href{https://www.exar.com/content/document.ashx?id=21632}{https://www.exar.com/content/document.ashx?id=21632}\\
-\textbf{Configuration files:}
-\href{https://github.com/m-labs/sinara/tree/master/EXAR\_config}{https://github.com/m-labs/sinara/tree/master/EXAR\_config}\\
-\textbf{Datasheet:}\href{https://www.exar.com/ds/xr77129_1a_120514.pdf}{https://www.exar.com/ds/xr77129\_1a\_120514.pdf}\\
-\textbf{Quick Start Guide:} \href{https://www.exar.com/files/powerxr/PA5-QSG_110_010614.pdf}{https://www.exar.com/files/powerxr/PA5-QSG\_110\_010614.pdf}\\
-
-
-Actual voltages and current consumption, temperature can be found in Chip Dashboard. There is also oportunity to adjust settings.
-
-	\begin{figure}[htbp!]
-		\centering
-		\includegraphics[scale=0.6]{img/exarprog.png}\\
-		\caption{Chip Dashboard} 
-	\end{figure}
-
+%\subsubsection{Exar configuration}
+%Exar chips are configured via I2C bus (MUX Port 5) or directly by connecting to W1 (call-out 28) header. For proper configuration \textbf{Exar Power Architect} in version \textbf{5.2-r1} is needed.
+%% Configuration files can be found at github in folder \href{https://github.com/m-labs/sinara/tree/master/EXAR\_config}{m-labs/sinara/Exar\_config}\\
+%
+%\noindent
+%\textbf{Exar Power Archtect 5.2-r1:}
+%\href{https://www.exar.com/content/document.ashx?id=21632}{https://www.exar.com/content/document.ashx?id=21632}\\
+%\textbf{Configuration files:}
+%\href{https://github.com/m-labs/sinara/tree/master/EXAR\_config}{https://github.com/m-labs/sinara/tree/master/EXAR\_config}\\
+%\textbf{Datasheet:}\href{https://www.exar.com/ds/xr77129_1a_120514.pdf}{https://www.exar.com/ds/xr77129\_1a\_120514.pdf}\\
+%\textbf{Quick Start Guide:} \href{https://www.exar.com/files/powerxr/PA5-QSG_110_010614.pdf}{https://www.exar.com/files/powerxr/PA5-QSG\_110\_010614.pdf}\\
+%
+%
+%Actual voltages and current consumption, temperature can be found in Chip Dashboard. There is also oportunity to adjust settings.
+%
+%	\begin{figure}[htbp!]
+%		\centering
+%		\includegraphics[scale=0.6]{img/exarprog.png}\\
+%		\caption{Chip Dashboard} 
+%	\end{figure}
+%
 

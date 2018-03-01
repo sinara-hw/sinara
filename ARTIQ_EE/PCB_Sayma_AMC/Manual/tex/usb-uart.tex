@@ -1,13 +1,20 @@
 \section{USB-UART}
-\subsection{UART Switch}
+\subsection{USB console switch}
 
-UART from FPGA is connected through Multiplexer (SN74CB3T3257PW). Selection between MMC and USB is preformes automaticly. When micro-USB is connected S siglnal is high and Multiplexer connects USB to FPGA.\\ 
+UART from FPGA is connected through Multiplexer (SN74CB3T3257PW). Selection between MMC and USB is preformed automaticly. When micro-USB is connected, +5V from USB bus  switches the multiplexer to pass data from USB to FPGA, after un plugging cable, the switch signal S fall down and the multiplexer conects MMC to FPGA.\\
+
+\begin{itemize}
+	\item PRI\_UART is connected to FPGA, configuration is 1N8 115200 baudrate
+	\item AUX\_UART is connected to FPGA, configuration is 1N8 115200 baudrate
+	\item UART1 is connected to MMC, configuration is 1N8 115200 baudrate
+	\item UART4 is connected to MMC, configuration is 1N8 115200 baudrate
+	\item MMC\_CONS\_PROG is conected to MMC, configuration is 1N8 115200 baudrate
+\end{itemize}
 
 \subsection{USB-UART bridge}
 
 The USB-UART bridge (FT4232H) requires USB device drivers, vailable free from http://www.ftdichip.com,
 which are used to make the FT4232H on the Mini Module appear as a four virtual COM ports (VCP). This
 then allows the user to communicate with the USB interface via a standard PC serial emulation port
-(TTY).\\ Another FTDI USB driver, the D2XX driver, can also be used with application software to directly
-access the FT4232H on the Mini Module though a DLL. \\
+(TTY).\\
 

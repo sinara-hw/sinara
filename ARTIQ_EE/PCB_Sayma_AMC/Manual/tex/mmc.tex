@@ -4,40 +4,64 @@
 
 \begin{itemize}
 
-\item configures CPU, UART
-\item sets port directions
+\item configures CPU, UART from own FLASH 
+\item sets IO port directions
 \item enables VCCINT PSU
 \item enables P5V0 PSU (helper PSU)
 \item enables Exar PSU. It boots from its own EEPROM
 \item waits 200ms
 \item configures SCANSTA chip in stitcher mode. If RTM is inserted, it enables its JTAG port
-\item configures I2C switch base address
+\item configures I2C switch base address for master ports - MMC, FPGA
 \item initializes default RTM power state to off
 \item initializes Ethernet PHY chip in RGMII mode using pin strap.
 \item waits 200ms
 \item initializes I2C controller and chain (switch)
 \item configures Si5324
-\item checks if RTM is inserted, if yes, then enables its power, waits 200ms and initializes RTM power supply via I2C. It also configures Si5324 on RTM
+\item checks if RTM is inserted, if yes, then enables its power, waits 200ms and initializes RTM power supply via RTM\_I2C. It also configures Si5324 on RTM
 \item runs task.\\
-
+ 
 The task performs following functions:
 
-\item blinks front panel LEDs alternately
 \item checks if FPGA is configured. If not, it keeps Ethernet PHY in reset state. Once FPGA gets configured, it initializes the PHY.
 \item checks if RTM is unplugged. If not, it switches the power off to make sure it is off during hotplug.
 \end{itemize}
+\textit{\textbf{Note:}Configuration CPU, UART does not affect with any changes of LED indicators.}
+
 
 \subsection{Bootstraping}
+To compile binaries \href{https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/lpc-cortex-m-mcus/lpc1100-cortex-m0-plus-m0/lpcxpresso-ide-v8.2.2:LPCXPRESSO?tab=Design_Tools_Tab}{LPCXpresso} in newest version is needed.\\
+\href{https://www.nxp.com/docs/en/user-guide/LPCXpresso_IDE_User_Guide.pdf}{LPCXpresso User Guide}
 
-The MMC can be upgraded by USB cable and NXP programmer(can be used other programmer but make sure that header shorts pins 3, 5, 9) using  \href{http://www.flashmagictool.com/}{Flashmagic} or any other software which can talk with NXP bootloader. The source code is written in C and can be found on github.\\ 
+Another option is to compile under Linux using cmake toolchain in version 4.9.3.
+\begin{lstlisting}
+cmake & arm-none-eabi-gcc
+\end{lstlisting}
+
+\begin{itemize}
+	\item Header flashing
+
+The MMC can be upgraded by USB cable and NXP programmer(can be used other programmer but make sure that header shorts pins 3, 5, 9) using  \href{http://www.flashmagictool.com/}{Flashmagic} or any other software which can talk with NXP bootloader. The tested programmer is LPCLink V2. Flashing using programmer allows to debug.
+
+	\item USB flashing
+The MMC can be upgraded using USB and flashmagic software. This option only allows to flash IC, without any debug option.
+Steps to flash using USB:
+\begin{itemize}
+	\item Set serial console 115200 8n1
+	\item Press front-panel button -PB3 to trigger MMD to dump to serial console
+	\item Set LPC1776, 8MHz oscillator, select hex file and press start
+\end{itemize}
+
+\end{itemize}
+
+The source code is written in C and can be found on github.\\ 
 \textbf{Source code:} \href{https://github.com/m-labs/sinara/tree/master/SAYMA\_firmware}{https://github.com/m-labs/sinara/tree/master/SAYMA\_firmware}.\\
 \textbf{pre-compiled binary:} \href{https://github.com/m-labs/mmc-firmware/releases}{https://github.com/m-labs/mmc-firmware/releases}\\
 
-To compile binaries \href{https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/lpc-cortex-m-mcus/lpc1100-cortex-m0-plus-m0/lpcxpresso-ide-v8.2.2:LPCXPRESSO?tab=Design_Tools_Tab}{LPCXpresso} is needed.
 
-\subsection{Functionality}
 
-\todo[inline]{needed?}
+%\subsection{Functionality}
+%
+%\todo[inline]{needed?}
 
 \subsection{Exar debugging}
  
@@ -59,9 +83,9 @@ In case of chip failure, there is possibility to check chip status via UART. In 
 		\caption{Ethernet PHY register } 
 	\end{figure}
 
-\subsection{RGMII Ethernet }
+\subsection{Ethernet }
 
-\todo[inline]{TBD. Not sure what should it contain.}
+There is no Ethernet sharing between MMC and FPGA due to speed difference between RGMII and RMII. PHY does not provide link speed translation.
 
 \subsection{OpenMMC}
 

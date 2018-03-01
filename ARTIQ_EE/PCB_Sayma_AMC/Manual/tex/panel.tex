@@ -2,32 +2,27 @@
 
 		\begin{figure}[htbp!]
 			\centering
-			\includegraphics[width=14cm]{img/frontcallout.png}\\
+			\includegraphics[width=12cm]{img/frontcallout.png}\\
 			\caption{Front view}
 		\end{figure}
 		
 		\begin{figure}[htbp!]
 			\centering
-			\includegraphics[width=14cm]{img/topcallout1.png}\\
+			\includegraphics[width=12cm]{img/topcallout1.png}\\
 			\caption{Front view}
 		\end{figure}
-\clearpage
-		\begin{figure}[htbp!]
-			\centering
-			\includegraphics[width=14cm]{img/botcallout1.png}\\
-			\caption{Front view}
-		\end{figure}
+
 
 \begin{longtable}{|c|c|c|} \hline
 	\multicolumn{3}{|c|}{Call out table } \\ \hline	
 	Call out & Designator & Description \\ \hline
-	1 & J15 & IO1 \\ \hline
-	2 & J26 & IO2 \\ \hline
-	3 & J27 & CLK OUT \\ \hline
-	4 & -- & FMC slot \\ \hline
+	1 & J15 & GPIO - IO1 \\ \hline
+	2 & J26 & GPIO - IO2 \\ \hline
+	3 & J27 & CLK OUT output driven by Si5324 (CDR\_CLK\_CLEAN3) \\ \hline
+	4 & J28 & FMC connector \\ \hline
 %	5 & LD13 & Error\\ \hline
 %	6 & LD18 & Hot swap \\ \hline
-	7 & PB3 & reset? \\ \hline
+	7 & PB3 & routed to MMC, allows to flash MMC via USB \\ \hline
 	8 & cage2 & SFP Cage \\ \hline
 	9 & cage1 & SFP Cage \\ \hline
 	10 & J1 & Micro USB -->Serial \\ \hline
@@ -39,34 +34,108 @@
 %	16 & LD15 & SFP LED2  \\ \hline
 %	17 & LD2 & SFP LED1 \\ \hline
 %	18 & LD5 & FPGA ETH \\ \hline
-	19 & J28 & FMC Header \\ \hline
-	20 & J3 & SW JTAG \\ \hline
+	19 & J28 & FMC header \\ \hline
+	20 & J3 & JTAG header connected to SCANSTA\\ \hline
 	21 & J14 & MMC JTAG \\ \hline
-	22 & SW1 & FPGA MODE \\ \hline
-	23 & J13 & Digital IOs \\ \hline
+	22 & SW1 & FPGA MODE, see SW1 paragraph \\ \hline
+	23 & J13 & Digital IOs connected to FPGA \\ \hline
 	24 & J12 & SLAVE SATA \\ \hline
 	25 & J11 & MASTER SATA \\ \hline
 	26 & J4 & Power In \\ \hline
-	27 & J10 & Port 0 \\ \hline
+	27 & J10 & SATA connected to Port 0 \\ \hline
 	28 & W1 & EXAR I2C header \\ \hline
 	29 & -- & P12V0 \\ \hline
 	30 & -- &  Test points \\ \hline
+	31 & J6 & RTM Connector \\ \hline
+	32 & J2 & AMC Connector \\ \hline
 \end{longtable}
 
+\clearpage
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=14cm]{img/botcallout1.png}\\
+	\caption{Front view}
+\end{figure}
+
+Callout 5: LD13 is
+\begin{itemize}
+	\item off if MMC is ok 
+	\item red if MMC is in an error state
+\end{itemize}
+
+Callout 6: LD4 is
+\begin{itemize}
+	\item off the board has initialized in crate
+	\item blue if power is cut off and is possible to remove the board.
+\end{itemize}
+
+
+Callout 33: LD21 is
+\begin{itemize}
+	\item green if FPGA is configured
+	\item off if FPGA is not configured
+\end{itemize}
+
+Callout 11: LD14 is
+\begin{itemize}
+	\item green if MMC successfulled operation
+	\item off if MMC unsuccessfuled operation
+\end{itemize}
+
+Callout 14: LD20 is
+\begin{itemize}
+	\item green if Link is up
+	\item off if Link is down
+\end{itemize}
+Callout 15: LD18 is
+\begin{itemize}
+	\item green if Ethernet is in MII mode (mTCA doesn't support 100mbit Ethernet)
+	\item off if Ethernet is in RGMII mode
+\end{itemize}
+%-----------------------------SFP
+Callout 12: LD3 is
+\begin{itemize}
+	\item red if SFP2 - user defined
+	\item off if SFP2 - user defined
+\end{itemize}
+Callout 13: LD6 is
+\begin{itemize}
+	\item green if SFP2 - user defined
+	\item off if SFP2 - user defined
+\end{itemize}
+Callout 16: LD2 is
+\begin{itemize}
+	\item red if SFP1 - user defined
+	\item off if SFP1 - user defined
+\end{itemize}
+
+Callout 17: LD5 is
+\begin{itemize}
+	\item green if SFP1 - user defined
+	\item off if SFP1 - user defined
+\end{itemize}
+
+Callout 18: LD19 is
+\begin{itemize}
+	\item green if - user defined
+	\item off if - user defined
+\end{itemize}
+
+
 \begin{longtable}{|c|c|c|c|c|c|c|} \hline
-		\multicolumn{7}{|c|}{LED table }\\ \hline
+		\multicolumn{7}{|c|}{Power LED table }\\ \hline
 	Call out & Designator & Description&  Colour &nominal state& IC &Failure\\ \hline
-	5 & LD13 & Error &Red & off &MMC & on \\ \hline
-	6 & LD4 & Hot Swap & Blue & on&  MMC &  off\\ \hline
-	6 & LD21 & FPGA config done & Green & on& FPGA &off \\ \hline 
-	11 & LD14 & Operation succesful& Green & on& MMC &off\\ \hline
-	12 & LD3 & SFP2 LED2 & Red &on& FPGA & off\\ \hline
-	13 & LD6 & SFP2 LED1 & Green &on & FPGA&off \\ \hline
-	14 & LD20 & LINK UP &  Green &on & MAX24287&off \\ \hline
-	15 & LD18 & MII MODE & Green & on& MMC&off \\ \hline
-	16 & LD2 & SFP1 LED2 & Red & on& FPGA &off\\ \hline
-	17& LD5 & SFP1 LED1 & Green &on & FPGA& off\\ \hline
-	18 & LD19 & FPGA ETH & Green &on & MMC &off\\ \hline
+%	5 & LD13 & Error &Red & off &MMC & on \\ \hline
+%	6 & LD4 & Hot Swap & Blue & on&  MMC &  off\\ \hline
+%	6 & LD21 & FPGA config done & Green & on& FPGA &off \\ \hline 
+%	11 & LD14 & Operation succesful& Green & on& MMC &off\\ \hline
+%	12 & LD3 & SFP2 LED2 & Red &on& FPGA & off\\ \hline
+%	13 & LD6 & SFP2 LED1 & Green &on & FPGA&off \\ \hline
+%	14 & LD20 & LINK UP &  Green &on & MAX24287&off \\ \hline
+%	15 & LD18 & MII MODE & Green & on& MMC&off \\ \hline
+%	16 & LD2 & SFP1 LED2 & Red & on& FPGA &off\\ \hline
+%	17& LD5 & SFP1 LED1 & Green &on & FPGA& off\\ \hline
+%	18 & LD19 & FPGA ETH & Green &on & MMC &off\\ \hline
 	30 & LD22 & 3V3 & Green & on & Power & off \\ \hline
 	30 & LD7 & 0V95 & Green & on & Power & off \\ \hline 
 	30 & LD11 & 0V9 & Green & on & Power & off \\ \hline 
@@ -161,6 +230,7 @@
 
 \subsection{SW1}
 
+SW1 is used to chose configuration mode of the FPGA. Configuration modes define the specifics of how the FPGA will interact with the data source, external control logic. SW1 is tied directly to Bank 0 pf FPGA. All pins have pull up, switching SW1 proceed of connecting to lower potential.
 \begin{longtable}{|c|c|c|c|} \hline
 			\multicolumn{4}{|c|}{SW1 table}\\ \hline
 	M0 & M1 & M2 & Description \\ \hline
