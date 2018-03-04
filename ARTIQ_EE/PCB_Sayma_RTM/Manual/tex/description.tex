@@ -1,0 +1,76 @@
+%\section{Project description}
+%	
+%The Sayma RTM module extends Sayma AMC board connectivity by DACs and ADCs modules.
+%
+	
+
+\section{Functional specifications}
+
+\noindent
+
+\textbf{Programmable resources:}
+
+\begin{itemize}
+\item Xilinx Artix-7 XC7A15T-1CSG325
+
+\end{itemize}	
+
+\textbf{Memory:}
+
+\begin{itemize}
+
+	\item EEPROM with MAC and unique ID 
+	
+\end{itemize}
+
+\textbf{Connectivity:}
+
+\begin{itemize}
+	\item 4x mezzaninne connector LSS-120-01-L-DV-A 
+	\item 40x SMP connector for ADC/DAC
+%	\item Stand-alone 12V power connector 
+	\item RTM connector with 16 GTP pair routed to it.
+	\item GTP on RTM connector connected to:
+	\begin{itemize}
+		\item DAC x16 [Tx]
+		\item ADC x8 [Rx]
+		\item FPGA MGT 2x2 [Tx + Rx]
+		\item SATA x2 
+	\end{itemize}
+	\item uRFB connector
+	
+\end{itemize}
+
+\textbf{Supply:}
+
+\begin{itemize}
+	\item Monitoring of voltage and Power supply for FPGA and P3V3
+	
+\end{itemize}
+
+
+\textbf{Clocking:}
+
+\begin{itemize}
+	\item UFL CLK input
+	\item SMA CLK output
+	\item Si5324 Clock recovery
+	
+\end{itemize}
+
+
+\textbf{Other:}
+
+\begin{itemize}
+	\item Temperature, voltage and current monitoring for critical power buses
+
+	
+\end{itemize}
+
+
+
+
+
+
+
+

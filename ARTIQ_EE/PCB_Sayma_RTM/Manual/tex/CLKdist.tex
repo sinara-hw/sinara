@@ -1,0 +1,257 @@
+\section{Clock distribution}
+
+\subsection{Crate clock distribution}\label{crate-clock-distribution}
+
+The crate distributes a 100MHz clock on a RTM RF backplane. This clock
+is typically externally supplied from a high quality source, but it is
+desirable to include a 100 MHz oscillator on the MCH RTM and on the
+Sayma RTM the for turnkey/standalone operation (with limited timing
+performance).
+
+In a multi-crate system, all crates need to receive the same 100MHz
+clock to support sample-accurate operation.
+
+\subsection{RTIO}\label{rtio}
+
+Sayma and Metlino shall include a general purpose XO of e.g.~125MHz,
+connected to a general purpose FPGA clock input pin. This is a simple
+addition that make the boards a bit friendlier to developers. It also
+allows for debugging and bootstrapping of the clocks during development:
+This XO becomes necessary if we use a transceiver PLL chip that needs to
+be configured before it outputs a clock.
+
+\subsubsection{Metlino}\label{metlino}
+
+In root mode, the Metlino receives the 100MHz clock and turns it into a
+200MHz RTIO clock that it uses as reference clock for its DRTIO
+transmitters.
+
+In satellite mode, the Metlino recovers the RTIO clock from the fiber.
+
+The following clock resources should be available on Metlino to support
+this operation:
+
+\begin{itemize}
+
+	\item
+	Si5324 for 100-\textgreater{}200MHz in root mode, and CDR jitter
+	filtering in satellite mode.
+	\item
+	Si5324 free-running based on local XO for providing a CDR reference in
+	satellite mode.
+\end{itemize}
+
+The Si5324 shall have its two clock outputs connected to a transceiver
+clock input (so that we can transmit back synchronously and at fixed
+latency) and to a general purpose clock input on the FPGA.
+Transceiver-fabric clock routing inside the FPGA is of poor quality, so
+we want to mitigate that.
+
+The Metlino will be double-width and connected to its RTM to receive the
+100MHz RTM clock (required in root mode).
+
+\subsubsection{Sayma}\label{sayma}
+
+Sayma cards recover their RTIO clock from the backplane's transceiver
+link or - if they are stand-alone -- from their SFP/SATA DRTIO
+transciever link. This requires the same hardware as the Metlino in root
+mode: Si5324 connected in the same way.
+
+\subsection{DRTIO}\label{drtio}
+
+DRTIO (distributed real-time input/output) achieves three distinct
+things over a single high speed serial link:
+
+\begin{itemize}
+
+	\item
+	It transfers the RTIO clock
+	\item
+	It transfers the RTIO time. This means that it will designate a
+	specific RTIO clock cycle as timestamp zero.
+	\item
+	It transfers data. Data consists of RTIO events (outputs or inputs)
+	and low bandwidth non-realtime auxiliary traffic.
+\end{itemize}
+
+%Note that the RTIO time (clock plus the cycle counter) is the primary
+%and authoritative source of time in the ARTIQ tree. The RTIO clock is
+%however not an extremely low noise clock that could serve as the sample
+%clock in data conversion or as a base clock for picosecond level
+%timestamping. Having another ``better'' clock do these tasks is not
+%trivial since the alignment between such a sample clock and the RTIO
+%clock is unknown. When data is transferred between the two clock domains
+%it is undefined which RTIO cycle corresponds to which sample clock
+%cycle.
+
+\subsection{JESD204 synchronization
+	procedure}\label{jesd204-synchronization-procedure}
+
+While JESD204B subclass 1 provides ``fixed latency'' for the data
+transfer between a converter (ADC or DAC) and the FPGA, this is
+fundamentally insufficient for DRTIO. We need more than just fixed
+latency. A JESD204B link has two deviceclocks: one for the converter and
+one for the FPGA. The SYSREF signal is used to designate which cycle of
+the faster of the two deviceclocks corresponds to the beginning of a
+cycle in the slower deviceclock. The slower deviceclock and SYSREF have
+an a priori unknown phase with respect to the RTIO clock.
+
+Timestamping a certain sample to a specific RTIO cycle requires two
+things in addition to JESD204B subclass 1 deterministic latency:
+
+\begin{itemize}
+
+	\item
+	Reproducible alignment of the sample clock with the RTIO clock. This
+	is guaranteed by fixed latencies in the DRTIO branch of the clocking
+	(master oscillator -\textgreater{} MCH RTM -\textgreater{} Metlino
+	-\textgreater{} AMC backplane DRTIO link -\textgreater{} Sayma AMC)
+	and in the sample branch (master oscillator -\textgreater{} MCH RTM
+	-\textgreater{} RF backplane -\textgreater{} Sayma RTM -\textgreater{}
+	PLL -\textgreater{} clock distribution -\textgreater{} DAC/ADC). This
+	also requires the backplane clock and the sample clock to be integer
+	multiples of the RTIO clock.
+	\item
+	Reproducible alignment of SYSREF and the slower FPGA deviceclock to
+	the RTIO clock. This is done actively.
+\end{itemize}
+
+The FPGA shall align SYSREF with designated RTIO clock edges. The
+alignment should be better than a DAC clock cycle and reproducible
+across reboots.
+
+The FPGA first roughly aligns SYSREF within one cycle before a desired
+RTIO clock edge by asserting the synchronization signal of the clock
+chip, which resets its dividers. This alignment is optional and may have
+an uncertainty of several DAC clock cycles. It is only used to decrease
+the required scan range of the delay elements used in the next steps.
+
+The FPGA then analyzes SYSREF by repeatedly sampling it with the RTIO
+clock while scanning a calibrated I/O input delay. This measures the
+SYSREF phase with a high precision.
+
+The delay scan mechanism is limited by the resolution and stability of
+the scan element. The resolution must be significantly smaller than a
+DAC clock period. There are three delay elements available to perform
+the scan:
+
+\begin{itemize}
+
+	\item
+	IDELAYE3 in the FPGA. Uncertainty about PVT effects.
+	\item
+	Digital delay in the clock distribution chip. Infinite delay, low
+	noise.
+	\item
+	Analog delay in the clock distribution chip (HMC704X only, not
+	AD9516-1). Very fine and well calibrated, but too noisy to be used on
+	a sample clock.
+\end{itemize}
+
+We plan to use the latter two elements for the scan.
+
+The FPGA then rounds the phase to an integer multiple of sample clock
+cycles using previously stored fractional delay data (delay \textless{}-
+round(measured - fractional)) and stores the new fractional delay
+(fractional \textless{}- measured - delay). It now programs the digital
+phase shifters of the slower clocks (FPGA deviceclock and SYSREF) with
+the negative of the rounded delay value.
+
+This technique can be implemented on the AD9154 FMC cards, using the
+digital delay of the AD9516-1 and IDELAYE3.
+
+\subsection{Sayma RTM clock chip
+	connections}\label{sayma-rtm-clock-chip-connections}
+
+The HMC7044 has 14 outputs. They are used for:
+
+\begin{itemize}
+
+	\item
+	DAC1 deviceclock
+	\item
+	DAC1 SYSREF
+	\item
+	DAC2 deviceclock
+	\item
+	DAC2 SYSREF
+	\item
+	ADC1 deviceclock
+	\item
+	ADC1 SYSREF
+	\item
+	ADC2 deviceclock
+	\item
+	ADC2 SYSREF
+	\item
+	FPGA SYSREF {[}with fine delay{]}
+	\item
+	FPGA MGT reference clock for DAC
+	\item
+	FPGA MGT reference clock for ADC
+	\item
+	additional outputs to FPGA, usable e.g.~if we have problems with the
+	recovered RTIO clock.
+\end{itemize}
+
+\subsection{Clock constraints}\label{clock-constraints}
+
+\subsubsection{Constraints}\label{constraints}
+
+\begin{itemize}
+
+	\item
+	t\_RTIO = n * 1ns
+	
+	\begin{itemize}
+
+		\item
+		period of the coarse RTIO clock
+		\item
+		n integer to avoid rounding errors and beating between RTIO clock
+		and user habit
+		\item
+		n not necessarily a power of two
+		\item
+		the same throughout the ARTIQ tree to avoid beating of channels
+	\end{itemize}
+	\item
+	t\_DRTIO\_link = n * 10 * t\_RTIO with n being 1, 2, 4, 8
+	
+	\begin{itemize}
+
+		\item
+		line period of the DRTIO link
+		\item
+		due to 8b10b and parallel bus width
+		\item
+		n not a power of two could work but looks impractical.
+		\item
+		does not need to be the same n for each link
+		\item
+		AMC backplane links can probably not to 10 GHz line rate but 5 GHz,
+		fibers (SFP+) can
+	\end{itemize}
+	\item
+	t\_SAWG\_DATA = t\_RTIO/
+\end{itemize}
+
+\begin{verbatim}
+f_DAC/f_SAWG: {1, 2, 4, 8}
+f_SAWG/f_RTIO: {1, 2, 4, 8}
+f_RTIO/f_DRTIO: {10, 20, 40}
+f_JESD_P/f_RTIO: {1, 2}
+f_JESD/f_JESD_P: {40}
+\end{verbatim}
+
+\begin{longtable}[]{@{}lllllll@{}}
+
+	(GHz) & f\_DAC & f\_SAWG & f\_JESD\_P & f\_JESD & f\_RTIO &
+	f\_DRTIO\tabularnewline
+
+	\endhead
+	A & 2.4 & 0.6 & 0.15 & 6 & 0.15 & 3\tabularnewline
+	B & 2 & 1 & 0.25 & 10 & 0.125 & 5\tabularnewline
+	C & 0.3 & 0.3 & 0.15 & 6 & 0.15 & 3\tabularnewline
+
+\end{longtable}

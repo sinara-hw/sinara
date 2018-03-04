@@ -1,0 +1,32 @@
+\section{Housekeeping Signals}
+
+\subsection{sensors}
+Temperature:\\
+
+\begin{longtable}{|c|c|c|c|c|}\hline
+	\multicolumn{5}{|c|}{IPMI\_I2C}\\ \hline
+	No & Addr. & placement & Type & Accuracy \\ \hline
+	IC39 & 0x4A & Bottom - close to ADC  & LM75 & +/- 2 \\ \hline
+	IC40 & 0x49 & Bottom - close to HMC7043 buffer& LM75 & +/- 2  \\ \hline
+	IC44 & 0x24 & Bottom - under Mezzanine1 & MAX664A & +/- 1 \\ \hline
+\end{longtable}
+
+\begin{longtable}{|c|c|c|c|c|}\hline
+		\multicolumn{5}{|c|}{TEMP\_SENS\_I2C}\\ \hline
+	No & Addr. & placement & Type & Accuracy \\ \hline
+	IC56 & 0x48 & Bottom - under DAC & ADT7420 & +/- 0.25 \\ \hline
+	IC57 & 0x49 & Bottom center & ADT7420 & +/- 0.25  \\ \hline
+\end{longtable}
+
+All sensors are available either from AMC siede I2C or from RTM\_FPGA.
+%All temperature sensors are tied tohether to one I2C bus - I2C\_SENS. \\
+
+
+
+
+
+
+
+\subsection{Safety interlocks}
+
+Temperature interlock is available on RTM board only and gets activated after reaching 80 degrees. This is hardware interlock and cannot be deactivated. Dedicated LED (LD15) gets on and RTM power supply is off until the temperature is exceeded

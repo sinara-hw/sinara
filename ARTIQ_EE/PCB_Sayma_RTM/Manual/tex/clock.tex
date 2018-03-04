@@ -1,0 +1,80 @@
+\section{Clock distribution mezzanine}
+
+\subsection{Overview}\label{overview}
+
+Clock mezzanines generate high-quality RF/microwave signals for use as
+data converter clocks and local oscillators (LOs) by phase-locking
+low-noise VCOs to a supplied reference source. They mount on a suitable
+carrier, such as \url{Baikal}, which supplies global signals to all RTMs
+in a uTCA.4 rack, or to an individual RTM, such as \url{Sayma}, for
+local frequency generation.
+
+\subsection{Features and specification}\label{features-and-specification}
+
+\begin{itemize}
+	\item
+	Reference input from carrier PCB via 2xSMPs, typically 100MHz
+	AC-coupled differential 3V3 PECL square-wave.
+	\item
+	Two independent phase-locked loops (PLLs), one typically used as one
+	data converter clock (CLK) and one as a high-frequency reference/local
+	oscillator (REF\_LO). Outputs are AC coupled 3V3 PECL square-waves
+	provided as differential signals over 2xSMPs.
+	\item
+	PLL lock indicators accessible via TTLs
+	\item
+	PLL multiplication factors (output frequencies) accessible from
+	carrier via I2C
+	\item
+	Auxiliary CLK input from MMCX connector on top of PCB with isolated
+	ground. Typical input is 50Ohm single-ended, +10dBm. Switching between
+	on-board PLL and auxiliary input using integrated ultra-low noise
+	clock mux controllable from carrier.
+	\item
+	Digital/power: copy from AFE specification, and specify pins for PLL
+	locked indicators (high-locked) and mux
+\end{itemize}
+
+\subsection{Mezzanines}\label{mezzanines}
+
+\subsubsection{Template mezzanine}\label{template-mezzanine}
+
+Used for thermal and electrical testing of carriers, such as Sayma and
+Baikal, and as a template for designing clock mezzanines.
+
+The design files are located in
+\href{https://github.com/m-labs/sinara/tree/master/ARTIQ_ALTIUM/PCB_mezzanine_clock_template}{ARTIQ\_ALTIUM/PCB\_mezzanine\_clock\_template},
+the schematic is
+\href{https://github.com/m-labs/sinara/blob/master/ARTIQ_ALTIUM/PCB_mezzanine_clock_template/mezzanine_clock_template.PDF}{here}.
+
+\subsection{Low phase noise clock mezzanine}\label{low-phase-noise-clock-mezzanine}
+
+An ultra-low noise, dual-output fixed-frequency signal generator.
+
+The design files are located in
+\href{https://github.com/m-labs/sinara/tree/master/ARTIQ_ALTIUM/PCB_mezzanine_clock}{ARTIQ\_ALTIUM/PCB\_mezzanine\_clock},
+the schematic is
+\href{https://github.com/m-labs/sinara/blob/master/ARTIQ_ALTIUM/PCB_mezzanine_clock_template/mezzanine_clock_template.PDF}{here}.
+
+Specification:
+
+\begin{itemize}
+
+	\item
+	PLL: HMC440
+	\item
+	VCOs: Crystek CVCO55CC family of narrow-band VCOs
+	\item
+	Output range for 100MHz input: 400MHz to 3.2GHz, limited by available
+	VCOs and HMC440 multiplication factor
+	\item
+	PLL multiplication factors (output frequencies) fixed by component
+	section, but readable from carrier via I2C
+
+\end{itemize}
+
+%\subsubsection{Loop filters}\label{loop-filters}
+%
+%To do: add component choices and noise models (+ measurements where
+%available) for important output frequencies.
+
