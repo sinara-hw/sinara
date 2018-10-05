@@ -1,4 +1,4 @@
-This repository is largely depreciated as we now give each piece of hardware its own repository instead of using this one.
+This repository is largely depreciated as we now give each piece of hardware its own repository within the [sinara-hw organization](https://github.com/sinara-hw) instead of using this one.
 
 The main exception is issue tracking for Sayma which remains [here](https://github.com/sinara-hw/sinara/issues).
 
