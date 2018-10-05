@@ -1,9 +1,7 @@
-Sinara is an open-source hardware ecosystem designed for use in quantum physics experiments running the [ARTIQ](https://m-labs.hk/artiq/) operating system. You can find documentation, including advice on purchasing hardware and contributing to the project, on the GitHub project [Wiki](https://github.com/m-labs/sinara/wiki).
+This repository is largely depreciated as we now give each piece of hardware its own repository instead of using this one.
 
-The Metlino and Sayma PCBs are developed by a collaboration including M-Labs, Warsaw University of Technology (WUT), US Army Research Laboratory (ARL), the University of Oxford, the University of Maryland and NIST Boulder. The majority of the hardware was designed by WUT and ARTIQ integration is provided by M-Labs. The development is funded by ARL, Duke University and the University of Oxford. 
+The main exception is issue tracking for Sayma which remains [here](https://github.com/sinara-hw/sinara/issues).
 
-The Kasli PCB is being developed by M-Labs. The hardware is designed by WUT and ARTIQ integration is provided by M-Labs. The work was funded by ___. 
-
-Several partners are contributing peripherals compatible with the Sinara hardware. 
+The [meta repository](https://github.com/sinara-hw/meta) is where Sinara management, inter-board design, incubation of new projects, etc. now occur.  Use either the [Main Sinara Wiki](https://github.com/sinara-hw/meta/wiki) or [Meta Issue Tracker](https://github.com/sinara-hw/meta/issues) as appropriate.
 
 All work is licensed under CERN OHL v1.2. 
